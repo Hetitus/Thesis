@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: TH_Thesis.aux
+A level-1 auxiliary file: chapters/Titelseite.aux
+A level-1 auxiliary file: chapters/Zusammenfassung.aux
+A level-1 auxiliary file: chapters/Summary.aux
+A level-1 auxiliary file: chapters/Introduction.aux
+A level-1 auxiliary file: chapters/NERModel.aux
+A level-1 auxiliary file: chapters/RobustRepair.aux
+A level-1 auxiliary file: chapters/CrossCorrel.aux
+A level-1 auxiliary file: chapters/Discussion.aux
+The style file: naturemagC.bst
+A level-1 auxiliary file: chapters/Appendix.aux
+Database file #1: NER_Bibliography.bib
+You've used 37 entries,
+            2538 wiz_defined-function locations,
+            848 strings with 14090 characters,
+and the built_in function-call counts, 19373 in all, are:
+= -- 1515
+> -- 856
+< -- 0
++ -- 782
+- -- 214
+* -- 1221
+:= -- 2192
+add.period$ -- 111
+call.type$ -- 37
+change.case$ -- 37
+chr.to.int$ -- 0
+cite$ -- 37
+duplicate$ -- 1749
+empty$ -- 1568
+format.name$ -- 248
+if$ -- 4056
+int.to.chr$ -- 0
+int.to.str$ -- 37
+missing$ -- 434
+newline$ -- 188
+num.names$ -- 37
+pop$ -- 797
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 286
+stack$ -- 0
+substring$ -- 1332
+swap$ -- 1047
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 143
+width$ -- 39
+write$ -- 409
