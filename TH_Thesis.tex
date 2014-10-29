@@ -1,0 +1,294 @@
+\documentclass[DIV12,11pt,a4paper,titlepage,twoside,headings=small]{scrbook}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+
+\def\TCop{\textsuperscript{\textcopyright}}
+\def\TReg{\textsuperscript{\textregistered}}
+\def\TTra{\textsuperscript{\texttrademark}}
+\usepackage[latin1]{inputenc}
+%\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{colortbl}
+%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\renewcommand{\chaptermark}[1]{%
+ \markboth{\thechapter.\ #1}{}}
+
+\renewcommand{\sectionmark}[1]{\markright{}}
+
+\newcommand{\helv}{%
+\fontfamily{phv}\fontsize{10}{11}\selectfont}
+
+\fancypagestyle{plain}{%
+%\fancyhf{} % clear all header and footer fields
+\fancyfoot[C]{\helv \thepage} % except the center
+%\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+\fancyfoot[C]{\helv \thepage} 
+
+%\newenvironment{keeppage}{\let\thispagestyle{plain}}
+
+ 
+\renewcommand{\chapterheadstartvskip}{\vspace *{-\baselineskip }}
+
+
+
+
+\usepackage{setspace}
+
+\usepackage{booktabs}
+\usepackage{cite}
+%\usepackage[numbers,sort&compress]{natbib}%enhanced citation
+\usepackage[format=plain,footnotesize,labelfont=bf,justification=justified,singlelinecheck=false]{caption}
+\usepackage{longtable}
+
+\usepackage{tabularx}
+\usepackage[section]{placeins}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{changepage}
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{helvet}
+     
+\setstretch{1.4}
+%\doublespacing
+
+\parindent0pt
+\usepackage{ifpdf}
+
+%%% Should be LAST usepackage-call!
+%%% For docu on that, see reference on package ``hyperref''
+\ifpdf%   (definitions for using pdflatex instead of latex)
+
+  %%% graphicx: support for graphics
+  \usepackage[pdftex]{graphicx}
+
+  \pdfcompresslevel=9
+
+  %%% hyperref (hyperlinks in PDF): for more options or more detailed
+  %%%          explanations, see the documentation of the hyperref-package
+  \usepackage[%
+    %%% general options
+    pdftex=true,      %% sets up hyperref for use with the pdftex program
+    %plainpages=false, %% set it to false, if pdflatex complains: ``destination with same identifier already exists''
+    %
+    %%% extension options
+    backref,      %% adds a backlink text to the end of each item in the bibliography
+    pagebackref=false, %% if true, creates backward references as a list of page numbers in the bibliography
+    colorlinks=false,   %% turn on colored links (true is better for on-screen reading, false is better for printout versions)
+    %
+    %%% PDF-specific display options
+    bookmarks=true,          %% if true, generate PDF bookmarks (requires two passes of pdflatex)
+    bookmarksopen=false,     %% if true, show all PDF bookmarks expanded
+    bookmarksnumbered=false, %% if true, add the section numbers to the bookmarks
+    %pdfstartpage={1},        %% determines, on which page the PDF file is opened
+    pdfpagemode=None         %% None, UseOutlines (=show bookmarks), UseThumbs (show thumbnails), FullScreen
+  ]{hyperref}
+
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\sloppy
+
+%%%%defines bibliography environment 
+\def\thebibliography#1{\chapter{Bibliography}% 
+    \markboth{Bibliography}{Bibliography} 
+  \list{[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin 
+\labelwidth 
+    \advance\leftmargin\labelsep 
+    \usecounter{enumi}} 
+    \def\newblock{\hskip .11em plus .33em minus .07em} 
+    \sloppy\clubpenalty4000\widowpenalty4000 
+    \sfcode`\.=1000\relax} 
+
+
+
+  \DeclareGraphicsExtensions{.pdf}
+
+\else %else   (definitions for using latex instead of pdflatex)
+
+  \usepackage[dvips]{graphicx}
+  
+
+  \DeclareGraphicsExtensions{.eps}
+
+%  \usepackage[%
+%    dvips,           %% sets up hyperref for use with the dvips driver
+%    colorlinks=false %% better for printout version; almost every hyperref-extension is eliminated by using dvips
+%  ]{hyperref}
+
+\fi
+
+\usepackage{chngcntr}
+\counterwithin{figure}{chapter}
+
+\geometry{inner=3.0cm,outer=2.5cm}
+
+\graphicspath{{Abbildungen/}}
+\raggedbottom
+
+
+\begin{document}
+
+
+%\usepackage[T1]{fontenc}
+%\newcommand{\changefont}[3]{
+%\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+%\changefont{phv}{m}{n}
+
+% title pages
+\include{chapters/Titelseite}
+
+% ************************* Acknowledgments *****************************
+
+%\include{chapters/Acknowledgments}
+%\addcontentsline{toc}{part}{Acknowledgments}
+
+\thispagestyle{plain}
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+% *************************table of contents*****************************
+%\setcounter{tocdepth}{3} %number gives depth of Table of Content 1 = only chapters, 2 = chapters + sections....
+%\fancyhf{}
+\thispagestyle{plain}
+\pagenumbering{gobble}
+\tableofcontents
+
+%\tableofcontents
+%\thispagestyle{plain}
+%\newpage
+
+
+
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+% main part
+%\mainmatter
+
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+%\thispagestyle{empty}
+%\cleardoublepage
+
+%\pagestyle{fancy} \lhead[\normalsize\thepage\hfill\footnotesize
+%\thechapter \hspace{2pt} \leftmark\ ]{} \chead{}
+%\rhead[]{\footnotesize\thesection \hspace{2pt}
+%\rightmark\hfill\normalsize\thepage} \lfoot{} \cfoot{} \rfoot{}
+
+%\thispagestyle{empty}
+
+
+
+
+
+% ************************* Abtract1 *****************************
+
+
+
+%\renewcommand{\sectionmark}[1]{\markright{}}
+
+\include{chapters/Zusammenfassung}
+%\addcontentsline{toc}{part}{Zusammenfassung}
+
+%\thispagestyle{empty}
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+% ************************* Abtract2 *****************************
+\include{chapters/Summary}
+%\addcontentsline{toc}{part}{Summary}
+
+%\thispagestyle{empty}
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+
+% ************************* PART I *****************************
+
+\include{chapters/Introduction}
+
+%\thispagestyle{empty}
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+% ************************* PART II *****************************
+
+
+\include{chapters/NERModel}
+
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+% ************************* PART III *****************************
+
+
+\include{chapters/RobustRepair}
+
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+% ************************* PART IV *****************************
+
+
+\include{chapters/CrossCorrel}
+
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+% ************************* PART V *****************************
+
+\include{chapters/Discussion}
+
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+% ************************* PART VI *****************************
+%\include{chapters/MaterialsandMethods}
+
+%\thispagestyle{empty}
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+%\thispagestyle{empty}
+%\clearpage{\pagestyle{empty}\cleardoublepage} \pagestyle{fancy}
+%\lhead[\normalsize\thepage\hfill\footnotesize\leftmark\ ]{} \chead{}
+%\rhead[]{\footnotesize\rightmark\hfill\normalsize\thepage} \lfoot{}
+%\cfoot{} \rfoot{}
+
+
+
+
+% ************************* Publications *****************************
+
+%\include{chapters/Publications}
+%\clearpage{\pagestyle{empty}\cleardoublepage} \thispagestyle{empty}
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+% ************************* List of Figures *****************************
+%\addcontentsline{toc}{chapter}{List of Figures}
+%\listoffigures \clearpage{\pagestyle{empty}\cleardoublepage}
+
+% ************************* References *****************************
+%\setcounter{chapter}{9}
+%\addcontentsline{toc}{chapter}{Bibliography}
+%\bibliographystyle{apa}
+%\newcommand{\bibfont}{\footnotesize}
+\footnotesize\bibliographystyle{naturemagC}
+\bibliography{NER_Bibliography}
+
+%\clearpage{\pagestyle{empty}\cleardoublepage} \thispagestyle{empty}
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+%\clearpage{\pagestyle{empty}\cleardoublepage} \thispagestyle{empty}
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+% ************************* Appendix *****************************
+
+\include{chapters/Appendix}
+%\clearpage{\pagestyle{empty}\cleardoublepage} \thispagestyle{empty}
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+%\setcounter{chapter}{1}
+
+
+\end{document}
