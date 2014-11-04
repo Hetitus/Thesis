@@ -138,6 +138,7 @@ where $EdU(t)$ and $EdU_{\text{max}}$ depict the amount of incorporated EdU and 
 
 \section{Kinetic model of NER}
 \subsection{Slow first-order reaction kinetic due to many fast interacting components}
+\label{sec:toyModel}
 To investigate the mechanistic connection between fast NER factor exchange at the DNA template and the overall slow repair time it appears practical to apply an analytical approach. During her Ph.D. thesis Gesa Terstiege together with Thomas H\"ofer performed this analysis \cite{Terstiege2010,Verbruggen2014}, considering the complex formation with a simplified model including $N$ repair factors. They examined different scenarios distinguishing random and sequential protein assembly; reversible and irreversible protein binding or mixed mechanisms specific for each DNA repair intermediate. Under appropriate assumptions, the mean repair time of such a process can be generally expressed with:
 
 \begin{equation}
@@ -308,11 +309,12 @@ Summing over all repair states and the respective intermediates associated to on
  
 \section{Maximum likelihood approach together with PLE analysis identifies realistic model of NER}
 \subsection{A maximum likelihood approach for efficient model fitting}
-
+\label{sec:maximumLL}
 To find a realistic parameterization for the temporal development of the repair states $y_\pi^R$ (cf.\ Eqn. \ref{eqn:DNAstatesModel}) the model was mapped to $m$ observables via a function $f_z$:
 
   \begin{equation}
   	z(t_i,\theta) = f_z(t_i,y(t_i,\theta),\theta).
+  	\label{eqn:observable}
   \end{equation} 
 
 The observables $z$ are parameterized by $\theta$ and resemble experimentally derived quantities at time $t_i$. $\theta$ depicts binding, dissociation and catalytic constants adding up to a total of 45 model parameters. Each observable $z_k(t_i,\theta)$ corresponds to the measured data $z_k^\dag(t_i)$ with intrinsic noise $\epsilon_{ki}$. Its origin can be traced back to a mixture of measurement noise combined with the naturally occurring biological variability. Assuming additive, normally distributed noise leads to $z_k(t_i)^\dag = z_k(t_i,\theta) + \epsilon_{ki}$ with $\epsilon_{ki} \sim N(0,\sigma_{ki}^2)$. To calibrate the measured data $z_k(t_i)^\dag$ with the model observables $z_k(t_i,\theta)+\epsilon_{ki}$ we applied a maximum likelihood approach as distance measure which translates for normally distributed noise into:
@@ -321,7 +323,7 @@ The observables $z$ are parameterized by $\theta$ and resemble experimentally de
 L(z^\dag \textbar \theta) = \varPi_{k=1}^m \varPi_{i=1}^{d_k} \frac{1}{\sqrt{2\pi \sigma_{ki}^2}}\exp \left( -\frac{1}{2\sigma_{ki}^2}\left(z_{ki}^\dag - z_k(t_i,\theta)\right)^2\right)
 \end{equation}
   
-Here, $d_k$ denotes the number of distinct experimental data sets $y^\dag$ for each observable $k\sim 1 ...m$, measured at time points $t_i$ with $i\sim 1 ... d_k$. $\sigma_{ki}^2$ are the variance components of the measurement noise of each data point. Instead of maximizing the likelihood it is equivalent and numerically more efficient to minimize its negative logarithm $-2log(L(z^\dag\textbar\theta))$ instead. In the following we will refer to it as $X^2$.  For the minimization of the $X^2$ the choice for $\theta$ is controlled by $\sigma_{ki}^2$ (cf.\ Eqn. \ref{eqn:likelihood}). As shown by Raue and colleagues for the reliable estimation of the model parameters $\theta$ the simultaneous approximation of $\sigma_{ki}^2$ together with the model dynamics leads to a statistically more accurate assessment of the model parameters than using noise estimations from preprocessed data \cite{Raue2013}. Accordingly $\sigma_{ki}^2$ can be considered as parameterized function
+Here, $d_k$ denotes the number of distinct experimental data sets $z^\dag$ for each observable $k\sim 1 ...m$, measured at time points $t_i$ with $i\sim 1 ... d_k$. $\sigma_{ki}^2$ are the variance components of the measurement noise of each data point. Instead of maximizing the likelihood it is equivalent and numerically more efficient to minimize its negative logarithm $-2log(L(z^\dag\textbar\theta))$ instead. In the following we will refer to it as $X^2$.  For the minimization of the $X^2$ the choice for $\theta$ is controlled by $\sigma_{ki}^2$ (cf.\ Eqn. \ref{eqn:likelihood}). As shown by Raue and colleagues for the reliable estimation of the model parameters $\theta$ the simultaneous approximation of $\sigma_{ki}^2$ together with the model dynamics leads to a statistically more accurate assessment of the model parameters than using noise estimations from preprocessed data \cite{Raue2013}. Accordingly $\sigma_{ki}^2$ can be considered as parameterized function
 
 \begin{equation}
 \sigma_{k}(t_i,\theta) = f_{\sigma_{k}}(t_i,z(t_i,\theta),\theta).
@@ -366,7 +368,13 @@ To derive faithful fitting results we reiterated the optimization process for 25
 \end{figure}
 
 \subsection{Identifiability analysis}
-In the following section we want to quantify the quality of the model fit and determine whether the current model structure is competent for reliable predictions concerning experimentally unobserved system behavior. This capability depends on the structural and practical identifiability of the model, which can be influenced by functionally related parameters or limited amount and quality of the data, respectively \cite{Cobelli1980,Swameye2003}. Both can be analyzed and tested numerically by a formalism called profile likelihood estimation (PLE)\cite{Venzon1988,Murphy2000,Raue2009}, where the multi-dimensional model uncertainty inflicted by an individual parameter is projected to a one-dimensional profile likelihood. Accordingly, one parameter $\theta_l$ with $l\in{1...N}$ is gradually fixed along this dimension for different values of $p$. In each step $X_{\theta_l}^2(p)$ is minimized fitting all other parameters $\theta_k$ with $k\in{1...N};k\neq l$. Subsequently, the identifiability of a parameter $\theta_l$ can be determined by $\Delta X_{\theta_l}^2(p)$, which describes the difference between the global $X^2$ minimum and the parameter dependent local minimum $X_{\theta_l}^2(p)$:
+\label{sec:identifiabilityAnalysis}
+In the following section we want to quantify the quality of the model fit and determine whether the current model structure is competent for reliable predictions concerning experimentally unobserved system behavior. This capability depends on the structural and practical identifiability of the model, which can be influenced by functionally related parameters or limited amount and quality of the data, respectively \cite{Cobelli1980,Swameye2003}. Both can be analyzed and tested numerically by a formalism called profile likelihood estimation (PLE)\cite{Venzon1988,Murphy2000,Raue2009}, where the multi-dimensional model uncertainty inflicted by an individual parameter is projected to a one-dimensional profile likelihood (PL)
+\begin{equation}
+PL(\theta_i) = \max_{\forall j \neq i} [L(z^\dag \lvert \theta_j)].
+\label{eqn:PL} 
+\end{equation}
+Accordingly, one parameter $\theta_l$ with $l\in{1...N}$ is gradually fixed along this dimension for different values of $p$. In each step $X_{\theta_l}^2(p)$ is minimized fitting all other parameters $\theta_k$ with $k\in{1...N};k\neq l$. Subsequently, the identifiability of a parameter $\theta_l$ can be determined by $\Delta X_{\theta_l}^2(p)$, which describes the difference between the global $X^2$ minimum and the parameter dependent local minimum $X_{\theta_l}^2(p)$:
 \begin{eqnarray}
 	\Delta X_{\theta_l}^2(p) &=& \min_{\{\theta_k\textbar k=1,...,N;k\neq l\}} \left( X^2 (\theta_1,...,\theta_{l-1},p,\theta_{l+1},...,\theta_N )\right)\nonumber \\
 	&-& \quad \! \min_{\{\theta_k\textbar k=1,...,N\}} \quad \!\! \left( X^2 (\theta_1,...,\theta_N )\right)

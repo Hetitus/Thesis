@@ -250,4 +250,27 @@ Raue, a., Kreutz, C., Maiwald, T., Bachmann, J., Schilling, M.,
   observed dynamical models by exploiting the profile likelihood.}
 \newblock \emph{Bioinformatics (Oxford, England)} \textbf{25}, 1923--9 (2009).
 
+\bibitem{Hofmeyr1991}
+Hofmeyr, J.-H.~S. \& Cornish-Bowden, A.
+\newblock {Quantitative assessment of regulation in metabolic systems}.
+\newblock \emph{European Journal of Biochemistry} \textbf{200}, 223--236
+  (1991).
+
+\bibitem{Fell1992}
+Fell, D.~A.
+\newblock {Metabolic Control Analysis : a survey of its theoretical and
+  experimental development}.
+\newblock \emph{Biochemical Journal} \textbf{286}, 313--330 (1992).
+
+\bibitem{Kreutz2012}
+Kreutz, C., Raue, A. \& Timmer, J.
+\newblock {Likelihood based observability analysis and confidence intervals for
+  predictions of dynamic models.}
+\newblock \emph{BMC systems biology} \textbf{6}, 120 (2012).
+
+\bibitem{Hinkley1979}
+Hinkley, D.
+\newblock {Predictive Likelihood}.
+\newblock \emph{The Annals of Statistics} \textbf{7}, 718--728 (1979).
+
 \end{thebibliography}

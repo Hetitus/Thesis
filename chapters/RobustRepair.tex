@@ -1,44 +1,57 @@
 \chapter{Control analysis of the DNA repair rate}
-%
-%%\documentclass[a4paper, 12pt]{article}
-%%\usepackage[english]{babel}
-%%\usepackage{graphicx}
-%%\makeatletter
-%%\def\ScaleIfNeeded{%
-%%	\ifdim\Gin@nat@width>\linewidth
-%%		\linewidth
-%%	\else
-%%		\Gin@nat@width
-%%	\fi
-%%}
-%%\makeatother
-%%\def\TCop{\textsuperscript{\textcopyright}}
-%%\def\TReg{\textsuperscript{\textregistered}}
-%%\def\TTra{\textsuperscript{\texttrademark}}
-%%\usepackage[applemac]{inputenc}
-%%\usepackage{color}
-%%\usepackage{cite}
-%%\pagestyle{headings}
-%
-%%\newpage
-%%\usepackage[T1]{fontenc}
-%%\newcommand{\changefont}[3]{
-%%\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
-%%\changefont{phv}{m}{n}
-%%\begin{document}
-%\section{Introduction}
 
-- summarize the data that we acquired
-- point out that it is single cell data
-- state that in image 2.5 we see a large variability of EdU kinetics 
-- want to answer the question how does this slow repair arise from the molecular mechanism 
-- what is the origin of the observed variability
+In the previous chapter we introduced the incorporation of EdU upon UV-irradiation as a quantitative readout for the DNA repair synthesis kinetic (cf.\ Figure \ref{fig:EdU_measurement}). We could show that despite the pathway's complexity DNA repair follows a mono-exponential kinetic of first order. Moreover, the repair of single lesions is distributed over a broad time span with 50\% of the lesions being repaired after a half-time of $\sim$1.2 h. Notably, measurements on the single cell level revealed that also the half-time and hence the rate of repair is highly variable (cf. Figure \ref{fig:DNArepairKinetic}B-E). So far the origin of this variability is unknown but also if and how the cell faces this highly fluctuating environment.\\  
+In the following chapter we will apply the kinetic NER model and explore the nature of the repair rate variation. Simulating the effect of NER factor variation on the repair rate we find that the repair rate control is distributed among all NER factors. Exploiting the natural variability of expressed repair proteins we can experimentally corroborate the computationally derived finding for the NER factors XPC, TFIIH, XPA, XPF and RPA. Apart from the variability in protein expression the model identifies the initial amount of inflicted DNA damage as major contribution determining the repair rate distribution. Both sources together appear to be sufficient to explain the overall rate variability.     
+
+
 
 \section{Kinetic NER model predicts collective rate control}
 
+\subsection{Response coefficients}
+
+The narrow confidence bounds derived by PLE analysis identified parameters in reasonable biological ranges (cf.\ Section \ref{sec:identifiabilityAnalysis}) and allowed us to use the model for quantitative predictions. On the basis of the simplified model result, indicating that the fast and random enzyme exchange defines the slow first-oder rate kinetics (cf.\ Section \ref{sec:toyModel}), we wanted to test whether the concept of multi-protein rate control also applies on the realistic NER model. To determine the response of a system to changes in the environment one can calculate the response coefficients $\tilde{R}_i$ \cite{Hofmeyr1991,Fell1992}. Accordingly, we can quantify the relative change in the repair rate $\nu$ as a function of the relative change in the protein concentration $C_i$ ($i$ = XPC, TFIIH,...).
+
+\begin{equation}
+\tilde{R}_i = \frac{\partial \, \text{ln} \, \nu}{\partial \, \text{ln} \, C_i}.
+\label{eqn:responseCoefficients}
+\end{equation}
+
+The inverse of $\nu$ is referred to as characteristic time $\tau$ so that Eqn. \ref{eqn:responseCoefficients} can be rewritten as
+
+\begin{equation}
+\tilde{R}_i = \frac{C_i}{\tau^{-1}} \frac{\partial  \, \tau^{-1}}{\partial \,  C_i}.
+\label{eqn:rC_characteristicTime}   
+\end{equation}
+
+$\tau$, in turn, can be directly approximated from the distribution of repaired DNA states $y^R_\pi(t)$, which include the modeled DNA intermediates for resynthesized and rechromatinized DNA. By taking the ratio between the first ($\mu^{(1)}$) and the zeroth ($\mu^{(0)}$) central moment of the distribution we derive the reaction-specific mean time 
+
+\begin{equation}
+\tau_{R} = \frac{\mu{(1)}}{\mu^{(0)}}, 
+\label{eqn:meanreactiontime}   
+\end{equation}
+
+with
+
+\begin{equation}
+\mu^{(m)} = \int t^m \, y^R_\pi(t)\, dt.
+\label{eqn:moments}   
+\end{equation}
 
 
-\subsection{Small and balanced control coefficients}
+To ensure the convergence of the integral we subtract all repair synthesis states (IV + V) from the initial amount of damages $y^{\text{I}}_{00} = $ 3.33 \textmu M at t = 0.
+	
+\begin{equation}	
+	\tau_{\text{syn}}=\frac{\int (y^I_{00}(0)-( \sum_ \pi  y_\pi^{IV}(t)+\sum_ \pi  y_\pi^{V}(t))\; dt)\cdot t\; dt}{\int y^I_{00}(0)-( \sum_ \pi  y_\pi^{IV}(t)+\sum_ \pi  y_\pi^{V}(t))\; dt}
+\end{equation}
+
+Using $\tau_syn$ in Equation \ref{eqn:rC_characteristicTime} we derive the response coefficients for the repair synthesis rate, which are uniformly small $\sim$0.3 and below (cf.\ Figure \ref{fig:controlCoefficients}). This result implies that that there is no single repair protein whose effect on the repair speed could be interpreted as rate-limiting. A similar result is obtained for the rate of re-synthesis response coefficients (cf.\ Appendix ), with the characteristic time
+
+\begin{equation}
+\tau_{\text{inc}}=\frac{\int^\infty_0 \,t \,\sum_{x=I}^{\text{III}} \sum_ \pi  y_\pi^x(t)\,dt}{\int^\infty_0  \,\sum_{x=I}^{\text{III}} \sum_ \pi  y_\pi^x(t)\,dt}.
+\end{equation}    
+
+
+
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_1.pdf}
@@ -47,6 +60,27 @@
 	\end{center}
 \end{figure}
 
+\paragraph{Prediction profile likelihood}
+To obtain realistic confidence bounds for the response coefficients we performed a prediction profile likelihood estimation \cite{Kreutz2012,Hinkley1979}. Thereby the predicted response coefficients $\tilde{R} = F(D_{\text{pred}},\theta)$ are considered as model outcome $F$ for a predicted experimental design $D_{\text{pred}}= (z_{\text{pred}},t_{\text{pred}},u_{\text{pred}})$. $D_{\text{pred}}$ specifies a prediction observable $z_{\text{pred}}$ at time point $t_{\text{pred}}$ given the externally controlled stimulation $u_{\text{pred}}$. As defined in Eqn. \ref{eqn:observable} $z_{\text{pred}}(y(t),\theta)$ comprises a model simulation that can be mapped to experimentally observable quantities. Analogous to Eqn. \ref{eqn:PL} the prediction profile likelihood 
+\begin{equation}
+	PPL(\tilde{R}) = \max_{\theta^\ast \in \{\theta \lvert F(D_{\text{pred}},\theta)=\tilde{R}\}} L(z^\dag \lvert \theta^\ast,\tilde{r}) 
+\end{equation}   
+
+is obtained by maximization over the model parameters satisfying the constraint that the model response $F(D, \theta^\ast)$ after fitting is equal to the considered value $\tilde{r}$ for the prediction $\tilde{R}$ with respect to the measured data $z^\dag$. This procedure is repeated for continuous variations of $\tilde{R}$. The model response can then be expressed as 
+
+\begin{equation}
+\Delta X_{\theta_l}^2(\tilde{r}) = \min_{\{\theta, \tilde{r} \in \tilde{R}  \}} \left( X^2 (\theta,\tilde{r} )\right)
+- \quad  \min_{\{\theta\}} \quad  \left( X^2 (\theta)\right),
+\end{equation}
+
+which describes the difference between the global $X^2$ minimum and the best fit with $r$ included into the objective function. Similar to Eqn. \ref{eqn:confidenceIntervals} we can determine prediction confidence bounds 
+
+   \begin{equation}
+   PCI_{1-a}(D_{\text{pred}},z^\dag) = \{\tilde{r}\textbar \Delta X_{\theta_l}^2(\tilde{r})\leq Q_{X^2}(1-a,1)\},
+   \label{eqn:confidenceIntervalsPPL}
+   \end{equation}
+
+which include the set of predictions $\tilde{R} = F(D_{\text{pred}},\theta)$ for which -2log(PPL) is below the threshold given by the $X^2$-distribution. The PPLs were computed with the d2d-framework \cite{Raue2013} using the CVODE package \cite{Hindmarsh2005} for the numerical integration of the ODEs and the sensitivity equations (cf. Section ...).
 
 \subsection{Exploiting natural variability in protein expression to quantify rate control}
 \begin{figure}[htbp]
