@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.11)  3 NOV 2014 16:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.11)  5 NOV 2014 11:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -987,96 +987,102 @@ File: Abbildungen/figure3_1.pdf Graphic file (type pdf)
 <use Abbildungen/figure3_1.pdf>
 Package pdftex.def Info: Abbildungen/figure3_1.pdf used on input line 57.
 (pdftex.def)             Requested size: 441.01773pt x 161.12164pt.
- [28]
+ [28] [29 <./Abbildungen/figure3_1.pdf>]
 
 LaTeX Warning: Command \textbar invalid in math mode on input line 79.
 
-[29 <./Abbildungen/figure3_1.pdf>]
-<Abbildungen/figure3_2.pdf, id=1045, 597.51233pt x 634.00566pt>
+<Abbildungen/figure3_1_b.pdf, id=1046, 597.51233pt x 187.93713pt>
+File: Abbildungen/figure3_1_b.pdf Graphic file (type pdf)
+
+<use Abbildungen/figure3_1_b.pdf>
+Package pdftex.def Info: Abbildungen/figure3_1_b.pdf used on input line 89.
+(pdftex.def)             Requested size: 441.01773pt x 138.7157pt.
+ [30 <./Abbildungen/figure3_1_b.pdf>]
+<Abbildungen/figure3_2.pdf, id=1070, 597.51233pt x 634.00566pt>
 File: Abbildungen/figure3_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_2.pdf>
-Package pdftex.def Info: Abbildungen/figure3_2.pdf used on input line 88.
+Package pdftex.def Info: Abbildungen/figure3_2.pdf used on input line 116.
 (pdftex.def)             Requested size: 441.01773pt x 467.95724pt.
 
-<Abbildungen/figure3_3.pdf, id=1046, 597.51233pt x 628.67575pt>
+<Abbildungen/figure3_3.pdf, id=1071, 597.51233pt x 628.67575pt>
 File: Abbildungen/figure3_3.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_3.pdf>
-Package pdftex.def Info: Abbildungen/figure3_3.pdf used on input line 96.
+Package pdftex.def Info: Abbildungen/figure3_3.pdf used on input line 126.
 (pdftex.def)             Requested size: 441.01773pt x 464.02325pt.
- [30] [31 <./Abbildungen/figure3_2.pdf>]
-[32 <./Abbildungen/figure3_3.pdf>]
-<Abbildungen/figure3_4.pdf, id=1138, 597.51233pt x 696.18492pt>
+ [31] [32 <./Abbildungen/figure3_2.pdf>]
+[33 <./Abbildungen/figure3_3.pdf>]
+<Abbildungen/figure3_4.pdf, id=1165, 597.51233pt x 696.18492pt>
 File: Abbildungen/figure3_4.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_4.pdf>
-Package pdftex.def Info: Abbildungen/figure3_4.pdf used on input line 108.
+Package pdftex.def Info: Abbildungen/figure3_4.pdf used on input line 138.
 (pdftex.def)             Requested size: 441.01773pt x 513.85153pt.
 
-<Abbildungen/figure3_5.pdf, id=1139, 597.51233pt x 221.84682pt>
+<Abbildungen/figure3_5.pdf, id=1166, 597.51233pt x 221.84682pt>
 File: Abbildungen/figure3_5.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_5.pdf>
-Package pdftex.def Info: Abbildungen/figure3_5.pdf used on input line 117.
+Package pdftex.def Info: Abbildungen/figure3_5.pdf used on input line 147.
 (pdftex.def)             Requested size: 441.01773pt x 163.74431pt.
 
-<Abbildungen/figure3_6.pdf, id=1140, 597.51233pt x 397.94772pt>
+<Abbildungen/figure3_6.pdf, id=1167, 597.51233pt x 397.94772pt>
 File: Abbildungen/figure3_6.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_6.pdf>
-Package pdftex.def Info: Abbildungen/figure3_6.pdf used on input line 125.
+Package pdftex.def Info: Abbildungen/figure3_6.pdf used on input line 155.
 (pdftex.def)             Requested size: 441.01773pt x 293.72375pt.
 
-<Abbildungen/figure3_7.pdf, id=1141, 597.51233pt x 617.12859pt>
+<Abbildungen/figure3_7.pdf, id=1168, 597.51233pt x 617.12859pt>
 File: Abbildungen/figure3_7.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_7.pdf>
-Package pdftex.def Info: Abbildungen/figure3_7.pdf used on input line 133.
+Package pdftex.def Info: Abbildungen/figure3_7.pdf used on input line 163.
 (pdftex.def)             Requested size: 441.01773pt x 455.50034pt.
 
-<Abbildungen/figure3_8.pdf, id=1142, 597.51233pt x 233.39397pt>
+<Abbildungen/figure3_8.pdf, id=1169, 597.51233pt x 233.39397pt>
 File: Abbildungen/figure3_8.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_8.pdf>
-Package pdftex.def Info: Abbildungen/figure3_8.pdf used on input line 142.
+Package pdftex.def Info: Abbildungen/figure3_8.pdf used on input line 172.
 (pdftex.def)             Requested size: 441.01773pt x 172.26721pt.
-) [33] [34 <./Abbildungen/figure3_4.pdf>]
-[35 <./Abbildungen/figure3_5.pdf> <./Abbildungen/figure3_6.pdf>] [36 <./Abbildu
-ngen/figure3_7.pdf>] [37 <./Abbildungen/figure3_8.pdf>]
+) [34] [35 <./Abbildungen/figure3_4.pdf>]
+[36 <./Abbildungen/figure3_5.pdf> <./Abbildungen/figure3_6.pdf>] [37 <./Abbildu
+ngen/figure3_7.pdf>] [38 <./Abbildungen/figure3_8.pdf>]
 \openout2 = `chapters/CrossCorrel.aux'.
 
 
-(./chapters/CrossCorrel.tex [38
-
-
-
-
-]
+(./chapters/CrossCorrel.tex
 Chapter 4.
-<Abbildungen/figure4_1.pdf, id=1315, 597.51233pt x 321.86949pt>
+<Abbildungen/figure4_1.pdf, id=1337, 597.51233pt x 321.86949pt>
 File: Abbildungen/figure4_1.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure4_1.pdf>
 Package pdftex.def Info: Abbildungen/figure4_1.pdf used on input line 6.
 (pdftex.def)             Requested size: 441.01773pt x 237.57066pt.
 
-<Abbildungen/figure4_2.pdf, id=1316, 597.51233pt x 462.791pt>
+<Abbildungen/figure4_2.pdf, id=1338, 597.51233pt x 462.791pt>
 File: Abbildungen/figure4_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure4_2.pdf>
 Package pdftex.def Info: Abbildungen/figure4_2.pdf used on input line 16.
 (pdftex.def)             Requested size: 441.01773pt x 341.58434pt.
 
-<Abbildungen/figure4_3.pdf, id=1317, 597.51233pt x 452.13115pt>
+<Abbildungen/figure4_3.pdf, id=1339, 597.51233pt x 452.13115pt>
 File: Abbildungen/figure4_3.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure4_3.pdf>
 Package pdftex.def Info: Abbildungen/figure4_3.pdf used on input line 25.
 (pdftex.def)             Requested size: 441.01773pt x 333.71634pt.
- [39 <./Abbildungen/figure4_1.pdf>] [40 <./Abbildungen/figure4_2.pdf>] [41 <./A
-bbildungen/figure4_3.pdf>]
-<Abbildungen/figure4_6.pdf, id=1424, 597.51233pt x 432.36734pt>
+ [39
+
+
+
+
+ <./Abbildungen/figure4_1.pdf>] [40 <./Abbildungen/figure4_2.pdf>] [41 <./Abbil
+dungen/figure4_3.pdf>]
+<Abbildungen/figure4_6.pdf, id=1446, 597.51233pt x 432.36734pt>
 File: Abbildungen/figure4_6.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure4_6.pdf>
@@ -1123,10 +1129,10 @@ Package rerunfilecheck Info: File `TH_Thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 294.
  ) 
 Here is how much of TeX's memory you used:
- 10795 strings out of 493315
- 165979 string characters out of 6137904
- 300645 words of memory out of 5000000
- 13781 multiletter control sequences out of 15000+600000
+ 10807 strings out of 493315
+ 166251 string characters out of 6137904
+ 301707 words of memory out of 5000000
+ 13789 multiletter control sequences out of 15000+600000
  61809 words of font info for 74 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  40i,17n,51p,1416b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1153,10 +1159,10 @@ a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><
 ocal/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TH_Thesis.pdf (60 pages, 3976100 bytes).
+Output written on TH_Thesis.pdf (60 pages, 3986657 bytes).
 PDF statistics:
- 1602 PDF objects out of 1728 (max. 8388607)
- 1248 compressed objects within 13 object streams
- 192 named destinations out of 1000 (max. 500000)
- 449 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1624 PDF objects out of 1728 (max. 8388607)
+ 1267 compressed objects within 13 object streams
+ 195 named destinations out of 1000 (max. 500000)
+ 454 words of extra memory for PDF output out of 10000 (max. 10000000)
 

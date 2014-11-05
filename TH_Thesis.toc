@@ -28,11 +28,11 @@
 \contentsline {section}{\numberline {3.1}Kinetic NER model predicts collective rate control}{27}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Response coefficients}{27}{subsection.3.1.1}
 \contentsline {paragraph}{Prediction profile likelihood}{29}{section*.20}
-\contentsline {subsection}{\numberline {3.1.2}Exploiting natural variability in protein expression to quantify rate control}{30}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Sources for repair rate variability}{33}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}NER Variability comparable between complemented patient cell lines and native repair}{33}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Variable NER factor expression and inflicted lesions account for the distribution of repair rates}{33}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Imbalanced contribution}{33}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.1.2}Exploiting natural variability in protein expression to quantify rate control}{31}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Sources for repair rate variability}{34}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}NER Variability comparable between complemented patient cell lines and native repair}{34}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Variable NER factor expression and inflicted lesions account for the distribution of repair rates}{34}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Imbalanced contribution}{34}{subsection.3.2.3}
 \contentsline {chapter}{\numberline {4}Cross-Correlation of NER repair factors}{39}{chapter.4}
 \contentsline {section}{\numberline {4.1}Co-staining experiments}{39}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Nuclear expression of NER factors is strongly correlated}{39}{subsection.4.1.1}

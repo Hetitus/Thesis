@@ -55,7 +55,7 @@ Using $\tau_syn$ in Equation \ref{eqn:rC_characteristicTime} we derive the respo
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_1.pdf}
-		\caption{\textbf{Blubb.} A) B) }
+		\caption{\textbf{Collective control of the repair rate.} A) Response coefficients for seven repair factors (XPC, TFIIH, XPG, XPA, XPF, RPA, PCNA) are small and uniformly distributed.  B) Prediction profile likelihood indicate small prediction confidence bounds for each response coefficient. 95\% threshold is given by the $X^2$ distribution with one degree of freedom.}
 		\label{fig:controlCoefficients}
 	\end{center}
 \end{figure}
@@ -80,9 +80,37 @@ which describes the difference between the global $X^2$ minimum and the best fit
    \label{eqn:confidenceIntervalsPPL}
    \end{equation}
 
-which include the set of predictions $\tilde{R} = F(D_{\text{pred}},\theta)$ for which -2log(PPL) is below the threshold given by the $X^2$-distribution. The PPLs were computed with the d2d-framework \cite{Raue2013} using the CVODE package \cite{Hindmarsh2005} for the numerical integration of the ODEs and the sensitivity equations (cf. Section ...).
+which include the set of predictions $\tilde{R} = F(D_{\text{pred}},\theta)$ for which -2log(PPL) is below the threshold given by the $X^2$-distribution. The PPLs were computed within the d2d-framework \cite{Raue2013} using the CVODE package \cite{Hindmarsh2005} for the numerical integration of the ODEs and the sensitivity equations (cf. Section \ref{sec:maximumLL}).
+By applying the PPL analysis for each response coefficient we find that all of them have small confidence bounds indicating how well the model predictions are determined by the data (cf. Figure \ref{fig:controlCoefficients}B).\\ The moderate response predicted by the response coefficients also holds true for larger variations in the repair factor concentration (cf. Figure \ref{fig:R_largeProteinVariation}). The linear approximation (on which the response coefficients are based) yields a reasonable description for about two-fold concentration decreases or increases (corresponding to a knockdown or overexpression experiment), while for very large decreases the repair rate drops eventually to zero (corresponding essentially to a gene knockout). From this result we can conclude that kinetic NER model predicts a collectively NER factor control of the repair rate. Consequently, the repair pathway appears robust against natural fluctuations in repair protein expression.  
+
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{Abbildungen/figure3_1_b.pdf}
+		\caption{\textbf{Moderate repair rate response against natural NER factor expression variability.} Repair rate as a function of concentration changes in individual repair factors.}
+		\label{fig:R_largeProteinVariation}
+	\end{center}
+\end{figure}
 
 \subsection{Exploiting natural variability in protein expression to quantify rate control}
+
+To corroborate the model prediction of a distributed repair rate control experimentally, we asked whether there is a measurable response in the repair rate due to the natural occurring variability in protein expression. By capturing the integrated nuclear fluorescence intensity of antibody-stained repair proteins we derived the expression values for XPC, TFIIH, XPA, XPF and RPA. (cf.\ Figure \ref{fig:accuImage}B). For these five individually measured NER factors the expression variability was quantified by calculating the coefficient of variation (CV; standard deviation divided by the mean), which was on average $\sim$0.37 (cf.\ Figure \ref{fig:ProteinDist}A-E). Table \ref{tab:proteinVariability} depicts mean and standard deviation representing at least three biologically independent measurements of the expressed protein cell-two-cell variability.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{cccccc}
+		\hline
+		\rule{0pt}{2ex}
+		&\textbf{XPC} & \textbf{TFIIH} & \textbf{XPA} & \textbf{XPF} & \textbf{RPA}\\ \hline
+		\rule{0pt}{3ex}
+		\textbf{CV}: & 0.34 $\pm$ 0.05 & 0.33 $\pm$ 0.02 & 0.33 $\pm$ 0.03 & 0.4 $\pm$ 0.04 & 0.44\\ \hline
+		
+	\end{tabular}
+	\caption{\textbf{Mean and standard deviation of the variability in nuclear XPC, TFIIH, XPA and XPF expression.} Distributions for nuclear protein expression were acquired in $\text{n}_\text{b}$(XPC) = 5, $\text{n}_\text{b}$(TFIIH, XPA,XPF) = 3 and $\text{n}_\text{b}$(RPA) = 2 biological independent replicates. Within each measurement between n=250 and n=572 with an average of n=477 cells were analyzed.}\label{tab:proteinVariability}
+\end{table}      
+
+To distinguish whether the measured variability is due to differences in nuclear expression or rather superimposed by measurement noise we co-analyzed XPC-eGFP stably expressed in XP-C fibroblasts together with immunofluorescently labeled XPC in the same cell. Both quantities are strong positively correlated (cf.\ Figure \ref{fig:ProteinDist}F) suggesting a large natural variability compared to much lower measurement noise. To quantitatively validate this observation we performed a principal component analysis \cite{Pearson1901}. Thereby both quantities, XPC-eGFP and antibody-stained XPC intensities, are orthogonally transformed into a new coordinate system were the new transformed variables are linearly uncorrelated. These new variables are referred to as principal components. In a two-dimensional case the variances of both principal components define an error-ellipse as illustrated in Figure \ref{fig:ProteinDist}F. From this we estimated a relative measurement error of antibody labeling of $\sim$11\% showing that the technique is suitable for quantification of nuclear XPC, TFIIH, XPA, XPF and RPA concentrations.       
+
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_2.pdf}
@@ -90,6 +118,8 @@ which include the set of predictions $\tilde{R} = F(D_{\text{pred}},\theta)$ for
 		\label{fig:ProteinDist}
 	\end{center}
 \end{figure}
+
+We then estimated 
 
 \begin{figure}[htbp]
 	\begin{center}

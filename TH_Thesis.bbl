@@ -273,4 +273,9 @@ Hinkley, D.
 \newblock {Predictive Likelihood}.
 \newblock \emph{The Annals of Statistics} \textbf{7}, 718--728 (1979).
 
+\bibitem{Pearson1901}
+Pearson, K.
+\newblock {On lines and planes of closest fit to systems of points in space.}
+\newblock \emph{Philosophical Magazine} \textbf{2}, 559--572 (1901).
+
 \end{thebibliography}
