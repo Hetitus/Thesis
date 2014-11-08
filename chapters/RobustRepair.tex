@@ -94,7 +94,7 @@ By applying the PPL analysis for each response coefficient we find that all of t
 
 \subsection{Exploiting natural variability in protein expression to quantify rate control}
 
-To corroborate the model prediction of a distributed repair rate control experimentally, we asked whether there is a measurable response in the repair rate due to the natural occurring variability in protein expression. By capturing the integrated nuclear fluorescence intensity of antibody-stained repair proteins we derived the expression values for XPC, TFIIH, XPA, XPF and RPA. (cf.\ Figure \ref{fig:accuImage}B). For these five individually measured NER factors the expression variability was quantified by calculating the coefficient of variation (CV; standard deviation divided by the mean), which was on average $\sim$0.37 (cf.\ Figure \ref{fig:ProteinDist}A-E). Table \ref{tab:proteinVariability} depicts mean and standard deviation representing at least three biologically independent measurements of the expressed protein cell-two-cell variability.
+To corroborate the model prediction of a distributed repair rate control, we developed an experimental setup for the investigation of single repair factors and their quantitative influence on the repair rate. In particular, we asked whether there is a measurable response in the repair rate due to the natural occurring variability in protein expression. By capturing the integrated nuclear fluorescence intensity of antibody-stained repair proteins we derived the expression values for XPC, TFIIH, XPA, XPF and RPA. (cf.\ Figure \ref{fig:accuImage}B). For these five individually measured NER factors the expression variability was quantified by calculating the coefficient of variation (CV; standard deviation divided by the mean), which was on average $\sim$0.37 (cf.\ Figure \ref{fig:ProteinDist}A-E). Table \ref{tab:proteinVariability} depicts mean and standard deviation representing at least three biologically independent measurements of the expressed protein cell-two-cell variability.
 
 \begin{table}[h!]
 	\centering
@@ -114,12 +114,20 @@ To distinguish whether the measured variability is due to differences in nuclear
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_2.pdf}
-		\caption{\textbf{Blubb.} A) B) }
+		\caption{\textbf{Natural variability in nuclear NER factor expression is significantly larger than measurement error} A-E) Histograms of nuclear protein concentrations of the antibody stained NER factors XPC, TFIIH, XPF, XPA and RPA (\textbf{Bildunterschrift: Nuclear und cpt. letters}/n nachschauen). Scatter plot of antibody recognized XPC against XPC-eGFP stably expressed in XP-C XPC-eGFP cell lines. The dashed error-ellipse illustrates the proportion of natural variability and measurement noise.}
 		\label{fig:ProteinDist}
 	\end{center}
 \end{figure}
 
-We then estimated 
+Before exploring the direct relation between protein expression variability and the speed of repair we tested whether higher protein amounts in the nucleus correlate with the accumulation of NER factors in the locally damaged area. In correspondence to previous findings for XPG \cite{Luijsterburg2010} there is a significant positive correlation between the nuclear XPC-eGFP expression and its local accumulation at the DNA lesions (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}A) thirty minutes after UV irradiation. The same holds true for XPA \cite{Verbruggen2014}, TFIIH, XPF and RPA in narrow confidence bounds (cf.\ Appendix \textbf{tbm}). Consequently, we conclude that the DNA lesions are not saturated so that a higher NER factor concentration could potentially accelerate the repair rate.\\
+In fact, the nuclear protein concentrations for all five antibody-stained repair factors and the amount of incorporated EdU after one hour were significantly correlated (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}B-F). Remarkably, the dependency between both quantities, characterized by the slop of the regression line is in the same order of magnitude as predicted computationally by the response coefficients (cf.\ Figure \ref{fig:controlCoefficients}A). Also among each other, correlation and regression slope fell into the same range. This agrees with the \textit{in silico} finding that the kinetic control of the measured repair factors is distributed among them and that the rate of repair synthesis is robust against natural variations in the repair protein expression.       
+
+\paragraph{Correlation analysis}
+The correlation analysis was performed in MATLAB (2012a, The Mathworks Inc., Natick, MA) using the inbuilt corrcoef function, which also returns p-values indicating the significance of the correlation coefficient. The p-values are determined by a t-test, where the null-hypothesis states that the true correlation between two variables equals zero and that for its observed value $r$ the quantity 
+\begin{equation}
+	t = \frac{r}{\sqrt{\frac{(1-r^2)}{N-2}}}
+\end{equation}     
+follows approximately a $t$-distribution for $N-2$ degrees of freedom and a sample size $N$ \cite{Kendall1979,Fisher1958}. A low p-value suggests the rejection of the null-hypothesis and thus, demonstrates the significance of the correlation.     
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -129,8 +137,7 @@ We then estimated
 	\end{center}
 \end{figure}
 
-\section{Sources for repair rate variability}
-
+- confidence bounds were derived by bootstraping ...
 
 \subsection{NER Variability comparable between complemented patient cell lines and native repair } 
 \begin{figure}[htbp]
@@ -140,6 +147,9 @@ We then estimated
 		\label{fig:consistVariability}
 	\end{center}
 \end{figure}
+
+
+\section{Sources for repair rate variability}
 
 \subsection{Variable NER factor expression and inflicted lesions account for the distribution of repair rates} 
 \begin{figure}[htbp]
