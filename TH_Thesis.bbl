@@ -288,4 +288,16 @@ Fisher, R.
 \newblock {Statistical Methods for Research Workers}.
 \newblock Hafner, 13th ed. (1958).
 
+\bibitem{Burry2011}
+Burry, R.~W.
+\newblock {Controls for immunocytochemistry: an update.}
+\newblock \emph{The journal of histochemistry and cytochemistry : official
+  journal of the Histochemistry Society} \textbf{59}, 6--12 (2011).
+
+\bibitem{Giepmans2006}
+Giepmans, B. N.~G., Adams, S.~R., Ellisman, M.~H. \& Tsien, R.~Y.
+\newblock {The fluorescent toolbox for assessing protein location and
+  function.}
+\newblock \emph{Science (New York, N.Y.)} \textbf{312}, 217--24 (2006).
+
 \end{thebibliography}

@@ -36,8 +36,8 @@
 \contentsline {subsection}{\numberline {3.2.2}Imbalanced contribution}{37}{subsection.3.2.2}
 \contentsline {chapter}{\numberline {4}Co-expression of NER repair factors}{41}{chapter.4}
 \contentsline {section}{\numberline {4.1}Co-staining experiments}{41}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Nuclear expression of NER factors is strongly correlated}{41}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Flow cytometry verification}{41}{subsection.4.1.2}
-\contentsline {chapter}{\numberline {5}Discussion}{45}{chapter.5}
-\contentsline {chapter}{\numberline {6}Bibliography}{47}{chapter.6}
-\contentsline {chapter}{\numberline {7}Appendix}{51}{chapter.7}
+\contentsline {subsection}{\numberline {4.1.1}Nuclear expression of NER factors is strongly correlated}{42}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Flow cytometry verification}{42}{subsection.4.1.2}
+\contentsline {chapter}{\numberline {5}Discussion}{47}{chapter.5}
+\contentsline {chapter}{\numberline {6}Bibliography}{49}{chapter.6}
+\contentsline {chapter}{\numberline {7}Appendix}{53}{chapter.7}
