@@ -19,10 +19,10 @@
 \BOOKMARK [1][-]{section.2.2}{Kinetic model of NER}{chapter.2}% 19
 \BOOKMARK [2][-]{subsection.2.2.1}{Slow first-order reaction kinetic due to many fast interacting components}{section.2.2}% 20
 \BOOKMARK [2][-]{subsection.2.2.2}{Model structure and parametrization}{section.2.2}% 21
-\BOOKMARK [1][-]{section.2.3}{Maximum likelihood approach together with PLE analysis identifies realistic model of NER}{chapter.2}% 22
-\BOOKMARK [2][-]{subsection.2.3.1}{A maximum likelihood approach for efficient model fitting}{section.2.3}% 23
-\BOOKMARK [2][-]{subsection.2.3.2}{NER model fits accumulation, FLIP and repair synthesis measurements}{section.2.3}% 24
-\BOOKMARK [2][-]{subsection.2.3.3}{Identifiability analysis}{section.2.3}% 25
+\BOOKMARK [2][-]{subsection.2.2.3}{Model fitting}{section.2.2}% 22
+\BOOKMARK [1][-]{section.2.3}{Identifiability analysis}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.3.1}{Prediction Profile Likelihood Estimation \(PLE\)}{section.2.3}% 24
+\BOOKMARK [2][-]{subsection.2.3.2}{Refined model structure after PLE analysis}{section.2.3}% 25
 \BOOKMARK [0][-]{chapter.3}{Control analysis of the DNA repair rate}{}% 26
 \BOOKMARK [1][-]{section.3.1}{Kinetic NER model predicts collective rate control}{chapter.3}% 27
 \BOOKMARK [2][-]{subsection.3.1.1}{Response coefficients}{section.3.1}% 28
