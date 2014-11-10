@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.11)  9 NOV 2014 16:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.10)  10 NOV 2014 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1064,28 +1064,28 @@ l in-ves-ti-gate a po-ten-tial
 
 
 
-] <Abbildungen/figure4_1.pdf, id=1359, 597.51233pt x 321.86949pt>
+] [42] <Abbildungen/figure4_1.pdf, id=1372, 597.51233pt x 197.73875pt>
 File: Abbildungen/figure4_1.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure4_1.pdf>
-Package pdftex.def Info: Abbildungen/figure4_1.pdf used on input line 48.
-(pdftex.def)             Requested size: 441.01773pt x 237.57066pt.
+Package pdftex.def Info: Abbildungen/figure4_1.pdf used on input line 40.
+(pdftex.def)             Requested size: 441.01773pt x 145.95024pt.
 
-<Abbildungen/figure4_2.pdf, id=1360, 597.51233pt x 462.791pt>
+<Abbildungen/figure4_2.pdf, id=1373, 597.51233pt x 462.791pt>
 File: Abbildungen/figure4_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure4_2.pdf>
-Package pdftex.def Info: Abbildungen/figure4_2.pdf used on input line 58.
+Package pdftex.def Info: Abbildungen/figure4_2.pdf used on input line 51.
 (pdftex.def)             Requested size: 441.01773pt x 341.58434pt.
 
-<Abbildungen/figure4_3.pdf, id=1361, 597.51233pt x 452.13115pt>
+<Abbildungen/figure4_3.pdf, id=1374, 597.51233pt x 452.13115pt>
 File: Abbildungen/figure4_3.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure4_3.pdf>
-Package pdftex.def Info: Abbildungen/figure4_3.pdf used on input line 67.
+Package pdftex.def Info: Abbildungen/figure4_3.pdf used on input line 60.
 (pdftex.def)             Requested size: 441.01773pt x 333.71634pt.
-) [42] [43 <./Abbildungen/figure4_1.pdf>]
-[44 <./Abbildungen/figure4_2.pdf>] [45 <./Abbildungen/figure4_3.pdf>]
+) [43 <./Abbildungen/figure4_1.pdf>] [44 <./Abbildungen/figure4_2.pdf>] [45 <./
+Abbildungen/figure4_3.pdf>]
 \openout2 = `chapters/Discussion.aux'.
 
 
@@ -1126,13 +1126,13 @@ Package rerunfilecheck Info: File `TH_Thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 294.
  ) 
 Here is how much of TeX's memory you used:
- 10814 strings out of 493315
- 166256 string characters out of 6137904
- 302388 words of memory out of 5000000
- 13788 multiletter control sequences out of 15000+600000
+ 10816 strings out of 493315
+ 166302 string characters out of 6137904
+ 302573 words of memory out of 5000000
+ 13790 multiletter control sequences out of 15000+600000
  61809 words of font info for 74 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 40i,17n,51p,1416b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,17n,51p,1433b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1156,10 +1156,10 @@ a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><
 ocal/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TH_Thesis.pdf (64 pages, 3930243 bytes).
+Output written on TH_Thesis.pdf (64 pages, 3933310 bytes).
 PDF statistics:
- 1621 PDF objects out of 1728 (max. 8388607)
- 1264 compressed objects within 13 object streams
+ 1624 PDF objects out of 1728 (max. 8388607)
+ 1268 compressed objects within 13 object streams
  204 named destinations out of 1000 (max. 500000)
  441 words of extra memory for PDF output out of 10000 (max. 10000000)
 
