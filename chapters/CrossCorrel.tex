@@ -69,4 +69,48 @@ As it turns out, all pairwise correlations of the measured co-staining experimen
 \subsection{Flow cytometry}
 
 \subsection{Calibration of the response coefficients}
+The positive pairwise correlation of the nuclear repair factor concentration was conclusively shown by two independent experimental approaches. This implies that the abundance of a protein is dependent on the other repair components, which has to be considered when determining the control on the rate of repair. Including this functional interdependence the relation between the measured EdU response (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}) and the response coefficients extends to 
 
+\begin{equation}
+ \frac{C_i}{\nu}\frac{d \nu}{d C_i} = \frac{C_i}{\nu}\frac{\partial \nu}{\partial C_i} + \sum_{j \neq i} \left( \frac{C_j}{\nu}\frac{\partial \nu}{\partial C_i}\right) \left(\frac{C_i}{C_j}\frac{\partial C_j}{\partial C_i}\right). 
+\end{equation}    
+
+Apart from the unknown response coefficients
+
+\begin{equation}
+	R_i = \frac{C_i}{\nu}\frac{\partial \nu}{\partial C_i} \nonumber
+\end{equation}
+
+we directly measured the remaining derivatives 
+
+\begin{equation}
+A_i = \frac{C_i}{\nu}\frac{d \nu}{d C_i} \nonumber
+\end{equation}
+as EdU incorporation for varying NER factor concentrations after one hour and
+
+\begin{equation}
+B_{ij} = \frac{C_i}{C_j}\frac{\partial C_j}{\partial C_i} \nonumber
+\end{equation}
+
+from the regression of repair factor concentration $i$ against repair factor $j$. Hence, for the calculation of the response coefficients we have to solve a linear equation system:
+
+\begin{equation}
+	R_i + \sum_{j\neq i} B_{ij}R_j = A_i,
+\end{equation}
+
+for $i \in$ 1,...,N. We approximate $B_{ii}$ = 1 and derive the matrix notation $B\vec{R}=\vec{A}$. However, even if we measured all pairwise NER factor dependencies, due to the strong correlations the matrix $B$ would not be invertible.
+- Invertierbarkeit...
+
+Although we are not able to derive a specific result for each response coefficient it is possible to make an estimation of their average size. Consider $\nu$ as a function of the concentration of the repair factors $C_i$ and the initial amount of DNA lesions $L$:
+\begin{equation}
+	\nu = Lf(C_1,...C_N).
+\end{equation}
+Using, once more, the standard law for the propagation of uncertainty analog to Eqn. ...
+ \begin{equation}
+ \sigma(\nu) = \sqrt{\sum_{i}\left(\frac{\partial \nu}{\partial C_i}\sigma(C_i) \right)^2 + \left(\frac{\partial \nu}{\partial L}\sigma(L)\right)^2 + \left(\frac{\partial \nu}{\partial C_i} \frac{\partial \nu}{\partial C_i}\textrm{cov}_{ij}\right)^2}
+ \end{equation}  
+ 
+ and introducing the response coefficients 
+ \begin{equation}
+ R_i = \frac{C_i}{\nu}\frac{\partial \nu}{\partial C_i} \nonumber
+ \end{equation}
