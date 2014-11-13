@@ -38,7 +38,7 @@
 \contentsline {section}{\numberline {4.1}Nuclear expression of NER factors is strongly correlated}{41}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Microscopy analysis of co-staining experiments}{41}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Flow cytometry}{44}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Calibration of the response coefficients}{44}{subsection.4.1.3}
-\contentsline {chapter}{\numberline {5}Discussion}{47}{chapter.5}
-\contentsline {chapter}{\numberline {6}Bibliography}{49}{chapter.6}
-\contentsline {chapter}{\numberline {7}Appendix}{53}{chapter.7}
+\contentsline {subsection}{\numberline {4.1.3}Calibration of the response coefficients}{46}{subsection.4.1.3}
+\contentsline {chapter}{\numberline {5}Discussion}{51}{chapter.5}
+\contentsline {chapter}{\numberline {6}Bibliography}{53}{chapter.6}
+\contentsline {chapter}{\numberline {7}Appendix}{57}{chapter.7}
