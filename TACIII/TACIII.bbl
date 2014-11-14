@@ -6,4 +6,12 @@ Verbruggen, P., Heinemann, T., Manders, E., von Bornstaedt, G., van Driel, R.
 \newblock {Robustness of DNA Repair through Collective Rate Control}.
 \newblock \emph{PLoS Computational Biology} \textbf{10}, e1003438 (2014).
 
+\bibitem{Luijsterburg2010}
+Luijsterburg, M.~S., von Bornstaedt, G., Gourdin, A.~M., Politi, A.~Z.,
+  Mon\'{e}, M.~J., Warmerdam, D.~O., Goedhart, J., Vermeulen, W., van Driel, R.
+  \& H\"{o}fer, T.
+\newblock {Stochastic and reversible assembly of a multiprotein DNA repair
+  complex ensures accurate target site recognition and efficient repair.}
+\newblock \emph{The Journal of Cell Biology} \textbf{189}, 445--63 (2010).
+
 \end{thebibliography}

@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: TACIII.aux
 The style file: naturemagC.bst
 Database file #1: NER_Bibliography.bib
-You've used 1 entry,
+You've used 2 entries,
             2538 wiz_defined-function locations,
-            576 strings with 4468 characters,
-and the built_in function-call counts, 551 in all, are:
-= -- 39
-> -- 24
+            584 strings with 4904 characters,
+and the built_in function-call counts, 1201 in all, are:
+= -- 84
+> -- 64
 < -- 0
-+ -- 22
-- -- 6
-* -- 36
-:= -- 69
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 1
++ -- 60
+- -- 16
+* -- 77
+:= -- 140
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 48
-empty$ -- 45
-format.name$ -- 7
-if$ -- 113
+cite$ -- 2
+duplicate$ -- 104
+empty$ -- 91
+format.name$ -- 18
+if$ -- 247
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 12
-newline$ -- 8
-num.names$ -- 1
-pop$ -- 22
+int.to.str$ -- 2
+missing$ -- 28
+newline$ -- 13
+num.names$ -- 2
+pop$ -- 52
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 8
+skip$ -- 20
 stack$ -- 0
-substring$ -- 36
-swap$ -- 29
+substring$ -- 70
+swap$ -- 66
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 3
-width$ -- 2
-write$ -- 13
+while$ -- 7
+width$ -- 3
+write$ -- 24
