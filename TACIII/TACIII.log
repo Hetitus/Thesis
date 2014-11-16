@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.10)  16 NOV 2014 14:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.10)  16 NOV 2014 15:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -293,33 +293,58 @@ File: Abbildungen/figureTAC_3.pdf Graphic file (type pdf)
 Package pdftex.def Info: Abbildungen/figureTAC_3.pdf used on input line 110.
 (pdftex.def)             Requested size: 455.24411pt x 353.78505pt.
  [3 <./Abbildungen/figureTAC_3.pdf>]
-<Abbildungen/figureTAC_4.pdf, id=113, 597.51233pt x 464.56763pt>
-File: Abbildungen/figureTAC_4.pdf Graphic file (type pdf)
 
-<use Abbildungen/figureTAC_4.pdf>
-Package pdftex.def Info: Abbildungen/figureTAC_4.pdf used on input line 124.
-(pdftex.def)             Requested size: 455.24411pt x 353.95406pt.
- [4 <./Abbildungen/figureTAC_4.pdf>]
-(./TACIII.bbl
+LaTeX Warning: File `Abbildungen/figureTAC_4.pdf' not found on input line 124.
+
+
+! Package pdftex.def Error: File `Abbildungen/figureTAC_4.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 ...1\textwidth]{Abbildungen/figureTAC_4.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 124.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ (./TACIII.bbl
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 7.
-) [5] (./TACIII.aux) ) 
+)
+[4] [5] (./TACIII.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4858 strings out of 493315
- 77291 string characters out of 6137904
+ 4876 strings out of 493315
+ 77823 string characters out of 6137904
  172772 words of memory out of 5000000
- 8115 multiletter control sequences out of 15000+600000
- 40971 words of font info for 134 fonts, out of 8000000 for 9000
+ 8128 multiletter control sequences out of 15000+600000
+ 41285 words of font info for 135 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,5n,38p,1064b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/
-8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on TACIII.pdf (5 pages, 952514 bytes).
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on TACIII.pdf (5 pages, 571444 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
+ 137 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 25104 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 25611 words of extra memory for PDF output out of 29859 (max. 10000000)
 
