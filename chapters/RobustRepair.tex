@@ -1,9 +1,11 @@
 \chapter{Control analysis of the DNA repair rate}
 
 In the previous chapter we introduced the incorporation of EdU upon UV-irradiation as a quantitative readout for the DNA repair synthesis kinetic (cf.\ Figure \ref{fig:EdU_measurement}). We could show that despite the pathway's complexity DNA repair follows a mono-exponential kinetic of first order. Moreover, the repair of single lesions is distributed over a broad time span with 50\% of the lesions being repaired after a half-time of $\sim$1.2 h. Notably, measurements on the single cell level revealed that also the half-time and hence the rate of repair is highly variable (cf. Figure \ref{fig:DNArepairKinetic}B-E). So far the origin of this variability is unknown but also if and how the cell faces this highly fluctuating environment.\\  
-In the following chapter we will apply the kinetic NER model and explore the nature of the repair rate variation. Simulating the effect of NER factor variation on the repair rate we find that the repair rate control is distributed among all NER factors. Exploiting the natural variability of expressed repair proteins we can experimentally corroborate the computationally derived finding for the NER factors XPC, TFIIH, XPA, XPF and RPA. Apart from the variability in protein expression the model identifies the initial amount of inflicted DNA damage as major contribution determining the repair rate distribution. Both sources together appear to be sufficient to explain the overall rate variability.     
+In the following chapter we will apply the kinetic NER model and explore the nature of the repair rate variability. Simulating the effect of NER factor variation on the repair rate we find that the repair rate control is distributed among all NER factors. Exploiting the natural variability of expressed repair proteins we can experimentally corroborate the computationally derived finding for the NER factors XPC, TFIIH, XPA, XPF and RPA. Apart from the variability in protein expression the model identifies the initial amount of inflicted DNA damage as major contribution determining the repair rate distribution. Both sources together appear to be sufficient to explain the overall rate variability.     
 
 - clarify who did what...
+- what about the response coefficients
+- don't forget to explain that TFIIH, RPA and XPF were indirectly antibody labeled
 
 \section{Kinetic NER model predicts collective rate control}
 
@@ -121,15 +123,8 @@ To distinguish whether the measured variability is due to differences in nuclear
 \end{figure}
 
 Before exploring the direct relation between protein expression variability and the speed of repair we tested whether higher protein amounts in the nucleus correlate with the accumulation of NER factors in the locally damaged area. In correspondence to previous findings for XPG \cite{Luijsterburg2010} there is a significant positive correlation between the nuclear XPC-eGFP expression and its local accumulation at the DNA lesions (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}A) thirty minutes after UV irradiation. The same holds true for XPA \cite{Verbruggen2014}, TFIIH, XPF and RPA in narrow confidence bounds (cf.\ Appendix \textbf{tbm}). Consequently, we conclude that the DNA lesions are not saturated so that a higher NER factor concentration could potentially accelerate the repair rate.\\
-In fact, the nuclear protein concentrations for all five antibody-stained repair factors and the amount of incorporated EdU after one hour were significantly correlated (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}B-F). Remarkably, the dependency between both quantities, characterized by the slop of the regression line is in the same order of magnitude as predicted computationally by the response coefficients (cf.\ Figure \ref{fig:controlCoefficients}A). Also among each other, correlation and regression slope fell into the same range. This agrees with the \textit{in silico} finding that the kinetic control of the measured repair factors is distributed among them and that the rate of repair synthesis is robust against natural variations in the repair protein expression.       
-
-\paragraph{Correlation analysis}
-The correlation analysis was performed in MATLAB (2012a, The Mathworks Inc., Natick, MA) using the inbuilt corrcoef function, which also returns p-values indicating the significance of the correlation coefficient. The p-values are determined by a t-test, where the null-hypothesis states that the true correlation between two variables equals zero and that for its observed value $r$ the quantity 
-\begin{equation}
-	t = \frac{r}{\sqrt{\frac{(1-r^2)}{N-2}}}
-\end{equation}     
-follows approximately a $t$-distribution for $N-2$ degrees of freedom and a sample size $N$ \cite{Kendall1979,Fisher1958}. A low p-value suggests the rejection of the null-hypothesis and thus, demonstrates the significance of the correlation.     
-
+In fact, the nuclear protein concentrations for all five antibody-stained repair factors and the amount of incorporated EdU after one hour were significantly correlated (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}B-F). Remarkably, the dependency between both quantities, characterized by the slope of the regression line is very evenly distributed and also in the same order of magnitude as predicted computationally by the response coefficients (cf.\ Figure \ref{fig:controlCoefficients}A). Nevertheless, all measure responses are consistently two to four-fold larger than the predicted response coefficients. This agrees on one hand with the \textit{in silico} finding that the kinetic control of the measured repair factors is uniformly distributed and that the rate of repair synthesis is robust against natural variations in the repair protein expression. On the other hand this result suggests that the measured repair rate response is not entirely explained solely by the model-predicted response coefficients. It remains to clarify, whether this discrepancy is due to a so far unknown additional NER component intrinsically contributing to the pathway control. Or, if there is an external element coordinating the NER factor expression and thereby superimposing the mathematically predicted response coefficients.   
+       
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_3.pdf}
@@ -137,8 +132,16 @@ follows approximately a $t$-distribution for $N-2$ degrees of freedom and a samp
 		\label{fig:Nuc_vs_DNAsynthesis}
 	\end{center}
 \end{figure}
+\paragraph{Correlation analysis}
+The correlation analysis was performed in MATLAB (2012a, The Mathworks Inc., Natick, MA) using the inbuilt corrcoef function, which also returns p-values indicating the significance of the correlation coefficient. The p-values are determined by a t-test, where the null-hypothesis states that the true correlation between two variables equals zero and that for its observed value $r$ the quantity 
+\begin{equation}
+	t = \frac{r}{\sqrt{\frac{(1-r^2)}{N-2}}}
+\end{equation}     
+follows approximately a $t$-distribution for $N-2$ degrees of freedom and a sample size $N$ \cite{Kendall1979,Fisher1958}. A low p-value suggests the rejection of the null-hypothesis and thus, demonstrates the significance of the correlation.\\
+The confidence intervals for each correlation coefficient were estimated by non-parametric bootstrap \cite{Efron1979}. Thereby the correlation coefficient was re-sampled for 10,000 times each time drawing n pseudoreplicates (with replacement), where n denotes the number of measured cells from the original data. The confidence borders mark the interval including 95\% of the re-sampled correlation coefficients.         
 
-- confidence bounds were derived by bootstraping ...
+
+
 
 \subsection{NER Variability comparable between complemented patient cell lines and native repair } 
 \begin{figure}[htbp]
@@ -153,6 +156,7 @@ follows approximately a $t$-distribution for $N-2$ degrees of freedom and a samp
 \section{Sources for repair rate variability}
 
 \subsection{Variable NER factor expression and inflicted lesions account for the distribution of repair rates} 
+\label{sec:variabilityAnalysis}
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_5.pdf}

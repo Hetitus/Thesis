@@ -1,0 +1,172 @@
+\chapter{Co-expression of NER repair factors}
+The aforementioned model-aided analysis of the DNA repair process revealed a link between the emergent phenomenon of rapidly exchanging and transiently interacting NER components with the experimentally observed slow first-order kinetics of repair. An important functional consequence of this kinetic design is that the control of the repair rate is shared by all repair factors. This manifests in the mathematical prediction of small, uniformly distributed response coefficients, which quantify the relative change of the repair rate in answer to changes in the nuclear repair protein concentration. Exploiting the natural variability in NER factor expression we experimentally corroborated the moderate control of the repair components on the repair rate. We found that compared to the model-predicted response coefficients the measured control was significantly elevated. \\ 
+In the following chapter we will show that this discrepancy can be explained assuming that the measured control is a superposition of firstly, the response due to concentrational changes for one repair factor and secondly, an additional cross-correlation among the repair factors. To test this assumption, we experimentally investigate the potential co-expression of five repair factors (XPC, TFIIH, XPA, XPF and RPA). Surprisingly, we find that the nuclear expression of these pairwise measured repair factors is indeed strongly positively correlated, whereas there is no correlation with the repair-independent cell cycle marker Ki67. This result suggests an additional control mechanism orchestrating NER factor expression on the transcriptional or translational level. 
+
+- sentence about who did what
+
+\section{Nuclear expression of NER factors is strongly correlated}
+
+\subsection{Cross-correlation affects repair response}
+The finding that the measured response in DNA synthesis is about twofold higher than the model-predicted response coefficients (cf.\ Figure \ref{fig:controlCoefficients} and Figure \ref{fig:Nuc_vs_DNAsynthesis}) indicates that there is an additional source of control determining the repair response. Likely, this contribution does not have a process-intrinsic origin. This can be indirectly concluded from the variability analysis in Section \ref{sec:variabilityAnalysis}, where we saw that the cell-to-cell variation in DNA repair is fully explainable by the measured variability of the UV-induced lesions and the variability in NER factor expression. A so far not considered explanation is a potential interdependence of the NER factor expression, introduced by an external gene-regulatory mechanism.  
+This would result in a measurable cross-correlation of the nuclear NER factor expression. Mathematically, such a factor would extend the relation between measured EdU response (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}) and the model-predicted response coefficients to 
+
+\begin{equation}
+\frac{C_i}{\nu}\frac{d \nu}{d C_i} = \frac{C_i}{\nu}\frac{\partial \nu}{\partial C_i} + \sum_{j \neq i} \left( \frac{C_j}{\nu}\frac{\partial \nu}{\partial C_i}\right) \left(\frac{C_i}{C_j}\frac{\partial C_j}{\partial C_i}\right), 
+\label{eqn:extendedResponse}
+\end{equation}    
+where $\nu$ represents the rate of EdU incorporation and $C_i$ the nuclear concentration of the $i^{\text{th}}$ repair factor. From Eqn. \ref{eqn:extendedResponse} we directly measured the EdU incorporation for varying NER factor concentrations after one hour (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis})
+
+\begin{equation}
+A_i = \frac{C_i}{\nu}\frac{d \nu}{d C_i}. \nonumber
+\end{equation}
+
+If we were able to measure the pairwise cross-correlations
+
+\begin{equation}
+B_{ij} = \frac{C_i}{C_j}\frac{\partial C_j}{\partial C_i} \nonumber
+\end{equation}
+
+additionally, we can derive the following system of equations
+
+
+\begin{equation}
+R_i + \sum_{j\neq i} B_{ij}R_j = A_i,
+\label{eqn:linearEqnSystem}
+\end{equation}
+
+for $i \in$ 1,...,N and
+
+\begin{equation}
+R_i = \frac{C_i}{\nu}\frac{\partial \nu}{\partial C_i}. \nonumber
+\end{equation}
+
+Assuming that all $B_{ii}$ = 1 Eqn. \ref{eqn:linearEqnSystem} translates into the matrix notation 
+\begin{equation}
+\vec{A} = B\vec{R}.
+\label{eqn:matrixNotation}
+\end{equation}
+
+By inverting $B$ we can solve Eqn. \ref{eqn:matrixNotation} for the response coefficients directly. 
+
+
+\subsection{Microscopy analysis of co-staining experiments}
+
+In order to measure the cross-correlation matrix $B$ we made use of the fluorescence microscopy approach, which proved to result in accurate measurements of the nuclear repair factor expression and their UV-induced repair dynamics, before (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}). For a flexible combinatorial tagging of multiple antigens simultaneously we used an indirect antibody-labeling protocol and established five single cell double stainings (cf.\ Table \ref{tab:co-staining} using the primary and secondary antibodies listed in Table \textbf{tbm}. 
+
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{cccccc}
+		\hline
+			\rule{0pt}{2ex}
+			&\textbf{XPC} & \textbf{TFIIH} & \textbf{XPA} & \textbf{XPF} & \textbf{RPA}\\ \hline
+			\rule{0pt}{3ex}
+\textbf{XPC}&        X    &           X    & X            &         X    & X            \\ \hline
+			\rule{0pt}{3ex}
+\textbf{TFIIH}&           & -              & -            & X            & -             \\ \hline
+			\rule{0pt}{3ex}
+\textbf{XPA}&             &                & -            & X            & X             \\ \hline
+			\rule{0pt}{3ex}
+\textbf{XPF}&             &                &              & -            & -              \\ \hline
+			\rule{0pt}{3ex}
+\textbf{RPA}&             &                &              &              & -               \\ \hline
+			\rule{0pt}{3ex}
+		
+	\end{tabular}
+	\caption{\textbf{Mean and standard deviation of the variability in nuclear XPC, TFIIH, XPA and XPF expression.} }\label{tab:co-staining}
+\end{table}   
+
+
+Two additional cross-correlation measurements were possible by directly labeling XPC with a monoclonal mouse antibody and thereby avoiding potential cross-reactions between antibodies originating from the same host species \cite{Burry2011,Giepmans2006}. The cross-correlation analysis was performed in	human diploid female fibroblasts which were grown to confluency on coverslips. Analogous to the description in Section \ref{sec:local_irradiation} cells were UV-irradiated locally with a dose of 100 J/$\text{m}^\text{2}$. Pre-incubated with serum-free medium containing 10 \textmu M EdU cells were allowed to repair for 60 minutes in an incubator. After the subsequent direct or indirect antibody labeling of two selected repair factors cells were also incubated with a DAPI solution, which visualizes the cell's chromatin and thus the contour of the nucleus. For each double staining microscopic 3-dimensional imaging was conducted on a Leica TCS SP5 II confocal microscope. All images were analyzed following the protocol presented in Section \ref{subsec:AccuFlipExp}. Segmentation of the nucleus was performed on the DAPI signal, due to the large signal-to-noise ratio in this channel (cf.\ Appendix \textbf{Appendix} and Figure \ref{fig:coStaining}A). The segmented region was then projected to the other channels and used to quantify the signal emitted by the secondary antibodies at 488 and 647 nm (cf.\ Figure \ref{fig:coStaining}B and C). For the same reason segmentation of the locally UV-irradiated chromatin region was done with the area determined from the EdU signal and then projected onto the signal of accumulated protein (cf.\ Figure \ref{fig:coStaining}D).   
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{Abbildungen/figure4_1.pdf}
+		\caption{\textbf{Blubb.} A) B) }
+		\label{fig:coStaining}
+	\end{center}
+\end{figure}
+
+To test whether the antibody co-staining experiment is suitable for the cross-correlation analysis we measured XPC expression with a directly labeled antibody together with an indirect immuno-staining and correlated both signals. Fitting an error ellipse to these data (cf.\ Figure \ref{fig:coExpressionData}A), as described in section  \ref{subsec:AccuFlipExp}, we estimated a relative measurement error of antibody labeling of 13\%, showing that the technique is sufficiently accurate to exploit the natural variability in protein expression for the cross-correlation analysis. \\
+
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{Abbildungen/figureTAC_2.pdf}
+		\caption{\textbf{NER factor cross-correlation is repair independent.} A) Scatter plot of indirectly antibody-stained XPC against a directly labeled antibody recognizing XPC (n=336) as determined by quantitative (immuno) fluorescence microscopy. B-D) Pairwise correlations of indirectly antibody-labeled XPB against XPC (n=220, B), XPB against XPF (n=410, C) and XPA against RPA (n=350, D) in locally damaged cells. Expression values represent fluorescence intensities originating from the nucleus including the damaged region (signal quantification was performed analogous to \cite{Luijsterburg2010}). E-F) Scatter plots of the nuclear expression of XPB vs. XPC (n=85) and XPA vs. RPA (n=170) in undamaged cells. A-F) Red lines represent linear regression with correlation coefficient r, p-value and slope m. 95\% confidence bounds of all correlation coeffiecients r were estimated by non-parametric bootstrap and are given in brackets. }
+		\label{fig:coExpressionData}
+	\end{center}
+\end{figure}
+
+
+As it turns out, all pairwise correlations of the measured co-staining experiments (cf.\ Table \ref{tab:co-staining}) are strong positively correlated with correlation coefficients between 0.74 and 0.88 (cf.\ Figure \ref{fig:coExpressionData}B-D and Appendix ...). Notably, the result is indifferent whether the acquired fluorescence signal is taken from the whole cell nucleus including the locally damaged area or only from the undamaged chromatin region (cf.\ Figure \ref{fig:coExpressionData}B-D and \ref{fig:coExpressionData}E-F). This suggests that the correlation of nuclear NER factors is independent of the ongoing repair. As a consequence, we suspect the regulatory mechanism determining the protein concentrations on a preceding level like transcription or translation.  
+
+
+
+
+
+
+
+%\begin{figure}[htbp]
+%	\begin{center}
+%		\includegraphics[width=1\textwidth]{Abbildungen/figure4_3.pdf}
+%		\caption{\textbf{Blubb.} A) B) }
+%		\label{fig:coExpressionData_woDamage}
+%	\end{center}
+%\end{figure}
+
+\subsection{Flow cytometry}
+
+To further pursue this question we repeated the experiment by flow cytometry, this time, investigating the NER-factor expression in human brain pericytes. We established a double-staining protocol for XPA and RPA and observed that also in this cell type the two repair factors strongly correlate (cf.\ Figure \ref{fig:FACS_nucCorrel}A and B).    
+
+%\begin{figure}[htbp]
+%	\begin{center}
+%		\includegraphics[width=1\textwidth]{Abbildungen/figure4_4.pdf}
+%		\caption{\textbf{Blubb.} A) B) }
+%		\label{fig:FC_proteindistribution}
+%	\end{center}
+%\end{figure}
+ 
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{Abbildungen/figureTAC_3.pdf}
+		\caption{\textbf{Correlated expression of RPA and XPA in human brain pericytes} A) Selection of XPA and RPA positive human brain pericytes (Q2) as determined by flow cytometry (n=8084). B-D) Nuclear expression of indirectly antibody-labeled RPA against XPA (B), Ki67 against XPA (C) and Ki67 against RPA (D). B-D) Red lines represent linear regression with correlation coefficient r, p-value and slope m. 95\% confidence bounds of all correlation coeffiecients r were estimated by non-parametric bootstrap and are given in brackets.}
+		\label{fig:FC_correlation}
+	\end{center}
+\end{figure}
+
+Quantitatively, the correlation coefficients of the double-staining signals in both cell types have the same order of magnitude. In particular, each value falls into the confidence interval of the other (cf.\ Figure \ref{fig:FACS_nucCorrel}B and Figure \ref{fig:Mic_nucCorrel}D). To test, whether this correlation is specific for proteins involved in DNA repair we measured the expression of the proliferation marker Ki67. Surprisingly, although the correlation between both repair factors and Ki67 is visibly reduced (XPA vs. Ki67 = 0.19 and RPA vs. Ki67 = 0.43 against XPA-RPA = 0.73) it is still significantly positive (cf.\ Figure \ref{fig:FACS_nucCorrel}C and D).
+
+\section*{Cell cycle independent cross-correlation of NER factor expression}
+As Ki67 increases during cell cycle we asked, to what extend the observed protein correlation of Ki67 and the NER factors is cell-cycle dependent? To answer this question, we stained the cell's DNA using FxCycle violet and gated them according to their DNA content (cf.\ Figure \ref{fig:CellCycle_nucCorrel}A). Two distinct peaks denote the portion of cells traversing the G1 or the synthesis and G2 phase, respectively. By sorting the protein expression values in accordance with their cell cycle phase we identified for each protein combination two contiguous regions revealing a general trend of increased protein expression during the S1 and G2 phase in comparison to the G1 phase (cf.\ Figure \ref{fig:CellCycle_nucCorrel}B-D).  
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{Abbildungen/figureTAC_4.pdf}
+		\caption{\textbf{NER factor cross-correlation is robust against cell cycle progression.} A) Distribution of fluorescently labeled DNA proportional to the DNA content. Horizontal bars indicate the fractions of cells assigned to G1 (left peak, n=5469) and S+G2 (right peak, n=1945).  B-D) Individual regression analysis of the nuclear expression values sorted according to the corresponding cell-cycle phase (G1 - blue; S+G2 - red) for RPA vs. XPA (B), Ki67 vs. XPA (C) and Ki67 vs. RPA (D). B-D) Red and blue lines represent linear regression with correlation coefficient r and p-value. 95\% confidence bounds of all correlation coeffiecients r were estimated by non-parametric bootstrap and are given in brackets.}
+		\label{fig:FC_cell_cycle}
+	\end{center}
+\end{figure}
+
+
+Remarkably, whereas the correlation coefficients between XPA and RPA remain constant for both regimes (G1: 0.71, S+G2: 0.68, all: 0.74) the correlation between XPA and Ki67 disappear (G1: -0.072, S+G2: -0.068). Between RPA and Ki67 there is close to no correlation in the G1 phase but a significant small positive correlation in the S and G2 phase (G1: 0.12, S+G2: 0.29). These results strengthen the conclusions derived from the cross-correlation analysis in fibroblasts that NER factor expression is functionally co-regulated. In particular, the missing correlation between the nuclear factors and the cell cycle marker after taking the cell-cycle into account suggests that the measured correlation is specific to NER proteins. 
+
+
+
+However, even if we measured all pairwise NER factor dependencies, due to the strong correlations the matrix $B$ would not be invertible.
+- Invertierbarkeit...
+
+Although we are not able to derive a specific result for each response coefficient it is possible to make an estimation of their average size. Consider $\nu$ as a function of the concentration of the repair factors $C_i$ and the initial amount of DNA lesions $L$:
+\begin{equation}
+	\nu = Lf(C_1,...C_N).
+\end{equation}
+Using, once more, the standard law for the propagation of uncertainty analog to Eqn. ...
+ \begin{equation}
+ \sigma(\nu) = \sqrt{\sum_{i}\left(\frac{\partial \nu}{\partial C_i}\sigma(C_i) \right)^2 + \left(\frac{\partial \nu}{\partial L}\sigma(L)\right)^2 + \left(\frac{\partial \nu}{\partial C_i} \frac{\partial \nu}{\partial C_i}\textrm{cov}_{ij}\right)^2}
+ \end{equation}  
+ 
+ and introducing the response coefficients 
+ \begin{equation}
+ R_i = \frac{C_i}{\nu}\frac{\partial \nu}{\partial C_i} \nonumber
+ \end{equation}
