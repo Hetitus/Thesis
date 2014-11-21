@@ -123,7 +123,7 @@ To distinguish whether the measured variability is due to differences in nuclear
 \end{figure}
 
 Before exploring the direct relation between protein expression variability and the speed of repair we tested whether higher protein amounts in the nucleus correlate with the accumulation of NER factors in the locally damaged area. In correspondence to previous findings for XPG \cite{Luijsterburg2010} there is a significant positive correlation between the nuclear XPC-eGFP expression and its local accumulation at the DNA lesions (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}A) thirty minutes after UV irradiation. The same holds true for XPA \cite{Verbruggen2014}, TFIIH, XPF and RPA in narrow confidence bounds (cf.\ Appendix \textbf{tbm}). Consequently, we conclude that the DNA lesions are not saturated so that a higher NER factor concentration could potentially accelerate the repair rate.\\
-In fact, the nuclear protein concentrations for all five antibody-stained repair factors and the amount of incorporated EdU after one hour were significantly correlated (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}B-F). Remarkably, the dependency between both quantities, characterized by the slope of the regression line is very evenly distributed and also in the same order of magnitude as predicted computationally by the response coefficients (cf.\ Figure \ref{fig:controlCoefficients}A). Nevertheless, all measure responses are consistently two to four-fold larger than the predicted response coefficients. This agrees on one hand with the \textit{in silico} finding that the kinetic control of the measured repair factors is uniformly distributed and that the rate of repair synthesis is robust against natural variations in the repair protein expression. On the other hand this result suggests that the measured repair rate response is not entirely explained solely by the model-predicted response coefficients. It remains to clarify, whether this discrepancy is due to a so far unknown additional NER component intrinsically contributing to the pathway control. Or, if there is an external element coordinating the NER factor expression and thereby superimposing the mathematically predicted response coefficients.   
+In fact, the nuclear protein concentrations for all five antibody-stained repair factors and the amount of incorporated EdU after one hour were significantly correlated (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}B-F). Remarkably, the dependency between both quantities, characterized by the slope of the regression line is very evenly distributed and also in the same order of magnitude as predicted computationally by the response coefficients (cf.\ Figure \ref{fig:controlCoefficients}A). This agrees with the \textit{in silico} finding that the kinetic control of the measured repair factors is uniformly distributed and that the rate of repair synthesis is robust against natural variations in the repair protein expression.    
        
 \begin{figure}[htbp]
 	\begin{center}
@@ -132,18 +132,18 @@ In fact, the nuclear protein concentrations for all five antibody-stained repair
 		\label{fig:Nuc_vs_DNAsynthesis}
 	\end{center}
 \end{figure}
+
 \paragraph{Correlation analysis}
 The correlation analysis was performed in MATLAB (2012a, The Mathworks Inc., Natick, MA) using the inbuilt corrcoef function, which also returns p-values indicating the significance of the correlation coefficient. The p-values are determined by a t-test, where the null-hypothesis states that the true correlation between two variables equals zero and that for its observed value $r$ the quantity 
 \begin{equation}
 	t = \frac{r}{\sqrt{\frac{(1-r^2)}{N-2}}}
 \end{equation}     
 follows approximately a $t$-distribution for $N-2$ degrees of freedom and a sample size $N$ \cite{Kendall1979,Fisher1958}. A low p-value suggests the rejection of the null-hypothesis and thus, demonstrates the significance of the correlation.\\
-The confidence intervals for each correlation coefficient were estimated by non-parametric bootstrap \cite{Efron1979}. Thereby the correlation coefficient was re-sampled for 10,000 times each time drawing n pseudoreplicates (with replacement), where n denotes the number of measured cells from the original data. The confidence borders mark the interval including 95\% of the re-sampled correlation coefficients.         
+The confidence intervals for each correlation coefficient were estimated by non-parametric bootstrap \cite{Efron1979}. Thereby the correlation coefficient was re-sampled for 10,000 times each time drawing n pseudoreplicates (with replacement), where n denotes the number of measured cells from the original data. The confidence borders mark the interval including 95\% of the re-sampled correlation coefficients.\\       
+
+To reinforce the conclusion of a robustness DNA repair rate we compared the repair factor expression and its consequence on the repair variability in different cell lines. In contrast to indirectly labelled XPC in Hela cells \cite{Verbruggen2014} or in human primary fibroblasts (cf.\ Figure \ref{fig:ProteinDist}) the expression of stably transfected XPC-eGFP into XP-C patient cells is significantly broader distributed. Its CV has a value of $\sim$1, which is up to 4 times larger compared to XPC variability in Hela or fibroblasts cells (cf.\ Figure \ref{fig:consistVariability}A, Figure \ref{fig:ProteinDist}A and \cite{Verbruggen2014}). At the same time the distributions of accumulated EdU after 1, 2 and 3 hours at the sites of local damage is strikingly similar in both cell types (cf.\ Figure \ref{fig:consistVariability}). The unaffected DNA repair dynamic, even for much larger NER factor fluctuations, allows the generalization of a robust repair for different cell types.  
 
 
-
-
-\subsection{NER Variability comparable between complemented patient cell lines and native repair } 
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_4.pdf}
@@ -153,10 +153,19 @@ The confidence intervals for each correlation coefficient were estimated by non-
 \end{figure}
 
 
-\section{Sources for repair rate variability}
+
+Returning to the comparison between the measured EdU incorporation as a function of NER factor concentration and the predicted response coefficients it should be noted that the  former are consistently two to four-fold larger (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}B-F and Figure \ref{fig:controlCoefficients}A). This result suggests that the measured repair rate response is not entirely explained solely by the model-predicted response coefficients. It remains to clarify, whether this discrepancy is due to a so far unknown additional NER component intrinsically contributing to the pathway control. Or, is there an external mechanism coordinating the NER factor expression and thereby superimposing the mathematically predicted response coefficients?
+
+  
+
+
+\section{Variability analysis of the repair rate}
 
 \subsection{Variable NER factor expression and inflicted lesions account for the distribution of repair rates} 
 \label{sec:variabilityAnalysis}
+While searching for factors contributing to the repair rate control we noticed the broad scatter of incorporated EdU, which appears to increase for larger protein concentrations. This variability indicates that besides the repair proteins there might be further sources of cell-to-cell heterogeneity, which may also be involved in the regulation of the repair rate.       
+
+
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_5.pdf}

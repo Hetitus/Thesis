@@ -30,8 +30,7 @@
 \contentsline {paragraph}{Prediction profile likelihood}{29}{section*.20}
 \contentsline {subsection}{\numberline {3.1.2}Exploiting natural variability in protein expression to quantify rate control}{31}{subsection.3.1.2}
 \contentsline {paragraph}{Correlation analysis}{33}{section*.25}
-\contentsline {subsection}{\numberline {3.1.3}NER Variability comparable between complemented patient cell lines and native repair}{35}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Sources for repair rate variability}{37}{section.3.2}
+\contentsline {section}{\numberline {3.2}Variability analysis of the repair rate}{37}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Variable NER factor expression and inflicted lesions account for the distribution of repair rates}{37}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Imbalanced contribution}{37}{subsection.3.2.2}
 \contentsline {chapter}{\numberline {4}Co-expression of NER repair factors}{41}{chapter.4}

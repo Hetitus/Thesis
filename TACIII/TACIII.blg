@@ -1,46 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: TACIII.aux
-The style file: naturemagC.bst
+The style file: melanieBib.bst
 Database file #1: NER_Bibliography.bib
 You've used 2 entries,
-            2538 wiz_defined-function locations,
-            584 strings with 4904 characters,
-and the built_in function-call counts, 1201 in all, are:
-= -- 84
-> -- 64
+            2987 wiz_defined-function locations,
+            610 strings with 5228 characters,
+and the built_in function-call counts, 2154 in all, are:
+= -- 160
+> -- 178
 < -- 0
-+ -- 60
-- -- 16
-* -- 77
-:= -- 140
++ -- 134
+- -- 49
+* -- 165
+:= -- 289
 add.period$ -- 6
 call.type$ -- 2
-change.case$ -- 2
-chr.to.int$ -- 0
+change.case$ -- 26
+chr.to.int$ -- 3
 cite$ -- 2
-duplicate$ -- 104
-empty$ -- 91
-format.name$ -- 18
-if$ -- 247
-int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 28
-newline$ -- 13
-num.names$ -- 2
-pop$ -- 52
+duplicate$ -- 110
+empty$ -- 103
+format.name$ -- 54
+if$ -- 417
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 30
+newline$ -- 14
+num.names$ -- 8
+pop$ -- 96
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 24
 quote$ -- 0
-skip$ -- 20
+skip$ -- 85
 stack$ -- 0
-substring$ -- 70
-swap$ -- 66
+substring$ -- 68
+swap$ -- 72
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 18
 warning$ -- 0
-while$ -- 7
-width$ -- 3
-write$ -- 24
+while$ -- 9
+width$ -- 0
+write$ -- 29
