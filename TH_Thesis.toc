@@ -32,14 +32,14 @@
 \contentsline {paragraph}{Correlation analysis}{33}{section*.25}
 \contentsline {section}{\numberline {3.2}Variability analysis of the repair rate}{37}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Variable NER factor expression and inflicted lesions account for the distribution of repair rates}{37}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Imbalanced contribution}{37}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}Co-expression of NER repair factors}{41}{chapter.4}
-\contentsline {section}{\numberline {4.1}Nuclear expression of NER factors is strongly correlated}{41}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Cross-correlation affects repair response}{41}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Microscopy analysis of co-staining experiments}{43}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Flow cytometry}{46}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Cell cycle independent cross-correlation of NER factor expression}{46}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Measured average response agrees with model prediction}{49}{subsection.4.1.5}
-\contentsline {chapter}{\numberline {5}Discussion}{51}{chapter.5}
-\contentsline {chapter}{\numberline {6}Bibliography}{53}{chapter.6}
-\contentsline {chapter}{\numberline {7}Appendix}{57}{chapter.7}
+\contentsline {subsection}{\numberline {3.2.2}Imbalanced contribution}{40}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}Co-expression of NER repair factors}{43}{chapter.4}
+\contentsline {section}{\numberline {4.1}Nuclear expression of NER factors is strongly correlated}{43}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Cross-correlation affects repair response}{43}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Microscopy analysis of co-staining experiments}{45}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Flow cytometry}{48}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Cell cycle independent cross-correlation of NER factor expression}{48}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Measured average response agrees with model prediction}{51}{subsection.4.1.5}
+\contentsline {chapter}{\numberline {5}Discussion}{53}{chapter.5}
+\contentsline {chapter}{\numberline {6}Bibliography}{55}{chapter.6}
+\contentsline {chapter}{\numberline {7}Appendix}{59}{chapter.7}

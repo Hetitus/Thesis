@@ -163,13 +163,13 @@ Returning to the comparison between the measured EdU incorporation as a function
 
 \subsection{Variable NER factor expression and inflicted lesions account for the distribution of repair rates} 
 \label{sec:variabilityAnalysis}
-While searching for factors contributing to the repair rate control we noticed the broad scatter of incorporated EdU, which appears to increase for larger protein concentrations. This variability indicates that besides the repair proteins there might be further sources of cell-to-cell heterogeneity, which may also be involved in the regulation of the repair rate.       
+While searching for factors affecting the repair rate control we noticed the broad scatter of incorporated EdU, which appears to increase for larger protein concentrations (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}B-F). This variability indicates that besides the repair proteins there might be further sources of cell-to-cell heterogeneity, which might be also involved in the regulation of the repair rate. To this end, we measured the amount of UV-inflicted DNA lesions by indirect (immuno)cytochemistry wondering how the distribution of pore sizes would propagate (cf.\ Figure \ref{fig:accuMethod}B). The distributions of DNA damage captured immediately after UV-irradiation very much resembles the variable EdU incorporation after 4 h, which is also confirmed by the similar CV. These data suggest that the amount of DNA lesions contributes to the cell-to cell variability in the repair-rate.  
 
 
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_5.pdf}
-		\caption{\textbf{Blubb.} A) B) }
+		\caption{\textbf{Distributed amount of inflicted DNA damages contributes to repair rate variability.} A) XP-C XPC-eGFP cells were locally UV-irradiated with an intensity of 100 J/$\text{m}^\text{2}$. DNA damages were quantified by indirect immunofluorescence microscopy in n=250 cells from five experiments. B) XP-C XPC-eGFP cells were locally irradiated and cultivated for 4 hours in the presence of EdU before fixation. Fluorescence signals were measured in n=198 cells derived from three independent experiments. }
 		\label{fig:DamageDist}
 	\end{center}
 \end{figure}
@@ -181,6 +181,31 @@ While searching for factors contributing to the repair rate control we noticed t
 		\label{fig:Model_dataComp}
 	\end{center}
 \end{figure}
+To find out whether the heterogeneity in nuclear NER factor expression together with the distributed amount of initial DNA damages would be sufficient to explain the variability in the repair rate we tried to reproduce the EdU response measurements with the model. Thus, we simulated the model for several hundred times in correspondence with the number of measured cells. For each simulated cell nuclear NER factor concentrations and the amount of local damages were randomly drawn from log-normal distributions in accordance with the experimentally determined CV (cf.\ Figure \ref{fig:ProteinDist} and Figure \ref{fig:DamageDist}) and the previously measured mean values \cite{Luijsterburg2010}. For PCNA and XPG we took the averaged CV$\sim$0.33 derived from the measured distributions. The simulated scatter plots for the accumulation of the nuclear repair factor at sites of local damage agree remarkably well with the measured data (cf.\ Figure \ref{fig:Model_dataComp}A-E, compare enlarged correlation (simulation) with the smaller inlay (experiment)). Qualitatively, the same holds true for the comparison between simulated and measured EdU incorporation as a readout for DNA resynthesis in response to changes in the repair factor concentration (cf.\ Figure \ref{fig:Model_dataComp}F-J). It should be noted that the simulated slopes representing the overall repair rate response are now slightly elevated compared to the calculated response coefficients (cf.\ Figure \ref{fig:controlCoefficients}), clearly marking the influence of the introduced distribution of DNA damages. However, the simulated slopes are still significantly smaller than the measured estimates (cf.\ Figure \ref{fig:Model_dataComp}F-J, compare enlarged correlation (simulation) with the smaller inlay (experiment)).\\    
+To locate the lacking control, we first asked whether the individual contributions of the concentration distributions of the repair factors to the distribution of the repair rate 'sum up' according to the response coefficients predicted by the model. Assuming that the repair rate $\nu$ is linearly dependent of the initial amount of inflicted lesions L and, as estimated in Section \ref{firstOrderRateKinetic}, also of the nuclear repair-factor concentrations $C_i$ (i=1,2,...) we can apply the general law of error propagation
+
+\begin{equation}
+\sigma(\nu) = \sqrt{\sum_{i}\left(\frac{\partial \nu}{\partial C_i}\sigma(C_i) \right)^2 + \left(\frac{\partial \nu}{\partial L}\sigma(L)\right)^2 }.
+\label{eqn:lawoferrorPropagation}
+\end{equation} 
+Introducing the predicted response coefficients $R_i$ we can estimate the overall repair rate variability $CV_{\nu}$ with
+\begin{equation}
+CV_{\nu} = \sqrt{CV_{L}^2 + \sum_{i}(R_iCV_i)^2},
+\label{eqn:lawOfErrorPropI}
+\end{equation}
+where $CV_{L}$ and $CV_i$ denote the coefficients of variation of the distributions of repair factors and initial amount of lesions. Obviously, the 'response coefficient' for the initial amount of inflicted lesions is 1. Including the variability for inflicted lesions $CV_L \sim 0.32$ and the average $CV_i \sim 0.33$ for each repair factor we can determine the repair rate variability with $CV_{\nu} \sim 0.35$. This is around 20\% less than the measured $CV_{\nu} \sim 0.45$ after one hour (cf.\ Figure \ref{fig:CV_Var_comp}).\\
+To dissect the contribution of the individual factors to the
+overall variability, we computed the effect of heterogeneity in only one factor on repair synthesis. Accordingly, for each CV-trajectory in Figure \ref{fig:CV_Var_comp} we determined the $CV_{\nu}$ by simulating the repair rate for 500 cell and drawing only one factor randomly. The largest contribution can be allocated to the initial amount of damages which were responsible for about two thirds of the whole repair variability. 
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{Abbildungen/figure3_8.pdf}
+		\caption{\textbf{Blubb.} A) B) }
+		\label{fig:CV_Var_comp}
+	\end{center}
+\end{figure}
+
+
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -191,10 +216,4 @@ While searching for factors contributing to the repair rate control we noticed t
 \end{figure}
 \subsection{Imbalanced contribution }
 
-\begin{figure}[htbp]
-	\begin{center}
-		\includegraphics[width=1\textwidth]{Abbildungen/figure3_8.pdf}
-		\caption{\textbf{Blubb.} A) B) }
-		\label{fig:CV_Var_comp}
-	\end{center}
-\end{figure}
+
