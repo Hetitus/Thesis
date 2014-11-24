@@ -117,7 +117,7 @@ To distinguish whether the measured variability is due to differences in nuclear
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_2.pdf}
-		\caption{\textbf{Natural variability in nuclear NER factor expression is significantly larger than measurement error} A-E) Histograms of nuclear protein concentrations of the antibody stained NER factors XPC, TFIIH, XPF, XPA and RPA (\textbf{Bildunterschrift: Nuclear und cpt. letters}/n nachschauen). Scatter plot of antibody recognized XPC against XPC-eGFP stably expressed in XP-C XPC-eGFP cell lines. The dashed error-ellipse illustrates the proportion of natural variability and measurement noise.}
+		\caption{\textbf{Natural variability in nuclear NER factor expression is significantly larger than measurement error} A-E) Histograms of nuclear protein concentrations of the antibody stained NER factors XPC, TFIIH, XPF, XPA and RPA. F) Scatter plot of antibody recognized XPC against XPC-eGFP stably expressed in XP-C XPC-eGFP cell lines. The dashed error-ellipse illustrates the proportion of natural variability and measurement noise.}
 		\label{fig:ProteinDist}
 	\end{center}
 \end{figure}
@@ -195,7 +195,7 @@ CV_{\nu} = \sqrt{CV_{L}^2 + \sum_{i}(R_iCV_i)^2},
 \end{equation}
 where $CV_{L}$ and $CV_i$ denote the coefficients of variation of the distributions of repair factors and initial amount of lesions. Obviously, the 'response coefficient' for the initial amount of inflicted lesions is 1. Including the variability for inflicted lesions $CV_L \sim 0.32$ and the average $CV_i \sim 0.33$ for each repair factor we can determine the repair rate variability with $CV_{\nu} \sim 0.35$. This is around 20\% less than the measured $CV_{\nu} \sim 0.45$ after one hour (cf.\ Figure \ref{fig:CV_Var_comp}).\\
 To dissect the contribution of the individual factors to the
-overall variability, we computed the effect of heterogeneity in only one factor on repair synthesis. Accordingly, for each CV-trajectory in Figure \ref{fig:CV_Var_comp} we determined the $CV_{\nu}$ by simulating the repair rate for 500 cell and drawing only one factor randomly. The largest contribution can be allocated to the initial amount of damages which were responsible for about two thirds of the whole repair variability. 
+overall variability, we computed the effect of heterogeneity in only one factor on repair synthesis. Accordingly, for each CV-trajectory in Figure \ref{fig:CV_Var_comp} we determined the $CV_{\nu}$ by simulating the repair rate for 500 cell and drawing only one factor randomly. The largest contribution can be allocated to the initial amount of damages which were responsible for about two thirds of the whole repair variability. Adding the heterogeneity of the nuclear expression values shrinks the gap between measured and simulated variability (cf.\ Figure \ref{fig:CV_Var_comp} blue (data) and red (simulation) trajectory).
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -204,16 +204,16 @@ overall variability, we computed the effect of heterogeneity in only one factor 
 		\label{fig:CV_Var_comp}
 	\end{center}
 \end{figure}
-
+This result becomes more explicit by comparing the strikingly matching temporal evolution of the measured and predicted distributions of repair synthesis (cf.\ Figure \ref{fig:ModelData_tempVar}).
 
 
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_7.pdf}
-		\caption{\textbf{Blubb.} A) B) }
+		\caption{\textbf{Simulated repair rate distribution fits experimentally derived EdU incorporation} Temporal evolution of the repair rate variation i)  measured in single cells after initial UV-irradiation (red histograms) and ii) predicted from model simulations (blues lines).}
 		\label{fig:ModelData_tempVar}
 	\end{center}
 \end{figure}
-\subsection{Imbalanced contribution }
 
+To summarize, we uncovered two sources of cell-to-cell variability in the rate of NER: (i) the amount of inflicted DNA lesions and (ii) the expression of NER factors. Together, both parameters explain most of the measured variability. However, the significant difference between measured and predicted repair rate responses leave space for interpretation whether there are additional factors involved in repair but have not been accounted for explicitly in the model.     
 

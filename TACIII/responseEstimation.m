@@ -57,7 +57,7 @@ covVec = [covXPC_TFIIH,covXPC_XPG,covXPC_XPF,covXPC_XPA,covXPC_RPA,covXPC_PCNA,c
 
 
 
-R = sqrt((CVr^2-CVd^2)/( sum( cvVecSquare) )); 
+R = sqrt((CVr^2-CVd^2)/( sum( cvVecSquare) + sum(covVec) )); 
 
 
 
