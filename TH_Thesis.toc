@@ -40,5 +40,10 @@
 \contentsline {subsection}{\numberline {4.1.4}Cell cycle independent cross-correlation of NER factor expression}{48}{subsection.4.1.4}
 \contentsline {subsection}{\numberline {4.1.5}Measured average response agrees with model prediction}{51}{subsection.4.1.5}
 \contentsline {chapter}{\numberline {5}Discussion}{53}{chapter.5}
+\contentsline {paragraph}{Slow first order kinetics as a systems property}{53}{section*.36}
+\contentsline {paragraph}{First identifiable kinetic model of DNA repair}{53}{section*.37}
+\contentsline {paragraph}{Model predictions}{53}{section*.38}
+\contentsline {paragraph}{Rate control}{54}{section*.39}
+\contentsline {paragraph}{cross-correlation of nuclear expressed proteins}{54}{section*.40}
 \contentsline {chapter}{\numberline {6}Bibliography}{55}{chapter.6}
 \contentsline {chapter}{\numberline {7}Appendix}{59}{chapter.7}
