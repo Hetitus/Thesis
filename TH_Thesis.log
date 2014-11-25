@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.11)  23 NOV 2014 21:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.11)  23 NOV 2014 21:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1045,14 +1045,14 @@ File: Abbildungen/figure3_6.pdf Graphic file (type pdf)
 Package pdftex.def Info: Abbildungen/figure3_6.pdf used on input line 179.
 (pdftex.def)             Requested size: 441.01773pt x 293.72375pt.
  [37 <./Abbildungen/figure3_5.pdf>] [38 <./Abbildungen/figure3_6.pdf>] [39]
-<Abbildungen/figure3_8.pdf, id=1354, 597.51233pt x 233.39397pt>
+<Abbildungen/figure3_8.pdf, id=1355, 597.51233pt x 233.39397pt>
 File: Abbildungen/figure3_8.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_8.pdf>
 Package pdftex.def Info: Abbildungen/figure3_8.pdf used on input line 202.
 (pdftex.def)             Requested size: 441.01773pt x 172.26721pt.
 
-<Abbildungen/figure3_7.pdf, id=1355, 597.51233pt x 617.12859pt>
+<Abbildungen/figure3_7.pdf, id=1357, 597.51233pt x 617.12859pt>
 File: Abbildungen/figure3_7.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_7.pdf>
@@ -1082,14 +1082,14 @@ ready used, duplicate ignored
                                                   \fi \fi 
 l.55 \subsection
                 {Microscopy analysis of co-staining experiments}] [45]
-<Abbildungen/figure4_1.pdf, id=1430, 597.51233pt x 197.73875pt>
+<Abbildungen/figure4_1.pdf, id=1432, 597.51233pt x 197.73875pt>
 File: Abbildungen/figure4_1.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure4_1.pdf>
 Package pdftex.def Info: Abbildungen/figure4_1.pdf used on input line 87.
 (pdftex.def)             Requested size: 441.01773pt x 145.95024pt.
 
-<Abbildungen/figureTAC_2.pdf, id=1433, 597.51233pt x 654.65778pt>
+<Abbildungen/figureTAC_2.pdf, id=1435, 597.51233pt x 654.65778pt>
 File: Abbildungen/figureTAC_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figureTAC_2.pdf>
@@ -1105,14 +1105,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
  []
 
 [46 <./Abbildungen/figure4_1.pdf>] [47 <./Abbildungen/figureTAC_2.pdf>]
-<Abbildungen/figureTAC_3.pdf, id=1519, 597.51233pt x 464.34578pt>
+<Abbildungen/figureTAC_3.pdf, id=1521, 597.51233pt x 464.34578pt>
 File: Abbildungen/figureTAC_3.pdf Graphic file (type pdf)
 
 <use Abbildungen/figureTAC_3.pdf>
 Package pdftex.def Info: Abbildungen/figureTAC_3.pdf used on input line 128.
 (pdftex.def)             Requested size: 441.01773pt x 342.73192pt.
 
-<Abbildungen/figureTAC_4.pdf, id=1525, 597.51233pt x 464.56763pt>
+<Abbildungen/figureTAC_4.pdf, id=1527, 597.51233pt x 464.56763pt>
 File: Abbildungen/figureTAC_4.pdf Graphic file (type pdf)
 
 <use Abbildungen/figureTAC_4.pdf>
@@ -1154,8 +1154,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 294.
 (./chapters/Discussion.aux) (./chapters/Appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 294.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 294.
-Package rerunfilecheck Info: File `TH_Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6F5A49E849D261F9F077CF7BA4F5CDD5;3662.
+
+
+Package rerunfilecheck Warning: File `TH_Thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `TH_Thesis.out':
+(rerunfilecheck)             Before: 6F5A49E849D261F9F077CF7BA4F5CDD5;3662
+(rerunfilecheck)             After:  D5478BE2CE8A79B3DB5FB9A61A6AF39D;3585.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 294.
  ) 
 Here is how much of TeX's memory you used:
@@ -1166,36 +1173,39 @@ Here is how much of TeX's memory you used:
  63339 words of font info for 76 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  40i,17n,51p,1872b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2
-013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/201
-3/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2013/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2013/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2013/texmf-dist/fonts
-/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
-/public/txfonts/rtxr.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
-/cm-super/sfrm0800.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/c
-m-super/sfrm1095.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/txf
-onts/txex.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/txfonts/tx
-sy.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
-3/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-di
-st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TH_Thesis.pdf (70 pages, 4803294 bytes).
+pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does no
+t exist, replaced by a fixed one
+
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
+usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
+ype1/public/txfonts/rtxmi.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/p
+ublic/txfonts/rtxr.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/c
+m-super/sfrm0800.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-
+super/sfrm1095.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/txfon
+ts/txex.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/txfonts/txsy
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/tex
+live/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist
+/fonts/type1/urw/times/utmri8a.pfb>
+Output written on TH_Thesis.pdf (70 pages, 4803583 bytes).
 PDF statistics:
- 1806 PDF objects out of 2073 (max. 8388607)
- 1422 compressed objects within 15 object streams
+ 1808 PDF objects out of 2073 (max. 8388607)
+ 1424 compressed objects within 15 object streams
  224 named destinations out of 1000 (max. 500000)
  462 words of extra memory for PDF output out of 10000 (max. 10000000)
 

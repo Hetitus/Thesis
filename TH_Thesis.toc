@@ -32,7 +32,6 @@
 \contentsline {paragraph}{Correlation analysis}{33}{section*.25}
 \contentsline {section}{\numberline {3.2}Variability analysis of the repair rate}{37}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Variable NER factor expression and inflicted lesions account for the distribution of repair rates}{37}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Imbalanced contribution}{40}{subsection.3.2.2}
 \contentsline {chapter}{\numberline {4}Co-expression of NER repair factors}{43}{chapter.4}
 \contentsline {section}{\numberline {4.1}Nuclear expression of NER factors is strongly correlated}{43}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Cross-correlation affects repair response}{43}{subsection.4.1.1}

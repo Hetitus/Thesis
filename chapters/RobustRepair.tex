@@ -195,7 +195,7 @@ CV_{\nu} = \sqrt{CV_{L}^2 + \sum_{i}(R_iCV_i)^2},
 \end{equation}
 where $CV_{L}$ and $CV_i$ denote the coefficients of variation of the distributions of repair factors and initial amount of lesions. Obviously, the 'response coefficient' for the initial amount of inflicted lesions is 1. Including the variability for inflicted lesions $CV_L \sim 0.32$ and the average $CV_i \sim 0.33$ for each repair factor we can determine the repair rate variability with $CV_{\nu} \sim 0.35$. This is around 20\% less than the measured $CV_{\nu} \sim 0.45$ after one hour (cf.\ Figure \ref{fig:CV_Var_comp}).\\
 To dissect the contribution of the individual factors to the
-overall variability, we computed the effect of heterogeneity in only one factor on repair synthesis. Accordingly, for each CV-trajectory in Figure \ref{fig:CV_Var_comp} we determined the $CV_{\nu}$ by simulating the repair rate for 500 cell and drawing only one factor randomly. The largest contribution can be allocated to the initial amount of damages which were responsible for about two thirds of the whole repair variability. 
+overall variability, we computed the effect of heterogeneity in only one factor on repair synthesis. Accordingly, for each CV-trajectory in Figure \ref{fig:CV_Var_comp} we determined the $CV_{\nu}$ by simulating the repair rate for 500 cell and drawing only one factor randomly. The largest contribution can be allocated to the initial amount of damages which were responsible for about two thirds of the whole repair variability. Adding the heterogeneity of the nuclear expression values shrinks the gap between measured and simulated variability (cf.\ Figure \ref{fig:CV_Var_comp} blue (data) and red (simulation) trajectory).
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -204,7 +204,7 @@ overall variability, we computed the effect of heterogeneity in only one factor 
 		\label{fig:CV_Var_comp}
 	\end{center}
 \end{figure}
-
+This result is illustrated more explicitly by comparing the strikingly matching temporal evolution of the measured and predicted distributions of repair synthesis (cf.\ Figure \ref{fig:ModelData_tempVar}).
 
 
 \begin{figure}[htbp]
@@ -214,6 +214,6 @@ overall variability, we computed the effect of heterogeneity in only one factor 
 		\label{fig:ModelData_tempVar}
 	\end{center}
 \end{figure}
-\subsection{Imbalanced contribution }
+
 
 
