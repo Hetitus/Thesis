@@ -1,15 +1,17 @@
 \chapter{Discussion}
 
 
-Our continuation of the DNA-repair analysis was motivated by the ability of explicitly observing the kinetics of resynthesized DNA during nucleotide-excision repair. The quantification of this repair intermediate by following the incorporation of fluorescently labeled nucleotides portrays the repair process as a slow, first-order kinetic. The new data supplement our comprehensive knowledge about the dynamic behavior of single repair proteins comprising their individual exchange kinetics at the chromatin fiber, which eventually lead to the formation of catalytic multi-protein machineries. Based on this information we were able to identify a realistic kinetic model of NER, which established a quantitative link between fast and random assembly of the NER factors at the DNA template and the emergent phenomenon of a slow overall repair time. Most importantly, the model predicts a collective control of the repair rate by the repair factors, which rebuts the presumption of a rate-limiting step in the pathway. This finding has been corroborated experimentally exploiting the natural variability of the nuclear NER factor concentrations, which highlights the robustness of DNA repair against fluctuations in NER factor expression.\\       
-Correlation analysis revealed 
-
-on the single-cell level
-
-The quantitative impact of these three parameters on the cell-to-cell variability of the repair rate is consistent with the robustness of the repair rate against concentration fluctuations in individual repair factors.
+Our continuation of the DNA-repair analysis was motivated by the ability of explicitly observing the kinetics of resynthesized DNA during nucleotide-excision repair. The quantification of this repair intermediate by following the incorporation of fluorescently labelled nucleotides on the single cell level portrays the repair process as a slow, first-order kinetic. The new data supplement our comprehensive knowledge about the dynamic behaviour of single repair proteins comprising their individual exchange kinetics at the chromatin fibre, which eventually lead to the formation of catalytic multi-protein machineries. Based on this information we were able to identify a realistic kinetic model of NER, which established a quantitative link between fast and random assembly of the NER factors at the DNA template and the emergent phenomenon of a slow overall repair time. Most importantly, the model predicts a collective control of the repair rate by the repair factors, which rebuts the presumption of a rate-limiting step in the pathway. This finding has been corroborated experimentally exploiting the natural variability of the nuclear NER factor concentrations, which emphasizes the robustness of DNA repair against fluctuations in NER factor expression.\\       
+In fact, we observe that the substantial heterogeneity in repair synthesis is generated primarily by the distribution of inflicted DNA lesions. This factor is further complemented by the variability contributed from each individual repair factor as well es by mutual dependencies in NER factor expression. The quantitative impact of these three parameters on the cell-to-cell variability of the repair rate is consistent with the robustness of the repair rate against concentration fluctuations of individual repair factors.
 
 
-\paragraph{Slow first order kinetics as a systems property}
+\paragraph{Slow first order kinetics as a general systems property for chromatin associated processes.}
+During our analysis of the NER kinetic we focused on the removal of one of the major UV-induced DNA lesions, the 6-4PPs, which are repaired significantly faster ($\sim$2-3 hours) compared to CPDs, which are still present after $\sim$ 24 hours \cite{Smerdon1978,vanHoffen:1995:EMBO-J:7835346,Luijsterburg2010}. 6-4PPs are cut out by incision of the damaged DNA strand, which we were able to monitor by following the incorporation of the fluorescently tagged uracil analogue EdU. The nucleotides are labelled by coper-catalysed covalent addition of the fluorophore for which the cells have to be fixed. Hence, EdU accumulation cannot be measured continuously in one cell. Instead, we followed EdU incorporation stepwise in increasingly longer time intervals, each starting immediately after UV-irradiation. In this way we were able to quantify the 6-4PP repair time course which fits to a first order kinetic with a half-life of $\sim$ 1.2 hours.         
+This long time scale (hours) stays in striking contrast to several live-cell imaging studies, which determined the time of engagement on damaged DNA for early and late repair factors in the range of minutes \cite{Houtsmuller1999,Volker2001,Hoogstraten2002,Rademakers2003,Mone2004,Zotter2006,Hoogstraten2008}. Recently, this result could be generalized for all core NER factors combining different photobleaching and fluorescence life-time microscopy approaches \cite{Luijsterburg2010}.\\
+The present work strengthens a prominent explanation of this apparent contradiction using the comprehensive biological knowledge about NER together with mathematical modelling. In agreement with a simplified model simulating the assembly of a catalytic protein repair-complex \cite{Terstiege2010} we find that reversible exchanging NER factors resemble the key property that makes NER an apparent first-order process. Accordingly, the long time-scale arises from the concurrence of stochastic assembly and reversible exchange, which leads to many non-functional preliminary stages before eventually the catalytic complex is formed. As suggested by Luijsterburg \textit{et al.} (2010) \cite{Luijsterburg2010}, the slow repair time might even present an advantage for the specificity of the repair process due to differential dissociation kinetics in case of a false-positive lesion detection. This is in contrast to a sequence of irreversible binding steps, which will create sigmoidal kinetics with an even sharper delay with increasing numbers of assembling components \cite{Terstiege2010}.\\ 
+The phenomenon of rapid protein exchange is a widespread property also found in other chromatin associated processes like replication, chromatin remodelling or transcription \cite{McNairn2005,Erdel2011,Sonneville2012,Stasevich2011}. Analogue to NER, these proteins are involved in finding the specific reaction site first before the catalytic machinery can assemble at the same location. In particular in case of DNA transcription, transient protein dynamics were experimentally demonstrated for transcription factor binding and transcription machinery assembly \cite{Hager2009}. The time scale for these reactions (several seconds to minutes) is comparable to our results for DNA repair, which encourages to hypothesise whether the  slow time scales of transcriptional bursting in mammalian cells (tens of minutes to hours; \cite{Harper2011,Suter2011}) also arise through the reversible assembly of large macromolecular complexes.   
+
+
 
 
 
@@ -18,6 +20,9 @@ The quantitative impact of these three parameters on the cell-to-cell variabilit
 - no XPA before XPF binding
 - comparison to previous models 
 
+
+- slow off rates... selection of a functional steady state...
+- fast catalytic rates - agrees with previous study
 
 \paragraph{Model predictions}
 - tight coupling between damage removal and repair synthesis
@@ -32,7 +37,8 @@ The quantitative impact of these three parameters on the cell-to-cell variabilit
 - experimental validation
 - difficulties during correlation analysis
 - further rate control through cooperativity 
-
+- were does variability come from - extrinsic/intrinsic
+- apparently variability 6-4PP are preferentially induced in linker sequences (Mitchel et al. 1990 - found in van Hoffen 1995)
 
 \paragraph{cross-correlation of nuclear expressed proteins}
 - interpretation of the data
