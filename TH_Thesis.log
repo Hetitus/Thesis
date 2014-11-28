@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.11)  27 NOV 2014 18:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.11)  28 NOV 2014 18:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1129,28 +1129,28 @@ Chapter 5.
 
 
 
-] [54]
-Underfull \hbox (badness 2903) in paragraph at lines 44--49
+] [54] [55]
+Underfull \hbox (badness 2903) in paragraph at lines 46--51
 [] []\T1/phv/b/n/10.95 cross-correlation of nu-clear ex-pressed pro-teins[][] \
 T1/phv/m/n/10.95 - in-ter-pre-ta-tion of the data -
  []
 
-) [55] (./TH_Thesis.bbl [56
+) [56] [57] (./TH_Thesis.bbl [58
 
 
 
 ]
 Chapter 6.
-[57] [58] [59]) [60]
+[59] [60] [61] [62]) [63]
 \openout2 = `chapters/Appendix.aux'.
 
- (./chapters/Appendix.tex
+ (./chapters/Appendix.tex [64
+
+
+
+]
 Chapter 7.
-) [61
-
-
-
-] [62]
+) [65] [66]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 294.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 294.
  (./TH_Thesis.aux (./chapters/Titelseite.aux)
@@ -1165,13 +1165,13 @@ Package rerunfilecheck Info: File `TH_Thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 294.
  ) 
 Here is how much of TeX's memory you used:
- 10887 strings out of 493315
- 167462 string characters out of 6137904
- 307540 words of memory out of 5000000
- 13821 multiletter control sequences out of 15000+600000
+ 10899 strings out of 493315
+ 167634 string characters out of 6137904
+ 307690 words of memory out of 5000000
+ 13825 multiletter control sequences out of 15000+600000
  63339 words of font info for 76 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 40i,17n,51p,1872b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,17n,51p,2203b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
@@ -1198,10 +1198,10 @@ ocal/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/t
 exlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TH_Thesis.pdf (72 pages, 4649023 bytes).
+Output written on TH_Thesis.pdf (76 pages, 4655637 bytes).
 PDF statistics:
- 1855 PDF objects out of 2073 (max. 8388607)
- 1482 compressed objects within 15 object streams
- 241 named destinations out of 1000 (max. 500000)
+ 1892 PDF objects out of 2073 (max. 8388607)
+ 1514 compressed objects within 16 object streams
+ 249 named destinations out of 1000 (max. 500000)
  454 words of extra memory for PDF output out of 10000 (max. 10000000)
 

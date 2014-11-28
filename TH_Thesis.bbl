@@ -376,4 +376,28 @@ Suter, D.~M., Molina, N., Gatfield, D., Schneider, K., Schibler, U. \& Naef, F.
   kinetics.}
 \newblock \emph{Science (New York, N.Y.)} \textbf{332}, 472--4 (2011).
 
+\bibitem{conn2009introduction}
+Conn, A.~R., Scheinberg, K. \& Vicente, L.~N.
+\newblock {Introduction to derivative-free optimization}, vol.~8.
+\newblock Siam (2009).
+
+\bibitem{Ramachandran2010}
+Ramachandran, R. \& Barton, P.~I.
+\newblock {Effective parameter estimation within a multi-dimensional population
+  balance model framework}.
+\newblock \emph{Chemical Engineering Science} \textbf{65}, 4884--4893 (2010).
+
+\bibitem{Uphoff2013}
+Uphoff, S., Reyes-Lamothe, R., {Garza de Leon}, F., Sherratt, D.~J. \&
+  Kapanidis, A.~N.
+\newblock {Single-molecule DNA repair in live bacteria.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America} \textbf{110}, 8063--8 (2013).
+
+\bibitem{Kesseler2007}
+Kesseler, K.~J., Kaufmann, W.~K., Reardon, J.~T., Elston, T.~C. \& Sancar, A.
+\newblock {A mathematical model for human nucleotide excision repair: damage
+  recognition by random order assembly and kinetic proofreading.}
+\newblock \emph{Journal of theoretical biology} \textbf{249}, 361--75 (2007).
+
 \end{thebibliography}
