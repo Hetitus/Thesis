@@ -42,8 +42,9 @@
 \contentsline {chapter}{\numberline {5}Discussion}{53}{chapter.5}
 \contentsline {paragraph}{Slow first order kinetics as a general systems property for chromatin associated processes.}{53}{section*.36}
 \contentsline {paragraph}{An identifiable and hence predictive kinetic model of DNA repair.}{55}{section*.37}
-\contentsline {paragraph}{Model predictions}{56}{section*.38}
-\contentsline {paragraph}{Rate control}{56}{section*.39}
-\contentsline {paragraph}{cross-correlation of nuclear expressed proteins}{56}{section*.40}
+\contentsline {paragraph}{Model parametrization and its implications}{56}{section*.38}
+\contentsline {paragraph}{Collective control of the DNA repair rate}{57}{section*.39}
+\contentsline {paragraph}{Co-regulation of the nuclear NER factor expression}{58}{section*.40}
+\contentsline {paragraph}{general implications for the future...}{58}{section*.41}
 \contentsline {chapter}{\numberline {6}Bibliography}{59}{chapter.6}
 \contentsline {chapter}{\numberline {7}Appendix}{65}{chapter.7}

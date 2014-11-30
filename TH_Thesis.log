@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.11)  28 NOV 2014 18:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.11)  30 NOV 2014 22:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1129,19 +1129,19 @@ Chapter 5.
 
 
 
-] [54] [55]
-Underfull \hbox (badness 2903) in paragraph at lines 46--51
-[] []\T1/phv/b/n/10.95 cross-correlation of nu-clear ex-pressed pro-teins[][] \
-T1/phv/m/n/10.95 - in-ter-pre-ta-tion of the data -
+] [54] [55] [56] [57])
+Underfull \hbox (badness 1237) in paragraph at lines 47--239
+[] []\T1/phv/b/n/10.95 general im-pli-ca-tions for the fu-ture...[][] \T1/phv/m
+/n/10.95 - out-look stuff - ap-pli-ca-bil-ity for the whole
  []
 
-) [56] [57] (./TH_Thesis.bbl [58
-
-
-
-]
+[58] (./TH_Thesis.bbl
 Chapter 6.
-[59] [60] [61] [62]) [63]
+[59
+
+
+
+] [60] [61] [62]) [63]
 \openout2 = `chapters/Appendix.aux'.
 
  (./chapters/Appendix.tex [64
@@ -1165,10 +1165,10 @@ Package rerunfilecheck Info: File `TH_Thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 294.
  ) 
 Here is how much of TeX's memory you used:
- 10899 strings out of 493315
- 167634 string characters out of 6137904
- 307690 words of memory out of 5000000
- 13825 multiletter control sequences out of 15000+600000
+ 10918 strings out of 493315
+ 167908 string characters out of 6137904
+ 307997 words of memory out of 5000000
+ 13834 multiletter control sequences out of 15000+600000
  63339 words of font info for 76 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  40i,17n,51p,2203b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1198,10 +1198,10 @@ ocal/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/t
 exlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TH_Thesis.pdf (76 pages, 4655637 bytes).
+Output written on TH_Thesis.pdf (76 pages, 4661508 bytes).
 PDF statistics:
- 1892 PDF objects out of 2073 (max. 8388607)
- 1514 compressed objects within 16 object streams
- 249 named destinations out of 1000 (max. 500000)
+ 1917 PDF objects out of 2073 (max. 8388607)
+ 1539 compressed objects within 16 object streams
+ 259 named destinations out of 1000 (max. 500000)
  454 words of extra memory for PDF output out of 10000 (max. 10000000)
 

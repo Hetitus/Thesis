@@ -1,8 +1,8 @@
 \chapter{Discussion}
 
 
-The continuation of our DNA-repair analysis was motivated by the ability of explicitly observing the kinetics of resynthesized DNA during nucleotide-excision repair. The quantification of this repair intermediate by following the incorporation of fluorescently labelled nucleotides on the single cell level portrays the repair process as a slow, first-order kinetic. The new data supplement our comprehensive knowledge about the dynamic behaviour of single repair proteins comprising their individual exchange kinetics at the chromatin fibre, which eventually lead to the formation of catalytic multi-protein machineries. Based on this information we were able to identify a realistic kinetic model of NER, which established a quantitative link between fast and random assembly of the NER factors at the DNA template and the emergent phenomenon of a slow overall repair time. Most importantly, the model predicts a collective control of the repair rate by the repair factors, which rebuts the presumption of a rate-limiting step in the pathway. This finding has been corroborated experimentally exploiting the natural variability of the nuclear NER factor concentrations, which emphasizes the robustness of DNA repair against fluctuations in NER factor expression.\\       
-In fact, we observe that the substantial heterogeneity in repair synthesis is generated primarily by the distribution of inflicted DNA lesions. This factor is further complemented by the variability contributed from each individual repair factor as well es by mutual dependencies in NER factor expression. The quantitative impact of these three parameters on the cell-to-cell variability of the repair rate is consistent with the robustness of the repair rate against concentration fluctuations of individual repair factors.
+The continuation of our DNA-repair analysis was motivated by the ability of explicitly observing the kinetics of resynthesized DNA during nucleotide-excision repair. The quantification of this repair intermediate by following the incorporation of fluorescently labelled nucleotides on the single cell level portrays the repair process as a slow, first-order kinetic. The new data supplement our comprehensive knowledge about the dynamic behaviour of single repair proteins comprising their individual exchange kinetics at the chromatin fibre, which eventually lead to the formation of catalytic multi-protein machineries. Based on this information we were able to identify a realistic kinetic model of NER, which established a quantitative link between fast and random assembly of the NER factors at the DNA template and the emergent phenomenon of a slow overall repair time. Most importantly, the model predicts a collective control of the repair rate by the repair factors, which rebuts the presumption of a rate-limiting step in the pathway. This finding has been corroborated experimentally exploiting the natural variability of the nuclear NER factor concentrations, which emphasizes the robustness of DNA repair against fluctuations in NER factor expression.\\  
+In fact, we observe that the substantial heterogeneity in repair synthesis is generated primarily by the distribution of inflicted DNA lesions. This factor is complemented by the variability contributed from each individual repair factor as well es by mutual dependencies in NER factor expression. The quantitative impact of these three parameters on the cell-to-cell variability of the repair rate is consistent with the robustness of the repair rate against concentration fluctuations of individual repair factors.
 
 
 \paragraph{Slow first order kinetics as a general systems property for chromatin associated processes.}
@@ -18,34 +18,31 @@ Augmenting the extensive kinetic data of the binding and dissociation of individ
 To achieve an identifiable NER model required a number of simplifications concerning the model structure. These were partly imposed by the limited collection of NER factors, which are currently available for live-cell imaging. In addition, the profile likelihood analysis itself allocated model substructures, which are not sufficiently described by the measurements. Accordingly, the two most significant modifications compared to the work of Luijsterburg \textit{et al.} (2010) \cite{Luijsterburg2010} concern the removal of the 'partially unwound' repair intermediate and the neglect of protein-protein interactions, in particular the sequential binding of XPA and XPF, for which there was no evidence in the data. Due to the lack of a direct readout for incised DNA the incision of the DNA lesion has been assumed practically instantaneous once the pre-incision complex has been completely assembled. Despite the rate of rechromatinisation, this uncertainty certainly also affects all other catalytic rates, indicated by the existence of lower bounds, only. Consequently, the individual rate constants turn out to be fast, which agrees with a recent direct measurement in bacteria where DNA synthesis and ligation take seconds \cite{Uphoff2013}. \\
 The current status, where the model structure is fully reconcilable with the experimental data, denotes a concrete progression beyond previous NER models \cite{Luijsterburg2010,Politi2005,Kesseler2007}. At the same time this enclosed data-model entanglement defines the predictive power of the model and thus determines what can be said quantitatively about the regulation of NER. Consequently, gaining further mechanistic understanding about system properties requires a parallel and intertwined advancement where the addition of molecular detail is consecutively balanced with appropriate quantitative measurements. We expect that the general dynamic behaviour of the model (\textit{e.g.} repair rate, robustness against protein-expression noise and fidelity of lesion recognition) will prove robust with respect to such a development as we observed these properties already for a simplified model of repair (cf.\ Figure \ref{fig:reactionTiming}).    
        
-    
 
- 
-
-
-
+\paragraph{Model parametrization and its implications}
+The model fit yields biochemically plausible estimates for the kinetic parameters of the individual assembly and dissociation kinetics in vivo that account for both the long-term accumulation and the rapid exchange of the NER factors. Notably, the affinity of the lesion recognition factor XPC is remarkably low, which is mainly caused by the high $k_{\text{off}}$ rate. This is consistent with previous work where high molecular off-rates have been described as a general property of self-organizing systems, which allows for efficient exploration of an assembly landscape and selection of a functional steady state \cite{Kirschner2000}. As discussed in depth at Luijsterburg and coworkers (2010)\cite{Luijsterburg2010} the strong reversibility is also beneficial for the specificity and regulatability of the system, for example by preventing the trapping of NER proteins in incomplete (and thus unproductive) repair complexes. The same applies for the trade-off between specificity and efficiency of the mechanism, which equally plays a role in chromatin remodelling and transcription \cite{Cook2010,Voss2011}.\\
+The parameter set is complemented by the fast catalytic rate constants, which indicate a tight coupling between lesion excision and repair synthesis. This implies that the lesions are repaired without much delay immediately after their recognition by XPC, which consequently prevents the accumulation of incised DNA. This \textit{in vivo} finding stays in contrast to \textit{in vitro} experiments that have found a delay before repair synthesis \cite{Mocquet2008,Riedl2003}. The predicted prevention of the single-stranded repair intermediate corresponds with our intuition that an elevated abundance of incised DNA would trigger DNA degradation to avoid the risk of an inflammatory response or autoimmunity \cite{Takeuchi2010}.             
 
 
-\paragraph{Model predictions}
-- tight coupling between damage removal and repair synthesis
-- little accumulation of incised DNA
-- slow off rates... selection of a functional steady state...
 
-\paragraph{Rate control}
-- lesions are far from saturation 
-- rate control is a kinetic property - independent of the order of binding
-- similarity to the control of fluxes, which are known to share control...
-- implications for transcription 
-- experimental validation
-- difficulties during correlation analysis
-- further rate control through cooperativity 
-- were does variability come from - extrinsic/intrinsic
-- apparently variability 6-4PP are preferentially induced in linker sequences (Mitchel et al. 1990 - found in van Hoffen 1995)
+\paragraph{Collective control of the DNA repair rate}
+A consequence of the NER model architecture, expressing the sequential organization of this chromatin-associated process through cycles of protein recruitment, is the absence of a rate-limiting factor for repair synthesis. The control is rather homogeneously distributed with small contributions by each repair factor. This result is similar to the outcome of previous flux control analyses that found no experimental support for the existence of a unique rate-limiting factor \cite{Fell1992}. Moreover, response coefficients with values much smaller than 1 indicate that DNA repair is robust  against natural fluctuation of the protein concentrations in the cell \cite{Bluthgen2013}. It is important to note that the degree of control as a kinetic property of a particular NER factor is independent of the order of engagement in the repair process. Thus, the lesion recognition factor XPC, which binds first, can have the same control as XPA or RPA that bind much later to protect the unwound DNA single-strands.\\
+To analyse the effect of changes in NER factor expression on the repair rate experimentally we exploited the natural variability of the nuclear protein concentration instead of changing the protein expression by gene knock-down or overexpression, which usually cause the partial or complete disruption of essential system functions \cite{Moriya2006}. Despite the weak correlation in the data we saw a significantly positive dependency between DNA resynthesis and protein expression for all five measured NER factors. The regression slopes were evenly distributed and below unity, which corroborates the finding of a shared moderate repair-rate control.\\  
+Not surprisingly, there are studies indicating that the collective control of a systems property (\textit{e.g.} repair rate) is not an exclusive concept for the DNA repair pathway, but also applies to other chromatin-associated processes. For example, it was shown that the probability to express interferon-$\beta$ was significantly increased when five out of six transcription factors, necessary for transcriptional activation, were overexpressed \cite{Apostolou2008}. A very similar result was recently obtained, which suggested the elevated expression of IL-2 by the concerted interplay of four transcription factors together with FOXP3 \cite{Bendfeldt2012}. These findings emphasize the probability of a collective process also for transcription.   
 
-\paragraph{cross-correlation of nuclear expressed proteins}
+
+
+\paragraph{Co-regulation of the nuclear NER factor expression}
 - interpretation of the data
 - implications for less correlated systems
 - so far no correlation measured on the protein levels 
 - only mRNA level - we don't see that
 - it would be interesting to see what happens under the influence of drugs...
+- difficulties during correlation analysis
+- further rate control through cooperativity 
+- were does variability come from - extrinsic/intrinsic
+- apparently variability 6-4PP are preferentially induced in linker sequences (Mitchel et al. 1990 - found in van Hoffen 1995)
 
+\paragraph{general implications for the future...}
+- outlook stuff 
+- applicability for the whole identifiability analysis for other systems...
