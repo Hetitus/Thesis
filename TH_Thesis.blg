@@ -12,44 +12,44 @@ A level-1 auxiliary file: chapters/Discussion.aux
 The style file: naturemagC.bst
 A level-1 auxiliary file: chapters/Appendix.aux
 Database file #1: NER_Bibliography.bib
-You've used 81 entries,
+You've used 85 entries,
             2538 wiz_defined-function locations,
-            1136 strings with 22900 characters,
-and the built_in function-call counts, 39289 in all, are:
-= -- 3171
-> -- 1522
+            1160 strings with 23953 characters,
+and the built_in function-call counts, 41265 in all, are:
+= -- 3328
+> -- 1602
 < -- 7
-+ -- 1354
-- -- 379
-* -- 2430
-:= -- 4472
-add.period$ -- 243
-call.type$ -- 81
-change.case$ -- 82
++ -- 1426
+- -- 399
+* -- 2554
+:= -- 4696
+add.period$ -- 255
+call.type$ -- 85
+change.case$ -- 86
 chr.to.int$ -- 18
-cite$ -- 81
-duplicate$ -- 3657
-empty$ -- 3319
-format.name$ -- 448
-if$ -- 8298
+cite$ -- 85
+duplicate$ -- 3841
+empty$ -- 3484
+format.name$ -- 472
+if$ -- 8714
 int.to.chr$ -- 0
-int.to.str$ -- 81
-missing$ -- 865
-newline$ -- 408
-num.names$ -- 81
-pop$ -- 1581
+int.to.str$ -- 85
+missing$ -- 909
+newline$ -- 428
+num.names$ -- 85
+pop$ -- 1661
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 554
+skip$ -- 582
 stack$ -- 0
-substring$ -- 2757
-swap$ -- 2112
+substring$ -- 2892
+swap$ -- 2220
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 310
-width$ -- 83
-write$ -- 893
+while$ -- 325
+width$ -- 87
+write$ -- 937
