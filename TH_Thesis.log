@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.11)  1 DEC 2014 17:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.11)  1 DEC 2014 21:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1129,7 +1129,13 @@ Chapter 5.
 
 
 
-] [54] [55] [56] [57] [58]) [59] (./TH_Thesis.bbl [60
+] [54] [55] [56] [57] [58])
+Underfull \hbox (badness 1107) in paragraph at lines 45--239
+\T1/phv/m/n/10.95 into a low sys-tems re-sponse in the event of NER fac-tor flu
+c-tu-a-tions. Sec-ond, a
+ []
+
+[59] (./TH_Thesis.bbl [60
 
 
 
@@ -1198,7 +1204,7 @@ ocal/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/t
 exlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TH_Thesis.pdf (78 pages, 4667826 bytes).
+Output written on TH_Thesis.pdf (78 pages, 4668483 bytes).
 PDF statistics:
  1956 PDF objects out of 2073 (max. 8388607)
  1576 compressed objects within 16 object streams
