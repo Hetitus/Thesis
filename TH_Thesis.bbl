@@ -435,6 +435,42 @@ Bl\"{u}thgen, N. \& Legewie, S.
 \newblock \emph{Cellular and molecular life sciences : CMLS} \textbf{70},
   2259--69 (2013).
 
+\bibitem{Csete2002}
+Csete, M.~E. \& Doyle, J.~C.
+\newblock {Reverse engineering of biological complexity.}
+\newblock \emph{Science (New York, N.Y.)} \textbf{295}, 1664--9 (2002).
+
+\bibitem{Koberle1999}
+K\"{o}berle, B., Masters, J.~R., Hartley, J.~a. \& Wood, R.~D.
+\newblock {Defective repair of cisplatin-induced DNA damage caused by reduced
+  XPA protein in testicular germ cell tumours}.
+\newblock \emph{Current Biology} \textbf{9}, 273--278 (1999).
+
+\bibitem{Koberle2006}
+K\"{o}berle, B., Roginskaya, V. \& Wood, R.~D.
+\newblock {XPA protein as a limiting factor for nucleotide excision repair and
+  UV sensitivity in human cells.}
+\newblock \emph{DNA repair} \textbf{5}, 641--8 (2006).
+
+\bibitem{Renaud2011}
+Renaud, E., Miccoli, L., Zacal, N., Biard, D.~S., Craescu, C.~T., Rainbow,
+  A.~J. \& Angulo, J.~F.
+\newblock {Differential contribution of XPC, RAD23A, RAD23B and CENTRIN 2 to
+  the UV-response in human cells.}
+\newblock \emph{DNA repair} \textbf{10}, 835--47 (2011).
+
+\bibitem{Stewart2007}
+Stewart, D.~J.
+\newblock {Mechanisms of resistance to cisplatin and carboplatin.}
+\newblock \emph{Critical reviews in oncology/hematology} \textbf{63}, 12--31
+  (2007).
+
+\bibitem{Arora2010}
+Arora, S., Kothandapani, A., Tillison, K., Kalman-Maltese, V. \& Patrick, S.~M.
+\newblock {Downregulation of XPF-ERCC1 enhances cisplatin efficacy in cancer
+  cells.}
+\newblock \emph{DNA repair} \textbf{9}, 745--53 (2010).
+
 \bibitem{Moriya2006}
 Moriya, H., Shimizu-Yoshida, Y. \& Kitano, H.
 \newblock {In vivo robustness analysis of cell division cycle genes in
@@ -454,5 +490,29 @@ Bendfeldt, H., Benary, M., Scheel, T., Steinbrink, K., Radbruch, A., Herzel, H.
   Depends on the Cellular Levels of FOXP3 as Well as of Four Transcription
   Factors of T Cell Activation.}
 \newblock \emph{Frontiers in immunology} \textbf{3}, 264 (2012).
+
+\bibitem{Alon2007}
+Alon, U.
+\newblock {Network motifs: theory and experimental approaches.}
+\newblock \emph{Nature reviews. Genetics} \textbf{8}, 450--61 (2007).
+
+\bibitem{Bleris2011}
+Bleris, L., Xie, Z., Glass, D., Adadey, A., Sontag, E. \& Benenson, Y.
+\newblock {Synthetic incoherent feedforward circuits show adaptation to the
+  amount of their genetic template.}
+\newblock \emph{Molecular systems biology} \textbf{7}, 519 (2011).
+
+\bibitem{Yi2000}
+Yi, T.-M., Huang, Y., Simon, M.~I. \& Doyle, J.
+\newblock {Robust perfect adaptation in bacterial chemotaxis through integral
+  feedback control}.
+\newblock \emph{Proceedings of the National Academy of Sciences} \textbf{97},
+  4649--4653 (2000).
+
+\bibitem{Manuscript2011}
+Muzzey, D., G\`{o}mez-Uribe, C.~A., Mettetal, J.~T. \& van Oudenaarden, A.
+\newblock {A systems-level analysis of perfect adaptation in yeast
+  osmoregulation}.
+\newblock \emph{Cell} \textbf{138}, 160--171 (2011).
 
 \end{thebibliography}

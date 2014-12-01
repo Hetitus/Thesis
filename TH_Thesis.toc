@@ -45,6 +45,6 @@
 \contentsline {paragraph}{Model parametrization and its implications}{56}{section*.38}
 \contentsline {paragraph}{Collective control of the DNA repair rate}{57}{section*.39}
 \contentsline {paragraph}{Co-regulation of the nuclear NER factor expression}{58}{section*.40}
-\contentsline {paragraph}{general implications for the future...}{58}{section*.41}
-\contentsline {chapter}{\numberline {6}Bibliography}{59}{chapter.6}
-\contentsline {chapter}{\numberline {7}Appendix}{65}{chapter.7}
+\contentsline {paragraph}{general implications for the future...}{59}{section*.41}
+\contentsline {chapter}{\numberline {6}Bibliography}{61}{chapter.6}
+\contentsline {chapter}{\numberline {7}Appendix}{67}{chapter.7}
