@@ -32,7 +32,7 @@ Based on this data we developed a mathematical model that is able to explain the
    
 The experiments reported in this chapter were planed and conducted by Martijn Luijsterburg (accumulation and FLIP experiments) and Paul Verbruggen (EdU incorporation).
 	
-	
+\newpage	
 \section{Fluorescent time-laps imaging of the NER process}
 
 \subsection{Locally inflicted UV-induced DNA damage}
@@ -305,7 +305,7 @@ E(y_{111}^\text{IV})&=&\;	\gamma \;	y_{0001011}^\text{III},
 Since all NER factors can bind independently the DNA template for each repair intermediate there are a total of $ 2^N $ repair states where $ N $ is the number of repair proteins assembling to the particular repair intermediate. Due to the sequential assembly of TFIIH after lesion detection of XPC the number of states for damaged DNA is reduced to $ 2^2-1 = 3$ states. For the remaining repair intermediates we derive  $ 2^6 = 64$ for unwound DNA; $ 2^7 = 128$ states for incised DNA; $ 2^3 = 8$ states for resynthesized DNA and $ 2^21 = 4$ states for rechromatinized DNA. This results in a total of 214 states including seven differential equations for the free NER-factor protein concentrations. \\
 Summing over all repair states and the respective intermediates associated to one repair factor we can simulate the its accumulation kinetic. As initial conditions serve the measured free protein concentrations denoted in Table \ref{tab:nuclearconcentrations}\cite{Terstiege2010,Luijsterburg2010} and the initial amount of inflicted damages whose concentration was estimated with  $y_{00}^{\text{I}} = 3.33$ \textmu M. The remaining states start at zero. To reproduce the FLIP kinetic for a specific repair factor all corresponding dissociation constants were set to zero at the time of maximal accumulation when the FLIP experiment started. Accordingly FLIP kinetics were acquired after 600 s for XPC and ERCCC1/XPF, 900 s for XPG and TFIIH and 2000 s for XPA and 7200 s for PCNA. 
 
- 
+ \newpage
 \section{Maximum likelihood approach together with PLE analysis identifies realistic model of NER}
 \subsection{A maximum likelihood approach for efficient model fitting}
 \label{sec:maximumLL}
@@ -400,7 +400,7 @@ The $K_d$ values which depict the protein binding affinities to the respective D
 \begin{landscape}
 	\centering
 \begin{table}[t]
-	\begin{adjustwidth}{}{}
+	
 	\small{
 	\begin{tabular}[angle=90]{p{2cm}ccccccc}
 	\hline
@@ -423,6 +423,8 @@ The $K_d$ values which depict the protein binding affinities to the respective D
 	&                               &                              &                           &                          &                            &  (0.438;0.645)  & (0.134;0.182)  \\
 	\hline
 \end{tabular}}
+
+\begin{adjustwidth}{-1.1 cm}{}
 \captionsetup{width=1.24\textwidth}
 \caption{\textbf{$\text{K}_{\text{d}}$Values.} NA, not applicable. $K_d$ ($k_{\text{off}}/k_{\text{on}}$) values are given for every repair protein and arranged in columns. Reference parameter set and 95\% confidence intervals (in parentheses) are shown.}\label{tab:KdValues}
 \end{adjustwidth}
