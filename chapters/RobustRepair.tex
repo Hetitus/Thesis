@@ -1,11 +1,9 @@
 \chapter{Control analysis of the DNA repair rate}
 
 In the previous chapter we introduced the incorporation of EdU upon UV-irradiation as a quantitative readout for the DNA repair synthesis kinetic (cf.\ Figure \ref{fig:EdU_measurement}). We could show that despite the pathway's complexity DNA repair follows a mono-exponential kinetic of first order. Moreover, the repair of single lesions is distributed over a broad time span with 50\% of the lesions being repaired after a half-time of $\sim$1.2 h. Notably, measurements on the single cell level revealed that also the half-time and hence the rate of repair is highly variable (cf. Figure \ref{fig:DNArepairKinetic}B-E). So far the origin of this variability is unknown but also if and how the cell faces this highly fluctuating environment.\\  
-In the following chapter we will apply the kinetic NER model and explore the nature of the repair rate variability. Simulating the effect of NER factor variation on the repair rate we find that the repair rate control is distributed among all NER factors. Exploiting the natural variability of expressed repair proteins we can experimentally corroborate the computationally derived finding for the NER factors XPC, TFIIH, XPA, XPF and RPA. Apart from the variability in protein expression the model identifies the initial amount of inflicted DNA damage as major contribution determining the repair rate distribution. Both sources together appear to be sufficient to explain the overall rate variability.     
+In the following chapter we will apply the kinetic NER model and explore the nature of the repair rate variability. Simulating the effect of NER factor variation on the repair rate we find that the repair rate control is distributed among all NER factors. Exploiting the natural variability of endogenously expressed repair proteins we can experimentally corroborate the computationally derived finding for the NER factors XPC, TFIIH, XPA, XPF and RPA. Apart from the variability in protein expression the model identifies the initial amount of inflicted DNA damage as major contribution determining the repair rate distribution. Both sources combined appear to be sufficient to explain the overall rate variability.\\     
 
-- clarify who did what...
-- what about the response coefficients
-- don't forget to explain that TFIIH, RPA and XPF were indirectly antibody labeled
+The work reported in this chapter has been done in close collaboration with Paul Verbruggen who planed and conducted the experiments.
 
 \section{Kinetic NER model predicts collective rate control}
 
@@ -117,7 +115,7 @@ To distinguish whether the measured variability is due to differences in nuclear
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_2.pdf}
-		\caption{\textbf{Natural variability in nuclear NER factor expression is significantly larger than measurement error} A-E) Histograms of nuclear protein concentrations of the antibody stained NER factors XPC, TFIIH, XPF, XPA and RPA. F) Scatter plot of antibody recognized XPC against XPC-eGFP stably expressed in XP-C XPC-eGFP cell lines. The dashed error-ellipse illustrates the proportion of natural variability and measurement noise.}
+		\caption{\textbf{Natural variability in nuclear NER factor expression is significantly larger than measurement error} A-E) Histograms of nuclear protein concentrations of the antibody stained NER factors XPC, TFIIH, XPF, XPA and RPA. F) Scatter plot of antibody recognized XPC against XPC-eGFP stably expressed in XP-C XPC-eGFP cell lines. The dashed error-ellipse illustrates the proportion of natural variability and measurement noise. \textbf{denote correct cell numbers}}
 		\label{fig:ProteinDist}
 	\end{center}
 \end{figure}
@@ -128,7 +126,7 @@ In fact, the nuclear protein concentrations for all five antibody-stained repair
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_3.pdf}
-		\caption{\textbf{Blubb.} A) B) }
+		\caption{\textbf{Natural expression variability of the repair factors XPC, TFIIH, XPF, XPA and RPA has small effect on DNA repair synthesis.} A) Scatter plot of accumulated XPC in local damage against the nuclear XPC concentration (n=303) 60 minutes post irradiation. B-F) DNA synthesis correlated with the endogenous concentration of XPC, TFIIH, XPF, XPA and RPA 60 minutes post-irradiation. A-F) Red lines represent linear regression with correlation coefficient r, p-value and slope m. 95\% confidence bounds of all correlation coeffiecients r were estimated by non-parametric bootstrap and are given in brackets. \textbf{denote correct cell numbers} }
 		\label{fig:Nuc_vs_DNAsynthesis}
 	\end{center}
 \end{figure}
@@ -147,7 +145,7 @@ To reinforce the conclusion of a robustness DNA repair rate we compared the repa
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_4.pdf}
-		\caption{\textbf{Blubb.} A) B) }
+		\caption{\textbf{Variability of repair synthesis is comparable between XPC-eGFP complemented XP-C patient cell lines and native NER.} A) Distribution of nuclear XPC-eGFP concentrations stably expressed in XP-C cells (n=332). B) Comparison of incorporated EdU in local damages in Hela cells (blue) and XPC-eGFP complemented XP-C cells after 1, 2 and hours (n=154 cells per time point per cell line). }
 		\label{fig:consistVariability}
 	\end{center}
 \end{figure}
@@ -177,7 +175,7 @@ While searching for factors affecting the repair rate control we noticed the bro
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_6.pdf}
-		\caption{\textbf{Blubb.} A) B) }
+		\caption{\textbf{Quantitative comparison between measured and simulated repair synthesis in response to variable NER factor concentrations.} A) Simulated scatter plot of the of locally accumulated XPC against the nuclear XPC concentration. For comparison the experimentally measured scatter plot is given in reduced size.  B-F) Comparison between measured (scatter plot in reduced size) and simulated correlation of DNA synthesis and nuclear XPC concentration. A-F) Red lines represent linear regression with correlation coefficient r, p-value and slope m. 95\% confidence bounds of all correlation coeffiecients r were estimated by non-parametric bootstrap and are given in brackets. \textbf{EdU into DNA synthesis}}
 		\label{fig:Model_dataComp}
 	\end{center}
 \end{figure}
@@ -200,7 +198,7 @@ overall variability, we computed the effect of heterogeneity in only one factor 
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_8.pdf}
-		\caption{\textbf{Blubb.} A) B) }
+		\caption{\textbf{Variability in repair synthesis results from the aggregate of initial damage variability and concentration fluctuations of each NER factor.} Each time course represents the variability in repair synthesis produced by a single component (dots) or by all components together (triangles) at a given time. For comparison the experimental measured distribution of incorporated EdU is shown in blue. Error bars depict the 95\% confidence intervals determined with non-parametric bootstrap.}
 		\label{fig:CV_Var_comp}
 	\end{center}
 \end{figure}
