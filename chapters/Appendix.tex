@@ -1,7 +1,8 @@
 \appendix
 \chapter{Appendix}
 \pagestyle{plain}
-
+\setcounter{table}{0}
+\renewcommand{\thetable}{A\arabic{table}}
 
 \section{Parameter estimation}
 
@@ -61,6 +62,7 @@
 		&                               &                              &                           &                          &                            &  (0.438;0.645)  & (0.134;0.182)  \\
 		\hline
 	\end{tabular}
+	\caption{Blubb}
 	\label{tab:parameter_bigTable}
 \end{table}
 
@@ -80,5 +82,16 @@
 		Reannealing  $\epsilon$                                & 5.3&(>0.9)    \\
 		\hline
 	\end{tabular}
+	\caption{Blubb}
 	\label{tab:parameter_catalyticRates}
 \end{table}
+
+\section{Cross-correlation}
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{Abbildungen/figure_A_2.pdf}
+		\caption{\textbf{} }
+		\label{fig:nuklearCrosscorrelation}
+	\end{center}
+\end{figure}
