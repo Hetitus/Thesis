@@ -1,43 +1,38 @@
 \BOOKMARK [0][-]{chapter*.2}{Zusammenfassung}{}% 1
 \BOOKMARK [0][-]{chapter*.3}{Summary}{}% 2
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
-\BOOKMARK [1][-]{section.1.1}{DNA damage}{chapter.1}% 4
-\BOOKMARK [2][-]{subsection.1.1.1}{Sources of DNA damage}{section.1.1}% 5
-\BOOKMARK [2][-]{subsection.1.1.2}{Types of DNA damage}{section.1.1}% 6
-\BOOKMARK [2][-]{subsection.1.1.3}{Variety of DNA damage repair mechanisms}{section.1.1}% 7
-\BOOKMARK [1][-]{section.1.2}{Experimental research on NER}{chapter.1}% 8
-\BOOKMARK [2][-]{subsection.1.2.1}{Key components of the NER pathway}{section.1.2}% 9
-\BOOKMARK [2][-]{subsection.1.2.2}{Expression of fluorescent NER factors}{section.1.2}% 10
-\BOOKMARK [1][-]{section.1.3}{Mathematical models of NER}{chapter.1}% 11
-\BOOKMARK [2][-]{subsection.1.3.1}{Metabolic control analysis}{section.1.3}% 12
-\BOOKMARK [0][-]{chapter.2}{Mathematical Modelling of Nucleotide Excision Repair \(NER\)}{}% 13
-\BOOKMARK [1][-]{section.2.1}{Fluorescent time-laps imaging of the NER process}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.1.1}{Locally inflicted UV-induced DNA damage}{section.2.1}% 15
-\BOOKMARK [2][-]{subsection.2.1.2}{Repair factor accumulation and dissociation occur on different time scales}{section.2.1}% 16
-\BOOKMARK [2][-]{subsection.2.1.3}{Direct measurement of DNA resynthesis}{section.2.1}% 17
-\BOOKMARK [2][-]{subsection.2.1.4}{Repair rate follows first order rate kinetic}{section.2.1}% 18
-\BOOKMARK [1][-]{section.2.2}{Kinetic model of NER}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.1}{Slow first-order reaction kinetic due to many fast interacting components}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.2}{Model structure and parametrization}{section.2.2}% 21
-\BOOKMARK [1][-]{section.2.3}{Maximum likelihood approach together with PLE analysis identifies realistic model of NER}{chapter.2}% 22
-\BOOKMARK [2][-]{subsection.2.3.1}{A maximum likelihood approach for efficient model fitting}{section.2.3}% 23
-\BOOKMARK [2][-]{subsection.2.3.2}{NER model fits accumulation, FLIP and repair synthesis measurements}{section.2.3}% 24
-\BOOKMARK [2][-]{subsection.2.3.3}{Identifiability analysis}{section.2.3}% 25
-\BOOKMARK [0][-]{chapter.3}{Control analysis of the DNA repair rate}{}% 26
-\BOOKMARK [1][-]{section.3.1}{Kinetic NER model predicts collective rate control}{chapter.3}% 27
-\BOOKMARK [2][-]{subsection.3.1.1}{Response coefficients}{section.3.1}% 28
-\BOOKMARK [2][-]{subsection.3.1.2}{Exploiting natural variability in protein expression to quantify rate control}{section.3.1}% 29
-\BOOKMARK [1][-]{section.3.2}{Variability analysis of the repair rate}{chapter.3}% 30
-\BOOKMARK [2][-]{subsection.3.2.1}{Variable NER factor expression and inflicted lesions account for the distribution of repair rates}{section.3.2}% 31
-\BOOKMARK [0][-]{chapter.4}{Co-expression of NER repair factors}{}% 32
-\BOOKMARK [1][-]{section.4.1}{Nuclear expression of NER factors is strongly correlated}{chapter.4}% 33
-\BOOKMARK [2][-]{subsection.4.1.1}{Cross-correlation affects repair response}{section.4.1}% 34
-\BOOKMARK [2][-]{subsection.4.1.2}{Microscopy analysis of co-staining experiments}{section.4.1}% 35
-\BOOKMARK [2][-]{subsection.4.1.3}{Flow cytometry}{section.4.1}% 36
-\BOOKMARK [2][-]{subsection.4.1.4}{Cell cycle independent cross-correlation of NER factor expression}{section.4.1}% 37
-\BOOKMARK [2][-]{subsection.4.1.5}{Measured average response agrees with model prediction}{section.4.1}% 38
-\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 39
-\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 40
-\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 41
-\BOOKMARK [1][-]{section.A.1}{Parameter estimation}{appendix.A}% 42
-\BOOKMARK [1][-]{section.A.2}{Cross-correlation}{appendix.A}% 43
+\BOOKMARK [1][-]{section.1.1}{DNA damage and its consequences}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.1}{Variety of DNA damage repair mechanisms}{section.1.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Mammalian nucleotide excision repair}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.3}{NER as model system for chromatin associated processes}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Mathematical Modelling of Nucleotide Excision Repair \(NER\)}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Fluorescent time-laps imaging of the NER process}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.1.1}{Locally inflicted UV-induced DNA damage}{section.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.1.2}{Repair factor accumulation and dissociation occur on different time scales}{section.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.1.3}{Direct measurement of DNA resynthesis}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.4}{Repair rate follows first order rate kinetic}{section.2.1}% 13
+\BOOKMARK [1][-]{section.2.2}{Kinetic model of NER}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.1}{Slow first-order reaction kinetic due to many fast interacting components}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.2}{Model structure and parametrization}{section.2.2}% 16
+\BOOKMARK [1][-]{section.2.3}{Maximum likelihood approach together with PLE analysis identifies realistic model of NER}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.3.1}{A maximum likelihood approach for efficient model fitting}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.2}{NER model fits accumulation, FLIP and repair synthesis measurements}{section.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.3.3}{Identifiability analysis}{section.2.3}% 20
+\BOOKMARK [0][-]{chapter.3}{Control analysis of the DNA repair rate}{}% 21
+\BOOKMARK [1][-]{section.3.1}{Kinetic NER model predicts collective rate control}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.1.1}{Response coefficients}{section.3.1}% 23
+\BOOKMARK [2][-]{subsection.3.1.2}{Exploiting natural variability in protein expression to quantify rate control}{section.3.1}% 24
+\BOOKMARK [1][-]{section.3.2}{Variability analysis of the repair rate}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.2.1}{Variable NER factor expression and inflicted lesions account for the distribution of repair rates}{section.3.2}% 26
+\BOOKMARK [0][-]{chapter.4}{Co-expression of NER repair factors}{}% 27
+\BOOKMARK [1][-]{section.4.1}{Nuclear expression of NER factors is strongly correlated}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.1.1}{Cross-correlation affects repair response}{section.4.1}% 29
+\BOOKMARK [2][-]{subsection.4.1.2}{Microscopy analysis of co-staining experiments}{section.4.1}% 30
+\BOOKMARK [2][-]{subsection.4.1.3}{Flow cytometry}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.4}{Cell cycle independent cross-correlation of NER factor expression}{section.4.1}% 32
+\BOOKMARK [2][-]{subsection.4.1.5}{Measured average response agrees with model prediction}{section.4.1}% 33
+\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 34
+\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 35
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 36
+\BOOKMARK [1][-]{section.A.1}{Parameter estimation}{appendix.A}% 37
+\BOOKMARK [1][-]{section.A.2}{Cross-correlation}{appendix.A}% 38

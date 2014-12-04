@@ -12,44 +12,46 @@ A level-1 auxiliary file: chapters/Discussion.aux
 The style file: naturemagC.bst
 A level-1 auxiliary file: chapters/Appendix.aux
 Database file #1: NER_Bibliography.bib
-You've used 85 entries,
+Warning--I didn't find a database entry for "Lovdok2009"
+You've used 89 entries,
             2538 wiz_defined-function locations,
-            1160 strings with 23953 characters,
-and the built_in function-call counts, 41265 in all, are:
-= -- 3328
-> -- 1602
+            1191 strings with 24668 characters,
+and the built_in function-call counts, 42900 in all, are:
+= -- 3474
+> -- 1642
 < -- 7
-+ -- 1426
-- -- 399
-* -- 2554
-:= -- 4696
-add.period$ -- 255
-call.type$ -- 85
-change.case$ -- 86
++ -- 1458
+- -- 409
+* -- 2651
+:= -- 4889
+add.period$ -- 267
+call.type$ -- 89
+change.case$ -- 90
 chr.to.int$ -- 18
-cite$ -- 85
-duplicate$ -- 3841
-empty$ -- 3484
-format.name$ -- 472
-if$ -- 8714
+cite$ -- 89
+duplicate$ -- 4002
+empty$ -- 3636
+format.name$ -- 483
+if$ -- 9062
 int.to.chr$ -- 0
-int.to.str$ -- 85
-missing$ -- 909
-newline$ -- 428
-num.names$ -- 85
-pop$ -- 1661
+int.to.str$ -- 89
+missing$ -- 943
+newline$ -- 448
+num.names$ -- 89
+pop$ -- 1718
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 582
+skip$ -- 600
 stack$ -- 0
-substring$ -- 2892
-swap$ -- 2220
+substring$ -- 3026
+swap$ -- 2305
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 325
-width$ -- 87
-write$ -- 937
+while$ -- 342
+width$ -- 91
+write$ -- 981
+(There was 1 warning)

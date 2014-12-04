@@ -1,5 +1,43 @@
 \begin{thebibliography}{10}
 
+\bibitem{Hoeijmakers2009}
+Hoeijmakers, J. H.~J.
+\newblock {DNA damage, aging, and cancer.}
+\newblock \emph{The New England journal of medicine} \textbf{361}, 1475--85
+  (2009).
+
+\bibitem{Lindahl1993}
+Lindahl, T.
+\newblock {Instability and decay of the primary structure of DNA}.
+\newblock \emph{Nature} \textbf{362}, 709--715 (1993).
+
+\bibitem{Lhomme1999}
+Lhomme, J., Constant, J.-F. \& Demeunynck, M.
+\newblock {Abasic DNA Structure , Reactivity , and Recognition}.
+\newblock \emph{Biopolymers} \textbf{52}, 65--83 (1999).
+
+\bibitem{DeBont2004}
+{De Bont}, R.
+\newblock {Endogenous DNA damage in humans: a review of quantitative data}.
+\newblock \emph{Mutagenesis} \textbf{19}, 169--185 (2004).
+
+\bibitem{Sander2005}
+Sander, M., Cadet, J., Casciano, D.~a., Galloway, S.~M., Marnett, L.~J., Novak,
+  R.~F., Pettit, S.~D., Preston, R.~J., Skare, J.~a., Williams, G.~M., {Van
+  Houten}, B. \& Gollapudi, B.~B.
+\newblock {Proceedings of a workshop on DNA adducts: biological significance
+  and applications to risk assessment Washington, DC, April 13-14, 2004.}
+\newblock \emph{Toxicology and applied pharmacology} \textbf{208}, 1--20
+  (2005).
+
+\bibitem{Luijsterburg2010}
+Luijsterburg, M.~S., von Bornstaedt, G., Gourdin, A.~M., Politi, A.~Z.,
+  Mon\'{e}, M.~J., Warmerdam, D.~O., Goedhart, J., Vermeulen, W., van Driel, R.
+  \& H\"{o}fer, T.
+\newblock {Stochastic and reversible assembly of a multiprotein DNA repair
+  complex ensures accurate target site recognition and efficient repair.}
+\newblock \emph{The Journal of Cell Biology} \textbf{189}, 445--63 (2010).
+
 \bibitem{Mone2001}
 Mon\'{e}, M.~J., Volker, M., Nikaido, O., Mullenders, L.~H., van Zeeland,
   a.~a., Verschure, P.~J., Manders, E.~M. \& van Driel, R.
@@ -28,13 +66,11 @@ Verbruggen, P., Heinemann, T., Manders, E., von Bornstaedt, G., van Driel, R.
 \newblock {Robustness of DNA Repair through Collective Rate Control}.
 \newblock \emph{PLoS Computational Biology} \textbf{10}, e1003438 (2014).
 
-\bibitem{Luijsterburg2010}
-Luijsterburg, M.~S., von Bornstaedt, G., Gourdin, A.~M., Politi, A.~Z.,
-  Mon\'{e}, M.~J., Warmerdam, D.~O., Goedhart, J., Vermeulen, W., van Driel, R.
-  \& H\"{o}fer, T.
-\newblock {Stochastic and reversible assembly of a multiprotein DNA repair
-  complex ensures accurate target site recognition and efficient repair.}
-\newblock \emph{The Journal of Cell Biology} \textbf{189}, 445--63 (2010).
+\bibitem{Terstiege2010}
+Terstiege, G.
+\newblock {Mammalian DNA Repair: a Model for Multi-protein Complex Assembly on
+  Chromatin}.
+\newblock Ph.D. thesis, University of Heidelberg (2010).
 
 \bibitem{Araujo2001}
 Ara\'{u}jo, S.~J., Nigg, E.~A. \& Wood, R.~D.
@@ -67,12 +103,6 @@ Sporbert, A., Gahl, A., Ankerhold, R., Leonhardt, H. \& Cardoso, M.~C.
   Replication Sites but Sequential De Novo Assembly at Adjacent Origin
   Clusters}.
 \newblock \emph{Molecular cell} \textbf{10}, 1355--1365 (2002).
-
-\bibitem{Terstiege2010}
-Terstiege, G.
-\newblock {Mammalian DNA Repair: a Model for Multi-protein Complex Assembly on
-  Chromatin}.
-\newblock Ph.D. thesis, University of Heidelberg (2010).
 
 \bibitem{Evans1997a}
 Evans, E., Moggs, J.~G., Hwang, J.~R., Egly, J.-m. \& Wood, R.~D.
@@ -534,12 +564,5 @@ Cheng, L., Spitz, M.~R., Hong, W.~K. \& Wei, Q.
 Kollmann, M., L\o~vdok, L., Bartholom\'{e}, K., Timmer, J. \& Sourjik, V.
 \newblock {Design principles of a bacterial signalling network.}
 \newblock \emph{Nature} \textbf{438}, 504--7 (2005).
-
-\bibitem{Lovdok2009}
-L\o~vdok, L., Bentele, K., Vladimirov, N., M\"{u}ller, A., Pop, F.~S., Lebiedz,
-  D., Kollmann, M. \& Sourjik, V.
-\newblock {Role of translational coupling in robustness of bacterial chemotaxis
-  pathway.}
-\newblock \emph{PLoS biology} \textbf{7}, e1000171 (2009).
 
 \end{thebibliography}
