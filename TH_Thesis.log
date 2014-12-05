@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.10)  4 DEC 2014 23:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.10)  5 DEC 2014 10:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -767,7 +767,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.13 
+l.12 
       [1])pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.2}) has been already used, duplicate ignored
 <to be read again> 
@@ -798,7 +798,7 @@ l.43
 
 
 
-] <Abbildungen/figure2_1.pdf, id=285, 597.50731pt x 469.25313pt>
+] <Abbildungen/figure2_1.pdf, id=287, 597.50731pt x 469.25313pt>
 File: Abbildungen/figure2_1.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_1.pdf>
@@ -816,7 +816,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
 
-<Abbildungen/figure2_2.pdf, id=328, 597.51233pt x 361.06093pt>
+<Abbildungen/figure2_2.pdf, id=330, 597.51233pt x 361.06093pt>
 File: Abbildungen/figure2_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_2.pdf>
@@ -829,14 +829,14 @@ LaTeX Font Info:    Font shape `TS1/phv/bx/n' in size <9> not available
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6 <./Abbildungen/figure2_2.pdf>] [7]
-<Abbildungen/figure2_2_2.pdf, id=393, 597.51233pt x 383.93437pt>
+<Abbildungen/figure2_2_2.pdf, id=395, 597.51233pt x 383.93437pt>
 File: Abbildungen/figure2_2_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_2_2.pdf>
 Package pdftex.def Info: Abbildungen/figure2_2_2.pdf used on input line 93.
 (pdftex.def)             Requested size: 441.01773pt x 283.38054pt.
  [8 <./Abbildungen/figure2_2_2.pdf>]
-<Abbildungen/figure2_3.pdf, id=427, 597.51233pt x 287.32344pt>
+<Abbildungen/figure2_3.pdf, id=429, 597.51233pt x 287.32344pt>
 File: Abbildungen/figure2_3.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_3.pdf>
@@ -849,7 +849,7 @@ ted EdU is fit-ted by a
  []
 
 [9 <./Abbildungen/figure2_3.pdf>]
-<Abbildungen/figure2_4.pdf, id=509, 597.51233pt x 530.96568pt>
+<Abbildungen/figure2_4.pdf, id=511, 597.51233pt x 530.96568pt>
 File: Abbildungen/figure2_4.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_4.pdf>
@@ -865,7 +865,7 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 
 [12
 
-] <Abbildungen/figure2_5_2.pdf, id=586, 597.51233pt x 246.71774pt>
+] <Abbildungen/figure2_5_2.pdf, id=588, 597.51233pt x 246.71774pt>
 File: Abbildungen/figure2_5_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_5_2.pdf>
@@ -878,7 +878,7 @@ s of a re-al-is-tic NER model.
  []
 
 [13 <./Abbildungen/figure2_5_2.pdf>]
-<Abbildungen/figure2_5.pdf, id=708, 597.51233pt x 192.48914pt>
+<Abbildungen/figure2_5.pdf, id=710, 597.51233pt x 192.48914pt>
 File: Abbildungen/figure2_5.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_5.pdf>
@@ -906,21 +906,21 @@ LaTeX Warning: Command \textbar invalid in math mode on input line 321.
 
 LaTeX Warning: Command \textbar invalid in math mode on input line 324.
 
-[19] <Abbildungen/figure2_6_4.pdf, id=829, 597.51233pt x 214.9621pt>
+[19] <Abbildungen/figure2_6_4.pdf, id=831, 597.51233pt x 214.9621pt>
 File: Abbildungen/figure2_6_4.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_6_4.pdf>
 Package pdftex.def Info: Abbildungen/figure2_6_4.pdf used on input line 342.
 (pdftex.def)             Requested size: 441.01773pt x 158.66272pt.
 
-<Abbildungen/figure2_6.pdf, id=830, 597.51233pt x 489.1605pt>
+<Abbildungen/figure2_6.pdf, id=832, 597.51233pt x 489.1605pt>
 File: Abbildungen/figure2_6.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_6.pdf>
 Package pdftex.def Info: Abbildungen/figure2_6.pdf used on input line 350.
 (pdftex.def)             Requested size: 441.01773pt x 361.04756pt.
  [20]
-<Abbildungen/figure2_6_2.pdf, id=846, 597.51233pt x 317.11372pt>
+<Abbildungen/figure2_6_2.pdf, id=848, 597.51233pt x 317.11372pt>
 File: Abbildungen/figure2_6_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_6_2.pdf>
@@ -937,7 +937,7 @@ LaTeX Warning: Command \textbar invalid in math mode on input line 378.
 
 LaTeX Warning: Command \textbar invalid in math mode on input line 383.
 
-[24] <Abbildungen/figure2_9.pdf, id=942, 597.51233pt x 609.20396pt>
+[24] <Abbildungen/figure2_9.pdf, id=944, 597.51233pt x 609.20396pt>
 File: Abbildungen/figure2_9.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_9.pdf>
@@ -949,7 +949,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <6> not available
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <5> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 428.
 
-[27] <Abbildungen/figure2_7.pdf, id=985, 597.51233pt x 208.74387pt>
+[27] <Abbildungen/figure2_7.pdf, id=987, 597.51233pt x 208.74387pt>
 File: Abbildungen/figure2_7.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_7.pdf>
@@ -974,7 +974,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
 
 
-] [30] <Abbildungen/figure3_1.pdf, id=1029, 597.51233pt x 218.29353pt>
+] [30] <Abbildungen/figure3_1.pdf, id=1031, 597.51233pt x 218.29353pt>
 File: Abbildungen/figure3_1.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_1.pdf>
@@ -984,21 +984,21 @@ Package pdftex.def Info: Abbildungen/figure3_1.pdf used on input line 58.
 
 LaTeX Warning: Command \textbar invalid in math mode on input line 80.
 
-<Abbildungen/figure3_1_b.pdf, id=1066, 597.51233pt x 187.93713pt>
+<Abbildungen/figure3_1_b.pdf, id=1068, 597.51233pt x 187.93713pt>
 File: Abbildungen/figure3_1_b.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_1_b.pdf>
 Package pdftex.def Info: Abbildungen/figure3_1_b.pdf used on input line 90.
 (pdftex.def)             Requested size: 441.01773pt x 138.7157pt.
  [32] [33 <./Abbildungen/figure3_1_b.pdf>]
-<Abbildungen/figure3_2.pdf, id=1098, 597.51233pt x 634.00566pt>
+<Abbildungen/figure3_2.pdf, id=1100, 597.51233pt x 634.00566pt>
 File: Abbildungen/figure3_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_2.pdf>
 Package pdftex.def Info: Abbildungen/figure3_2.pdf used on input line 117.
 (pdftex.def)             Requested size: 441.01773pt x 467.95724pt.
 
-<Abbildungen/figure3_3.pdf, id=1103, 597.51233pt x 628.67575pt>
+<Abbildungen/figure3_3.pdf, id=1105, 597.51233pt x 628.67575pt>
 File: Abbildungen/figure3_3.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_3.pdf>
@@ -1017,21 +1017,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--141
  []
 
 [34] [35 <./Abbildungen/figure3_2.pdf>] [36 <./Abbildungen/figure3_3.pdf>]
-<Abbildungen/figure3_4.pdf, id=1210, 597.51233pt x 696.18492pt>
+<Abbildungen/figure3_4.pdf, id=1212, 597.51233pt x 696.18492pt>
 File: Abbildungen/figure3_4.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_4.pdf>
 Package pdftex.def Info: Abbildungen/figure3_4.pdf used on input line 147.
 (pdftex.def)             Requested size: 441.01773pt x 513.85153pt.
  [37] [38 <./Abbildungen/figure3_4.pdf>]
-<Abbildungen/figure3_5.pdf, id=1271, 597.51233pt x 221.84682pt>
+<Abbildungen/figure3_5.pdf, id=1273, 597.51233pt x 221.84682pt>
 File: Abbildungen/figure3_5.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_5.pdf>
 Package pdftex.def Info: Abbildungen/figure3_5.pdf used on input line 169.
 (pdftex.def)             Requested size: 441.01773pt x 163.74431pt.
 
-<Abbildungen/figure3_6.pdf, id=1272, 597.51233pt x 708.6214pt>
+<Abbildungen/figure3_6.pdf, id=1274, 597.51233pt x 708.6214pt>
 File: Abbildungen/figure3_6.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_6.pdf>
@@ -1042,14 +1042,14 @@ Package pdftex.def Info: Abbildungen/figure3_6.pdf used on input line 177.
 LaTeX Warning: Float too large for page by 30.50066pt on input line 181.
 
 [39 <./Abbildungen/figure3_5.pdf>] [40 <./Abbildungen/figure3_6.pdf>] [41]
-<Abbildungen/figure3_8.pdf, id=1376, 597.51233pt x 233.39397pt>
+<Abbildungen/figure3_8.pdf, id=1378, 597.51233pt x 233.39397pt>
 File: Abbildungen/figure3_8.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_8.pdf>
 Package pdftex.def Info: Abbildungen/figure3_8.pdf used on input line 201.
 (pdftex.def)             Requested size: 441.01773pt x 172.26721pt.
 
-<Abbildungen/figure3_7.pdf, id=1378, 597.51233pt x 617.12859pt>
+<Abbildungen/figure3_7.pdf, id=1380, 597.51233pt x 617.12859pt>
 File: Abbildungen/figure3_7.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_7.pdf>
@@ -1083,14 +1083,14 @@ l.49 \end{equation}
                                                   \fi \fi 
 l.49 \end{equation}
                    ] [47]
-<Abbildungen/figure4_1.pdf, id=1453, 597.51233pt x 197.73875pt>
+<Abbildungen/figure4_1.pdf, id=1455, 597.51233pt x 197.73875pt>
 File: Abbildungen/figure4_1.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure4_1.pdf>
 Package pdftex.def Info: Abbildungen/figure4_1.pdf used on input line 86.
 (pdftex.def)             Requested size: 441.01773pt x 145.95024pt.
 
-<Abbildungen/figureTAC_2.pdf, id=1456, 597.51233pt x 654.65778pt>
+<Abbildungen/figureTAC_2.pdf, id=1458, 597.51233pt x 654.65778pt>
 File: Abbildungen/figureTAC_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figureTAC_2.pdf>
@@ -1106,14 +1106,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--102
  []
 
 [48 <./Abbildungen/figure4_1.pdf>] [49 <./Abbildungen/figureTAC_2.pdf>]
-<Abbildungen/figureTAC_3.pdf, id=1540, 597.51233pt x 464.34578pt>
+<Abbildungen/figureTAC_3.pdf, id=1542, 597.51233pt x 464.34578pt>
 File: Abbildungen/figureTAC_3.pdf Graphic file (type pdf)
 
 <use Abbildungen/figureTAC_3.pdf>
 Package pdftex.def Info: Abbildungen/figureTAC_3.pdf used on input line 127.
 (pdftex.def)             Requested size: 441.01773pt x 342.73192pt.
 
-<Abbildungen/figureTAC_4.pdf, id=1546, 597.51233pt x 464.56763pt>
+<Abbildungen/figureTAC_4.pdf, id=1548, 597.51233pt x 464.56763pt>
 File: Abbildungen/figureTAC_4.pdf Graphic file (type pdf)
 
 <use Abbildungen/figureTAC_4.pdf>
@@ -1161,14 +1161,14 @@ car-bo-platin.  \T1/phv/m/sl/9 Crit-i-cal re-views in
 
 ]
 Appendix A.
-<Abbildungen/figure_A_1.pdf, id=1844, 597.51233pt x 594.25511pt>
+<Abbildungen/figure_A_1.pdf, id=1846, 597.51233pt x 594.25511pt>
 File: Abbildungen/figure_A_1.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure_A_1.pdf>
 Package pdftex.def Info: Abbildungen/figure_A_1.pdf used on input line 12.
 (pdftex.def)             Requested size: 441.01773pt x 438.61752pt.
  [71 <./Abbildungen/figure_A_1.pdf>] [72]
-<Abbildungen/figure_A_2.pdf, id=1888, 597.51233pt x 449.4672pt>
+<Abbildungen/figure_A_2.pdf, id=1890, 597.51233pt x 449.4672pt>
 File: Abbildungen/figure_A_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure_A_2.pdf>
@@ -1228,10 +1228,10 @@ ocal/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/t
 exlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TH_Thesis.pdf (83 pages, 4770312 bytes).
+Output written on TH_Thesis.pdf (83 pages, 4770475 bytes).
 PDF statistics:
- 2057 PDF objects out of 2073 (max. 8388607)
- 1662 compressed objects within 17 object streams
+ 2059 PDF objects out of 2073 (max. 8388607)
+ 1664 compressed objects within 17 object streams
  288 named destinations out of 1000 (max. 500000)
  432 words of extra memory for PDF output out of 10000 (max. 10000000)
 
