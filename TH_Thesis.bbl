@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{Hoeijmakers2009}
 Hoeijmakers, J. H.~J.
@@ -56,6 +56,192 @@ Ciccia, A. \& Elledge, S.~J.
 \newblock {The DNA damage response: making it safe to play with knives.}
 \newblock \emph{Molecular cell} \textbf{40}, 179--204 (2010).
 
+\bibitem{Lindahl2000}
+Lindahl, T. \& Barnes, D.
+\newblock {Repair of Endogenous DNA Damage}.
+\newblock \emph{Cold Spring Harbor Symposia on Quantitative Biology}
+  \textbf{65}, 127--134 (2000).
+
+\bibitem{Caldecott2008}
+Caldecott, K.~W.
+\newblock {Single-strand break repair and genetic disease.}
+\newblock \emph{Nature reviews. Genetics} \textbf{9}, 619--31 (2008).
+
+\bibitem{Moldovan2009}
+Moldovan, G.-L. \& D'Andrea, A.~D.
+\newblock {How the fanconi anemia pathway guards the genome.}
+\newblock \emph{Annual review of genetics} \textbf{43}, 223--49 (2009).
+
+\bibitem{West2003}
+West, S.~C.
+\newblock {Molecular views of recombination proteins and their control.}
+\newblock \emph{Nature reviews. Molecular cell biology} \textbf{4}, 435--45
+  (2003).
+
+\bibitem{Hoeijmakers:2001:Nature:11357144}
+Hoeijmakers, J.~H.
+\newblock {Genome maintenance mechanisms for preventing cancer}.
+\newblock \emph{Nature} \textbf{411}, 366--374 (2001).
+
+\bibitem{Gillet:2006:Chem-Rev:16464005}
+Gillet, L.~C. \& Sch\"{a}rer, O.~D.
+\newblock {Molecular mechanisms of mammalian global genome nucleotide excision
+  repair}.
+\newblock \emph{Chem Rev} \textbf{106}, 253--276 (2006).
+
+\bibitem{Dinant:2009:J-Cell-Biol:19332890}
+Dinant, C., Luijsterburg, M.~S., H\"{o}fer, T., von Bornstaedt, G., Vermeulen,
+  W., Houtsmuller, A.~B. \& van Driel, R.
+\newblock {Assembly of multiprotein complexes that control genome function}.
+\newblock \emph{J Cell Biol} \textbf{185}, 21--26 (2009).
+
+\bibitem{Volker2001}
+Volker, M., Mon\'{e}, M.~J., Karmakar, P., van Hoffen, a., Schul, W.,
+  Vermeulen, W., Hoeijmakers, J.~H., van Driel, R., van Zeeland, a.~a. \&
+  Mullenders, L.~H.
+\newblock {Sequential assembly of the nucleotide excision repair factors in
+  vivo.}
+\newblock \emph{Molecular cell} \textbf{8}, 213--24 (2001).
+
+\bibitem{Vermeulen2011}
+Vermeulen, W.
+\newblock {Dynamics of mammalian NER proteins.}
+\newblock \emph{DNA repair} \textbf{10}, 760--71 (2011).
+
+\bibitem{Stasevich2011}
+Stasevich, T.~J. \& McNally, J.~G.
+\newblock {Assembly of the transcription machinery: ordered and stable, random
+  and dynamic, or both?}
+\newblock \emph{Chromosoma} \textbf{120}, 533--45 (2011).
+
+\bibitem{Kuipers2011}
+Kuipers, M.~a., Stasevich, T.~J., Sasaki, T., Wilson, K.~a., Hazelwood, K.~L.,
+  McNally, J.~G., Davidson, M.~W. \& Gilbert, D.~M.
+\newblock {Highly stable loading of Mcm proteins onto chromatin in living cells
+  requires replication to unload.}
+\newblock \emph{The Journal of cell biology} \textbf{192}, 29--41 (2011).
+
+\bibitem{Sonneville2012}
+Sonneville, R., Querenet, M., Craig, A., Gartner, A. \& Blow, J.~J.
+\newblock {The dynamics of replication licensing in live Caenorhabditis elegans
+  embryos.}
+\newblock \emph{The Journal of cell biology} \textbf{196}, 233--46 (2012).
+
+\bibitem{Sugasawa:2005:Cell:15882621}
+Sugasawa, K., Okuda, Y., Saijo, M., Nishi, R., Matsuda, N., Chu, G., Mori, T.,
+  Iwai, S., Tanaka, K. \& Hanaoka, F.
+\newblock {UV-induced ubiquitylation of XPC protein mediated by
+  UV-DDB-ubiquitin ligase complex}.
+\newblock \emph{Cell} \textbf{121}, 387--400 (2005).
+
+\bibitem{Fousteri2008}
+Fousteri, M. \& Mullenders, L. H.~F.
+\newblock {Transcription-coupled nucleotide excision repair in mammalian cells:
+  molecular mechanisms and biological effects.}
+\newblock \emph{Cell research} \textbf{18}, 73--84 (2008).
+
+\bibitem{Sugasawa:1998:Mol-Cell:9734359}
+Sugasawa, K., Ng, J.~M., Masutani, C., Iwai, S., van~der Spek, P.~J., Eker,
+  A.~P., Hanaoka, F., Bootsma, D. \& Hoeijmakers, J.~H.
+\newblock {Xeroderma pigmentosum group C protein complex is the initiator of
+  global genome nucleotide excision repair}.
+\newblock \emph{Mol Cell} \textbf{2}, 223--232 (1998).
+
+\bibitem{Yokoi:2000:J-Biol-Chem:10734143}
+Yokoi, M., Masutani, C., Maekawa, T., Sugasawa, K., Ohkuma, Y. \& Hanaoka, F.
+\newblock {The xeroderma pigmentosum group C protein complex XPC-HR23B plays an
+  important role in the recruitment of transcription factor IIH to damaged
+  DNA}.
+\newblock \emph{J Biol Chem} \textbf{275}, 9870--9875 (2000).
+
+\bibitem{Riedl2003}
+Riedl, T., Hanaoka, F. \& Egly, J.-M.
+\newblock {The comings and goings of nucleotide excision repair factors on
+  damaged DNA.}
+\newblock \emph{The EMBO journal} \textbf{22}, 5293--303 (2003).
+
+\bibitem{Tapias2004}
+Tapias, A., Auriol, J., Forget, D., Enzlin, J.~H., Sch\"{a}rer, O.~D., Coin,
+  F., Coulombe, B. \& Egly, J.-M.
+\newblock {Ordered conformational changes in damaged DNA induced by nucleotide
+  excision repair factors.}
+\newblock \emph{The Journal of biological chemistry} \textbf{279}, 19074--83
+  (2004).
+
+\bibitem{Compe2012}
+Compe, E. \& Egly, J.-M.
+\newblock {TFIIH: when transcription met DNA repair.}
+\newblock \emph{Nature reviews. Molecular cell biology} \textbf{13}, 343--54
+  (2012).
+
+\bibitem{Evans1997}
+Evans, E., Fellows, J., Coffer, A. \& Wood, R.~D.
+\newblock {Open complex formation around a lesion during nucleotide excision
+  repair provides a structure for cleavage by human XPG protein}.
+\newblock \emph{EMBO Journal} \textbf{16}, 625--638 (1997).
+
+\bibitem{deLaat:1998:Genes-Dev:9716411}
+de~Laat, W.~L., Appeldoorn, E., Sugasawa, K., Weterings, E., Jaspers, N.~G. \&
+  Hoeijmakers, J.~H.
+\newblock {DNA-binding polarity of human replication protein A positions
+  nucleases in nucleotide excision repair}.
+\newblock \emph{Genes Dev} \textbf{12}, 2598--2609 (1998).
+
+\bibitem{Wakasugi:1997:J-Biol-Chem:9188507}
+Wakasugi, M., Reardon, J.~T. \& Sancar, A.
+\newblock {The non-catalytic function of \{XPG\} protein during dual incision
+  in human nucleotide excision repair}.
+\newblock \emph{J Biol Chem} \textbf{272}, 16030--16034 (1997).
+
+\bibitem{Park:2006:FEBS-J:16623697}
+Park, C.~J. \& Choi, B.~S.
+\newblock {The protein shuffle. Sequential interactions among components of the
+  human nucleotide excision repair pathway}.
+\newblock \emph{FEBS J} \textbf{273}, 1600--1608 (2006).
+
+\bibitem{Camenisch:2006:Nat-Struct-Mol-Biol:16491090}
+Camenisch, U., Dip, R., Schumacher, S.~B., Schuler, B. \& Naegeli, H.
+\newblock {Recognition of helical kinks by xeroderma pigmentosum group A
+  protein triggers DNA excision repair}.
+\newblock \emph{Nat Struct Mol Biol} \textbf{13}, 278--284 (2006).
+
+\bibitem{Essers2005}
+Essers, J., Theil, A.~F., Baldeyron, C., Wiggert, A., Cappellen, V.,
+  Houtsmuller, A.~B., Kanaar, R. \& Cappellen, W. A.~V.
+\newblock {Nuclear Dynamics of PCNA in DNA Replication and Repair}.
+\newblock \emph{Molecular and cellular biology} \textbf{25}, 9350--9359 (2005).
+
+\bibitem{Moser:2007:Mol-Cell:17643379}
+Moser, J., Kool, H., Giakzidis, I., Caldecott, K., Mullenders, L.~H. \&
+  Fousteri, M.~I.
+\newblock {Sealing of chromosomal DNA nicks during nucleotide excision repair
+  requires XRCC1 and DNA ligase III alpha in a cell-cycle-specific manner}.
+\newblock \emph{Mol Cell} \textbf{27}, 311--323 (2007).
+
+\bibitem{Green:2003:EMBO-J:14517254}
+Green, C.~M. \& Almouzni, G.
+\newblock {Local action of the chromatin assembly factor CAF-1 at sites of
+  nucleotide excision repair in vivo}.
+\newblock \emph{EMBO J} \textbf{22}, 5163--5174 (2003).
+
+\bibitem{Polo2006}
+Polo, S.~E., Roche, D. \& Almouzni, G.
+\newblock {New histone incorporation marks sites of UV repair in human cells.}
+\newblock \emph{Cell} \textbf{127}, 481--93 (2006).
+
+\bibitem{Vermeulen2001}
+Vermeulen, W., Rademakers, S., Jaspers, N. G.~J., Appeldoorn, E., Raams, A.,
+  Kleijer, W.~J., Hansen, L. K. r.~r. \& Hoeijmakers, J. H.~J.
+\newblock {A temperature-sensitive disorder in basal transcription and DNA
+  repair in humans} \textbf{27}, 299--303 (2001).
+
+\bibitem{Boer}
+Boer, J.~D., Andressoo, J.~O., Wit, J.~D., Huijmans, J., Beems, R.~B., Steeg,
+  H.~V., Weeda, G., Horst, G. T. J. V.~D., Leeuwen, W.~V., Themmen, A. P.~N.,
+  Meradji, M. \& Hoeijmakers, J. H.~J.
+\newblock {Premature Aging in Mice Deficient in DNA Repair and Transcription}.
+\newblock \emph{Science} \textbf{296}, 1276--1279 (2002).
+
 \bibitem{Mone2001}
 Mon\'{e}, M.~J., Volker, M., Nikaido, O., Mullenders, L.~H., van Zeeland,
   a.~a., Verschure, P.~J., Manders, E.~M. \& van Driel, R.
@@ -109,12 +295,6 @@ Limsirichaikul, S., Niimi, A., Fawcett, H., Lehmann, A., Yamashita, S. \& Ogi,
   deoxyuridine (EdU).}
 \newblock \emph{Nucleic acids research} \textbf{37}, e31 (2009).
 
-\bibitem{Essers2005}
-Essers, J., Theil, A.~F., Baldeyron, C., Wiggert, A., Cappellen, V.,
-  Houtsmuller, A.~B., Kanaar, R. \& Cappellen, W. A.~V.
-\newblock {Nuclear Dynamics of PCNA in DNA Replication and Repair}.
-\newblock \emph{Molecular and cellular biology} \textbf{25}, 9350--9359 (2005).
-
 \bibitem{Sporbert2002}
 Sporbert, A., Gahl, A., Ankerhold, R., Leonhardt, H. \& Cardoso, M.~C.
 \newblock {DNA Polymerase Clamp Shows Little Turnover at Established
@@ -133,19 +313,6 @@ Mu, D., Hsu, D.~S. \& Sancar, A.
 \newblock {Reaction Mechanism of Human DNA Repair Excision Nuclease}.
 \newblock \emph{Journal of Biological Chemistry} \textbf{271}, 8285--8294
   (1996).
-
-\bibitem{Polo2006}
-Polo, S.~E., Roche, D. \& Almouzni, G.
-\newblock {New histone incorporation marks sites of UV repair in human cells.}
-\newblock \emph{Cell} \textbf{127}, 481--93 (2006).
-
-\bibitem{Tapias2004}
-Tapias, A., Auriol, J., Forget, D., Enzlin, J.~H., Sch\"{a}rer, O.~D., Coin,
-  F., Coulombe, B. \& Egly, J.-M.
-\newblock {Ordered conformational changes in damaged DNA induced by nucleotide
-  excision repair factors.}
-\newblock \emph{The Journal of biological chemistry} \textbf{279}, 19074--83
-  (2004).
 
 \bibitem{Rademakers2003}
 Rademakers, S., Volker, M., Hoogstraten, D., Nigg, A.~L., Mone, M.~J., Zeeland,
@@ -169,27 +336,6 @@ Politi, A., Mon\'{e}, M.~J., Houtsmuller, A.~B., Hoogstraten, D., Vermeulen,
   efficiency of sequential assembly strategies.}
 \newblock \emph{Molecular cell} \textbf{19}, 679--90 (2005).
 
-\bibitem{Riedl2003}
-Riedl, T., Hanaoka, F. \& Egly, J.-M.
-\newblock {The comings and goings of nucleotide excision repair factors on
-  damaged DNA.}
-\newblock \emph{The EMBO journal} \textbf{22}, 5293--303 (2003).
-
-\bibitem{Yokoi:2000:J-Biol-Chem:10734143}
-Yokoi, M., Masutani, C., Maekawa, T., Sugasawa, K., Ohkuma, Y. \& Hanaoka, F.
-\newblock {The xeroderma pigmentosum group C protein complex XPC-HR23B plays an
-  important role in the recruitment of transcription factor IIH to damaged
-  DNA}.
-\newblock \emph{J Biol Chem} \textbf{275}, 9870--9875 (2000).
-
-\bibitem{Volker2001}
-Volker, M., Mon\'{e}, M.~J., Karmakar, P., van Hoffen, a., Schul, W.,
-  Vermeulen, W., Hoeijmakers, J.~H., van Driel, R., van Zeeland, a.~a. \&
-  Mullenders, L.~H.
-\newblock {Sequential assembly of the nucleotide excision repair factors in
-  vivo.}
-\newblock \emph{Molecular cell} \textbf{8}, 213--24 (2001).
-
 \bibitem{ODonovan:1994:Nature:8090225}
 O'Donovan, A., Davies, A.~A., Moggs, J.~G., West, S.~C. \& Wood, R.~D.
 \newblock {XPG endonuclease makes the 3' incision in human DNA nucleotide
@@ -211,13 +357,6 @@ Winkler, G.~S., Sugasawa, K., Eker, a.~P., de~Laat, W.~L. \& Hoeijmakers, J.~H.
   proteins influencing the enzymatic activities of TFIIH, XPG, and ERCC1-XPF.}
 \newblock \emph{Biochemistry} \textbf{40}, 160--5 (2001).
 
-\bibitem{deLaat:1998:Genes-Dev:9716411}
-de~Laat, W.~L., Appeldoorn, E., Sugasawa, K., Weterings, E., Jaspers, N.~G. \&
-  Hoeijmakers, J.~H.
-\newblock {DNA-binding polarity of human replication protein A positions
-  nucleases in nucleotide excision repair}.
-\newblock \emph{Genes Dev} \textbf{12}, 2598--2609 (1998).
-
 \bibitem{Moser2005}
 Moser, J., Volker, M., Kool, H., Alekseev, S., Vrieling, H., Yasui, A., van
   Zeeland, A.~a. \& Mullenders, L. H.~F.
@@ -230,13 +369,6 @@ Shivji, M.~K., Podust, V.~N., H\"{u}bscher, U. \& Wood, R.~D.
 \newblock {Nucleotide excision repair DNA synthesis by DNA polymerase epsilon
   in the presence of PCNA, RFC, and RPA}.
 \newblock \emph{Biochemistry} \textbf{34}, 5011--5017 (1995).
-
-\bibitem{Moser:2007:Mol-Cell:17643379}
-Moser, J., Kool, H., Giakzidis, I., Caldecott, K., Mullenders, L.~H. \&
-  Fousteri, M.~I.
-\newblock {Sealing of chromosomal DNA nicks during nucleotide excision repair
-  requires XRCC1 and DNA ligase III alpha in a cell-cycle-specific manner}.
-\newblock \emph{Mol Cell} \textbf{27}, 311--323 (2007).
 
 \bibitem{Raue2013}
 Raue, A., Schilling, M., Bachmann, J., Matteson, A., Schelker, M., Schelke, M.,
@@ -393,18 +525,6 @@ Erdel, F. \& Rippe, K.
 \newblock {Binding kinetics of human ISWI chromatin-remodelers to DNA repair
   sites elucidate their target location mechanism.}
 \newblock \emph{Nucleus (Austin, Tex.)} \textbf{2}, 105--12 (2011).
-
-\bibitem{Sonneville2012}
-Sonneville, R., Querenet, M., Craig, A., Gartner, A. \& Blow, J.~J.
-\newblock {The dynamics of replication licensing in live Caenorhabditis elegans
-  embryos.}
-\newblock \emph{The Journal of cell biology} \textbf{196}, 233--46 (2012).
-
-\bibitem{Stasevich2011}
-Stasevich, T.~J. \& McNally, J.~G.
-\newblock {Assembly of the transcription machinery: ordered and stable, random
-  and dynamic, or both?}
-\newblock \emph{Chromosoma} \textbf{120}, 533--45 (2011).
 
 \bibitem{Hager2009}
 Hager, G.~L., McNally, J.~G. \& Misteli, T.
