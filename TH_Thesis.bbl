@@ -229,18 +229,57 @@ Polo, S.~E., Roche, D. \& Almouzni, G.
 \newblock {New histone incorporation marks sites of UV repair in human cells.}
 \newblock \emph{Cell} \textbf{127}, 481--93 (2006).
 
-\bibitem{Vermeulen2001}
-Vermeulen, W., Rademakers, S., Jaspers, N. G.~J., Appeldoorn, E., Raams, A.,
-  Kleijer, W.~J., Hansen, L. K. r.~r. \& Hoeijmakers, J. H.~J.
-\newblock {A temperature-sensitive disorder in basal transcription and DNA
-  repair in humans} \textbf{27}, 299--303 (2001).
+\bibitem{Hoogstraten2002}
+Hoogstraten, D., Nigg, A.~L., Heath, H., Mullenders, L. H.~F., van Driel, R.,
+  Hoeijmakers, J. H.~J., Vermeulen, W. \& Houtsmuller, A.~B.
+\newblock {Rapid switching of TFIIH between RNA polymerase I and II
+  transcription and DNA repair in vivo.}
+\newblock \emph{Molecular cell} \textbf{10}, 1163--74 (2002).
 
-\bibitem{Boer}
-Boer, J.~D., Andressoo, J.~O., Wit, J.~D., Huijmans, J., Beems, R.~B., Steeg,
-  H.~V., Weeda, G., Horst, G. T. J. V.~D., Leeuwen, W.~V., Themmen, A. P.~N.,
-  Meradji, M. \& Hoeijmakers, J. H.~J.
-\newblock {Premature Aging in Mice Deficient in DNA Repair and Transcription}.
-\newblock \emph{Science} \textbf{296}, 1276--1279 (2002).
+\bibitem{Hoogstraten2008}
+Hoogstraten, D., Bergink, S., Ng, J. M.~Y., Verbiest, V. H.~M., Luijsterburg,
+  M.~S., Geverts, B., Raams, a., Dinant, C., Hoeijmakers, J. H.~J., Vermeulen,
+  W. \& Houtsmuller, a.~B.
+\newblock {Versatile DNA damage detection by the global genome nucleotide
+  excision repair protein XPC}.
+\newblock \emph{Journal of Cell Science} \textbf{121}, 3991--3991 (2008).
+
+\bibitem{Zotter2006}
+Zotter, A., Luijsterburg, M.~S., Warmerdam, D.~O., Ibrahim, S., Nigg, A., van
+  Cappellen, W.~a., Hoeijmakers, J. H.~J., van Driel, R., Vermeulen, W. \&
+  Houtsmuller, A.~B.
+\newblock {Recruitment of the nucleotide excision repair endonuclease XPG to
+  sites of UV-induced dna damage depends on functional TFIIH.}
+\newblock \emph{Molecular and cellular biology} \textbf{26}, 8868--79 (2006).
+
+\bibitem{Rademakers2003}
+Rademakers, S., Volker, M., Hoogstraten, D., Nigg, A.~L., Mone, M.~J., Zeeland,
+  A. A.~V., Hoeijmakers, J. H.~J., Houtsmuller, A.~B. \& Vermeulen, W.
+\newblock {Xeroderma Pigmentosum Group A Protein Loads as a Separate Factor
+  onto DNA Lesions}.
+\newblock \emph{Molecular and cellular biology} \textbf{23}, 5755--5767 (2003).
+
+\bibitem{Gorski:2008:Mol-Cell:18498750}
+Gorski, S.~A., Snyder, S.~K., John, S., Grummt, I. \& Misteli, T.
+\newblock {Modulation of RNA polymerase assembly dynamics in transcriptional
+  regulation}.
+\newblock \emph{Mol Cell} \textbf{30}, 486--497 (2008).
+
+\bibitem{Voss2011}
+Voss, T.~C., Schiltz, R.~L., Sung, M.-H., Yen, P.~M., Stamatoyannopoulos,
+  J.~a., Biddie, S.~C., Johnson, T.~a., Miranda, T.~B., John, S. \& Hager,
+  G.~L.
+\newblock {Dynamic exchange at regulatory elements during chromatin remodeling
+  underlies assisted loading mechanism.}
+\newblock \emph{Cell} \textbf{146}, 544--54 (2011).
+
+\bibitem{Raue2013}
+Raue, A., Schilling, M., Bachmann, J., Matteson, A., Schelker, M., Schelke, M.,
+  Kaschek, D., Hug, S., Kreutz, C., Harms, B.~D., Theis, F.~J.,
+  Klingm\"{u}ller, U. \& Timmer, J.
+\newblock {Lessons learned from quantitative dynamical modeling in systems
+  biology.}
+\newblock \emph{PloS one} \textbf{8}, e74335 (2013).
 
 \bibitem{Mone2001}
 Mon\'{e}, M.~J., Volker, M., Nikaido, O., Mullenders, L.~H., van Zeeland,
@@ -314,21 +353,6 @@ Mu, D., Hsu, D.~S. \& Sancar, A.
 \newblock \emph{Journal of Biological Chemistry} \textbf{271}, 8285--8294
   (1996).
 
-\bibitem{Rademakers2003}
-Rademakers, S., Volker, M., Hoogstraten, D., Nigg, A.~L., Mone, M.~J., Zeeland,
-  A. A.~V., Hoeijmakers, J. H.~J., Houtsmuller, A.~B. \& Vermeulen, W.
-\newblock {Xeroderma Pigmentosum Group A Protein Loads as a Separate Factor
-  onto DNA Lesions}.
-\newblock \emph{Molecular and cellular biology} \textbf{23}, 5755--5767 (2003).
-
-\bibitem{Zotter2006}
-Zotter, A., Luijsterburg, M.~S., Warmerdam, D.~O., Ibrahim, S., Nigg, A., van
-  Cappellen, W.~a., Hoeijmakers, J. H.~J., van Driel, R., Vermeulen, W. \&
-  Houtsmuller, A.~B.
-\newblock {Recruitment of the nucleotide excision repair endonuclease XPG to
-  sites of UV-induced dna damage depends on functional TFIIH.}
-\newblock \emph{Molecular and cellular biology} \textbf{26}, 8868--79 (2006).
-
 \bibitem{Politi2005}
 Politi, A., Mon\'{e}, M.~J., Houtsmuller, A.~B., Hoogstraten, D., Vermeulen,
   W., Heinrich, R. \& van Driel, R.
@@ -369,14 +393,6 @@ Shivji, M.~K., Podust, V.~N., H\"{u}bscher, U. \& Wood, R.~D.
 \newblock {Nucleotide excision repair DNA synthesis by DNA polymerase epsilon
   in the presence of PCNA, RFC, and RPA}.
 \newblock \emph{Biochemistry} \textbf{34}, 5011--5017 (1995).
-
-\bibitem{Raue2013}
-Raue, A., Schilling, M., Bachmann, J., Matteson, A., Schelker, M., Schelke, M.,
-  Kaschek, D., Hug, S., Kreutz, C., Harms, B.~D., Theis, F.~J.,
-  Klingm\"{u}ller, U. \& Timmer, J.
-\newblock {Lessons learned from quantitative dynamical modeling in systems
-  biology.}
-\newblock \emph{PloS one} \textbf{8}, e74335 (2013).
 
 \bibitem{Leis1988}
 Leis, J.~R. \& Kramer, M.~A.
@@ -499,21 +515,6 @@ van Hoffen, A., Venema, J., Meschini, R., van Zeeland, A.~A. \& Mullenders,
   from transcribed DNA in xeroderma pigmentosum group C fibroblasts}.
 \newblock \emph{EMBO J} \textbf{14}, 360--367 (1995).
 
-\bibitem{Hoogstraten2002}
-Hoogstraten, D., Nigg, A.~L., Heath, H., Mullenders, L. H.~F., van Driel, R.,
-  Hoeijmakers, J. H.~J., Vermeulen, W. \& Houtsmuller, A.~B.
-\newblock {Rapid switching of TFIIH between RNA polymerase I and II
-  transcription and DNA repair in vivo.}
-\newblock \emph{Molecular cell} \textbf{10}, 1163--74 (2002).
-
-\bibitem{Hoogstraten2008}
-Hoogstraten, D., Bergink, S., Ng, J. M.~Y., Verbiest, V. H.~M., Luijsterburg,
-  M.~S., Geverts, B., Raams, a., Dinant, C., Hoeijmakers, J. H.~J., Vermeulen,
-  W. \& Houtsmuller, a.~B.
-\newblock {Versatile DNA damage detection by the global genome nucleotide
-  excision repair protein XPC}.
-\newblock \emph{Journal of Cell Science} \textbf{121}, 3991--3991 (2008).
-
 \bibitem{McNairn2005}
 McNairn, A.~J., Okuno, Y., Misteli, T. \& Gilbert, D.~M.
 \newblock {Chinese hamster ORC subunits dynamically associate with chromatin
@@ -577,14 +578,6 @@ Kirschner, M., Gerhart, J. \& Mitchison, T.
 Cook, P.~R.
 \newblock {A model for all genomes: the role of transcription factories.}
 \newblock \emph{Journal of molecular biology} \textbf{395}, 1--10 (2010).
-
-\bibitem{Voss2011}
-Voss, T.~C., Schiltz, R.~L., Sung, M.-H., Yen, P.~M., Stamatoyannopoulos,
-  J.~a., Biddie, S.~C., Johnson, T.~a., Miranda, T.~B., John, S. \& Hager,
-  G.~L.
-\newblock {Dynamic exchange at regulatory elements during chromatin remodeling
-  underlies assisted loading mechanism.}
-\newblock \emph{Cell} \textbf{146}, 544--54 (2011).
 
 \bibitem{Mocquet2008}
 Mocquet, V., Lain\'{e}, J.~P., Riedl, T., Yajin, Z., Lee, M.~Y. \& Egly, J.~M.
