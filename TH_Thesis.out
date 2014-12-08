@@ -5,11 +5,11 @@
 \BOOKMARK [1][-]{section.1.2}{NER as a model system for chromatin-associated processes}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.3}{Research objectives}{chapter.1}% 6
 \BOOKMARK [0][-]{chapter.2}{Mathematical Modelling of Nucleotide Excision Repair \(NER\)}{}% 7
-\BOOKMARK [1][-]{section.2.1}{Fluorescent time-laps imaging of the NER process}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.1}{Fluorescence time-lapse imaging of the NER process}{chapter.2}% 8
 \BOOKMARK [2][-]{subsection.2.1.1}{Locally inflicted UV-induced DNA damage}{section.2.1}% 9
 \BOOKMARK [2][-]{subsection.2.1.2}{Repair factor accumulation and dissociation occur on different time scales}{section.2.1}% 10
 \BOOKMARK [2][-]{subsection.2.1.3}{Direct measurement of DNA resynthesis}{section.2.1}% 11
-\BOOKMARK [2][-]{subsection.2.1.4}{Repair rate follows first order rate kinetic}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.4}{Repair rate follows first order rate kinetics}{section.2.1}% 12
 \BOOKMARK [1][-]{section.2.2}{Kinetic model of NER}{chapter.2}% 13
 \BOOKMARK [2][-]{subsection.2.2.1}{Slow first-order reaction kinetic due to many fast interacting components}{section.2.2}% 14
 \BOOKMARK [2][-]{subsection.2.2.2}{Model structure and parametrization}{section.2.2}% 15
@@ -32,7 +32,4 @@
 \BOOKMARK [2][-]{subsection.4.1.5}{Measured average response agrees with model prediction}{section.4.1}% 32
 \BOOKMARK [0][-]{chapter.5}{Discussion}{}% 33
 \BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 34
-\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 35
-\BOOKMARK [1][-]{section.A.1}{Parameter estimation}{appendix.A}% 36
-\BOOKMARK [1][-]{section.A.2}{Cross-correlation}{appendix.A}% 37
-\BOOKMARK [0][-]{appendix*.51}{Acknowledgements}{}% 38
+\BOOKMARK [0][-]{chapter*.47}{Acknowledgements}{}% 35

@@ -27,37 +27,41 @@
 %%\changefont{phv}{m}{n}
 %%\begin{document}
 %\section{Introduction}
-An essential advantage for the research on Nucleotide Excision Repair (NER) is the ability to inflict UV-induced DNA damages within a locally confined area in the cell nucleus \cite{Mone2001}. This technique reformed the investigation of chromatin associated processes whose \textit{in vivo} analysis was, until then, focusing on enzyme mobility and exchange dynamics at steady state performed with photobleaching experiments \cite{Houtsmuller2001,Mone2004}. In contrast, the enclosed distribution of single stranded DNA damages causes the local activation of a multi-protein repair machinery which in turn allows to study the \textit{de novo} assembly and dissociation kinetics of single repair factors. Exploiting this standard experimental set-up we acquired a comprehensive data set comprising the accumulation and dissociation time series of seven individual repair enzymes. In addition, we were able to directly quantify newly synthesized DNA measuring the incorporation of a fluorescently modified nucleotide analogue.\\
-Based on this data we developed a mathematical model that is able to explain the connection between the dynamic exchange of individual repair factors at the chromatin on one hand and the overall time scale of the repair process on the other. The exact parametrization of the model was adapted iteratively in correspondence with a profile likelihood estimation leading to identifiable parameters and hence an increased predictive power of the model. As a consequence our model can reliably predict the behaviour of the experimentally not accessible incised DNA intermediate.\\
+DNA damage can be induced by UV-light within a locally confined area in the cell nucleus \cite{Mone2001}. This spatial constraint represents an essential advantage for the research on Nucleotide Excision Repair (NER). These techniques reformed the investigation of chromatin-associated processes whose \textit{in-vivo} analysis was, until recently, focused on enzyme mobility and exchange dynamics at steady state performed with photobleaching experiments \cite{Houtsmuller2001,Mone2004}. In contrast, the enclosed distribution of single-stranded DNA damages causes the local activation of a multi-protein repair machinery, which in turn allows us to study the \textit{de-novo} assembly and dissociation kinetics of individual repair factors. Exploiting this standard experimental set-up, we acquired a comprehensive data set comprising the accumulation and dissociation time series of seven individual repair enzymes. In addition, we were able to directly quantify newly-synthesized DNA by measuring the incorporation of a fluorescently modified nucleotide analogue.\\ 
+Based on this data we developed a mathematical model that is able to explain the connection between the dynamic exchange of individual repair factors at damaged chromatin sites and the overall time scale of the entire repair process. The exact parametrization of the model was adapted iteratively with a profile likelihood estimation leading to identifiable parameters and hence an increased predictive power of the model. As a consequence, our fully identifiable model can reliably predict the behaviour of the experimentally inaccessible incised DNA intermediate.\\
    
 The experiments reported in this chapter were planed and conducted by Martijn Luijsterburg (accumulation and FLIP experiments) and Paul Verbruggen (EdU incorporation).
 	
 	
-\section{Fluorescent time-laps imaging of the NER process}
+\section{Fluorescence time-lapse imaging of the NER process}
 
 \subsection{Locally inflicted UV-induced DNA damage}
 \label{sec:local_irradiation}
  
 
-To observe the dynamic behaviour of NER factors upon local infliction of DNA damage we applied the experimental set-up developed by Mon\'e \textit{et al.} (2001)\cite{Mone2001}. Therein, NER competent cells are covered with a polycarbonate UV filter containing pores with a given diameter (cf.\ Figure \ref{fig:accuMethod}A). For our purposes cells were grown on uncoated 24 mm coverslips before overlaid with a mask including pores with 5 \textmu m diameter \cite{Verbruggen2014}. Figure \ref{fig:accuMethod}B illustrates the realistic deviation of pore diameters due to manufacturing inaccuracies. The actual size distribution has a very small CV of 0.14 indicating a negligible effect on the filter's transmissivity. Filter-covered cells were immediately irradiated with a dose of 100 $\text{J/m}^\text{2}$ of UV-C with a fluency of 3.85 $\text{W/m}^\text{2}$. Due to the specific pore density (4 x $\text{10}^\text{5}$ pores/$\text{cm}^\text{2}$) we could observe nuclei containing either one damage spot or no spot at all. Very rarely two spots per cell were present (cf.\ Figure \ref{fig:accuMethod}C, white arrows indicate the damage spot). With this technique we were able to measure NER in damaged nuclei as well as undamaged control nuclei in the same experiment.
+To observe the dynamic behavior of NER factors upon local infliction of DNA damage, we applied the experimental set-up developed by Mon\'e \textit{et al.} (2001)\cite{Mone2001}, in which NER-competent cells are covered with a polycarbonate UV filter containing pores with a given diameter (cf.\ Figure \ref{fig:accuMethod}A). For our purposes, cells were grown on uncoated 24 mm coverslips before being overlaid with a mask with pores of 5 \textmu m diameter \cite{Verbruggen2014}. Figure \ref{fig:accuMethod}B illustrates the realistic deviation of pore diameters due to manufacturing inaccuracies. The actual size distribution has a very small coefficient of variation (CV) of 0.14 indicating a negligible effect on the filter's transmissivity. Filter-covered cells were immediately irradiated with a dose of 100 $\text{J/m}^\text{2}$ of UV-C with a fluency of 3.85 $\text{W/m}^\text{2}$. Due to the specific pore density (4 x $\text{10}^\text{5}$ pores/$\text{cm}^\text{2}$), we could observe nuclei containing only either one damage spot or no spot at all. Very rarely were two spots per cell (cf.\ Figure \ref{fig:accuMethod}C, white arrows indicate the damage spot). With this technique we were able to measure NER in damaged nuclei as well as undamaged control nuclei in the same experiment.
 
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure2_1.pdf}
-		\caption{\textbf{Local irradiation leads to spatially confined DNA damage.} A) Schematic illustration of the experimental setup. UV-light (purple arrows) is transmitted through a UV filter containing pores with 5 \textmu m diameter. Local irradiation of the chromatin occurs, if a pore is located above a cell nucleus. (reprinted Figure from \cite{Terstiege2010}) B) Distribution of the pore sizes within the UV irradiation mask (n=5008) - \textbf{ask paul how he did it} C) Partially UV-irradiated nuclei of cultivated mammalian cells were made visible with a blue-fluorescent DNA stain. Red fluorescence depicts incorporation of labelled nucleotides due to NER.}
+		\caption{\textbf{Local irradiation leads to spatially confined DNA damage.} A) Schematic illustration of the experimental set-up. UV-light (purple arrows) is transmitted through a UV filter containing pores with 5 \textmu m diameter. Local irradiation of the chromatin occurs if a pore is located above a cell nucleus. (reprinted Figure from \cite{Terstiege2010}) B) Distribution of the pore sizes within the UV irradiation mask (n=5008) - \textbf{ask paul how he did it} C) Partially UV-irradiated nuclei of cultivated mammalian cells were made visible with a blue-fluorescent DNA stain. Red fluorescence depicts incorporation of labelled nucleotides due to NER.}
 		\label{fig:accuMethod}
 	\end{center}
 \end{figure}
 
 \subsection{Repair factor accumulation and dissociation occur on different time scales}
 \label{subsec:AccuFlipExp}
-The ability to locally inflict DNA damage with a discrete dose of UV-C allows to study the accumulation and exchange behaviour of fluorescently tagged repair proteins under different experimental conditions. In the following we describe the comprehensive dataset acquired by Luijsterburg \textit{et al.} (2010)\cite{Luijsterburg2010}, which represents the basis of our quantitative analysis of the NER process. In total, the kinetics of seven repair factors were measured: i) XPC, the lesion recognition factor; ii) TFIIH, the helicase responsible for DNA unwinding; iii) XPA and RPA, which bind and thereby protect single stranded DNA against cleavage iv) the exonucleases XPF/ERCC1 and XPG performing the incision of the damaged DNA strand and v) PCNA, which loads the DNA polymerase and hence indirectly provides insight into the DNA repair-synthesis kinetic. \\
-Each repair factor is tagged with a green fluorescent protein (GFP) (or its 'enhanced' derivative EGFP) and expressed at physiological levels within the cell nucleus. Before the cells are UV-irradiated at time t = 0 the repair proteins are homogeneously distributed. Immediately afterwards the repair factors accumulate at the damaged chromatin sites, which leads to a higher visible fluorescence intensity (cf.\ Figure \ref{fig:accuImage}A). For quantification of the fluorescence intensity image analysis was done by using ImageJ software (NIH Bethesda, MD). Accumulated repair-factor concentrations were determined by multiplying the nuclear reference concentrations (cf.\ Table \ref{tab:nuclearconcentrations}) with the fraction of bound proteins at damaged DNA:
+The ability to locally inflict DNA damage with a discrete dose of UV-C allows the study of accumulation and exchange behaviour of fluorescently-tagged repair proteins under different experimental conditions. In the following, we describe the comprehensive dataset acquired by Luijsterburg \textit{et al.} (2010)\cite{Luijsterburg2010}, which represents the basis for our quantitative analysis of the NER process. In total, the kinetics of seven repair factors were measured: i) XPC, the lesion recognition factor; ii) TFIIH, the helicase responsible for DNA unwinding; iii) XPA and RPA, which bind and thereby protect single stranded DNA against cleavage; iv) the exonucleases XPF/ERCC1 and XPG performing the incision of the damaged DNA strand and; v) PCNA, which loads the DNA polymerase and hence indirectly provides insight into the DNA repair-synthesis kinetics. \\
+Each repair factor is tagged with a green fluorescent protein (GFP) (or its 'enhanced' derivative EGFP) and expressed at physiological levels within the cell nucleus. Before the cells are UV-irradiated at time t = 0, the repair proteins are homogeneously distributed at steady state. Immediately afterwards, the repair factors accumulate at the damaged chromatin sites, which leads to a higher visible fluorescence intensity (cf.\ Figure \ref{fig:accuImage}A). For quantification of the fluorescence intensity, image analysis was done by using ImageJ software (NIH Bethesda, MD). Accumulated repair-factor concentrations were determined by multiplying the nuclear reference concentrations (cf.\ Table \ref{tab:nuclearconcentrations}) with the fraction of bound proteins at damaged DNA:
+% * <l.adlung@dkfz.de> 2014-12-06T23:21:59.631Z:
+%
+%  expressed at physiological levels under the endogenous promoter?
+%
 \begin{equation}
 \text{Bound fraction} = (I_\text{LD} - I_\text{outspot})A_\text{LD}/ (I_\text{nucleus} - I_\text{background})A_\text{nucleus}
 \label{Eqn:BoundFraction}
 \end{equation}     
-where $I_\text{LD}$, $I_\text{outspot}$, $I_\text{nucleus}$ and $I_\text{background}$ represent the average fluorescence intensities within the locally damaged spot, an equally sized area in the non-damaged nucleus, the whole nucleus and the background, respectively (cf.\ Figure \ref{fig:accuImage}B). $A_\text{LD}$ and $A_\text{nucleus}$ depict the damaged area and the size of the nucleus. Finally, the concentrations of accumulated protein are calculated assuming a damaged nuclear volume of 0.03 pL.\\   
+where $I_\text{LD}$, $I_\text{outspot}$, $I_\text{nucleus}$ and $I_\text{background}$ represent the average fluorescence intensities within the locally damaged spot, an equally sized area in the non-damaged nucleus, the whole nucleus and the background, respectively (cf.\ Figure \ref{fig:accuImage}B). $A_\text{LD}$ and $A_\text{nucleus}$ give the size of the damaged area and the size of the nucleus. Finally, the concentrations of accumulated protein are calculated assuming a damaged nuclear volume of 0.3 pL \cite{Luijsterburg2010}.\\   
 
 \begin{figure}[htbp]
 \begin{center}
@@ -83,10 +87,14 @@ PCNA&1.110 \textmu M&20\%\\  \hline
  \caption{\textbf{Nuclear concentrations of NER factors (in \textmu M)} All nuclear quantities are based on published data or on previous estimates \cite{Araujo2001,Houtsmuller1999,Mone2004}. The nuclear concentrations are calculated assuming a nuclear volume of 0.3 pL. The bound
 fractions are determined by Eqn. \ref{Eqn:BoundFraction}\cite{Luijsterburg2010}. }\label{tab:nuclearconcentrations}
   \end{table}
+% * <l.adlung@dkfz.de> 2014-12-06T23:29:58.578Z:
+%
+%  Precisely mention irradiation and cell type
+%
   
-During the timespan of DNA repair (cf.\ Section \ref{sec:NERexperiments}) NER factors accumulate towards and then gradually decrease from their plateau levels at different rates (cf.\ Figure \ref{fig:accuImage}C). For example the half-life $t_\text{1/2}$ for XPC- and XPG-EGFP is $\sim$1 h whereas $\sim$2.5 h for XPA-EGFP \cite{Luijsterburg2010}. Moreover, PCNA and RPA stay present in the damage spot even after lesion removal. These result show that NER factors engage for hours in the repair process with temporal changes in the molecular composition.\\
-To characterize the interaction between repair proteins and DNA intermediates dwell times were determined by fluorescence loss in photobleaching (FLIP) experiments \cite{Luijsterburg2010}. Thereby, a large part of the nucleus, away from the local damage spot, is continuously bleached at 100 \% laser power (cf.\ \ref{fig:accuFlip}A, white rectangle). At the same time fluorescent proteins are probed at low laser power elsewhere within the nucleus. Repair proteins dissociating from the local damage spot have a high probability to be bleached before rebinding due to their large diffusivity. Accordingly, for the dwell time of the repair proteins binding instead of diffusion seems to be rate limiting \cite{Luijsterburg2010}.\\
-Still, compared to the long timespan (in the order of hours) where repair protein levels are still elevated at site of local damage, all NER factors dissociate very quickly from damaged DNA with half-lives of 20 s (RPA), 25 s (XPC), 50 s (TFIIH, XPG, ERCC1/XPF) and 80 s (RPA) (cf.\ Figure \ref{fig:accuFlip}B). For PCNA the dissociation is strongly biphasic with half-lives of 10 s and 225 s respectively. To analyse, whether the dwell time of slowly accumulating NER factors changes throughout the repair process resynthesis was stalled by addition of the drugs hydroxyurea (HU) and cytosine-$\beta$-arabinofuranoside. While NER factors, reaching their plateau level earlier, were not affected \cite{Luijsterburg2010}, omitting the repair progression at this late stage mainly slowed down the dissociation of PCNA and RPA (cf.\ Figure \ref{fig:accuFlip}C). In contrast, XPA's half-life decreased by twofold indicating its higher affinity to repair synthesis intermediates. This shows that the dwell times of NER factors change as repair progresses and suggests that their affinity towards damaged chromatin is defined by the state of the DNA substrate.      
+During the timespan of DNA repair, NER factors accumulate and then gradually decrease from their plateau levels at different rates (cf.\ Figure \ref{fig:accuImage}C). For example, the half-life $t_\text{1/2}$ for XPC- and XPG-EGFP is $\sim$1 h but $\sim$2.5 h for XPA-EGFP \cite{Luijsterburg2010}. In contrast, PCNA and RPA stay present in the damage spot even after lesion removal. These results show that NER factors engage for hours in the repair process with temporal changes in the molecular composition.\\
+To characterize the interaction between repair proteins and DNA intermediates, dwell times were determined by fluorescence loss in photobleaching (FLIP) experiments \cite{Luijsterburg2010}. Thereby, a large part of the nucleus, away from the local damage spot, is continuously bleached at 100\,\% laser power (cf.\ Figure \ref{fig:accuFlip}A, white rectangle). At the same time, fluorescent proteins are probed at low laser power (to prevent photobleaching) elsewhere within the nucleus. Repair proteins dissociating from the local damage spot have a high probability of being bleached before rebinding due to their large diffusivity. Accordingly, binding of the repair proteins seems to be rate limiting for the dwell time, not diffusing \cite{Luijsterburg2010}.\\
+However, compared to the long timespan (in the order of hours) where repair protein levels are still elevated at the site of local damage, all NER factors dissociate very quickly from damaged DNA with half-lives of 20 s (RPA), 25 s (XPC), 50 s (TFIIH, XPG, ERCC1/XPF) and 80 s (RPA) (cf.\ Figure \ref{fig:accuFlip}B). For PCNA the dissociation is strongly biphasic with half-lives of 10 s and 225 s respectively. To analyse, whether the dwell time of slowly accumulating NER factors changes throughout the repair process, resynthesis was stalled by addition of hydroxyurea (HU) and cytosine-$\beta$-arabinofuranoside. NER factors, which reached their plateau levels earlier, were not affected \cite{Luijsterburg2010}, so omitting the repair progression at this late stage mainly slowed down the dissociation of PCNA and RPA (cf.\ Figure \ref{fig:accuFlip}C). In contrast, XPA's half-life decreased by two fold indicating its higher affinity to repair synthesis intermediates. This demonstrates that the dwell times of NER factors change as repair progresses and suggests that their affinity towards damaged chromatin is defined by the state of the DNA substrate.      
            
   \begin{figure}[htbp]
   	\begin{center}
@@ -101,8 +109,8 @@ Still, compared to the long timespan (in the order of hours) where repair protei
 \subsection{Direct measurement of DNA resynthesis}
 \label{Subsec:EdUmeasurement}
 
-In order to expand our quantitative inspection of the NER pathway in intact mammalian cells we established a protocol for the direct measurement of the repair synthesis process. DNA resynthesis reflects the kinetic of the post-incision repair process, complementing the measurement of DNA lesion removal, which captures the systems behaviour of the pre-incision steps (cf.\ section \ref{sec:NERexperiments}). To visualize newly incorporated DNA shortly before and after local UV irradiation cells were incubated in microscopy medium supplemented with 10 \textmu M 5-ethynyl-2'-deoxyuridine (EdU). Due to its excessive presence in solution the DNA polymerase integrates EdU (a thymidine analogue) into the new DNA strand instead of the endogenous thymine (cf.\ Figure \ref{fig:EdU_measurement}A). After incubation for the desired time cells were fixed stopping EdU incorporation and subsequently permeabilized. EdU is then tagged with the fluorescent azide (AlexaFluor-555, Life Technologies) forming a covalent bond by click chemistry \cite{Limsirichaikul2009}. Analogous to the quantification of NER factor dynamics EdU intensities were captured with a laser scanning microscope (Zeiss).\\
-Accordingly, incorporated EdU is exclusively present at the locally confined area of damaged DNA, which coincides with the localization of immunostained XPC (cf.\ Figure \ref{fig:EdU_measurement}B, upper row). The same result occurs for XP-C cells with stably transfected XPC-eGFP (cf.\ Figure \ref{fig:EdU_measurement}B, lower row). Replicating cells could be excluded easily from the analysis due to there prevalent EdU incorporation distributed over the entire nucleus. 
+In order to expand our quantitative inspection of the NER pathway in intact mammalian cells, we established a protocol for the direct measurement of the repair synthesis process \cite{Verbruggen2014}. DNA resynthesis reflects the kinetics of the post-incision repair process, complementing the measurement of DNA lesion removal, which captures the system's behaviour of the pre-incision steps (cf.\ section \ref{sec:NERexperiments}). To visualize newly-incorporated DNA shortly before and after local UV irradiation, cells were incubated in microscopy medium supplemented with 10 \textmu M 5-ethynyl-2'-deoxyuridine (EdU). Due to its excessive presence in solution, the DNA polymerase integrates EdU (a thymidine analogue) instead of the endogenous thymine into the new DNA strand (cf.\ Figure \ref{fig:EdU_measurement}A). After incubation for the desired time, cells were fixed, stopping EdU incorporation, and subsequently permeabilized. EdU was then tagged with the fluorescent azide (AlexaFluor-555, Life Technologies) forming a covalent bond by click chemistry \cite{Limsirichaikul2009}. Analogous to the quantification of NER factor dynamics, EdU intensities were captured with a laser scanning microscope (Zeiss).\\
+Accordingly, incorporated EdU is exclusively present at the locally confined area of damaged and thereupon resynthesized DNA, which coincides with the localization of immunostained XPC (cf.\ Figure \ref{fig:EdU_measurement}B, upper row). The same result occurs for XP-C cells with stably-transfected XPC-eGFP (cf.\ Figure \ref{fig:EdU_measurement}B, lower row). Replicating cells could be excluded easily from the analysis due to the prevalent EdU incorporation distributed over the entire nucleus. 
   
 
     
@@ -118,28 +126,41 @@ Accordingly, incorporated EdU is exclusively present at the locally confined are
 \end{figure}
 
 
-\subsection{Repair rate follows first order rate kinetic}
+\subsection{Repair rate follows first order rate kinetics}
 \label{firstOrderRateKinetic}
-In contrast to the real-time measurements for accumulation and dissociation of the NER factors the incorporation of EdU cannot be followed continuously. As mentioned in section \ref{Subsec:EdUmeasurement} cells have to be fixed and permeabilized before the newly incorporated bases can be fluorescently labelled. Therefore, only the accumulated EdU incorporated in the time interval between UV-irradiation and fixation can be followed. By repeating this procedure for growing time intervals we acquired successively the repair kinetic for newly repaired DNA (cf.\ Figure \ref{fig:DNArepairKinetic}A and B). The signal at each time point represents the EdU signal averaged over multiple cells. \\
-We found that EdU incorporation essentially stops after 4 h, which coincides with the removal of 6-4PP (cf.\ \cite{Luijsterburg2010} and Figure \ref{fig:DNArepairKinetic}B red and blue curve, respectively). This agrees with the observation that NER is not primarily engaged in the removal of cyclobutane pyrimidine dimers (CPD) which are repaired on a much longer time scale. To test whether the availability of EdU is rate limiting we measured the incorporation of EdU in discrete equidistant time intervals after UV-irradiation (cf.\ Figure \ref{fig:DNArepairKinetic}C). As it turns out the amount of EdU incorporation per time interval is indeed continuously declining and hence the rate of repair synthesis. Moreover the EdU kinetic follows the trajectory of PCNA accumulation as measured by Luijsterburg \textit{et al.} \cite{Luijsterburg2010} (cf.\ Figure \ref{fig:DNArepairKinetic}D). PCNA is thought to act as processivity factor for the DNA polymerase and remains bound to the DNA \cite{Luijsterburg2010,Essers2005,Sporbert2002}. Taken together, these data establish EdU incorporation as a direct and quantitative measure of DNA repair synthesis in locally damaged cells.\\
+In contrast to the real-time measurements for accumulation and dissociation of the NER factors, the incorporation of EdU cannot be followed continuously. As mentioned in section \ref{Subsec:EdUmeasurement}, cells have to be fixed and permeabilized before the newly incorporated bases can be fluorescently labelled. Therefore, only the accumulated EdU incorporated in the time interval between UV-irradiation and fixation can be followed. By repeating this procedure for growing time intervals we acquired successively the repair kinetics for newly-repaired DNA (cf.\ Figure \ref{fig:DNArepairKinetic}A and B). The signal at each time point represents the EdU signal averaged over multiple cells. \\
+We found that EdU incorporation essentially stops after 4 hours, which coincides with the removal of 6-4PP (cf.\ \cite{Luijsterburg2010} and Figure \ref{fig:DNArepairKinetic}B red and blue curve, respectively). This agrees with the observation that NER is not primarily engaged in the removal of cyclobutane pyrimidine dimers (CPD) which are repaired on a much longer time scale \cite{Luijsterburg2010}. To test whether the availability of EdU is rate limiting, we measured the incorporation of EdU in discrete equidistant time intervals after UV-irradiation (cf.\ Figure \ref{fig:DNArepairKinetic}C). As it turns out, the amount of EdU incorporation per time interval is indeed continuously declining and hence, the rate of repair synthesis. Moreover the EdU kinetic follows the trajectory of PCNA accumulation as measured by Luijsterburg \textit{et al.} \cite{Luijsterburg2010} (cf.\ Figure \ref{fig:DNArepairKinetic}D). PCNA is thought to act as processivity factor for the DNA polymerase and remains bound to the DNA \cite{Luijsterburg2010,Essers2005,Sporbert2002}. Taken together, these data establish EdU incorporation as a direct and quantitative measure for DNA repair synthesis in locally damaged nuclei.\\
 The DNA repair time series characterized by incorporated EdU is fitted by a mono-exponential kinetic (cf.\ Figure \ref{fig:DNArepairKinetic}E):
 \begin{equation}
 EdU(t) = EdU_\text{max}(1 - e^{\lambda t}),
 \label{Eqn:EdU_kinetic}
 \end{equation}  
-where $EdU(t)$ and $EdU_{\text{max}}$ depict the amount of incorporated EdU and its value at saturation, respectively. The time constant is $\lambda$=0.58 ($\pm$0.07) $\text{h}^{-\text{1}}$. This result indicates that, despite its molecular complexity, 6-4PP removal by NER is a slow first-order reaction with a half-time of 1.2 hours.          
+where $EdU(t)$ and $EdU_{\text{max}}$ give the amount of incorporated EdU and its value at saturation, respectively. The time constant is $\lambda$=0.58 ($\pm$0.07) $\text{h}^{-\text{1}}$. This result indicates that despite its molecular complexity, 6-4PP removal by NER is a slow first-order reaction with a half-time of 1.2 hours.          
+% * <l.adlung@dkfz.de> 2014-12-07T00:14:27.396Z:
+%
+%  More important: Here it should be mentioned once more why EdU corporation is inversely correlated with 6-4PP removal.
+%
+% * <l.adlung@dkfz.de> 2014-12-07T00:13:30.350Z:
+%
+%  Have second order kinetics been tested, too and checked not to perform significantly better? 
+%
+% ^ <l.adlung@dkfz.de> 2014-12-07T10:07:30.533Z.
 \begin{figure}[b!]
 \begin{center}
 \includegraphics[width=1\textwidth]{Abbildungen/figure2_4.pdf}
 \caption{\textbf{EdU incorporation reflects DNA repair synthesis quantitatively.} A) EdU signal at various time points after local UV-C irradiation. B) Repair DNA synthesis (EdU, red curve) coincides with damage removal (6-4PP, blue curve) measured previously by Luijsterburg \textit{et al.}(2010) \cite{Luijsterburg2010}. The EdU trajectory represents mean $\pm$ SD (derived from three independent experiments) of DNA repair in n=150 locally damaged cells per time point. C) Irradiated XP-C XPC-eGFP cells were treated with EdU for different time intervals post-irradiation. Intervals were chosen as follows: 15 minutes pre-irradiation to 60 minutes post-irradiation, 45-120 minutes, 105-180 minutes, 165-240 minutes and 225-300 minutes. Line plot of experimental means derived from distributions associated to a particular time interval. D) DNA repair synthesis follows PCNA accumulation as measured previously \cite{Luijsterburg2010}. E) Mono-exponential fit of the EdU kinetic according to Eqn. \ref{Eqn:EdU_kinetic}.}
 \label{fig:DNArepairKinetic}
+% * <l.adlung@dkfz.de> 2014-12-07T10:08:06.916Z:
+%
+%  Explain UV-C in contrast to UV. Give R^2 for E
+%
 \end{center}
 \end{figure}
 
 \section{Kinetic model of NER}
 \subsection{Slow first-order reaction kinetic due to many fast interacting components}
 \label{sec:toyModel}
-To investigate the mechanistic connection between fast NER factor exchange at the DNA template and the overall slow repair time it appears practical to apply an analytical approach. During her Ph.D. thesis Gesa Terstiege supervised by Prof. Thomas H\"ofer performed this analysis \cite{Terstiege2010,Verbruggen2014}, considering the complex formation with a simplified model including $N$ repair factors. They examined different scenarios distinguishing random and sequential protein assembly; reversible and irreversible protein binding or mixed mechanisms specific for each DNA repair intermediate (cf.\ Figure \ref{fig:reactionTiming}A,\cite{Verbruggen2014}). Under appropriate assumptions, the mean repair time of such a process can be generally expressed with:
+To investigate the mechanistic connection between fast NER factor exchange at the DNA template and the overall slow repair time, it appears practical to apply an analytical approach. During her Ph.D. thesis, Gesa Terstiege supervised by Prof. Thomas H\"ofer performed this analysis \cite{Terstiege2010,Verbruggen2014}, considering the complex formation with a simplified model including $N$ repair factors. They examined different scenarios distinguishing between random and sequential protein assembly; reversible and irreversible protein binding, or mixed mechanisms specific for each DNA repair intermediate (cf.\ Figure \ref{fig:reactionTiming}A,\cite{Verbruggen2014}). Under appropriate assumptions, the mean repair time of such a process can be generally expressed with:
 
 \begin{equation}
 \tau = \underbrace{\frac{1}{k}\sum^{N-1}_{i=0}A_i\left(\frac{l}{k}\right)^i}_{\text{first assembly}} +  \underbrace{\frac{1}{\rho}\sum_{i=0}^{N}B_i \left(\frac{l}{k}\right)^i}_{\text{reassembly and reaction}} \label{Eqn:taugen}
@@ -153,7 +174,11 @@ and sequential assembly
 \begin{equation}
 A_i^\text{seq}= N-i , \quad B_i^\text{seq} = 1.\label{Eqn.coefseq}
 \end{equation}
-Sequential and random assembly occur on a similar time scale for a number of repair components smaller than 10 considering reversible protein binding ($l=k=1$) \cite{Terstiege2010}, which coincides with the number of core NER factors \cite{Luijsterburg2010}. The theoretical component number for equal repair times is even higher for increasing reaction rates ($\rho \gg k,l$). Given that all repair factor dwell times are in the order of $\sim$1 min ($k$ = $l$ = 1 $\text{min}^{-\text{1}}$) the model was simulated for N = 9 components. Remarkably, the resulting trajectory followed a single-exponential kinetic with a half-time of $\sim$1 hour in case of balanced reversibility. In contrast, for an irreversible process ($l/k = 0$) the repair kinetic resembles a sigmoid time course (cf.\ Figure \ref{fig:reactionTiming}B). These results suggest that the rapidly exchanging NER factors naturally generate a mono-exponential repair kinetic whereas the slow overall time span can be explained by the stochastic distribution of repair events.
+Considering reversible protein binding ($l=k=1$), sequential and random assembly occur on a similar time scale for fewer than or equal to 10 components \cite{Terstiege2010}, which coincides with the number of core NER factors \cite{Luijsterburg2010}. The theoretical component number where both assembly strategies have a similar timing is even higher for increasing reaction rates ($\rho \gg k,l$). Given that all repair factor dwell times are in the order of $\sim$1 min ($k$ = $l$ = 1 $\text{min}^{-\text{1}}$), the model was simulated for N = 9 components. The resulting trajectory followed a single-exponential kinetic with a half-time of $\sim$1 hour in the case of balanced reversibility. In contrast, for an irreversible process ($l/k = 0$) the repair kinetic resembles a sigmoid time course (cf.\ Figure \ref{fig:reactionTiming}B). These results suggest that the rapidly exchanging NER factors naturally generate a mono-exponential repair kinetic whereas the slow overall time span can be explained by the stochastic distribution of repair events.
+% * <l.adlung@dkfz.de> 2014-12-07T00:20:46.664Z:
+%
+%  This stochastic distribution comes a bit out of the blue. Mention that, due to sparse interactions, even fast binding events take overall long to be established
+%
 
 \begin{figure}[h]
 \begin{center}
@@ -165,9 +190,9 @@ Sequential and random assembly occur on a similar time scale for a number of rep
 
 
 \subsection{Model structure and parametrization}
-To examine the relation between rapid repair factor exchange and the slow first-order reaction kinetic we extended this analysis on the basis of a realistic NER model. Conceptually, it follows a model worked out by Luijsterburg \textit{et al.} (2010) \cite{Luijsterburg2010}. In this model NER factors bind transiently to DNA repair intermediates thereby forming catalytic complexes that, if complete, perform the next repair step. These are usually irreversible reactions embodying the sequential characteristics of this pathway (cf.\ Figure \textbf{tbm}).\\
-The nature of these distinguishable repair intermediates is widely investigated in biochemical but also in \textit{in vivo} studies \cite{Evans1997a,Mu1996,Polo2006,Tapias2004}.
-Accordingly, the evolved model distinguishes five DNA repair intermediates: i) damaged DNA, unwound DNA, incised DNA, resynthesised DNA and rechromatinised DNA. The molecular state of these intermediates defines the binding affinity for a specific set of repair proteins (cf.\ Figure \ref{fig:ModelStructure}). Table \ref{tab:modelassumptions} summarizes all repair intermediates and lists the corresponding repair factors that show affinity for a particular repair intermediate. Repair factors that catalyse the enzymatic reaction if assembled are indicated. As stated before, FLIP measurements indicate that diffusion is not rate limiting for protein binding and thus not included in the model (cf.\ Section \ref{subsec:AccuFlipExp} and \cite{Rademakers2003,Zotter2006}).              
+To examine the relation between rapid repair factor exchange and the slow first-order reaction kinetic, we extended the analysis \cite{Luijsterburg2010,Terstiege2010}, by considering a more realistic NER model. Conceptually, the model developed here, follows on introduced by Luijsterburg \textit{et al.} (2010) \cite{Luijsterburg2010}. In their model NER factors bind transiently to DNA repair intermediates to form catalytic complexes that, if complete, perform the next repair step. The latter are usually irreversible reactions embodying the sequential characteristics of this pathway (cf.\ Figure \ref{fig:introScheme}A).\\
+The nature of these distinguishable repair intermediates has been widely investigated \textit{in vitro} and \textit{in vivo} \cite{Evans1997a,Mu1996,Polo2006,Tapias2004}.
+The evolved model, presented here, distinguishes five DNA repair intermediates: damaged DNA, unwound DNA, incised DNA, resynthesised DNA and rechromatinised DNA. The molecular state of these intermediates defines the binding affinity for a specific set of repair proteins (cf.\ Figure \ref{fig:ModelStructure}). Table \ref{tab:modelassumptions} summarizes all repair intermediates and lists the corresponding repair factors that show affinity for a particular repair intermediate. Repair factors that catalyse the enzymatic reaction if assembled are indicated. As stated before, FLIP measurements indicated that diffusion is not rate limiting for protein binding and therefore, we do not include it in the model (cf.\ Section \ref{subsec:AccuFlipExp} and \cite{Rademakers2003,Zotter2006}).              
 
 
 \begin{figure}[t!]
@@ -177,24 +202,25 @@ Accordingly, the evolved model distinguishes five DNA repair intermediates: i) d
 \label{fig:ModelStructure}
 \end{center}
 \end{figure}
-A prominent role within the NER pathway belongs to the lesion recognition factor XPC. Theoretical results suggest that the detection of damaged DNA sites by a single element instead of multiple simultaneously is crucial for the efficient initiation of the repair process \cite{Politi2005}. Beside this exception the model allows random, non-cooperative binding for all NER factors.\\    
-The model structure introduced above and shown in Figure \ref{fig:ModelStructure} was translated into an ordinary differential equation system assuming mass-action kinetics for all protein-DNA interaction processes. Each equation describes the concentration of a single DNA state $y_{\pi}^{R}$ (cf.\ Eqn. \ref{eqn:DNAstatesModel}) associated with a specific repair intermediate R = I, II,...,V (damaged (I), unwound (II), incised (III), resynthesised (IV), rechromatinised (V)). The index $\pi$ represents a binary vector where each position displays the presence or absence of a repair protein p (p $\in$ {C, T, G, A, F, R, P}, where XPC (C), TFIIH (T), XPG (G), XPA (A), ERCC1/XPF (F), RPA (R) and PCNA (P)). $\pi(p)=1$ if protein p is bound and $\pi(p)=0$ if not. The length of $\pi(p)$ is defined according to the model structure (cf.\ Table \ref{tab:modelassumptions}) with: $\pi_{R=I} = \{ \text{C,T} \}$; $\pi_{R=II} = \{ \text{C,T,G,A,F,R} \}$; $\pi_{R=III} = \{ \text{C,T,G,A,F,R,P} \}$; $\pi_{R=IV} = \{ \text{A,R,P} \}$; $\pi_{R=V} = \{ \text{R,P} \}$. The time course of this model is then described by:
+A prominent role within the NER pathway belongs to the lesion recognition factor XPC. Theoretical results suggest that the detection of damaged DNA sites by a single element instead of multiple elements simultaneously is crucial for the efficient initiation of the repair process \cite{Politi2005}. Besides this exception, the model allows random, non-cooperative binding for all NER factors.\\    
+The model structure introduced above and shown in Figure \ref{fig:ModelStructure} was translated into an ordinary differential equation system assuming mass-action kinetics for all protein-DNA interaction processes. Each equation describes the concentration of a single DNA state $y_{\pi}^{R}$ (cf.\ Eqn. \ref{eqn:DNAstatesModel}) associated with a specific repair intermediate R = I, II,\dots,V (damaged (I), unwound (II), incised (III), resynthesised (IV), rechromatinised (V)). The index $\pi$ represents a binary vector where each position displays the presence or absence of a repair protein $p$ ($p$ $\in$ {C, T, G, A, F, R, P}, where XPC (C), TFIIH (T), XPG (G), XPA (A), ERCC1/XPF (F), RPA (R) and PCNA (P)). $\pi(p)=1$ if protein p is bound and $\pi(p)=0$ if not. The length of $\pi(p)$ is defined according to the model structure (cf.\ Table \ref{tab:modelassumptions}) with: $\pi_{R=I} = \{ \text{C,T} \}$; $\pi_{R=II} = \{ \text{C,T,G,A,F,R} \}$; $\pi_{R=III} = \{ \text{C,T,G,A,F,R,P} \}$; $\pi_{R=IV} = \{ \text{A,R,P} \}$; $\pi_{R=V} = \{ \text{R,P} \}$. The time course of this model is described by:
 
 \begin{equation}\label{eqn:DNAstatesModel}
 \frac{d}{dt}\;y_{\pi}^{R} =\sum_{p\text{ in }R}\eta \, \left( (-1)^{\pi(p)} \,l_{p}^{ R}\, y_{\pi}^{R}\left. \right|_{\pi(p)=1}+  \, (-1)^{1+\pi(p)}\, k_{p}^{ R} \,C_p(t)\,y_{\pi}^{R}\left. \right|_{\pi(p)=0}\right ) +E(y_{\pi}^{R}),
 \end{equation}\\
 where $\eta$ represents a cooperativity ensuring the inclusion of all cooperative binding events:
+
 \begin{align*}
 \eta =\left\{
 \begin{array}{llll}
-& =\; 0 \quad   &\text{if}& R=\text{I} \wedge p=\text{C} \wedge \text{T}=1, \\
-&     && R=\text{I} \wedge p=\text{T} \wedge \text{C}=0,\\
-& = \; 1 \quad &\text{else}.&
+& =\; 0 \quad   &\text{if}& R=\text{I} ~\wedge~ p=\text{C} ~\wedge~ \text{T}=1, \\
+&     && R=\text{I} ~\wedge~ p=\text{T} ~\wedge~ \text{C}=0,\\
+& = \; 1 \quad &\text{otherwise}.&
 \end{array}
 \right.
 \end{align*}
   
-The kinetics describing protein exchange at the repair intermediates are characterized by the binding $k_{p}^{ R}$ and dissociation constants $l_{p}^{ R}$, respectively. The free protein concentrations are denoted by $C_p(t)$ representing seven additional differential equations for $p \in \{\text{C,T,G,A,F,R,P}\}$:
+The kinetics describing protein exchange at the repair intermediates are characterized by the binding $k_{p}^{ R}$ and dissociation constants $l_{p}^{ R}$, respectively. The free protein concentrations are denoted by $C_p(t)$ representing seven additional ordinary differential equations for $p \in \{\text{C,T,G,A,F,R,P}\}$:
 
 \begin{eqnarray}\label{Eqn:concentration}
 \frac{d}{dt}\;C_p&=&\,\sum_{R=\text{I}}^{\text{V}} \sum_{\pi} \xi \left( \,\delta_{\pi (p)1}\;l_{p}^{ R}\, y_{\pi}^{R}- \,\delta_{\pi (p)0}\; k_{p}^{ R} \,C_p\,y_{\pi}^{R}\right)
@@ -205,10 +231,10 @@ Analogous to $\eta$, $\xi$ governs the sequential binding of XPC and TFIIH by:
 \begin{align*}
 \xi =\left\{
 \begin{array}{l l ll}
-& =\; 0 \quad   &\text{if} & R=\text{I} \wedge \text{C}=0 \wedge \text{T}=1, \\
-&    && R=\text{I} \wedge p=\text{C} \wedge \text{C}=\text{T}=1, \\
-&    &&R=\text{I} \wedge p=\text{T} \wedge \text{C}=\text{T}=0, \\
-& = \; 1 \quad& \text{else }.&
+& =\; 0 \quad   &\text{if} & R=\text{I} ~\wedge~ \text{C}=0 ~\wedge~ \text{T}=1, \\
+&    && R=\text{I} ~\wedge~ p=\text{C} ~\wedge~ \text{C}=\text{T}=1, \\
+&    &&R=\text{I} ~\wedge~ p=\text{T} ~\wedge~ \text{C}=\text{T}=0, \\
+& = \; 1 \quad& \text{otherwise}.&
 \end{array}
 \right.
 \end{align*}
@@ -256,7 +282,7 @@ Analogous to $\eta$, $\xi$ governs the sequential binding of XPC and TFIIH by:
 			&&&& \\ \hline
 			\rule{0pt}{3ex}
 			(V) Rechromatin- &RPA, PCNA &&RPA and PCNA associate&\cite{Riedl2003}\\
-			ized DNA &(4 states)	&&with rep. intermediate $I$,&\cite{Luijsterburg2010}\\
+			ized DNA &(4 states)	&&with repaired intermediate $I$,&\cite{Luijsterburg2010}\\
 			&&&as levels of bound EGFP-&\\
 			&&&PCNA and EGFP-RPA&\\ 
 			&&& are  high up to at least 4h&\\
@@ -269,19 +295,19 @@ Analogous to $\eta$, $\xi$ governs the sequential binding of XPC and TFIIH by:
 	
 
 
-Finally, if an enzymatic complex has fully assembled at the DNA template it catalyses the next repair step, which is represented in the model with the term $E(y_{\pi}^{R})$. After damage recognition by XPC damaged DNA is unwound by the helicase TFIIH with the unwinding activity $\alpha$, whereas XPC acts as a stabilizing/proof reading factor in parallel. Accordingly $E(y_{\pi}^{R})$ translates into the following catalytic reactions for damaged DNA ($R= \text{I}$):
+Finally, when a enzymatic complex has fully assembled at the DNA template, it catalyses the next repair step, which is represented in the model by the term $E(y_{\pi}^{R})$. After damage recognition by XPC, damaged DNA is unwound by the helicase TFIIH with the unwinding activity $\alpha$, whereas XPC acts as a stabilizing/proof-reading factor in parallel. Accordingly $E(y_{\pi}^{R})$ translates into the following catalytic reactions for damaged DNA ($R= \text{I}$):
 $$E(y_{00}^\text{I})=\;\varepsilon\;y_{000000}^\text{II} \quad \text{ and }\quad
 E(y_{11}^\text{I})=\;-\alpha \;y_{11}^\text{I},$$
-If all proteins fall off the DNA template due to false damage detection the DNA will re-anneal with the rate $\epsilon$. Otherwise a complex formed by TFIIH, XPG, XPA, XPF, XPA and RPA will eventually promote the excision of the lesion DNA strand leading to the following catalytic reactions for unwound DNA ($R= \text{II}$): 
+If all proteins fall off the DNA template due to false damage detection, the DNA will re-anneal with the rate $\epsilon$. Otherwise a complex formed by TFIIH, XPG, XPA, XPF, XPA and RPA will eventually promote the excision of the lesion DNA strand leading to the following catalytic reactions for unwound DNA ($R= \text{II}$): 
 
 \begin{align*}
-	\begin{array}{l l llll}
-		E(y_{000000}^\text{II})&=&-\;	\varepsilon	\;y_{000000}^\text{II}\;, &E(y_{110000}^\text{II})&=\;	\alpha	\;y_{11}^\text{I},\\
-		\text{ and }&&    & E(y_{011111}^\text{II})&=-\	\beta	\;y_{011111}^\text{II}.
+	\begin{array}{l l l}
+		E(y_{000000}^\text{II})&=&-\;	\varepsilon	\;y_{000000}^\text{II}\;, \\ E(y_{110000}^\text{II})&=&\;	\alpha	\;y_{11}^\text{I} 	\text{ and }\\
+	    E(y_{011111}^\text{II})&=&-\	\beta	\;y_{011111}^\text{II}.
 	\end{array}
 \end{align*}
 
-Once the lesion strand is excised with incision rate $\beta$ the remaining repair steps are irreversible. Incised DNA is resynthesised with the rate $\gamma$ by the resynthesis complex  XPA-RPA-PCNA. XPA is assumed to assemble at post incision repair intermediates as suggested by experiments with inhibited incision that showed accelerated dissociation FLIP kinetics for XPA  \cite{Luijsterburg2010}. This result is supported by a chromatin immunoprecipitation (ChIP) experiment with antibodies against XRCC1-Lig III showing the co-precipitation of XPA and RPA but not XPC and TFIIH \cite{Moser:2007:Mol-Cell:17643379}. Evidence for the importance of PCNA and RPA for the resynthesis reaction was shown by Shivji \textit{et al.} (1995) \cite{Shivji:1995:Biochemistry:7711023}. This results into the following catalytic reactions for incised DNA ($R= \text{III}$):  
+Once the lesion strand is excised with incision rate $\beta$, the remaining repair steps are irreversible. Incised DNA is resynthesised with the rate $\gamma$ by the resynthesis complex  XPA-RPA-PCNA. XPA is assumed to assemble at post-incision repair intermediates as suggested by experiments with inhibited incision that showed accelerated dissociation FLIP kinetics for XPA  \cite{Luijsterburg2010}. This result is supported by a chromatin immunoprecipitation (ChIP) experiment with antibodies against XRCC1-Lig III showing the co-precipitation of XPA and RPA but not XPC and TFIIH \cite{Moser:2007:Mol-Cell:17643379}. Evidence for the importance of PCNA and RPA for the resynthesis reaction was shown by Shivji \textit{et al.} (1995) \cite{Shivji:1995:Biochemistry:7711023}, and therefore we incorporate the following catalytic reactions for incised DNA ($R= \text{III}$):  
             
 \begin{align*}
 \begin{array}{l l llll}
@@ -290,19 +316,20 @@ E(y_{1111111}^\text{III})&=&\;	\beta \;	y_{011111}^\text{II}	 \quad \text{and}
 \end{array}
 \end{align*}
 
-In correspondence to the previously described accumulation measurements (cf.\ Figure \ref{fig:accuImage}) only RPA and PCNA stay bound during chromatin remodelling, the last modelled repair intermediate. This leads to the following enzymatic reactions for resynthesised DNA  ($R= \text{IV}$) and rechromatinised DNA ($R= \text{IV}$):
+In correspondence to the previously described accumulation measurements (cf.\ Figure \ref{fig:accuImage}), only RPA and PCNA stay bound during chromatin remodelling (the last modelled repair intermediate). This leads to the following enzymatic reactions for resynthesised DNA  ($R= \text{IV}$) and rechromatinised DNA ($R= \text{IV}$):
 
 
 \begin{align*}
 \begin{array}{l l llll}
-E(y_{111}^\text{IV})&=&\;	\gamma \;	y_{0001011}^\text{III},	 
-&E(y_{011}^\text{IV})=&\;	-\delta	\;y_{011}^\text{IV},	 \\
-\text{and} && & E(y_{11}^\text{V})= &\;	\delta	\;y_{011}^\text{IV}.
+E(y_{111}^\text{IV})&=&\;	\gamma \;	y_{0001011}^\text{III},\\	 
+E(y_{011}^\text{IV})&=&\;	-\delta	\;y_{011}^\text{IV} \text{ and }	 \\
+ E(y_{11}^\text{V})&=&\;	\delta	\;y_{011}^\text{IV}.
 \end{array}
 \end{align*}
 
-Since all NER factors can bind independently to the DNA template for each repair intermediate there are a total of $2^N $ repair states where $ N $ is the number of repair proteins assembling to the particular repair intermediate. Due to the sequential assembly of TFIIH after lesion detection of XPC the number of states for damaged DNA is reduced to $ 2^2-1 = 3$ states. For the remaining repair intermediates we derive  $ 2^6 = 64$ for unwound DNA; $ 2^7 = 128$ states for incised DNA; $ 2^3 = 8$ states for resynthesised DNA and $ 2^21 = 4$ states for rechromatinised DNA. This results in a total of 214 states including seven differential equations for the free NER-factor protein concentrations. \\
-Summing over all repair states and the respective intermediates associated to one repair factor we can simulate its accumulation kinetic. As initial conditions serve the measured free protein concentrations denoted in Table \ref{tab:nuclearconcentrations}\cite{Terstiege2010,Luijsterburg2010} and the initial amount of inflicted damages whose concentration was estimated with  $y_{00}^{\text{I}} = 3.33$ \textmu M. The remaining states start at zero. To reproduce the FLIP kinetic for a specific repair factor all corresponding dissociation constants were set to zero at the time of maximal accumulation when the FLIP experiment started. Accordingly, FLIP kinetics were acquired after 600 s for XPC and ERCCC1/XPF, 900 s for XPG and TFIIH and 2000 s for XPA and 7200 s for PCNA. 
+Since all NER factors can bind independently to the DNA template for each repair intermediate, there are a total of $2^N$ repair states where $N$ denotes the number of repair proteins assembling to the particular repair intermediate. Due to the sequential assembly of TFIIH, after lesion detection of XPC, the number of states for damaged DNA is reduced to $ 2^2-1 = 3$ states. For the remaining repair intermediates we derive  $ 2^6 = 64$ for unwound DNA; $ 2^7 = 128$ states for incised DNA; $ 2^3 = 8$ states for resynthesised DNA and $ 2^2 = 4$ states for rechromatinised DNA. This results in a total of 214 states including seven differential equations for the free NER-factor protein concentrations. \\
+Summing over all repair states and the respective intermediates associated to one repair factor, we can simulate its accumulation kinetic. The initial conditions are the measured free protein concentrations denoted in Table \ref{tab:nuclearconcentrations}\cite{Terstiege2010,Luijsterburg2010} and the initial amount of inflicted damages was estimated with  $y_{00}^{\text{I}} = 3.33$ \textmu M \cite{Verbruggen2014}. The remaining initial states were assumed to be zero. To reproduce the FLIP kinetic for a specific repair factor, all corresponding dissociation constants were set to zero when the FLIP experiment started (at the time where protein accumulation at LD reached the plateau level). Accordingly, FLIP kinetics were acquired after 600 s for XPC and ERCCC1/XPF, 900 s for XPG and TFIIH and 2000 s for XPA and 7200 s for PCNA. 
+
 
  \newpage
 \section{Maximum likelihood approach together with PLE analysis identifies realistic model of NER}
@@ -315,26 +342,26 @@ To find a realistic parametrisation for the temporal development of the repair s
   	\label{eqn:observable}
   \end{equation} 
 
-The observables $z$ are parametrised by $\theta$ and resemble experimentally derived quantities at time $t_i$. $\theta$ depicts binding, dissociation and catalytic constants adding up to a total of 45 model parameters. Each observable $z_k(t_i,\theta)$ corresponds to the measured data $z_k^\dag(t_i)$ with intrinsic noise $\epsilon_{ki}$. Its origin can be traced back to a mixture of measurement noise combined with the naturally occurring biological variability. Assuming additive, normally distributed noise leads to $z_k(t_i)^\dag = z_k(t_i,\theta) + \epsilon_{ki}$ with $\epsilon_{ki} \sim N(0,\sigma_{ki}^2)$. To calibrate the measured data $z_k(t_i)^\dag$ with the model observables $z_k(t_i,\theta)+\epsilon_{ki}$ we applied a maximum likelihood approach as distance measure which translates for normally distributed noise into:
+The observables $z$ are parametrised by $\theta$ and resemble experimentally-derived quantities at time $t_i$. $\theta$ depicts binding, dissociation and catalytic constants adding up to a total of 45 model parameters. Each observable $z_k(t_i,\theta)$ corresponds to the measured data $z_k^\dag(t_i)$ with intrinsic noise $\epsilon_{ki}$. The data is usually the sum of measurement noise combined with the naturally occurring biological variability. Assuming additive, normally distributed noise leads to $z_k(t_i)^\dag = z_k(t_i,\theta) + \epsilon_{ki}$ with $\epsilon_{ki} \sim N(0,\sigma_{ki}^2)$. To calibrate the measured data $z_k(t_i)^\dag$ with the model observables $z_k(t_i,\theta)+\epsilon_{ki}$, we applied a maximum likelihood approach as distance measure which translates for normally distributed noise into:
 \begin{equation}
 \label{eqn:likelihood}
 L(z^\dag \textbar \theta) = \varPi_{k=1}^m \varPi_{i=1}^{d_k} \frac{1}{\sqrt{2\pi \sigma_{ki}^2}}\exp \left( -\frac{1}{2\sigma_{ki}^2}\left(z_{ki}^\dag - z_k(t_i,\theta)\right)^2\right)
 \end{equation}
   
-Here, $d_k$ denotes the number of distinct experimental data sets $z^\dag$ for each observable $k\sim 1 ...m$, measured at time points $t_i$ with $i\sim 1 ... d_k$. $\sigma_{ki}^2$ are the variance components of the measurement noise of each data point. Instead of maximizing the likelihood it is equivalent and numerically more efficient to minimize its negative logarithm $-2log(L(z^\dag\textbar\theta))$ instead. In the following we will refer to it as $X^2$.  For the minimization of $X^2$ the choice for $\theta$ is controlled by $\sigma_{ki}^2$ (cf.\ Eqn. \ref{eqn:likelihood}). As shown by Raue and colleagues for the reliable estimation of the model parameters $\theta$ the simultaneous approximation of $\sigma_{ki}^2$ together with the model dynamics leads to a statistically more accurate assessment of the model parameters than using noise estimations from preprocessed data \cite{Raue2013}. Accordingly $\sigma_{ki}^2$ can be considered as parametrised function
+Here, $d_k$ denotes the number of distinct experimental data sets $z^\dag$ for each observable $k\sim 1 ...m$, measured at time points $t_i$ with $i\sim 1,...,d_k$. $\sigma_{ki}^2$ are the variance components of the measurement noise of each data point. Instead of maximizing the likelihood it is equivalent and numerically more efficient to minimize its negative logarithm $-2log(L(z^\dag\textbar\theta))$. In the following we will refer to it as $X^2$.  For the minimization of $X^2$ the choice for $\theta$ is controlled by $\sigma_{ki}^2$ (cf.\ Eqn. \ref{eqn:likelihood}). As shown by Raue and colleagues \cite{Raue2013}, for a reliable estimation of the model parameters $\theta$, the simultaneous approximation of $\sigma_{ki}^2$ together with the model dynamics leads to a statistically more accurate assessment of the model parameters than using noise estimations from preprocessed data \cite{Raue2013}. Accordingly $\sigma_{ki}^2$ can be considered as parametrised function
 
 \begin{equation}
 \sigma_{k}(t_i,\theta) = f_{\sigma_{k}}(t_i,z(t_i,\theta),\theta).
 \end{equation}    
 
 wherein additional parameters are introduced representing the type and magnitude of the modelled noise. Analogous we applied an additive error model for each observable with the parametrised function $\sigma_{k}(t_i,\theta) = s_a$ and $\epsilon_{ki} \sim N(0,\sigma_{ki}^2)$ where $s_a$ is included in $\theta$.\\ 
-For reasons of fitting-speed efficiency we implemented our model into the online-available D2D software environment \cite{Raue2013} optimized for MATLAB (2011a, The Mathworks Inc., Natick, MA). The integrated fitting procedure applies the trust region algorithm LSQNONLIN, which is pre-implemented in MATLAB. The algorithm requires the derivatives of the objective function with respect to the parameters (cf.\ Eqn. \ref{eqn:likelihood}). The inner derivatives $dy(t,/theta)/d\theta$, also called sensitivities, provide gradient information about the parameter landscape and thus are crucial to guide the optimization algorithm to the nearest optimum. The sensitivities can be passed in form of sensitivity equations 
+For reasons of fitting-speed efficiency we implemented our model into the online-available D2D software environment \cite{Raue2013} optimized for MATLAB (2011a, The Mathworks Inc., Natick, MA). The integrated fitting procedure applies the trust region algorithm LSQNONLIN, which is pre-implemented in MATLAB. The algorithm requires the derivatives of the objective function with respect to the parameters (cf.\ Eqn. \ref{eqn:likelihood}). The inner derivatives $dy(t,\theta)/d\theta$, also called sensitivities, provide gradient information about the parameter landscape and thus, are crucial to guide the optimization algorithm to the nearest optimum. The sensitivities can be passed into the form of sensitivity equations 
 
 \begin{equation}
 	\frac{d}{dt}\frac{dy(t,\theta)}{d\theta} = \frac{\partial f_y}{\partial y}\frac{dy(t,\theta)}{d\theta}+\frac{\partial f_y}{\partial \theta},
 \end{equation}  
 
-which represent additional ODEs that are solved in parallel to the original ODE system (cf.\ Eqn. \ref{eqn:DNAstatesModel})\cite{Leis1988}. Applying sensitivity equations instead of a simple finite difference approximation proved to be numerically more accurate and computationally also faster \cite{Raue2013}. Both, model and sensitivity ODEs were solved with the CVODES algorithm written in ANSI standard C \cite{Hindmarsh2005}. \\
+which represent additional ODEs that are solved in parallel to the original ODE system (cf.\ Eqn. \ref{eqn:DNAstatesModel})\cite{Leis1988}. Applying sensitivity equations instead of a simple finite difference approximation proved to be numerically more accurate and computationally faster \cite{Raue2013}. Both, model and sensitivity ODEs were solved with the CVODES algorithm written in ANSI standard C \cite{Hindmarsh2005}. \\
 To avoid terminating the optimization procedure in a local minimum we used a 'multi-start' approach by drawing the initial parameter vector using Latin hypercube sampling (LHS) \cite{Owen2014}. In contrast to a random sampling approach LHS provides a better coverage of the sampling space by maximizing the distance between successive parameter drawings \cite{Raue2013}.    
 
 \begin{figure}[htbp]
@@ -355,7 +382,7 @@ To avoid terminating the optimization procedure in a local minimum we used a 'mu
 
 \subsection{NER model fits accumulation, FLIP and repair synthesis measurements}    
 
-To derive faithful fitting results we reiterated the optimization process for 250 times. For each iteration the starting parameters were redrawn by Latin hypercube sampling. Despite the size of the model, with respect to data points and the number of parameters, the majority of fits terminated relatively close to the global $X^2$ minimum (cf.\ Figure \ref{fig:LHS}). Nevertheless two distinct minimums can be distinguished suggesting a close local minimum, which 'hides' the rarely reached global minimum. For both parameter sets the model fits the experimental data set comprising accumulation, FLIP, perturbation and repair synthesis measurements with small estimated measurement errors (cf.\ Figure \ref{fig:ModelFit_accu_flip}A, B, C). The accumulation kinetics (cf.\ Figure \ref{fig:ModelFit_accu_flip}A) are depicted as concentrations scaled by the volume of the locally damaged area which was assumed to be 10\% of the nuclear volume. We believe that this specification is more intuitively comprehensible  compared to scaling by the whole nuclear volume as performed by Luijsterburg \textit{et al.}\cite{Luijsterburg2010}. Moreover it allows the realistic comparison between simulated and measured microscopy images of NER factor accumulation and EdU incorporation (cf.\ Figure \ref{fig:Fitt_accu_Mic}).  
+To derive faithful fitting results we reiterated the optimization process 250 times. For each iteration the starting parameters were redrawn by Latin hypercube sampling. Despite the size of the model, with respect to data points and the number of parameters, the majority of fits terminated relatively close to the global $X^2$ minimum (cf.\ Figure \ref{fig:LHS}). Nevertheless two distinct minimums can be distinguished suggesting a close local minimum, which 'hides' the rarely-reached global minimum. For both parameter sets, the model fits the experimental data set comprising accumulation, FLIP, perturbation and repair synthesis measurements with small estimated measurement errors (cf.\ Figure \ref{fig:ModelFit_accu_flip}A, B, C). The accumulation kinetics (cf.\ Figure \ref{fig:ModelFit_accu_flip}A) are depicted as concentrations scaled by the volume of the locally damaged area which was assumed to be 10\% of the nuclear volume. We believe that this specification is more intuitively comprehensible  compared to scaling by the whole nuclear volume as performed by Luijsterburg \textit{et al.}\cite{Luijsterburg2010}. It allows the realistic comparison between simulated and measured microscopy images of NER factor accumulation and EdU incorporation (cf.\ Figure \ref{fig:Fitt_accu_Mic}).  
 
 \begin{figure}[htbp]
 \begin{center}
@@ -367,12 +394,12 @@ To derive faithful fitting results we reiterated the optimization process for 25
 
 \subsection{Identifiability analysis}
 \label{sec:identifiabilityAnalysis}
-In the following section we want to quantify the quality of the model fit and determine whether the current model structure is competent for reliable predictions concerning experimentally unobserved system behaviour. This capability depends on the structural and practical identifiability of the model, which can be influenced by functionally related parameters or limited amount and quality of the data, respectively \cite{Cobelli1980,Swameye2003}. Both can be analysed and tested numerically by a formalism called profile likelihood estimation (PLE)\cite{Venzon1988,Murphy2000,Raue2009}, where the multi-dimensional model uncertainty inflicted by an individual parameter is projected to a one-dimensional profile likelihood (PL)
+In this section we quantify the quality of the model fit and determine whether the current model structure is competent for reliable predictions concerning experimentally unobserved system behaviour. This capability depends on the structural and practical identifiability of the model, which can be influenced by functionally related parameters or by the limited amount and quality of the data, respectively \cite{Cobelli1980,Swameye2003}. Both can be analysed and tested numerically by a formalism called profile likelihood estimation (PLE)\cite{Venzon1988,Murphy2000,Raue2009}, where the multi-dimensional model uncertainty inflicted by an individual parameter is projected to a one-dimensional profile likelihood (PL)
 \begin{equation}
 PL(\theta_i) = \max_{\forall j \neq i} [L(z^\dag \lvert \theta_j)].
 \label{eqn:PL} 
 \end{equation}
-Accordingly, one parameter $\theta_l$ with $l\in{1...N}$ is gradually fixed along this dimension for different values of $p$. In each step $X_{\theta_l}^2(p)$ is minimized fitting all other parameters $\theta_k$ with $k\in{1...N};k\neq l$. Subsequently, the identifiability of a parameter $\theta_l$ can be determined by $\Delta X_{\theta_l}^2(p)$, which describes the difference between the global $X^2$ minimum and the parameter dependent local minimum $X_{\theta_l}^2(p)$:
+One parameter $\theta_l$ with $l\in{1,...,N}$ at a time, is gradually fixed along this dimension for different values of $p$. In each step $X_{\theta_l}^2(p)$ is minimized, fitting all other parameters $\theta_k$ with $k\in{1,...,N};k\neq l$. Subsequently, the identifiability of a parameter $\theta_l$ can be determined by $\Delta X_{\theta_l}^2(p)$, which describes the difference between the global $X^2$ minimum and the parameter dependent local minimum $X_{\theta_l}^2(p)$:
 \begin{eqnarray}
 	\Delta X_{\theta_l}^2(p) &=& \min_{\{\theta_k\textbar k=1,...,N;k\neq l\}} \left( X^2 (\theta_1,...,\theta_{l-1},p,\theta_{l+1},...,\theta_N )\right)\nonumber \\
 	&-& \quad \! \min_{\{\theta_k\textbar k=1,...,N\}} \quad \!\! \left( X^2 (\theta_1,...,\theta_N )\right)
@@ -431,7 +458,7 @@ The $K_d$ values, depicting the protein binding affinities to the respective DNA
 
 \end{landscape}
 
-The narrow confidence bounds on the parameters allow to make valid computational predictions. For example, we can simulate the so far not observable fraction of incised DNA (cf.\ Figure \ref{fig:ModelFit_intermed}, green trajectory). As the EdU incorporation measurement shows, the damaged (blue) and repaired DNA (red) kinetics are tightly coupled. This omits a higher accumulation of incised DNA. \textbf{hier koennte noch was kommen...}
+The narrow confidence bounds on the parameters allow us to make valid computational predictions. For example, we can simulate the unobservable fraction of incised DNA (cf.\ Figure \ref{fig:ModelFit_intermed}, green trajectory). As the EdU incorporation measurement shows, the damaged (blue) and repaired DNA (red) kinetics are tightly coupled. This omits a higher accumulation of incised DNA. \textbf{hier koennte noch was kommen...}
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -440,6 +467,3 @@ The narrow confidence bounds on the parameters allow to make valid computational
 		\label{fig:ModelFit_intermed}
 	\end{center}
 \end{figure}
-
-
-  
