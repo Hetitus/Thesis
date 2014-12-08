@@ -11,11 +11,12 @@ A level-1 auxiliary file: chapters/CrossCorrel.aux
 A level-1 auxiliary file: chapters/Discussion.aux
 The style file: naturemagC.bst
 A level-1 auxiliary file: chapters/Appendix.aux
+A level-1 auxiliary file: chapters/Acknowledgments.aux
 Database file #1: NER_Bibliography.bib
 Warning--I didn't find a database entry for "Lovdok2009"
 You've used 111 entries,
             2538 wiz_defined-function locations,
-            1320 strings with 28910 characters,
+            1321 strings with 28938 characters,
 and the built_in function-call counts, 52913 in all, are:
 = -- 4331
 > -- 1954

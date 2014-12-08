@@ -1,6 +1,8 @@
  \documentclass[DIV12,11pt,a4paper,titlepage,twoside,headings=small]{scrbook}
-\usepackage[english]{babel}
+ %\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
 \usepackage[T1]{fontenc}
+
 
 \def\TCop{\textsuperscript{\textcopyright}}
 \def\TReg{\textsuperscript{\textregistered}}
@@ -28,6 +30,13 @@
 \renewcommand{\footrulewidth}{0pt}}
 \fancyfoot[C]{\helv \thepage} 
 
+
+\fancypagestyle{plain2}{
+	\fancyhf{}
+	\fancyhead[C]{}
+	\fancyfoot[C]{\thepage{}}
+	\renewcommand{\headrulewidth}{1pt}
+}
 %\newenvironment{keeppage}{\let\thispagestyle{plain}}
 
  
@@ -286,9 +295,12 @@
 % ************************* Appendix *****************************
 
 \include{chapters/Appendix}
-%\clearpage{\pagestyle{empty}\cleardoublepage} \thispagestyle{empty}
+%\clearpage{\cleardoublepage}
+\clearpage{\pagestyle{plain2}} %\thispagestyle{empty}
 %\clearpage{\pagestyle{empty}\cleardoublepage}
 
+
+\include{chapters/Acknowledgments}
 %\setcounter{chapter}{1}
 
 
