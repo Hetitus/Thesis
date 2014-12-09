@@ -9,40 +9,37 @@
 \contentsline {paragraph}{Molecular mechanism of NER}{3}{section*.6}
 \contentsline {paragraph}{Data-driven kinetic modelling of NER}{3}{section*.8}
 \contentsline {section}{\numberline {1.3}Research objectives}{5}{section.1.3}
-\contentsline {chapter}{\numberline {2}Mathematical Modelling of Nucleotide Excision Repair (NER)}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Fluorescence time-lapse imaging of the NER process}{7}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Locally inflicted UV-induced DNA damage}{7}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Repair factor accumulation and dissociation occur on different time scales}{8}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Direct measurement of DNA resynthesis}{12}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Repair rate follows first order rate kinetics}{14}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}Kinetic model of NER}{16}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Slow first-order reaction kinetic due to many fast interacting components}{16}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Model structure and parametrization}{17}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Maximum likelihood approach together with PLE analysis identifies realistic model of NER}{23}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}A maximum likelihood approach for efficient model fitting}{23}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}NER model fits accumulation, FLIP and repair synthesis measurements}{24}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Identifiability analysis}{25}{subsection.2.3.3}
-\contentsline {chapter}{\numberline {3}Control analysis of the DNA repair rate}{33}{chapter.3}
-\contentsline {section}{\numberline {3.1}Kinetic NER model predicts collective rate control}{33}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Response coefficients}{33}{subsection.3.1.1}
-\contentsline {paragraph}{Prediction profile likelihood}{35}{section*.25}
-\contentsline {subsection}{\numberline {3.1.2}Exploiting natural variability in protein expression to quantify rate control}{36}{subsection.3.1.2}
-\contentsline {paragraph}{Correlation analysis}{38}{section*.30}
-\contentsline {section}{\numberline {3.2}Variability analysis of the repair rate}{43}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Variable NER factor expression and inflicted lesions account for the distribution of repair rates}{43}{subsection.3.2.1}
-\contentsline {chapter}{\numberline {4}Co-expression of NER repair factors}{49}{chapter.4}
-\contentsline {section}{\numberline {4.1}Nuclear expression of NER factors is strongly correlated}{50}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Cross-correlation affects repair response}{50}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Microscopy analysis of co-staining experiments}{51}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Flow cytometry}{54}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Cell cycle independent cross-correlation of NER factor expression}{54}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Measured average response agrees with model prediction}{57}{subsection.4.1.5}
-\contentsline {chapter}{\numberline {5}Discussion}{59}{chapter.5}
-\contentsline {paragraph}{Slow first order kinetics as a general systems property for chromatin associated processes.}{59}{section*.41}
-\contentsline {paragraph}{An identifiable and hence predictive kinetic model of DNA repair.}{61}{section*.42}
-\contentsline {paragraph}{Model parametrization and its implications}{62}{section*.43}
-\contentsline {paragraph}{Collective control of the DNA repair rate}{63}{section*.44}
-\contentsline {paragraph}{Co-regulation of the nuclear NER factor expression}{64}{section*.45}
-\contentsline {paragraph}{Concluding remarks}{65}{section*.46}
-\contentsline {chapter}{\numberline {6}Bibliography}{67}{chapter.6}
-\contentsline {chapter}{Acknowledgements}{75}{chapter*.47}
+\contentsline {chapter}{\numberline {2}Fluorescence time-lapse imaging of the NER process}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Locally UV-inflicted DNA damage}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Repair factor accumulation and dissociation occur on different time scales}{9}{section.2.2}
+\contentsline {section}{\numberline {2.3}Direct measurement of DNA resynthesis}{12}{section.2.3}
+\contentsline {section}{\numberline {2.4}Repair rate follows first order rate kinetics}{14}{section.2.4}
+\contentsline {chapter}{\numberline {3}Kinetic model of NER}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Slow first-order reaction kinetic due to many fast interacting components}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Model structure and parametrization}{19}{section.3.2}
+\contentsline {section}{\numberline {3.3}A maximum likelihood approach for efficient model fitting}{24}{section.3.3}
+\contentsline {section}{\numberline {3.4}NER model fits accumulation, FLIP and repair synthesis measurements}{28}{section.3.4}
+\contentsline {section}{\numberline {3.5}PLE analysis identifies realistic model of NER}{29}{section.3.5}
+\contentsline {chapter}{\numberline {4}Control analysis of the DNA repair rate}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Kinetic NER model predicts collective rate control}{35}{section.4.1}
+\contentsline {paragraph}{Prediction profile likelihood}{37}{section*.25}
+\contentsline {section}{\numberline {4.2}Exploiting natural variability in protein expression to quantify rate control}{39}{section.4.2}
+\contentsline {paragraph}{Correlation analysis}{40}{section*.30}
+\contentsline {section}{\numberline {4.3}Variable NER factor expression and inflicted lesions account for the distribution of repair rates}{45}{section.4.3}
+\contentsline {chapter}{\numberline {5}Co-expression of NER repair factors}{51}{chapter.5}
+\contentsline {section}{\numberline {5.1}Cross-correlation affects repair response}{51}{section.5.1}
+\contentsline {section}{\numberline {5.2}Microscopy analysis of co-staining experiments}{53}{section.5.2}
+\contentsline {section}{\numberline {5.3}Flow cytometry}{56}{section.5.3}
+\contentsline {section}{\numberline {5.4}Cell cycle independent cross-correlation of NER factor expression}{58}{section.5.4}
+\contentsline {section}{\numberline {5.5}Measured average response agrees with model prediction}{60}{section.5.5}
+\contentsline {chapter}{\numberline {6}Discussion}{63}{chapter.6}
+\contentsline {paragraph}{Slow first order kinetics as a general systems property for chromatin associated processes.}{63}{section*.41}
+\contentsline {paragraph}{An identifiable and hence predictive kinetic model of DNA repair.}{65}{section*.42}
+\contentsline {paragraph}{Model parametrization and its implications}{66}{section*.43}
+\contentsline {paragraph}{Collective control of the DNA repair rate}{67}{section*.44}
+\contentsline {paragraph}{Co-regulation of the nuclear NER factor expression}{68}{section*.45}
+\contentsline {paragraph}{Concluding remarks}{69}{section*.46}
+\contentsline {chapter}{\numberline {7}Bibliography}{71}{chapter.7}
+\contentsline {chapter}{\numberline {A}Appendix}{79}{appendix.A}
+\contentsline {section}{\numberline {A.1}Parameter estimation}{79}{section.A.1}
+\contentsline {section}{\numberline {A.2}Cross-correlation}{81}{section.A.2}
