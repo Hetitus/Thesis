@@ -1,27 +1,29 @@
 \chapter{Control analysis of the DNA repair rate}
+\label{chap:robustRepair}
 
-In the previous chapter we introduced the incorporation of EdU upon UV-irradiation as a quantitative readout for the DNA repair synthesis kinetic (cf.\ Figure \ref{fig:EdU_measurement}). We could show that despite the pathway's complexity DNA repair follows a mono-exponential kinetic of first order. Moreover, the repair of single lesions is distributed over a broad time span with 50\% of the lesions being repaired after a half-time of $\sim$1.2 h. Notably, measurements on the single cell level revealed that also the half-time and hence the rate of repair is highly variable (cf.\ Figure \ref{fig:DNArepairKinetic}B-E). So far the origin of this variability is unknown but also if and how the cell faces this highly fluctuating environment.\\  
-In the following chapter we will apply the previously introduced kinetic NER model and explore the nature of the repair rate variability. Simulating the effect of NER factor variation on the repair rate we find that the repair rate control is distributed among all NER factors. Exploiting the natural variability of endogenously expressed repair proteins we can experimentally corroborate the computationally derived finding for the NER factors XPC, TFIIH, XPA, XPF and RPA. Apart from the variability in protein expression the model identifies the initial amount of inflicted DNA damage as major contribution determining the repair rate distribution. Both sources combined appear to be sufficient to explain the overall rate variability.\\     
+In the previous chapter we introduced the incorporation of EdU upon UV-irradiation as a quantitative readout for the DNA repair synthesis kinetic (cf.\ Figure \ref{fig:EdU_measurement}). We could show that despite the pathway's complexity, DNA repair follows a mono-exponential kinetic of first order. Moreover, the repair of single lesions is distributed over a broad time span with 50\% of the lesions being repaired with a half-time of $\sim$1.2 h. Notably, measurements on the single cell level revealed also that the half-time and hence the rate of repair is highly variable (cf.\ Figure \ref{fig:DNArepairKinetic}B-E). So far, not only is the origin of this variability, but also how the cell faces this highly fluctuating environment.\\  
+In this chapter we will apply the previously introduced kinetic NER model and explore the nature of the repair rate variability. By simulating the effect of NER factor variation on the repair rate, we find that the repair rate control is distributed among all NER factors. Exploiting the natural variability of endogenously expressed repair proteins we can experimentally corroborate the computationally-derived finding for the NER factors XPC, TFIIH, XPA, XPF and RPA. Apart from the variability in protein expression, the model identifies the initial amount of inflicted DNA damage as major contribution determining the repair rate distribution. Both sources combined appears to be sufficient to explain the overall rate variability.\\     
 
-The work reported in this chapter has been done in close collaboration with Paul Verbruggen who planed and conducted the experiments.
+The work reported in this chapter has been done in close collaboration with Paul Verbruggen who planned and conducted the experiments.
 
 \section{Kinetic NER model predicts collective rate control}
+\label{sec:repairControl}
 
-The narrow confidence bounds derived by PLE analysis identified parameters in reasonable biological ranges (cf.\ Section \ref{sec:identifiabilityAnalysis}) and allowed us to use the model for quantitative predictions. On the basis of the simplified model result, indicating that the fast and random enzyme exchange defines the slow first-order rate kinetics (cf.\ Section \ref{sec:toyModel}), we wanted to test whether the concept of multi-protein rate control also applies on the realistic NER model. To determine the response of a system to changes in the environment one can calculate the response coefficients $\tilde{R}_i$ \cite{Hofmeyr1991,Fell1992}. Accordingly, we can quantify the relative change in the repair rate $\nu$ as a function of the relative change in the protein concentration $C_i$ ($i$ = XPC, TFIIH,...).
+The narrow confidence bounds derived by PLE analysis identified parameters in reasonable biological ranges (cf.\ Section \ref{sec:identifiabilityAnalysis}) allowed us to use the model for quantitative predictions. On the basis of the simplified model result, indicating that the fast and random enzyme exchange defines the slow first-order rate kinetics (cf.\ Section \ref{sec:toyModel}), we wanted to test whether this concept of multi-protein rate control also applies on the realistic NER model. To determine the response of a system to changes in the environment, one can calculate the response coefficients $\tilde{R}_i$ \cite{Hofmeyr1991,Fell1992}. Accordingly, we can quantify the relative change in the repair rate $\nu$ as a function of the relative change in the protein concentration $C_i$ ($i$ = XPC, TFIIH,...).
 
 \begin{equation}
 \tilde{R}_i = \frac{\partial \, \text{ln} \, \nu}{\partial \, \text{ln} \, C_i}.
 \label{eqn:responseCoefficients}
 \end{equation}
 
-The inverse of $\nu$ is referred to as characteristic time $\tau$ so that Eqn. \ref{eqn:responseCoefficients} can be rewritten as
+The inverse of $\nu$ is the characteristic time $\tau_R$ that represents the time duration for the repair reaction $R$. Hence, Eqn. \ref{eqn:responseCoefficients} can be rewritten as
 
 \begin{equation}
-\tilde{R}_i = \frac{C_i}{\tau^{-1}} \frac{\partial  \, \tau^{-1}}{\partial \,  C_i}.
+\tilde{R}_i = \frac{C_i}{\tau_R^{-1}} \frac{\partial  \, \tau_R^{-1}}{\partial \,  C_i}.
 \label{eqn:rC_characteristicTime}   
 \end{equation}
 
-$\tau$, in turn, can be directly approximated from the distribution of repaired DNA states $y^R_\pi(t)$, which include the modelled DNA intermediates for resynthesised and rechromatinised DNA. By taking the ratio between the first ($\mu^{(1)}$) and the zeroth ($\mu^{(0)}$) central moment of the distribution we derive the reaction-specific mean time 
+$\tau_R$, in turn, can be directly approximated from the distribution of repaired DNA states $y^R_\pi(t)$, which include the modelled DNA intermediates for resynthesised and rechromatinised DNA. By taking the ratio between the first ($\mu^{(1)}$) and the zeroth ($\mu^{(0)}$) central moment of the distribution we derive the reaction-specific mean time 
 
 \begin{equation}
 \tau_{R} = \frac{\mu{(1)}}{\mu^{(0)}}, 
@@ -37,12 +39,12 @@ with
 
 
 To ensure the convergence of the integral we subtract all repair synthesis states (IV + V) from the initial amount of damages $y^{\text{I}}_{00} = $ 3.33 \textmu M at t = 0.
-	
+
 \begin{equation}	
-	\tau_{\text{syn}}=\frac{\int (y^I_{00}(0)-( \sum_ \pi  y_\pi^{IV}(t)+\sum_ \pi  y_\pi^{V}(t))\; dt)\cdot t\; dt}{\int y^I_{00}(0)-( \sum_ \pi  y_\pi^{IV}(t)+\sum_ \pi  y_\pi^{V}(t))\; dt}
+\tau_{\text{syn}}=\frac{\int (y^I_{00}(0)-( \sum_ \pi  y_\pi^{IV}(t)+\sum_ \pi  y_\pi^{V}(t))\; dt)\cdot t\; dt}{\int y^I_{00}(0)-( \sum_ \pi  y_\pi^{IV}(t)+\sum_ \pi  y_\pi^{V}(t))\; dt}
 \end{equation}
 
-Using $\tau_syn$ in Equation \ref{eqn:rC_characteristicTime} we derive the response coefficients for the repair synthesis rate, which are uniformly small $\sim$0.3 and below (cf.\ Figure \ref{fig:controlCoefficients}). This result implies that there is no single repair protein whose effect on the repair speed could be interpreted as rate-limiting. A similar result is obtained for the rate of re-synthesis response coefficients (cf.\ Appendix \textbf{tbd}), with the characteristic time
+Using $\tau_{\text{syn}}$ in Eqn. \ref{eqn:rC_characteristicTime} we derive the response coefficients for the repair synthesis rate, which are uniformly small with $\sim$0.3 and below (cf.\ Figure \ref{fig:controlCoefficients}). This result implies that there is no single repair protein whose effect on the repair speed could be interpreted as rate-limiting. A similar result is obtained for the rate of re-synthesis response coefficients (cf.\ Appendix \textbf{tbd}), with the characteristic time
 
 \begin{equation}
 \tau_{\text{inc}}=\frac{\int^\infty_0 \,t \,\sum_{x=I}^{\text{III}} \sum_ \pi  y_\pi^x(t)\,dt}{\int^\infty_0  \,\sum_{x=I}^{\text{III}} \sum_ \pi  y_\pi^x(t)\,dt}.
@@ -59,9 +61,9 @@ Using $\tau_syn$ in Equation \ref{eqn:rC_characteristicTime} we derive the respo
 \end{figure}
 
 \paragraph{Prediction profile likelihood}
-To obtain realistic confidence bounds for the response coefficients we performed a prediction profile likelihood estimation \cite{Kreutz2012,Hinkley1979}. Thereby the predicted response coefficients $\tilde{R} = F(D_{\text{pred}},\theta)$ are considered as model outcome $F$ for a predicted experimental design $D_{\text{pred}}= (z_{\text{pred}},t_{\text{pred}},u_{\text{pred}})$. $D_{\text{pred}}$ specifies a prediction observable $z_{\text{pred}}$ at time point $t_{\text{pred}}$ given the externally controlled stimulation $u_{\text{pred}}$. As defined in Eqn.\ \ref{eqn:observable} $z_{\text{pred}}(y(t),\theta)$ comprises a model simulation that can be mapped to experimentally observable quantities. Analogous to Eqn.\ \ref{eqn:PL} the prediction profile likelihood 
+To obtain realistic confidence bounds for the response coefficients we performed a prediction profile likelihood estimation \cite{Kreutz2012,Hinkley1979}. The predicted response coefficients $\tilde{R} = F(D_{\text{pred}},\theta)$ are considered as model outcomes $F$ for a predicted experimental design $D_{\text{pred}}= (z_{\text{pred}},t_{\text{pred}},u_{\text{pred}})$. $D_{\text{pred}}$ specifies a prediction observable $z_{\text{pred}}$ at time point $t_{\text{pred}}$ given the externally controlled stimulation $u_{\text{pred}}$. As defined in Eqn.\ \ref{eqn:observable} $z_{\text{pred}}(y(t),\theta)$ comprises a model simulation that can be mapped to experimentally observable quantities. Analogous to Eqn.\ \ref{eqn:PL}, the prediction profile likelihood 
 \begin{equation}
-	PPL(\tilde{R}) = \max_{\theta^\ast \in \{\theta \lvert F(D_{\text{pred}},\theta)=\tilde{R}\}} L(z^\dag \lvert \theta^\ast,\tilde{r}) 
+PPL(\tilde{R}) = \max_{\theta^\ast \in \{\theta \lvert F(D_{\text{pred}},\theta)=\tilde{R}\}} L(z^\dag \lvert \theta^\ast,\tilde{r}) 
 \end{equation}   
 
 is obtained by maximization over the model parameters satisfying the constraint that the model response $F(D, \theta^\ast)$ after fitting is equal to the considered value $\tilde{r}$ for the prediction $\tilde{R}$ with respect to the measured data $z^\dag$. This procedure is repeated for continuous variations of $\tilde{R}$. The model response can then be expressed as 
@@ -73,13 +75,13 @@ is obtained by maximization over the model parameters satisfying the constraint 
 
 which describes the difference between the global $X^2$ minimum and the best fit with $r$ included into the objective function. Similar to Eqn.\ \ref{eqn:confidenceIntervals} we can determine prediction confidence bounds 
 
-   \begin{equation}
-   PCI_{1-a}(D_{\text{pred}},z^\dag) = \{\tilde{r}\textbar \Delta X_{\theta_l}^2(\tilde{r})\leq Q_{X^2}(1-a,1)\},
-   \label{eqn:confidenceIntervalsPPL}
-   \end{equation}
+\begin{equation}
+PCI_{1-a}(D_{\text{pred}},z^\dag) = \{\tilde{r}\textbar \Delta X_{\theta_l}^2(\tilde{r})\leq Q_{X^2}(1-a,1)\},
+\label{eqn:confidenceIntervalsPPL}
+\end{equation}
 
 which include the set of predictions $\tilde{R} = F(D_{\text{pred}},\theta)$ for which -2log(PPL) is below the threshold given by the $X^2$-distribution. The PPLs were computed within the d2d-framework \cite{Raue2013} using the CVODE package \cite{Hindmarsh2005} for the numerical integration of the ODEs together with the sensitivity equations (cf.\ Section \ref{sec:maximumLL}).
-By applying the PPL analysis for each response coefficient we find that all of them have small confidence bounds indicating how well the model predictions are determined by the data (cf.\ Figure \ref{fig:controlCoefficients}B).\\ The moderate response predicted by the response coefficients also holds true for larger variations in the repair factor concentration (cf.\ Figure \ref{fig:R_largeProteinVariation}). The linear approximation (on which the response coefficients are based) yields a reasonable description for about two-fold concentration decreases or increases (corresponding to a knock-down or overexpression experiment), while for very large decreases the repair rate drops eventually to zero (corresponding essentially to a gene knock-out). From this result we can conclude that the kinetic NER model predicts a collective NER factor control of the repair rate. Consequently, the repair pathway appears robust against natural fluctuations in repair protein expression.  
+By applying the PPL analysis for each response coefficient we find that all of them are identifiable indicating how well the model predictions are determined by the data (cf.\ Figure \ref{fig:controlCoefficients}B).\\ The moderate response predicted by the response coefficients also holds true for larger variations in the repair factor concentration (cf.\ Figure \ref{fig:R_largeProteinVariation}). The linear approximation (on which the response coefficients are based on) yields a reasonable description for about two-fold concentration decreases or increases (corresponding to a knock-down or overexpression experiment), while for very large decreases the repair rate drops eventually to zero (corresponding essentially to a gene knock-out). From this result we can conclude that the kinetic NER model predicts a collective NER factor control of the repair rate. Consequently, the repair pathway appears robust against natural fluctuations in repair protein expression.  
 
 
 \begin{figure}[htbp]
@@ -92,7 +94,7 @@ By applying the PPL analysis for each response coefficient we find that all of t
 
 \section{Exploiting natural variability in protein expression to quantify rate control}
 \label{natural_Variability_m}
-To corroborate the model prediction of a distributed repair rate control, we developed an experimental set-up for the investigation of single repair factors and their quantitative influence on the repair rate. In particular, we asked whether there is a measurable response in the repair rate due to the natural occurring variability in protein expression. By capturing the integrated nuclear fluorescence intensity of indirectly antibody-stained repair proteins we derive the expression values for XPC, TFIIH, XPA, XPF and RPA. (cf.\ Figure \ref{fig:accuImage}B). For these five individually measured NER factors the expression variability was quantified by calculating the coefficient of variation (CV; standard deviation divided by the mean), which is on average $\sim$0.37 (cf.\ Figure \ref{fig:ProteinDist}A-E). Table \ref{tab:proteinVariability} depicts mean and standard deviation representing at least three biologically independent measurements of the expressed protein cell-two-cell variability.
+To corroborate the model prediction of a distributed repair rate control (cf.\ Section \ref{sec:repairControl}), we developed an experimental set-up for the investigation of single repair factors and their quantitative influence on the repair rate. In particular, we asked whether there is a measurable response in the repair rate due to the natural occurring variability in protein expression. By capturing the integrated nuclear fluorescence intensity of antibody-stained repair proteins we derive the expression values for XPC, TFIIH, XPA, XPF and RPA. (cf.\ Figure \ref{fig:accuImage}B). For these five individually measured NER factors the expression variability was quantified by calculating the coefficient of variation (CV; standard deviation divided by the mean), which is on average $\sim$0.37 (cf.\ Figure \ref{fig:ProteinDist}A-E). Table \ref{tab:proteinVariability} gives the means and standard deviations from at least three biologically independent measurements of the expressed protein cell-to-cell variability.
 
 \begin{table}[h!]
 	\centering
@@ -104,10 +106,10 @@ To corroborate the model prediction of a distributed repair rate control, we dev
 		\textbf{CV}: & 0.34 $\pm$ 0.05 & 0.33 $\pm$ 0.02 & 0.33 $\pm$ 0.03 & 0.4 $\pm$ 0.04 & 0.44\\ \hline
 		
 	\end{tabular}
-	\caption{\textbf{Mean and standard deviation of the variability in nuclear XPC, TFIIH, XPA and XPF expression.} Distributions for nuclear protein expression were acquired in $\text{n}_\text{b}$(XPC) = 5, $\text{n}_\text{b}$(TFIIH, XPA,XPF) = 3 and $\text{n}_\text{b}$(RPA) = 2 biological independent replicates. Within each measurement between n=250 and n=572 with an average of n=477 cells were analysed.}\label{tab:proteinVariability}
+	\caption{\textbf{Mean and standard deviation of the variability in nuclear XPC, TFIIH, XPA and XPF expression.} Distributions for nuclear protein expression were acquired in $\text{n}_\text{b}$(XPC) = 5, $\text{n}_\text{b}$(TFIIH, XPA,XPF) = 3 and $\text{n}_\text{b}$(RPA) = 2 independent biological replicates. Within each measurement between n=250 and n=572 with an average of n=477 cells were analysed.}\label{tab:proteinVariability}
 \end{table}      
 
-To distinguish whether the measured variability is due to differences in nuclear expression or rather superimposed by measurement noise we co-analysed XPC-eGFP stably expressed in XP-C fibroblasts together with immunofluorescently labelled XPC in the same cell. Both quantities are strongly positively correlated (cf.\ Figure \ref{fig:ProteinDist}F) suggesting a large natural variability compared to much lower measurement noise. To quantitatively validate this observation we performed a principal component analysis \cite{Pearson1901}. Thereby both quantities, XPC-eGFP and antibody-stained XPC intensities, are orthogonally transformed into a new coordinate system were the new transformed variables are linearly uncorrelated. These new variables are referred to as principal components. In a two-dimensional case the variances of both principal components define an error-ellipse as illustrated in Figure \ref{fig:ProteinDist}F. From this we estimated a relative measurement error of antibody labelling of $\sim$11\% showing that the technique is suitable for quantification of nuclear NER factor concentrations.       
+To distinguish whether the measured variability is due to differences in nuclear expression or rather superimposed by measurement noise, we co-analysed XPC-eGFP stably expressed in XP-C fibroblasts together with immunofluorescently labelled XPC in the same cell. Both quantities are strongly positively correlated (cf.\ Figure \ref{fig:ProteinDist}F) suggesting a large natural variability compared to much lower measurement noise. To quantitatively validate this observation, we performed a principal component analysis \cite{Pearson1901}. Thereby both quantities, XPC-eGFP and antibody-stained XPC intensities, are orthogonally transformed into a new coordinate system were the new transformed variables are linearly uncorrelated. These new variables are referred to as principal components. In a two-dimensional case the variances of both principal components define an error-ellipse as illustrated in Figure \ref{fig:ProteinDist}F. Calculating the CV from the smaller component we determined a relative measurement error for the antibody labelling method of $\sim$11\% showing that the technique is suitable for quantification of nuclear NER factor concentrations.       
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -117,9 +119,9 @@ To distinguish whether the measured variability is due to differences in nuclear
 	\end{center}
 \end{figure}
 %The same holds true for XPA \cite{Verbruggen2014}, TFIIH, XPF and RPA in narrow confidence bounds (cf.\ Appendix \textbf{tbm}).
-Before exploring the direct relation between protein expression variability and the speed of repair we tested whether higher protein amounts in the nucleus correlate with the accumulation of NER factors in the locally damaged area. In correspondence to previous findings for XPG \cite{Luijsterburg2010} there is a significant positive correlation between the nuclear XPC-eGFP expression and its local accumulation at the DNA lesions (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}A) thirty minutes after UV irradiation. Consequently, we conclude that the DNA lesions are not saturated so that a higher NER factor concentration could potentially accelerate the repair rate.\\
-In fact, the nuclear protein concentrations for all five antibody-stained repair factors and the amount of incorporated EdU after one hour were significantly correlated (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}B-F). Remarkably, the dependency between both quantities, characterized by the slope of the regression line is very evenly distributed and also in the same order of magnitude as predicted computationally by the response coefficients (cf.\ Figure \ref{fig:controlCoefficients}A). This agrees with the \textit{in silico} finding that the kinetic control of the measured repair factors is uniformly distributed and that the rate of repair synthesis is robust against natural variations in the repair protein expression.    
-       
+Before exploring the direct relation between protein expression variability and the speed of repair we tested whether higher protein amounts in the nucleus correlate with the accumulation of NER factors in the locally damaged area. In correspondence to previous findings for XPG \cite{Luijsterburg2010} there is a significant positive correlation between the nuclear XPC-eGFP expression and its local accumulation at the DNA lesions (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}A) thirty minutes after UV irradiation. Consequently, we conclude that the DNA lesions are not saturated, and thus, a higher NER factor concentration could potentially accelerate the repair rate.\\
+In fact, the nuclear protein concentrations for all five antibody-stained repair factors and the amount of incorporated EdU after one hour were weak, but still significantly correlated as indicated by the correlation coefficients and the corresponding small p-values (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}B-F). Remarkably, the dependency between protein concentration and EdU response, characterized by the slope of the regression line is very evenly distributed (cf.\ Figure \ref{fig:controlCoefficients}A). This agrees with the \textit{in silico} finding that the kinetic control of the measured repair factors is uniformly distributed and that the rate of repair synthesis is robust against natural variations in the repair protein expression.    
+
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_3.pdf}
@@ -129,15 +131,26 @@ In fact, the nuclear protein concentrations for all five antibody-stained repair
 \end{figure}
 
 \paragraph{Correlation analysis}
-The correlation analysis was performed in MATLAB (2012a, The Mathworks Inc., Natick, MA) using the inbuilt 'corrcoef' function, which also returns p-values indicating the significance of the correlation coefficient. The p-values are determined by a t-test, where the null-hypothesis states that the true correlation between two variables equals zero and that for its observed value $r$ the quantity 
+The correlation analysis was performed in MATLAB (2012a, The Mathworks Inc., Natick, MA) using the inbuilt 'corrcoef' function, which also returns p-values indicating the significance of the correlation coefficient. The p-values are determined by a t-test, where the null-hypothesis states that the true correlation between two variables equals zero ($H_0: \, p_r=0)$, whereas $H_1: \, p_r\neq0)$) and that for its observed value $r$ the quantity 
 \begin{equation}
-	t = \frac{r}{\sqrt{\frac{(1-r^2)}{N-2}}}
+t = \frac{r}{\sqrt{\frac{(1-r^2)}{N-2}}}
 \end{equation}     
 follows approximately a $t$-distribution for $N-2$ degrees of freedom and a sample size $N$ \cite{Kendall1979,Fisher1958}. A low p-value suggests the rejection of the null-hypothesis and thus, demonstrates the significance of the correlation.\\
 The confidence intervals for each correlation coefficient were estimated by non-parametric bootstrap \cite{Efron1979}. Thereby the correlation coefficient was re-sampled for 10,000 times each time drawing n pseudoreplicates (with replacement), where n denotes the number of measured cells from the original data. The confidence borders mark the interval including 95\% of the re-sampled correlation coefficients.\\       
 
-To reinforce the conclusion of a robustness DNA repair rate we compared the repair factor expression and its consequence on the repair variability in different cell lines. In contrast to indirectly labelled XPC in Hela cells \cite{Verbruggen2014} or in human primary fibroblasts (cf.\ Figure \ref{fig:ProteinDist}) the expression of stably transfected XPC-eGFP into XP-C patient cells is significantly broader distributed. Its CV has a value of $\sim$1, which is up to four times larger compared to XPC variability in Hela or fibroblasts cells (cf.\ Figure \ref{fig:consistVariability}A, Figure \ref{fig:ProteinDist}A and \cite{Verbruggen2014}). At the same time the distributions of accumulated EdU after 1, 2 and 3 hours at the sites of local damage is strikingly similar in both cell types (cf.\ Figure \ref{fig:consistVariability}). The unaffected DNA repair dynamic, even for much larger NER factor fluctuations, suggests a general phenomenon of a robust repair in different cell types.  
+To reinforce the conclusion of a robustness DNA repair rate we compared the repair factor expression and its consequence on the repair variability in different cell lines. In contrast to indirectly labelled XPC in Hela cells \cite{Verbruggen2014} or in human primary fibroblasts (cf.\ Figure \ref{fig:ProteinDist}) the expression of stably transfected XPC-eGFP into XP-C patient cells is much broader distributed. Its CV has a value of $\sim$1, which is up to four times larger compared to XPC variability in Hela or fibroblasts cells (compare Figure \ref{fig:consistVariability}A with Figure \ref{fig:ProteinDist}A and \cite{Verbruggen2014}). \\
+In both cell types we measured EdU incorporation after 1, 2 and 3 hours (cf.\ Figure \ref{fig:consistVariability}). At all three time points the distributions of newly-incorporated DNA were nearly congruent suggesting that DNA repair follows the same kinetics regardless of the cell type and the corresponding NER factor expression variability. This result allows to generalize the concept of a robust repair rate for different cell types and their cellular environments.\\ 
 
+
+
+
+
+
+
+\section{Variable NER factor expression and inflicted lesions account for the distribution of repair rates} 
+\label{sec:variabilityAnalysis}
+
+Comparing the measured EdU incorporation as a function of NER factor concentration and the predicted response coefficients quantitatively (cf.\ Section \ref{natural_Variability_m}), we noted that the measured repair responses towards changes in the nuclear protein concentration are consistently two to four-fold larger than the mathematically calculated values (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}B-F and Figure \ref{fig:controlCoefficients}A). This result suggests that the measured repair-rate response is not solely explained by the model-predicted response coefficients. It remains to be clarified, whether this discrepancy is due to a so far unknown additional NER component intrinsically contributing to the pathway control, or whether there is an external mechanism coordinating the NER factor expression and thereby superimposing the mathematically predicted response coefficients.
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -147,18 +160,7 @@ To reinforce the conclusion of a robustness DNA repair rate we compared the repa
 	\end{center}
 \end{figure}
 
-
-
-Returning to the comparison between the measured EdU incorporation as a function of NER factor concentration and the predicted response coefficients it should be noted that the  former are consistently two to four-fold larger (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}B-F and Figure \ref{fig:controlCoefficients}A). This result suggests that the measured repair-rate response is not entirely explained solely by the model-predicted response coefficients. It remains to clarify, whether this discrepancy is due to a so far unknown additional NER component intrinsically contributing to the pathway control. Or, is there an external mechanism coordinating the NER factor expression and thereby superimposing the mathematically predicted response coefficients?
-
-  
-
-
-
-
-\section{Variable NER factor expression and inflicted lesions account for the distribution of repair rates} 
-\label{sec:variabilityAnalysis}
-While searching for factors affecting the repair rate control we noticed the broad scatter of incorporated EdU, which appears to increase for larger protein concentrations (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}B-F). This variability indicates that besides the repair proteins there might be further sources of cell-to-cell heterogeneity, which might be also involved in the regulation of the repair rate. To this end, we measured the amount of UV-inflicted DNA lesions by indirect (immuno)cytochemistry wondering how the distribution of pore sizes would propagate (cf.\ Figure \ref{fig:accuMethod}B). The distributions of DNA damage captured immediately after UV-irradiation very much resembles the variable EdU incorporation after 4 h, which is also confirmed by the similar CV. These data suggest that the amount of DNA lesions contributes to the cell-to cell variability in the repair-rate.  
+While searching for additional factors affecting the repair rate response we noticed the broad scatter of incorporated EdU, which appears to increase for larger protein concentrations (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}B-F). This variability indicates that, besides the repair proteins, there might be further sources of cell-to-cell heterogeneity, which might be also involved in the regulation of the repair rate. To this end, we measured the amount of UV-inflicted DNA lesions by indirect (immuno)cytochemistry to determine how the distribution of pore sizes would propagate (cf.\ Figure \ref{fig:accuMethod}B). The distributions of DNA damage captured immediately after UV-irradiation very much resembles the variable EdU incorporation after 4 hours, which is also confirmed by the similar CV. These data suggest that the amount of DNA lesions contributes to the cell-to cell variability in the repair-rate.  
 
 
 \begin{figure}[htbp]
@@ -177,8 +179,10 @@ While searching for factors affecting the repair rate control we noticed the bro
 	\end{center}
 \end{figure}
 
-To find out whether the heterogeneity in nuclear NER factor expression together with the distributed amount of initial DNA damages would be sufficient to explain the variability in the repair rate we tried to reproduce the EdU response measurements with the model. Thus, we simulated the model for several hundred times in correspondence with the number of measured cells. For each simulated cell nuclear NER factor concentrations and the amount of local damages were randomly drawn from log-normal distributions in accordance with the experimentally determined CV (cf.\ Figure \ref{fig:ProteinDist} and Figure \ref{fig:DamageDist}) and the previously measured mean values \cite{Luijsterburg2010}. For PCNA and XPG we took the averaged CV$\sim$0.33 derived from the measured distributions. The simulated scatter plots for the accumulation of the nuclear repair factor at sites of local damage agree remarkably well with the measured data (cf.\ Figure \ref{fig:Model_dataComp}A-E, compare enlarged correlation (simulation) with the smaller inlay (experiment)). Qualitatively, the same holds true for the comparison between simulated and measured EdU incorporation as a readout for DNA resynthesis in response to changes in the repair factor concentration (cf.\ Figure \ref{fig:Model_dataComp}F-J). It should be noted that the simulated slopes representing the overall repair rate response are slightly elevated compared to the calculated response coefficients (cf.\ Figure \ref{fig:controlCoefficients}), clearly marking the influence of the introduced distribution of DNA damages. However, the simulated slopes are still significantly smaller than the measured estimates (cf.\ Figure \ref{fig:Model_dataComp}F-J, compare enlarged correlation (simulation) with the smaller inlay (experiment)).\\    
-To locate the lacking control, we first asked whether the individual contributions of the concentration distributions of the repair factors to the distribution of the repair rate 'sum up' according to the response coefficients predicted by the model. Assuming that the repair rate $\nu$ is linearly dependent on the initial amount of inflicted lesions L and, as estimated in Section \ref{firstOrderRateKinetic}, also on the nuclear repair-factor concentrations $C_i$ (i=1,2,...) we can apply the general law of error propagation
+To find out whether the heterogeneity in nuclear NER factor expression, together with the distributed amount of initial DNA damages, would be sufficient to explain the variability in the repair rate we tried to reproduce the EdU response measurements with the evolved quantitative model introduced in Chapter \ref{chap:kineticNERmodel}. Thus, we simulated the model several hundred times in correspondence with the number of measured cells. For each simulated cell nuclear NER factor concentrations and the amount of local damages were randomly drawn from log-normal distributions in accordance with the experimentally determined CV (cf.\ Figure \ref{fig:ProteinDist} and Figure \ref{fig:DamageDist}) and the previously measured mean values \cite{Luijsterburg2010}. For PCNA and XPG we took the averaged CV$\sim$0.33 derived from the measured distributions. \\
+For XPC the simulated scatter plot for the accumulation of the nuclear repair factor at sites of local damage agree remarkably well with the measured data (cf.\ Figure \ref{fig:Model_dataComp}A, compare enlarged correlation (simulation) with the smaller inlay (experiment)). Qualitatively, the same holds true for the comparison between simulated and measured EdU incorporation as a readout for DNA resynthesis in response to changes in the repair factor concentration (cf.\ Figure \ref{fig:Model_dataComp}B-F). It should be noted that the simulated slopes representing the overall repair rate response are slightly elevated compared to the calculated response coefficients (cf.\ Figure \ref{fig:controlCoefficients}), clearly marking the influence of the introduced distribution of DNA damages. However, the simulated slopes are still significantly smaller than the measured estimates (cf.\ Figure \ref{fig:Model_dataComp}B-F, compare enlarged correlation (simulation) with the smaller inlay (experiment)). This indicates that we still miss out on an essential, perhaps intrinsic, factor regulating the repair-rate response.\\    
+To locate the lacking control, we first asked whether the natural variability, contributed by the NER factor expression variability and the distribution of inflicted lesions, can explain the distribution of the repair rate. Assuming that the repair rate $\nu$ is linearly dependent on the initial amount of inflicted lesions L and, as estimated in Section \ref{firstOrderRateKinetic}, also on the nuclear repair-factor concentrations $C_i$ (i=1,2,...), we can apply the general law of error propagation
+%and hence 'sums up' according to the response coefficients predicted by the model
 
 \begin{equation}
 \sigma(\nu) = \sqrt{\sum_{i}\left(\frac{\partial \nu}{\partial C_i}\sigma(C_i) \right)^2 + \left(\frac{\partial \nu}{\partial L}\sigma(L)\right)^2 }.
@@ -189,9 +193,9 @@ Introducing the predicted response coefficients $R_i$ we can estimate the overal
 CV_{\nu} = \sqrt{CV_{L}^2 + \sum_{i}(R_iCV_i)^2},
 \label{eqn:lawOfErrorPropI}
 \end{equation}
-where $CV_{L}$ and $CV_i$ denote the coefficients of variation of the distributions of repair factors and initial amount of lesions. Obviously, the response coefficient for the initial amount of inflicted lesions is 1. Including the variability for inflicted lesions $CV_L \sim 0.32$ and the average $CV_i \sim 0.33$ for each repair factor we can determine the repair rate variability with $CV_{\nu} \sim 0.35$. This is around 20\% less than the measured $CV_{\nu} \sim 0.45$ after one hour (cf.\ Figure \ref{fig:CV_Var_comp}).\\
+where $CV_{L}$ and $CV_i$ denote the coefficients of variation of the distributions of repair factors and initial amount of lesions. Obviously, the response coefficient for the initial amount of inflicted lesions is 1. Including the variability for inflicted lesions $CV_L \sim 0.32$ and the average $CV_i \sim 0.33$ for each repair factor, we can determine the repair rate variability with $CV_{\nu} \sim 0.35$. This is around 20\% less than the measured $CV_{\nu} \sim 0.45$ after one hour (cf.\ Figure \ref{fig:CV_Var_comp}).\\
 To dissect the contribution of the individual factors to the
-overall variability, we computed the effect of heterogeneity in only one factor on repair synthesis. Accordingly, for each CV-trajectory in Figure \ref{fig:CV_Var_comp} we determined the $CV_{\nu}$ by simulating the repair rate for 500 cells and drawing only one factor randomly. The largest contribution can be allocated to the initial amount of damages which were responsible for about two thirds of the whole repair variability. Adding the heterogeneity of the nuclear expression values shrinks the gap between measured and simulated variability (cf.\ Figure \ref{fig:CV_Var_comp} blue (data) and red (simulation) trajectory).
+overall variability, we computed the effect of heterogeneity in only one factor on repair synthesis. Accordingly, for each CV-trajectory in Figure \ref{fig:CV_Var_comp} we determined the $CV_{\nu}$ by simulating the repair rate for 500 cells and drawing only one factor randomly. The largest contribution can be allocated to the initial amount of damages (cf.\ Figure \ref{fig:CV_Var_comp} brown trajectory) which were responsible for about two thirds of the whole repair variability (cf.\ Figure \ref{fig:CV_Var_comp} blue trajectory). Drawing all NER factors together with the initial amount of damages from their pre-determined distributions shrinks the gap between measured and simulated DNA repair variability (cf.\ Figure \ref{fig:CV_Var_comp} blue (data) and red (simulation) trajectory).
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -200,7 +204,7 @@ overall variability, we computed the effect of heterogeneity in only one factor 
 		\label{fig:CV_Var_comp}
 	\end{center}
 \end{figure}
-This result becomes more explicit by comparing the strikingly matching temporal evolution of the measured and predicted distributions of repair synthesis (cf.\ Figure \ref{fig:ModelData_tempVar}).
+This result becomes more explicit, as seen, by comparing the strikingly matching temporal evolution of the measured and predicted distributions of repair synthesis (cf.\ Figure \ref{fig:ModelData_tempVar}).\\
 
 
 \begin{figure}[htbp]
@@ -211,6 +215,5 @@ This result becomes more explicit by comparing the strikingly matching temporal 
 	\end{center}
 \end{figure}
 
-To summarize, we uncovered two sources of cell-to-cell variability in the rate of NER: (i) the amount of inflicted DNA lesions and (ii) the expression of NER factors. Together, both parameters explain most of the measured variability. However, the significant difference between measured and predicted repair rate responses leave space for interpretation whether there are additional factors involved in repair but have not been accounted for explicitly in the model.     
-
-
+To summarize, in this chapter we uncovered two sources of natural variability that are propagated throughout the repair process and consequently contributing to the emergent cell-to-cell variability of repair synthesis: (i) the amount of inflicted DNA lesions and (ii) the variation of the nuclear NER factor concentrations. 
+However, the significant differences between measured and predicted repair rate responses (cf.\ Figure \ref{fig:Model_dataComp}, compare the slope $m$ of the regression lines) leave space for interpretation, whether there are additional factors involved in repair, but have not been accounted for, explicitly, in the model.

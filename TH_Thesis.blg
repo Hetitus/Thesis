@@ -5,54 +5,54 @@ A level-1 auxiliary file: chapters/Titelseite.aux
 A level-1 auxiliary file: chapters/Zusammenfassung.aux
 A level-1 auxiliary file: chapters/Summary.aux
 A level-1 auxiliary file: chapters/Introduction.aux
-A level-1 auxiliary file: chapters/NERModel.aux
+A level-1 auxiliary file: chapters/quantData.aux
+A level-1 auxiliary file: chapters/KineticModel.aux
 A level-1 auxiliary file: chapters/RobustRepair.aux
 A level-1 auxiliary file: chapters/CrossCorrel.aux
 A level-1 auxiliary file: chapters/Discussion.aux
 The style file: naturemagC.bst
 A level-1 auxiliary file: chapters/Appendix.aux
-A level-1 auxiliary file: chapters/Acknowledgments.aux
 Database file #1: NER_Bibliography.bib
 Warning--I didn't find a database entry for "Lovdok2009"
-You've used 111 entries,
+You've used 112 entries,
             2538 wiz_defined-function locations,
-            1321 strings with 28938 characters,
-and the built_in function-call counts, 52913 in all, are:
-= -- 4331
-> -- 1954
+            1329 strings with 29089 characters,
+and the built_in function-call counts, 53324 in all, are:
+= -- 4369
+> -- 1962
 < -- 7
-+ -- 1726
-- -- 487
-* -- 3278
-:= -- 6044
-add.period$ -- 333
-call.type$ -- 111
-change.case$ -- 112
++ -- 1732
+- -- 489
+* -- 3304
+:= -- 6092
+add.period$ -- 336
+call.type$ -- 112
+change.case$ -- 113
 chr.to.int$ -- 18
-cite$ -- 111
-duplicate$ -- 4946
-empty$ -- 4523
-format.name$ -- 579
-if$ -- 11184
+cite$ -- 112
+duplicate$ -- 4986
+empty$ -- 4562
+format.name$ -- 582
+if$ -- 11272
 int.to.chr$ -- 0
-int.to.str$ -- 111
-missing$ -- 1153
-newline$ -- 558
-num.names$ -- 111
-pop$ -- 2090
+int.to.str$ -- 112
+missing$ -- 1161
+newline$ -- 563
+num.names$ -- 112
+pop$ -- 2104
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 721
+skip$ -- 725
 stack$ -- 0
-substring$ -- 3825
-swap$ -- 2831
+substring$ -- 3862
+swap$ -- 2852
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 430
-width$ -- 114
-write$ -- 1223
+while$ -- 434
+width$ -- 115
+write$ -- 1234
 (There was 1 warning)
