@@ -10,7 +10,7 @@
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=1\textwidth]{Abbildungen/figure_A_1.pdf}
-\caption{\textbf{} }
+\caption{\textbf{Identifiability analysis by Profile Likelihood Estimation (PLE)} PLE and 95\% confidence interval (horizontal red line) of binding and dissociation parameters for all catalytic constants (A), damaged DNA (B), unwound and incised DNA (C), resynthesised DNA (D) and rechromatinised DNA (E). }
 \label{fig:profileLikilihoods}
 \end{center}
 \end{figure}
@@ -20,7 +20,7 @@
 	\tiny
 	\begin{tabular}{lccccccc}
 		
-		\multicolumn{8}{l}{Table SI. \textbf{Values of binding and dissociation rate constants}} \\
+		\multicolumn{8}{l}{} \\
 		\hline
 		\textbf{Value}    & \textbf{ XPC} & \textbf{TFIIH} & \textbf{XPG} & \textbf{XPF} & \textbf{XPA} & \textbf{RPA} & \textbf{PCNA}  \\
 		\hline
@@ -62,16 +62,16 @@
 		&                               &                              &                           &                          &                            &  (0.438;0.645)  & (0.134;0.182)  \\
 		\hline
 	\end{tabular}
-	\caption{Blubb}
+	\caption{\textbf{Values of binding and dissociation rate constants.} NA, not applicable. $k_{\text{on}}$, $k_{\text{off}}$ and $K_{\text{D}}$ ($k_{\text{on}}$/$k_{\text{off}}$) values are given for every repair protein and arranged in columns. Reference parameter set and 95\% confidence intervals (in parentheses) are shown. Nuclear concentration (in \textmu M) of NER factors are based on previously described data \cite{Luijsterburg2010}}
 	\label{tab:parameter_bigTable}
 \end{table}
 
 \begin{table}[H]
 	
-	\tiny
+\begin{center}
 	\begin{tabular}{lrl}
 		
-		\multicolumn{3}{l}{Table SII. \textbf{Values of the enzymatic rate constants}} \\
+		\multicolumn{3}{l}{} \\
 		\hline
 		\textbf{Enzymatic rate}    && \textbf{$\text{k}_{\text{cat}}$}  \\
 		\hline
@@ -82,16 +82,27 @@
 		Reannealing  $\epsilon$                                & 5.3&(>0.9)    \\
 		\hline
 	\end{tabular}
-	\caption{Blubb}
+	\caption{\textbf{Values of the enzymatic rate constants.}  Reference parameter set and 95\% confidence intervals (in parentheses) are shown. In case of practical non-identifiability only the lower confidence bound is given.}
 	\label{tab:parameter_catalyticRates}
+	\end{center}
 \end{table}
+\section{Control analysis}
 
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{Abbildungen/figure_A_4.pdf}
+		\caption{\textbf{Uniformly distributed response coefficients for the rate of incision.} Response coefficients for the control of the incision rate by the concentrations of the repair factors. }
+		\label{fig:cc_rateOfincision}
+	\end{center}
+\end{figure}
+
+\newpage
 \section{Cross-correlation}
 
 \begin{figure}[h!]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure_A_2.pdf}
-		\caption{\textbf{} }
+		\caption{\textbf{Nuclear expression of NER factors is correlated.} Pairwise correlations of indirectly antibody-labelled RPA against XPC (n=383, A), XPA against XPC (n=464, B), XPF against XPC (n=425, C) and XPA against XPF (n=454 , D) in locally damaged cells. Expression values represent fluorescence intensities originating from the nucleus including the damaged region. Red lines represent linear regression with correlation coefficient r, p-value and slope m. 95\% confidence bounds of all correlation coefficients r were estimated by non-parametric bootstrap and are given in brackets. }
 		\label{fig:nuklearCrosscorrelation}
 	\end{center}
 \end{figure}

@@ -701,4 +701,11 @@ Kollmann, M., L\o~vdok, L., Bartholom\'{e}, K., Timmer, J. \& Sourjik, V.
 \newblock {Design principles of a bacterial signalling network.}
 \newblock \emph{Nature} \textbf{438}, 504--7 (2005).
 
+\bibitem{Lovdok2009}
+L\o{}vdok, L., Bentele, K., Vladimirov, N., M\"{u}ller, A., Pop, F.~S.,
+  Lebiedz, D., Kollmann, M. \& Sourjik, V.
+\newblock {Role of translational coupling in robustness of bacterial chemotaxis
+  pathway.}
+\newblock \emph{PLoS biology} \textbf{7}, e1000171 (2009).
+
 \end{thebibliography}
