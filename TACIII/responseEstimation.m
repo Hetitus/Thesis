@@ -11,6 +11,15 @@ cvPCNA = 0.36;
 
 cvVecSquare = [cvXPC^2,cvTFIIH^2,cvXPG^2,cvXPF^2,cvXPA^2 , cvRPA^2 , cvPCNA^2];
 
+%                XPC   TFIIH XPG  XPF   XPA  RPA   PCNA
+
+CorrMat = [  1      0.58  0.7   0.8 0.52 0.87  0.7;...
+                    0.58 1       0.7   0.71 0.7   0.7    0.7;...
+                    0.7   0.7    1      0.7   0.7   0.7    0.7;...
+                    0.8 0.71  0.5   1      0.75 0.7    0.7;...
+                    0.52 0.7    0.7   0.75   1    0.59  0.7;...
+                    0.87 0.7    0.7   0.7   0.59 1       0.7;...
+                    0.7   0.7    0.7   0.7   0.5   0.7    1];
 
 
 
@@ -59,5 +68,5 @@ covVec = [covXPC_TFIIH,covXPC_XPG,covXPC_XPF,covXPC_XPA,covXPC_RPA,covXPC_PCNA,c
 
 R = sqrt((CVr^2-CVd^2)/( sum( cvVecSquare) + sum(covVec) )); 
 
-
+VIF = diag(inv(CorrMat))'
 

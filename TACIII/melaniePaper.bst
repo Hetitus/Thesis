@@ -4,7 +4,7 @@
 %%
 %% The original source files were:
 %%
-%% merlin.mbs  (with options: `nm-rev,ed-rev,jnrlst,mcite,mct-6,mct-x6,nmft,nmft-bf,nmfted,nmand-rm,dt-beg,xmth,jttl-rm,thtit-a,vol-bf,vnum-x,num-xser,jnm-x,btit-rm,bt-rm,bkpg-x,agu-doi,doi,ppx,ed,abr,ednx,mth-bare,xedn,jabr,etal-xc,nfss,')
+%% merlin.mbs  (with options: `nm-rev1,ed-rev,jnrlst,mcite,mct-6,mct-x6,nmft,nmft-bf,nmfted,dt-beg,xmth,jttl-rm,thtit-a,vol-bf,vnum-x,num-xser,jnm-x,btit-rm,bt-rm,bkpg-x,agu-doi,doi,ppx,ed,abr,ednx,mth-bare,xedn,jabr,etal-xc,nfss,')
 %% ----------------------------------------
 %% *** elife ***
 %% 
@@ -403,9 +403,11 @@ FUNCTION {format.names}
   numnames 'namesleft :=
     { namesleft #0 > }
     { s nameptr
-      "{vv~}{ll}{, f.}{, jj}"
+      duplicate$ #1 >
+        { "{f.~}{vv~}{ll}{, jj}" }
+        { "{vv~}{ll}{, f.}{, jj}" }
+      if$
       format.name$
-      bib.name.font
       bibinfo bibinfo.check
       't :=
       nameptr #1 >
@@ -424,7 +426,8 @@ FUNCTION {format.names}
               if$
               t "others" =
                 {
-                  " " * bbl.etal bib.name.font *
+                  " " * bbl.etal *
+                  bib.name.font
                 }
                 {
                   bbl.and
@@ -440,6 +443,10 @@ FUNCTION {format.names}
       namesleft #1 - 'namesleft :=
     }
   while$
+  t "others" =
+    'skip$
+    { bib.name.font }
+  if$
   } if$
 }
 FUNCTION {format.names.ed}
@@ -777,7 +784,6 @@ FUNCTION {format.article.crossref}
 }
 FUNCTION {format.crossref.editor}
 { editor #1 "{vv~}{ll}" format.name$
-  bib.name.font
   "editor" bibinfo.check
   editor num.names$ duplicate$
   #2 >
@@ -785,6 +791,8 @@ FUNCTION {format.crossref.editor}
       "editor" bibinfo.check
       " " * bbl.etal
       *
+      bib.name.font
+      "others" 't :=
     }
     { #2 <
         'skip$
@@ -793,11 +801,12 @@ FUNCTION {format.crossref.editor}
               "editor" bibinfo.check
               " " * bbl.etal
               *
+              bib.name.font
+              "others" 't :=
             }
             {
              bbl.and space.word
               * editor #2 "{vv~}{ll}" format.name$
-              bib.name.font
               "editor" bibinfo.check
               *
             }
@@ -805,6 +814,10 @@ FUNCTION {format.crossref.editor}
         }
       if$
     }
+  if$
+  t "others" =
+    'skip$
+    { bib.name.font "editor" bibinfo.check }
   if$
 }
 FUNCTION {format.book.crossref}

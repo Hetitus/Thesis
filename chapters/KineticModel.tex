@@ -228,15 +228,17 @@ To avoid terminating the optimization procedure in a local minimum we used a 'mu
 
 \section{NER model fits accumulation, FLIP and repair synthesis measurements}    
 
-To derive faithful fitting results we reiterated the optimization process 250 times. For each iteration the starting parameters were redrawn by Latin hypercube sampling. Despite the size of the model, with respect to data points and the number of parameters, the majority of fits terminated within one order of magnitude compared to the global $X^2$ minimum (cf.\ Figure \ref{fig:LHS}). Compared to the average initial $X^2$-value, the average fit improvement was about eight orders of magnitude. For the optimal parameter set, the model fits the experimental data comprising accumulation, FLIP, perturbation and repair synthesis measurements (cf.\ Figure \ref{fig:ModelFit_accu_flip}A, B, C; estimated measurement errors are shown as shaded area around the fit). The accumulation kinetics (cf.\ Figure \ref{fig:ModelFit_accu_flip}A) are depicted as concentrations scaled by the volume of the locally damaged area which were estimated with 10\% of the nuclear volume (average derived from segmentation results of the nucleus and the LD foci). We believe that this specification is more intuitively comprehensible  compared to scaling by the whole nuclear volume as performed by Luijsterburg \textit{et al.}\cite{Luijsterburg2010}. It allows the realistic comparison between simulated and measured microscopy images of NER factor accumulation and EdU incorporation (cf.\ Figure \ref{fig:Fitt_accu_Mic}).  
-
-\begin{figure}[htbp]
+To derive faithful fitting results we reiterated the optimization process 250 times. For each iteration the starting parameters were redrawn by Latin hypercube sampling. Despite the size of the model, with respect to data points and the number of parameters, the majority of fits terminated within one order of magnitude compared to the global $X^2$ minimum (cf.\ Figure \ref{fig:LHS}). Compared to the average initial $X^2$-value, the average fit improvement was about eight orders of magnitude.
+\begin{figure}[b!]
 \begin{center}
 \includegraphics[width=1\textwidth]{Abbildungen/figure2_6_2.pdf}
 \caption{\textbf{Comparison between measured and simulated single cell microscopy images} Simulated time courses (lines) and the associated microscopy images for GFP tagged XPC (two upper rows) and EdU incorporation (two lower rows). Simulated XPC expression intensities were normalized to the nuclear intensities of the microscopy images. For the EdU incorporation intensities were scaled according to the highest and lowest intensity values of the microscopy images.}
 \label{fig:Fitt_accu_Mic}
 \end{center}
 \end{figure}
+For the optimal parameter set, the model fits the experimental data comprising accumulation, FLIP, perturbation and repair synthesis measurements (cf.\ Figure \ref{fig:ModelFit_accu_flip}A, B, C; estimated measurement errors are shown as shaded area around the fit). The accumulation kinetics (cf.\ Figure \ref{fig:ModelFit_accu_flip}A) are depicted as concentrations scaled by the volume of the locally damaged area which were estimated with 10\% of the nuclear volume (average derived from segmentation results of the nucleus and the LD foci). We believe that this specification is more intuitively comprehensible  compared to scaling by the whole nuclear volume as performed by Luijsterburg \textit{et al.}\cite{Luijsterburg2010}. It allows the realistic comparison between simulated and measured microscopy images of NER factor accumulation and EdU incorporation (cf.\ Figure \ref{fig:Fitt_accu_Mic}).  
+
+
 
 \section{PLE analysis identifies realistic model of NER}
 \label{sec:identifiabilityAnalysis}
@@ -304,7 +306,10 @@ Besides the slow rate of rechromatinisation $\delta$, presumably identifiable du
 
 \end{landscape}
 
-Having an identifiable model allows us to make more precise computational predictions. For example, we can simulate the unobservable fraction of incised DNA (cf.\ Figure \ref{fig:ModelFit_intermed}, green trajectory). As the EdU incorporation measurement shows, the damaged (blue) and repaired DNA (red) kinetics are tightly coupled. This omits a higher accumulation of incised DNA. 
+Having an identifiable model allows us to make more precise computational predictions. For example, we can simulate the unobservable fraction of incised DNA (cf.\ Figure \ref{fig:ModelFit_intermed}, green trajectory). As the EdU incorporation measurement shows, the damaged (blue) and repaired DNA (red) kinetics are tightly coupled. This omits a higher accumulation of incised DNA.\\ 
+
+
+In summary, for the development of a realistic model of the DNA repair pathway we integrated live-cell imaging data of the assembly and dissociation kinetics of all core NER factors and linked it directly to the DNA repair kinetics. The extended dataset identifies a total of 31 model parameters including 14 binding, 13 dissociation and 4 catalytic rate constants. Therefore, quantitative predictions with the model on the functioning of NER are no longer limited.  
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -313,6 +318,4 @@ Having an identifiable model allows us to make more precise computational predic
 		\label{fig:ModelFit_intermed}
 	\end{center}
 \end{figure}
-In summary, for the development of a realistic model of the DNA repair pathway we integrated live-cell imaging data of the assembly and dissociation kinetics of all core NER factors and linked it directly to the DNA repair kinetics. The extended dataset identifies a total of 31 model parameters including 14 binding, 13 dissociation and 4 catalytic rate constants. Therefore, quantitative predictions with the model on the functioning of NER are no longer limited.  
-
 

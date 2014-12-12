@@ -1,21 +1,23 @@
-\begin{thebibliography}{2}
-\providecommand{\natexlab}[1]{#1}
+\begin{thebibliography}{1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
 
-\bibitem[{Luijsterburg et~al.(2010)Luijsterburg, von Bornstaedt, Gourdin,
-  Politi, Mon\'{e}, Warmerdam, Goedhart, Vermeulen, van Driel, and
-  H\"{o}fer}]{Luijsterburg2010}
-Luijsterburg, Martijn~S, von Bornstaedt, Gesa, Gourdin, Audrey~M, Politi,
-  Antonio~Z, Mon\'{e}, Martijn~J, Warmerdam, Dani\"{e}l~O, Goedhart, Joachim,
-  Vermeulen, Wim, van Driel, Roel, and H\"{o}fer, Thomas.
+\bibitem{Luijsterburg2010}
+\textbf{Luijsterburg, M.~S., G.~von Bornstaedt, A.~M. Gourdin, A.~Z. Politi,
+  M.~J. Mon\'{e}, D.~O. Warmerdam, J.~Goedhart, W.~Vermeulen, R.~van Driel, and
+  T.~H\"{o}fer}, 2010.
 \newblock {Stochastic and reversible assembly of a multiprotein DNA repair
   complex ensures accurate target site recognition and efficient repair.}
-\newblock \emph{The Journal of Cell Biology}, 189(3):445--63, 2010.
+\newblock The Journal of Cell Biology \textbf{189}:445--63.
+\newblock \doi{10.1083/jcb.200909175}.
 
-\bibitem[{Verbruggen et~al.(2014)Verbruggen, Heinemann, Manders, von
-  Bornstaedt, van Driel, and H\"{o}fer}]{Verbruggen2014}
-Verbruggen, Paul, Heinemann, Tim, Manders, Erik, von Bornstaedt, Gesa, van
-  Driel, Roel, and H\"{o}fer, Thomas.
+\bibitem{Verbruggen2014}
+\textbf{Verbruggen, P., T.~Heinemann, E.~Manders, G.~von Bornstaedt, R.~van
+  Driel, and T.~H\"{o}fer}, 2014.
 \newblock {Robustness of DNA Repair through Collective Rate Control}.
-\newblock \emph{PLoS Computational Biology}, 10(1):e1003438, 2014.
+\newblock PLoS Computational Biology \textbf{10}:e1003438.
+\newblock \doi{10.1371/journal.pcbi.1003438}.
 
 \end{thebibliography}

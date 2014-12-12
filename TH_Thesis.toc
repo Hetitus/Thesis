@@ -30,16 +30,17 @@
 \contentsline {section}{\numberline {5.1}Cross-correlation affects repair response}{52}{section.5.1}
 \contentsline {section}{\numberline {5.2}Microscopy analysis of co-staining experiments}{53}{section.5.2}
 \contentsline {section}{\numberline {5.3}Cell cycle independent cross-correlation of NER factor expression}{56}{section.5.3}
-\contentsline {section}{\numberline {5.4}Measured average response agrees with model prediction}{60}{section.5.4}
-\contentsline {chapter}{\numberline {6}Discussion}{63}{chapter.6}
-\contentsline {paragraph}{Slow first order kinetics as a general systems property for chromatin associated processes.}{63}{section*.41}
-\contentsline {paragraph}{An identifiable and hence predictive kinetic model of DNA repair.}{65}{section*.42}
-\contentsline {paragraph}{Model parametrization and its implications}{66}{section*.43}
-\contentsline {paragraph}{Collective control of the DNA repair rate}{67}{section*.44}
-\contentsline {paragraph}{Co-regulation of the nuclear NER factor expression}{68}{section*.45}
-\contentsline {paragraph}{Concluding remarks}{69}{section*.46}
-\contentsline {chapter}{\numberline {7}Bibliography}{71}{chapter.7}
-\contentsline {chapter}{\numberline {A}Appendix}{79}{appendix.A}
-\contentsline {section}{\numberline {A.1}Parameter estimation}{79}{section.A.1}
-\contentsline {section}{\numberline {A.2}Control analysis}{81}{section.A.2}
-\contentsline {section}{\numberline {A.3}Cross-correlation}{82}{section.A.3}
+\contentsline {section}{\numberline {5.4}Measured average response agrees with model prediction}{58}{section.5.4}
+\contentsline {chapter}{\numberline {6}Discussion}{61}{chapter.6}
+\contentsline {paragraph}{Slow first order kinetics as a general systems property for chromatin associated processes.}{61}{section*.41}
+\contentsline {paragraph}{An identifiable and hence predictive kinetic model of DNA repair.}{63}{section*.42}
+\contentsline {paragraph}{Model parametrization and its implications}{64}{section*.43}
+\contentsline {paragraph}{Collective control of the DNA repair rate}{65}{section*.44}
+\contentsline {paragraph}{Co-regulation of the nuclear NER factor expression}{66}{section*.45}
+\contentsline {paragraph}{Concluding remarks}{67}{section*.46}
+\contentsline {chapter}{\numberline {7}Bibliography}{69}{chapter.7}
+\contentsline {chapter}{\numberline {A}Appendix}{77}{appendix.A}
+\contentsline {section}{\numberline {A.1}Parameter estimation}{77}{section.A.1}
+\contentsline {section}{\numberline {A.2}Control analysis}{79}{section.A.2}
+\contentsline {section}{\numberline {A.3}Cross-correlation}{80}{section.A.3}
+\contentsline {chapter}{Acknowledgements}{83}{appendix*.53}
