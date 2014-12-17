@@ -16,7 +16,7 @@ The finding that the measured response in DNA synthesis is about twofold higher 
 \frac{C_i}{\nu}\frac{d \nu}{d C_i} = \frac{C_i}{\nu}\frac{\partial \nu}{\partial C_i} + \sum_{j \neq i} \left( \frac{C_j}{\nu}\frac{\partial \nu}{\partial C_i}\right) \left(\frac{C_i}{C_j}\frac{\partial C_j}{\partial C_i}\right), 
 \label{eqn:extendedResponse}
 \end{equation}    
-where $\nu$ represents the rate of EdU incorporation and $C_i$ the nuclear concentration of the $i^{\text{th}}$ repair factor. From Eqn. \ref{eqn:extendedResponse} we directly measured the EdU incorporation for varying NER factor concentrations after one hour (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis})
+where $\nu$ represents the rate of EdU incorporation and $C_i$ the nuclear concentration of the $i^{\text{th}}$ repair factor. From Eqn.\ \ref{eqn:extendedResponse} we directly measured the EdU incorporation for varying NER factor concentrations after one hour (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis})
 
 \begin{equation}
 A_i = \frac{C_i}{\nu}\frac{d \nu}{d C_i}. \nonumber
@@ -43,18 +43,18 @@ R_i = \frac{C_i}{\nu}\frac{\partial \nu}{\partial C_i}.
 \label{eqn:responseCoefficientsII}
 \end{equation}
 
-Assuming that all $B_{ii}$ = 1 Eqn. \ref{eqn:linearEqnSystem} translates into the matrix notation 
+Assuming that all $B_{ii}$ = 1 Eqn.\ \ref{eqn:linearEqnSystem} translates into the matrix notation 
 \begin{equation}
 \vec{A} = B\vec{R}.
 \label{eqn:matrixNotation}
 \end{equation}
 
-By inverting $B$ we can solve Eqn. \ref{eqn:matrixNotation} for the desired response coefficients directly. 
+By inverting $B$ we can solve Eqn.\ \ref{eqn:matrixNotation} for the desired response coefficients directly. 
 
 
 \section{Microscopy analysis of co-staining experiments}
 
-In order to measure the cross-correlation matrix $B$ we made use of the fluorescence microscopy approach, which proved to result in accurate measurements of the nuclear repair factor expression and their UV-induced repair dynamics (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}). For a flexible combinatorial tagging of multiple antigens simultaneously, we used an indirect antibody-labelling protocol and established five single cell double stainings (cf.\ Table \ref{tab:co-staining} using the primary and secondary antibodies listed in Table \textbf{tbm}. 
+In order to measure the cross-correlation matrix $B$ we made use of the fluorescence microscopy approach, which proved to result in accurate measurements of the nuclear repair factor expression and their UV-induced repair dynamics (cf.\ Figure \ref{fig:Nuc_vs_DNAsynthesis}). For a flexible combinatorial tagging of multiple antigens simultaneously, we used an indirect antibody-labelling protocol and established five single cell double stainings (cf.\ Table \ref{tab:co-staining} using the primary and secondary antibodies listed in the Tables \ref{tab:antibodies}, \ref{tab:SecondaryAntibodies} and \ref{tab:DirectlyLabeledAntibody}. 
 
 
 \begin{table}[h!]
@@ -130,7 +130,7 @@ Remarkably, whereas the correlation coefficients between XPA and RPA remain cons
 %sentence about RPA - Ki67 correlation
 
 \section{Measured average response agrees with model prediction}
-To determine potential mutual dependencies in NER factor expression we performed two independent cross-correlation experiments, firstly based on microscopy of human fibroblast and secondly using flow cytometry in human brain pericytes. For both approaches we found conclusive evidence for a positive pairwise correlation of the nuclear repair factor concentration. As described in Section \ref{sec:crossCorelResponse} the measured cross-dependencies represent the entries of matrix $B$ in Eqn. \ref{eqn:matrixNotation}. In theory, the product of the inverse of $B$ and $A$ define the vector of response coefficients. However, due to the strong multicolinearity the matrix $B$ has variance inflation factors (VIF) between 2.5 and 10.8 indicating that the variations of each protein are largely explained by a linear combinations of the other protein expression values. VIFs measure how much of the predicted standard error of the response coefficient estimates is caused by the colinearity. For instance, for a VIF of 5 the estimated error is  about $\sqrt{5} \cong 2.3$ times as large as it would be if the matrix $B$ was uncorrelated.\\ 
+To determine potential mutual dependencies in NER factor expression we performed two independent cross-correlation experiments, firstly based on microscopy of human fibroblast and secondly using flow cytometry in human brain pericytes. For both approaches we found conclusive evidence for a positive pairwise correlation of the nuclear repair factor concentration. As described in Section \ref{sec:crossCorelResponse} the measured cross-dependencies represent the entries of matrix $B$ in Eqn.\ \ref{eqn:matrixNotation}. In theory, the product of the inverse of $B$ and $A$ define the vector of response coefficients. However, due to the strong multicolinearity the matrix $B$ has variance inflation factors (VIF) between 2.5 and 10.8 indicating that the variations of each protein are largely explained by a linear combinations of the other protein expression values. VIFs measure how much of the predicted standard error of the response coefficient estimates is caused by the colinearity \cite{allison1999multiple}. For instance, for a VIF of 5 the estimated error is  about $\sqrt{5} \cong 2.3$ times as large as it would be if the matrix $B$ was uncorrelated.\\ 
 \begin{figure}[htbp]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figureTAC_4.pdf}

@@ -43,4 +43,3 @@
 \contentsline {section}{\numberline {A.1}Parameter estimation}{77}{section.A.1}
 \contentsline {section}{\numberline {A.2}Control analysis}{79}{section.A.2}
 \contentsline {section}{\numberline {A.3}Cross-correlation}{80}{section.A.3}
-\contentsline {chapter}{Acknowledgements}{83}{appendix*.53}
