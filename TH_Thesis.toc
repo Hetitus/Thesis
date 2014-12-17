@@ -33,7 +33,7 @@
 \contentsline {section}{\numberline {5.4}Measured average response agrees with model prediction}{51}{section.5.4}
 \contentsline {chapter}{\numberline {6}Discussion}{55}{chapter.6}
 \contentsline {paragraph}{Slow first order kinetics as a general systems property for chromatin associated processes.}{56}{section*.41}
-\contentsline {paragraph}{An identifiable and hence predictive kinetic model of DNA repair.}{57}{section*.42}
+\contentsline {paragraph}{A predictive kinetic model of DNA repair.}{57}{section*.42}
 \contentsline {paragraph}{Model parametrization and its implications}{58}{section*.43}
 \contentsline {paragraph}{Collective control of the DNA repair rate}{59}{section*.44}
 \contentsline {paragraph}{Co-regulation of the nuclear NER factor expression}{60}{section*.45}
@@ -43,4 +43,3 @@
 \contentsline {section}{\numberline {A.1}Parameter estimation}{71}{section.A.1}
 \contentsline {section}{\numberline {A.2}Control analysis}{73}{section.A.2}
 \contentsline {section}{\numberline {A.3}Cross-correlation}{74}{section.A.3}
-\contentsline {chapter}{Acknowledgements}{77}{appendix*.53}
