@@ -44,6 +44,13 @@ Bartek, J., Bartkova, J. \& Lukas, J.
   progression.}
 \newblock \emph{Oncogene} \textbf{26}, 7773--9 (2007).
 
+\bibitem{Mone2001}
+Mon\'{e}, M.~J., Volker, M., Nikaido, O., Mullenders, L.~H., van Zeeland,
+  a.~a., Verschure, P.~J., Manders, E.~M. \& van Driel, R.
+\newblock {Local UV-induced DNA damage in cell nuclei results in local
+  transcription inhibition.}
+\newblock \emph{EMBO reports} \textbf{2}, 1013--7 (2001).
+
 \bibitem{Marteijn2014}
 Marteijn, J.~a., Lans, H., Vermeulen, W. \& Hoeijmakers, J. H.~J.
 \newblock {Understanding nucleotide excision repair and its roles in cancer and
@@ -146,6 +153,13 @@ Sugasawa, K., Ng, J.~M., Masutani, C., Iwai, S., van~der Spek, P.~J., Eker,
 \newblock {Xeroderma pigmentosum group C protein complex is the initiator of
   global genome nucleotide excision repair}.
 \newblock \emph{Mol Cell} \textbf{2}, 223--232 (1998).
+
+\bibitem{Hanawalt2008}
+Hanawalt, P.~C. \& Spivak, G.
+\newblock {Transcription-coupled DNA repair: two decades of progress and
+  surprises.}
+\newblock \emph{Nature reviews. Molecular cell biology} \textbf{9}, 958--70
+  (2008).
 
 \bibitem{Yokoi:2000:J-Biol-Chem:10734143}
 Yokoi, M., Masutani, C., Maekawa, T., Sugasawa, K., Ohkuma, Y. \& Hanaoka, F.
@@ -280,13 +294,6 @@ Raue, A., Schilling, M., Bachmann, J., Matteson, A., Schelker, M., Schelke, M.,
 \newblock {Lessons learned from quantitative dynamical modeling in systems
   biology.}
 \newblock \emph{PloS one} \textbf{8}, e74335 (2013).
-
-\bibitem{Mone2001}
-Mon\'{e}, M.~J., Volker, M., Nikaido, O., Mullenders, L.~H., van Zeeland,
-  a.~a., Verschure, P.~J., Manders, E.~M. \& van Driel, R.
-\newblock {Local UV-induced DNA damage in cell nuclei results in local
-  transcription inhibition.}
-\newblock \emph{EMBO reports} \textbf{2}, 1013--7 (2001).
 
 \bibitem{Houtsmuller2001}
 Houtsmuller, A. \& Vermeulen, W.
@@ -506,9 +513,9 @@ Giepmans, B. N.~G., Adams, S.~R., Ellisman, M.~H. \& Tsien, R.~Y.
   function.}
 \newblock \emph{Science (New York, N.Y.)} \textbf{312}, 217--24 (2006).
 
-\bibitem{allison1999multiple}
+\bibitem{Allison1999}
 Allison, P.~D.
-\newblock {Multiple regression: A primer}.
+\newblock {Multiple Regression: A Primer}.
 \newblock Pine Forge Press (1999).
 
 \bibitem{Smerdon1978}
@@ -702,15 +709,8 @@ Cheng, L., Spitz, M.~R., Hong, W.~K. \& Wei, Q.
 \newblock \emph{Carcinogenesis} \textbf{21}, 1527--1530 (2000).
 
 \bibitem{Kollmann2005}
-Kollmann, M., L\o{}vdok, L., Bartholom\'{e}, K., Timmer, J. \& Sourjik, V.
+Kollmann, M., L\o~vdok, L., Bartholom\'{e}, K., Timmer, J. \& Sourjik, V.
 \newblock {Design principles of a bacterial signalling network.}
 \newblock \emph{Nature} \textbf{438}, 504--7 (2005).
-
-\bibitem{Lovdok2009}
-L\o{}vdok, L., Bentele, K., Vladimirov, N., M\"{u}ller, A., Pop, F.~S.,
-  Lebiedz, D., Kollmann, M. \& Sourjik, V.
-\newblock {Role of translational coupling in robustness of bacterial chemotaxis
-  pathway.}
-\newblock \emph{PLoS biology} \textbf{7}, e1000171 (2009).
 
 \end{thebibliography}

@@ -99,7 +99,7 @@
     pdfpagemode=None         %% None, UseOutlines (=show bookmarks), UseThumbs (show thumbnails), FullScreen
   ]{hyperref}
 
-\hyphenpenalty=10000
+\hyphenpenalty=10
 \exhyphenpenalty=10000
 \sloppy
 
@@ -165,10 +165,20 @@
 %\fancyhf{}
 \thispagestyle{plain}
 \pagenumbering{gobble}
+\begingroup
+\makeatletter% Allow use of restricted @ in control sequences
+\renewcommand\tableofcontents{%
+	\chapter*{\contentsname}% or \chapter* but that looks ugly
+	\pagestyle{empty}%
+	\@starttoc{toc}}
+\makeatother
 \tableofcontents
+\thispagestyle{plain2}
+\clearpage
+\endgroup
 
 %\tableofcontents
-%\thispagestyle{plain}
+
 %\newpage
 
 
