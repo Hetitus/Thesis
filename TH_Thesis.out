@@ -14,7 +14,7 @@
 \BOOKMARK [1][-]{section.3.2}{Model structure and parametrization}{chapter.3}% 14
 \BOOKMARK [1][-]{section.3.3}{A maximum likelihood approach for efficient model fitting}{chapter.3}% 15
 \BOOKMARK [1][-]{section.3.4}{NER model fits accumulation, FLIP and repair synthesis measurements}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.5}{PLE analysis identifies realistic model of NER}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.5}{Profile likelihood analysis identifies realistic model of NER}{chapter.3}% 17
 \BOOKMARK [0][-]{chapter.4}{Control analysis of the DNA repair rate}{}% 18
 \BOOKMARK [1][-]{section.4.1}{Kinetic NER model predicts collective rate control}{chapter.4}% 19
 \BOOKMARK [1][-]{section.4.2}{Exploiting natural variability in protein expression to quantify rate control}{chapter.4}% 20

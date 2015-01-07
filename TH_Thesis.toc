@@ -19,7 +19,7 @@
 \contentsline {section}{\numberline {3.2}Model structure and parametrization}{17}{section.3.2}
 \contentsline {section}{\numberline {3.3}A maximum likelihood approach for efficient model fitting}{21}{section.3.3}
 \contentsline {section}{\numberline {3.4}NER model fits accumulation, FLIP and repair synthesis measurements}{23}{section.3.4}
-\contentsline {section}{\numberline {3.5}PLE analysis identifies realistic model of NER}{25}{section.3.5}
+\contentsline {section}{\numberline {3.5}Profile likelihood analysis identifies realistic model of NER}{25}{section.3.5}
 \contentsline {chapter}{\numberline {4}Control analysis of the DNA repair rate}{31}{chapter.4}
 \contentsline {section}{\numberline {4.1}Kinetic NER model predicts collective rate control}{31}{section.4.1}
 \contentsline {paragraph}{Prediction profile likelihood}{32}{section*.25}
