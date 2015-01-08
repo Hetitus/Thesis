@@ -11,48 +11,47 @@ A level-1 auxiliary file: chapters/RobustRepair.aux
 A level-1 auxiliary file: chapters/CrossCorrel.aux
 A level-1 auxiliary file: chapters/Discussion.aux
 The style file: naturemagC.bst
+A level-1 auxiliary file: chapters/Abbreviations.aux
 A level-1 auxiliary file: chapters/Appendix.aux
 Database file #1: NER_Bibliography.bib
-Warning--I didn't find a database entry for "Lovdok2009"
-You've used 114 entries,
+You've used 115 entries,
             2538 wiz_defined-function locations,
-            1340 strings with 29320 characters,
-and the built_in function-call counts, 53995 in all, are:
-= -- 4428
-> -- 1974
+            1344 strings with 29595 characters,
+and the built_in function-call counts, 54588 in all, are:
+= -- 4469
+> -- 2006
 < -- 7
-+ -- 1740
-- -- 492
-* -- 3337
-:= -- 6171
-add.period$ -- 342
-call.type$ -- 114
-change.case$ -- 114
++ -- 1770
+- -- 500
+* -- 3375
+:= -- 6237
+add.period$ -- 345
+call.type$ -- 115
+change.case$ -- 115
 chr.to.int$ -- 18
-cite$ -- 114
-duplicate$ -- 5056
-empty$ -- 4633
-format.name$ -- 586
-if$ -- 11421
+cite$ -- 115
+duplicate$ -- 5108
+empty$ -- 4679
+format.name$ -- 595
+if$ -- 11545
 int.to.chr$ -- 0
-int.to.str$ -- 114
-missing$ -- 1175
-newline$ -- 573
-num.names$ -- 114
-pop$ -- 2133
+int.to.str$ -- 115
+missing$ -- 1189
+newline$ -- 578
+num.names$ -- 115
+pop$ -- 2159
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 734
+skip$ -- 744
 stack$ -- 0
-substring$ -- 3908
-swap$ -- 2883
+substring$ -- 3944
+swap$ -- 2916
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 440
-width$ -- 117
-write$ -- 1255
-(There was 1 warning)
+while$ -- 443
+width$ -- 118
+write$ -- 1266
