@@ -481,21 +481,6 @@ Pearson, K.
 \newblock {On lines and planes of closest fit to systems of points in space.}
 \newblock \emph{Philosophical Magazine} \textbf{2}, 559--572 (1901).
 
-\bibitem{Kendall1979}
-Kendall, M.~G. \& Stuart, A.
-\newblock {The Advanced Theory of Statistics}.
-\newblock McMillan, London, 4th ed. (1979).
-
-\bibitem{Fisher1958}
-Fisher, R.
-\newblock {Statistical Methods for Research Workers}.
-\newblock Hafner, 13th ed. (1958).
-
-\bibitem{Efron1979}
-Efron, B.
-\newblock {Bootstrap methods: another look at the jacknife}.
-\newblock \emph{Annual Statistics} \textbf{7}, 1--26 (1979).
-
 \bibitem{Scholzen2000}
 Scholzen, T. \& Gerdes, J.
 \newblock {The Ki-67 Protein : From the Known and}.
@@ -712,5 +697,20 @@ Cheng, L., Spitz, M.~R., Hong, W.~K. \& Wei, Q.
 Kollmann, M., L\o~vdok, L., Bartholom\'{e}, K., Timmer, J. \& Sourjik, V.
 \newblock {Design principles of a bacterial signalling network.}
 \newblock \emph{Nature} \textbf{438}, 504--7 (2005).
+
+\bibitem{Kendall1979}
+Kendall, M.~G. \& Stuart, A.
+\newblock {The Advanced Theory of Statistics}.
+\newblock McMillan, London, 4th ed. (1979).
+
+\bibitem{Fisher1958}
+Fisher, R.
+\newblock {Statistical Methods for Research Workers}.
+\newblock Hafner, 13th ed. (1958).
+
+\bibitem{Efron1979}
+Efron, B.
+\newblock {Bootstrap methods: another look at the jacknife}.
+\newblock \emph{Annual Statistics} \textbf{7}, 1--26 (1979).
 
 \end{thebibliography}

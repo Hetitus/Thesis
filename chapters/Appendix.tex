@@ -1,6 +1,6 @@
 \appendix
 \chapter{Appendix}
-\pagestyle{plain}
+\pagestyle{plain4}
 \setcounter{table}{0}
 \renewcommand{\thetable}{A\arabic{table}}
 
@@ -10,7 +10,7 @@
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=1\textwidth]{Abbildungen/figure_A_1.pdf}
-\caption{\textbf{Identifiability analysis by Profile Likelihood Estimation (PLE)} PLE and 95\% confidence interval (horizontal red line) of binding and dissociation parameters for all catalytic constants (A), damaged DNA (B), unwound and incised DNA (C), resynthesised DNA (D) and rechromatinised DNA (E). }
+\caption{\textbf{Identifiability analysis by profile likelihood estimation (PLE).} PLE and 95\% confidence limit (horizontal red line) of binding and dissociation parameters for A) all catalytic constants, B) damaged DNA, C) unwound and incised DNA, D) resynthesised DNA and E) rechromatinised DNA. }
 \label{fig:profileLikilihoods}
 \end{center}
 \end{figure}
@@ -46,14 +46,14 @@
 		& (0.019;0.019)     & (0.009;0.012)             & (0.0140;0.0149)&(0.0134; 0.0141)&(0.0167;0.0172)     &  (0.0213;0.0224)    & (0.003;0.0032)  \\
 		$\text{K}_{\text{d}}$({\textmu}$\text{M})$                                                   & 0.864                     & 0.204                   & 0.395                 &2.446                 &0.147                    &1.222                   &0.388    \\
 		& (0.635;1.006)     & (0.163;0.259)             & (0.373;0.419)		&(2.344; 2.596)&(0.138;0.158)     &  (1.048;1.36)  					& (0.319;0.538)   \\
-		\multicolumn{8}{l}{\textbf{Resynthesized DNA}} \\
+		\multicolumn{8}{l}{\textbf{Resynthesised DNA}} \\
 		$\text{k}_{\text{on}}$({\textmu}$\text{M}^{\text{-1}}\text{s}^{\text{-1}})$    & NA                          & NA                        & NA                      &  NA                    & 0.022                   &0.032                    &0.004    \\
 		&                               &                             &                            &                          &(0.021;0.025)    &(0.025;0.037)    & (0.0038;0.005)    \\
 		$\text{k}_{\text{off}}$($\text{s}^{\text{-1}})$                                             & NA                          &NA                          & NA                      & NA                     & 0.0052                  & 0.035                   &0.0026     \\
 		&                               &                              &                           &                          &(0.0051;0.0053)     &  (0.031;0.042)  & (0.0025;0.0027)  \\
 		$\text{K}_{\text{d}}$({\textmu}$\text{M})$                                                  & NA                          &NA                         & NA                      &NA                      &0.236                   &1.167                    &0.605     \\
 		&                               &                              &                           &                          &(0.222;0.27)     &  (0.924;1.521)  & (0.531;0.747)  \\
-		\multicolumn{8}{l}{\textbf{Rechromatinized DNA}} \\
+		\multicolumn{8}{l}{\textbf{Rechromatinised DNA}} \\
 		$\text{k}_{\text{on}}$({\textmu}$\text{M}^{\text{-1}}\text{s}^{\text{-1}})$    & NA                          & NA                        & NA                      &  NA                    & NA                       &0.065                    &0.396    \\
 		&                               &                             &                            &                          &                            &(0.056;0.075)    & (0.359;0.457)    \\
 		$\text{k}_{\text{off}}$($\text{s}^{\text{-1}})$                                             & NA                          &NA                          & NA                      & NA                     & NA                       & 0.035                   &0.061     \\
@@ -62,7 +62,7 @@
 		&                               &                              &                           &                          &                            &  (0.438;0.645)  & (0.134;0.182)  \\
 		\hline
 	\end{tabular}
-	\caption{\textbf{Values of binding and dissociation rate constants.} NA, not applicable. $k_{\text{on}}$, $k_{\text{off}}$ and $K_{\text{D}}$ ($k_{\text{on}}$/$k_{\text{off}}$) values are given for every repair protein and arranged in columns. Reference parameter set and 95\% confidence intervals (in parentheses) are shown. Nuclear concentration (in \textmu M) of NER factors are based on previously described data \cite{Luijsterburg2010}}
+	\caption{\textbf{Values of binding and dissociation rate constants.} NA, not applicable. $k_{\text{on}}$, $k_{\text{off}}$ and $K_{\text{D}}$ ($k_{\text{off}}$/$k_{\text{on}}$) values are given for every repair protein and arranged in columns. Reference parameter set and 95\% confidence intervals (in parentheses) are shown. Nuclear concentration (in \textmu M) of NER factors are based on previously described data \cite{Luijsterburg2010}}
 	\label{tab:parameter_bigTable}
 \end{table}
 
@@ -73,19 +73,28 @@
 		
 		\multicolumn{3}{l}{} \\
 		\hline
-		\textbf{Enzymatic rate}    && \textbf{$\text{k}_{\text{cat}}$}  \\
+		\textbf{Catalytic rate}    && \textbf{$\text{k}_{\text{cat}}$ $\, \left[\text{s}^{\text{-1}}\right]$}  \\
 		\hline
-		&  &$\text{s}^{\text{-1}}$       \\
 		Unwinding  $\alpha$                                     & 19.9& (>0.2)                 \\
 		Resynthesis $\gamma$                                 & 25.5 &(>1.5)     \\
 		Rechromatinization $\delta$                         & 0.001 &(0.001;0.0011)                   \\
 		Reannealing  $\epsilon$                                & 5.3&(>0.9)    \\
 		\hline
 	\end{tabular}
-	\caption{\textbf{Values of the enzymatic rate constants.}  Reference parameter set and 95\% confidence intervals (in parentheses) are shown. In case of practical non-identifiability only the lower confidence bound is given.}
+	\caption{\textbf{Values of the catalytic rate constants.}  Reference parameter set and 95\% confidence intervals (in parentheses) are shown. In case of practical non-identifiability only the lower confidence bound is given.}
 	\label{tab:parameter_catalyticRates}
 	\end{center}
 \end{table}
+
+
+\section{Correlation analysis}
+\label{apendix:correlationAnalysis}
+The correlation analysis was performed in MATLAB (2012a, The Mathworks Inc., Natick, MA) using the inbuilt 'corrcoef' function, which also returns p-values indicating the significance of the correlation coefficient. The p-values are determined by a t-test, where the null-hypothesis $H_0$ states that the true correlation $p_r$ between two variables equals zero $H_0: \, p_r=0$ (whereas the alternative hypothesis states $H_1: \, p_r\neq0$) and that for its observed value $r$ the quantity 
+\begin{equation}
+t = \frac{r}{\sqrt{\frac{(1-r^2)}{N-2}}}
+\end{equation}     
+follows approximately a $t$-distribution for $N-2$ degrees of freedom and a sample size $N$ \cite{Kendall1979,Fisher1958}. A low p-value suggests the rejection of the null-hypothesis and thus, demonstrates the significance of the correlation.\\
+The confidence intervals for each correlation coefficient were estimated by non-parametric bootstrap \cite{Efron1979}. Thereby the correlation coefficient was re-sampled for 10,000 times each time drawing $n$ pseudoreplicates (with replacement), where $n$ denotes the number of measured cells from the original data. The confidence borders mark the interval including 95\% of the re-sampled correlation coefficients.\\ 
 
 \section{Control analysis}
 
@@ -96,6 +105,7 @@
 		\label{fig:cc_rateOfincision}
 	\end{center}
 \end{figure}
+
 
 \newpage
 \section{Cross-correlation}
@@ -117,7 +127,7 @@
 		\multicolumn{4}{l}{} \\
 		\hline
 		\rule{0pt}{2ex}
-		\textbf{Species}    &\textbf{Type} & \textbf{Protein} & \textbf{Manufacturer} \\
+		\hspace{-0.15cm}\textbf{Species}    &\textbf{Type} & \textbf{Protein} & \textbf{Manufacturer} \\
 		\hline
 		
 		Mouse & mAb & RPA70 & Abcam       \\
@@ -140,7 +150,7 @@
 		\multicolumn{5}{l}{} \\
 		\hline
 		\rule{0pt}{2ex}
-		\textbf{Species}    &\textbf{Type} &\textbf{Fluorophore}& \textbf{Protein} & \textbf{Manufacturer} \\
+		\hspace{-0.15cm}\textbf{Species}    &\textbf{Type} &\textbf{Fluorophore}& \textbf{Protein} & \textbf{Manufacturer} \\
 		\hline
 		
 		Donkey & IgG (H+L) & Alexa488 & Mouse & Jackson Immunoresearch       \\
@@ -160,7 +170,7 @@
 		\multicolumn{5}{l}{} \\
 		\hline
 		\rule{0pt}{2ex}
-		\textbf{Species}    &\textbf{Type} &\textbf{Fluorophore}& \textbf{Protein} & \textbf{Manufacturer} \\
+		\hspace{-0.15cm}\textbf{Species}    &\textbf{Type} &\textbf{Fluorophore}& \textbf{Protein} & \textbf{Manufacturer} \\
 		\hline
 		Mouse & mAb & Alexa488 & XPC & Abcam       \\
 		\hline

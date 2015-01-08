@@ -8,7 +8,7 @@
 \BOOKMARK [1][-]{section.2.1}{Locally UV-inflicted DNA damage}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.2}{Repair factor accumulation and dissociation occur on different time scales}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.3}{Direct measurement of DNA resynthesis}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.4}{Repair rate follows first order rate kinetics}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{Repair rate follows first-order rate kinetics}{chapter.2}% 11
 \BOOKMARK [0][-]{chapter.3}{Kinetic model of NER}{}% 12
 \BOOKMARK [1][-]{section.3.1}{Slow first-order reaction kinetic due to many fast interacting components}{chapter.3}% 13
 \BOOKMARK [1][-]{section.3.2}{Model structure and parametrization}{chapter.3}% 14
@@ -26,7 +26,9 @@
 \BOOKMARK [1][-]{section.5.4}{Measured average response agrees with model prediction}{chapter.5}% 26
 \BOOKMARK [0][-]{chapter.6}{Discussion}{}% 27
 \BOOKMARK [0][-]{chapter.7}{Bibliography}{}% 28
-\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 29
-\BOOKMARK [1][-]{section.A.1}{Parameter estimation}{appendix.A}% 30
-\BOOKMARK [1][-]{section.A.2}{Control analysis}{appendix.A}% 31
-\BOOKMARK [1][-]{section.A.3}{Cross-correlation}{appendix.A}% 32
+\BOOKMARK [0][-]{chapter.8}{Abbreviations}{}% 29
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 30
+\BOOKMARK [1][-]{section.A.1}{Parameter estimation}{appendix.A}% 31
+\BOOKMARK [1][-]{section.A.2}{Correlation analysis}{appendix.A}% 32
+\BOOKMARK [1][-]{section.A.3}{Control analysis}{appendix.A}% 33
+\BOOKMARK [1][-]{section.A.4}{Cross-correlation}{appendix.A}% 34

@@ -37,6 +37,24 @@
 	\fancyfoot[C]{\thepage{}}
 	\renewcommand{\headrulewidth}{1pt}
 }
+
+\fancypagestyle{plain3}{
+	\fancyhf{}
+	%\fancyhead[LE,RO]{\slshape \rightmark}
+	\fancyhead[LO,RE]{\slshape \leftmark}
+	\fancyfoot[C]{\thepage{}}
+	\renewcommand{\headrulewidth}{1pt}
+	\renewcommand{\chaptermark}[1]{\markright{}}
+}
+
+\fancypagestyle{plain4}{
+	\fancyhf{}
+	%\fancyhead[LE,RO]{Appendix}
+	\fancyhead[LO,RE]{Appendix}
+	\fancyfoot[C]{\thepage{}}
+	\renewcommand{\headrulewidth}{1pt}
+	\renewcommand{\chaptermark}[1]{\markright{}}
+}
 %\newenvironment{keeppage}{\let\thispagestyle{plain}}
 
  
@@ -61,6 +79,7 @@
 \usepackage{changepage}
 \usepackage{lscape}
 \usepackage{dsfont}
+\usepackage{acronym}
 
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{helvet}
@@ -294,13 +313,24 @@
 %\addcontentsline{toc}{chapter}{Bibliography}
 %\bibliographystyle{apa}
 %\newcommand{\bibfont}{\footnotesize}
-
+%\begingroup
+%\makeatletter% Allow use of restricted @ in control sequences
+%\renewcommand\tableofcontents{%
+%	\chapter*{\contentsname}% or \chapter* but that looks ugly
+%	\pagestyle{empty}%
+%	\@starttoc{toc}}
+%\makeatother
+%\tableofcontents
+%\thispagestyle{plain2}
+%\clearpage
+%\endgroup
 \footnotesize\bibliographystyle{naturemagC}
+\pagestyle{plain3}
 \bibliography{NER_Bibliography}
 
 %\clearpage{\pagestyle{empty}\cleardoublepage} \thispagestyle{empty}
 %\clearpage{\pagestyle{empty}\cleardoublepage}
-
+\include{chapters/Abbreviations}
 
 %\clearpage{\pagestyle{empty}\cleardoublepage} \thispagestyle{empty}
 %\clearpage{\pagestyle{empty}\cleardoublepage}
@@ -308,6 +338,7 @@
 % ************************* Appendix *****************************
 
 \include{chapters/Appendix}
+
 %\clearpage{\cleardoublepage}
 %\clearpage{\pagestyle{plain2}} %\thispagestyle{empty}
 %\clearpage{\pagestyle{empty}\cleardoublepage}
