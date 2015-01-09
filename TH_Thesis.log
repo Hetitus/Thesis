@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.10)  8 JAN 2015 20:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.10)  9 JAN 2015 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -236,7 +236,7 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count100
 \LT@p@ftn=\toks19
 )
-Class scrbook Info: longtable captions redefined on input line 73.
+Class scrbook Info: longtable captions redefined on input line 82.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
@@ -603,29 +603,29 @@ Package: chngcntr 2009/09/02 v1.0a change counter resetting
 (./chapters/Appendix.aux))
 \openout1 = `TH_Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 164.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 164.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 173.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 173.
 
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 164.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 173.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -701,7 +701,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 164.
+Package hyperref Info: Link coloring OFF on input line 173.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -711,9 +711,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count137
 )
-LaTeX Info: Redefining \ref on input line 164.
-LaTeX Info: Redefining \pageref on input line 164.
-LaTeX Info: Redefining \nameref on input line 164.
+LaTeX Info: Redefining \ref on input line 173.
+LaTeX Info: Redefining \pageref on input line 173.
+LaTeX Info: Redefining \nameref on input line 173.
 
 (./TH_Thesis.out) (./TH_Thesis.out)
 \@outlinefile=\write4
@@ -755,7 +755,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.197 \clearpage
+l.206 \clearpage
                  [2]
 \openout2 = `chapters/Zusammenfassung.aux'.
 
@@ -855,56 +855,59 @@ File: Abbildungen/figure2_1.pdf Graphic file (type pdf)
 Package pdftex.def Info: Abbildungen/figure2_1.pdf used on input line 23.
 (pdftex.def)             Requested size: 441.01773pt x 346.354pt.
  [8 <./Abbildungen/figure2_1.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
 
 LaTeX Font Info:    Font shape `TS1/phv/bx/n' in size <9> not available
-(Font)              Font shape `TS1/phv/b/n' tried instead on input line 56.
+(Font)              Font shape `TS1/phv/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 56.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 57.
 <Abbildungen/figure2_2.pdf, id=426, 597.51233pt x 361.06093pt>
 File: Abbildungen/figure2_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_2.pdf>
-Package pdftex.def Info: Abbildungen/figure2_2.pdf used on input line 66.
+Package pdftex.def Info: Abbildungen/figure2_2.pdf used on input line 67.
 (pdftex.def)             Requested size: 441.01773pt x 266.49774pt.
- [9] [10 <./Abbildungen/figure2_2.pdf>]
-<Abbildungen/figure2_2_2.pdf, id=486, 597.51233pt x 383.93437pt>
+
+<Abbildungen/figure2_2_2.pdf, id=433, 597.51233pt x 383.93437pt>
 File: Abbildungen/figure2_2_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_2_2.pdf>
-Package pdftex.def Info: Abbildungen/figure2_2_2.pdf used on input line 76.
+Package pdftex.def Info: Abbildungen/figure2_2_2.pdf used on input line 77.
 (pdftex.def)             Requested size: 441.01773pt x 283.38054pt.
-
-<Abbildungen/figure2_3.pdf, id=491, 597.51233pt x 287.32344pt>
+ [9] [10 <./Abbildungen/figure2_2.pdf>]
+[11 <./Abbildungen/figure2_2_2.pdf>]
+<Abbildungen/figure2_3.pdf, id=523, 597.51233pt x 287.32344pt>
 File: Abbildungen/figure2_3.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_3.pdf>
-Package pdftex.def Info: Abbildungen/figure2_3.pdf used on input line 90.
+Package pdftex.def Info: Abbildungen/figure2_3.pdf used on input line 103.
 (pdftex.def)             Requested size: 441.01773pt x 212.07236pt.
- [11 <./Abbildungen/figure2_2_2.pdf>] [12 <./Abbildungen/figure2_3.pdf>]
-Underfull \hbox (badness 4229) in paragraph at lines 107--110
+
+<Abbildungen/figure2_4.pdf, id=524, 597.51233pt x 530.96568pt>
+File: Abbildungen/figure2_4.pdf Graphic file (type pdf)
+
+<use Abbildungen/figure2_4.pdf>
+Package pdftex.def Info: Abbildungen/figure2_4.pdf used on input line 110.
+(pdftex.def)             Requested size: 441.01773pt x 391.90382pt.
+
+Underfull \hbox (badness 4229) in paragraph at lines 100--122
 \T1/phv/m/n/10.95 The DNA re-pair time se-ries char-ac-ter-ized by in-cor-po-ra
 ted EdU is fit-ted by a
  []
 
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 114.
+[12]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 126.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 113--115
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
-<Abbildungen/figure2_4.pdf, id=571, 597.51233pt x 530.96568pt>
-File: Abbildungen/figure2_4.pdf Graphic file (type pdf)
-
-<use Abbildungen/figure2_4.pdf>
-Package pdftex.def Info: Abbildungen/figure2_4.pdf used on input line 118.
-(pdftex.def)             Requested size: 441.01773pt x 391.90382pt.
- [13]) [14 <./Abbildungen/figure2_4.pdf>]
+[13 <./Abbildungen/figure2_3.pdf>]) [14 <./Abbildungen/figure2_4.pdf>]
 \openout2 = `chapters/KineticModel.aux'.
 
 
@@ -932,7 +935,7 @@ File: Abbildungen/figure2_5_2.pdf Graphic file (type pdf)
 Package pdftex.def Info: Abbildungen/figure2_5_2.pdf used on input line 31.
 (pdftex.def)             Requested size: 441.01773pt x 171.77527pt.
  [16 <./Abbildungen/figure2_5_2.pdf>]
-<Abbildungen/figure2_5.pdf, id=768, 597.51233pt x 192.48914pt>
+<Abbildungen/figure2_5.pdf, id=769, 597.51233pt x 192.48914pt>
 File: Abbildungen/figure2_5.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_5.pdf>
@@ -954,21 +957,21 @@ LaTeX Warning: Command \textbar invalid in math mode on input line 208.
 
 LaTeX Warning: Command \textbar invalid in math mode on input line 211.
 
-[22] <Abbildungen/figure2_6_4.pdf, id=876, 597.51233pt x 214.9621pt>
+[22] <Abbildungen/figure2_6_4.pdf, id=877, 597.51233pt x 214.9621pt>
 File: Abbildungen/figure2_6_4.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_6_4.pdf>
 Package pdftex.def Info: Abbildungen/figure2_6_4.pdf used on input line 239.
 (pdftex.def)             Requested size: 441.01773pt x 158.66272pt.
  [23]
-<Abbildungen/figure2_6.pdf, id=891, 597.51233pt x 489.1605pt>
+<Abbildungen/figure2_6.pdf, id=892, 597.51233pt x 489.1605pt>
 File: Abbildungen/figure2_6.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_6.pdf>
 Package pdftex.def Info: Abbildungen/figure2_6.pdf used on input line 249.
 (pdftex.def)             Requested size: 441.01773pt x 361.04756pt.
 
-<Abbildungen/figure2_6_2.pdf, id=892, 597.51233pt x 286.81755pt>
+<Abbildungen/figure2_6_2.pdf, id=893, 597.51233pt x 286.81755pt>
 File: Abbildungen/figure2_6_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_6_2.pdf>
@@ -985,7 +988,7 @@ LaTeX Warning: Command \textbar invalid in math mode on input line 272.
 
 LaTeX Warning: Command \textbar invalid in math mode on input line 277.
 
-<Abbildungen/figure2_9.pdf, id=977, 597.51233pt x 609.20396pt>
+<Abbildungen/figure2_9.pdf, id=978, 597.51233pt x 609.20396pt>
 File: Abbildungen/figure2_9.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_9.pdf>
@@ -1002,7 +1005,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--332
 
  []
 
-<Abbildungen/figure2_7.pdf, id=1029, 597.51233pt x 208.74387pt>
+<Abbildungen/figure2_7.pdf, id=1030, 597.51233pt x 208.74387pt>
 File: Abbildungen/figure2_7.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure2_7.pdf>
@@ -1027,7 +1030,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
 
 
-] <Abbildungen/figure3_1.pdf, id=1068, 597.51233pt x 218.29353pt>
+] <Abbildungen/figure3_1.pdf, id=1069, 597.51233pt x 218.29353pt>
 File: Abbildungen/figure3_1.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_1.pdf>
@@ -1038,14 +1041,14 @@ Package pdftex.def Info: Abbildungen/figure3_1.pdf used on input line 56.
 LaTeX Warning: Command \textbar invalid in math mode on input line 78.
 
 [33 <./Abbildungen/figure3_1.pdf>]
-<Abbildungen/figure3_1_b.pdf, id=1117, 597.51233pt x 245.5845pt>
+<Abbildungen/figure3_1_b.pdf, id=1118, 597.51233pt x 245.5845pt>
 File: Abbildungen/figure3_1_b.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_1_b.pdf>
 Package pdftex.def Info: Abbildungen/figure3_1_b.pdf used on input line 88.
 (pdftex.def)             Requested size: 441.01773pt x 181.26501pt.
 
-<Abbildungen/figure3_2.pdf, id=1120, 597.51233pt x 634.00566pt>
+<Abbildungen/figure3_2.pdf, id=1121, 597.51233pt x 634.00566pt>
 File: Abbildungen/figure3_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_2.pdf>
@@ -1056,7 +1059,7 @@ Package pdftex.def Info: Abbildungen/figure3_2.pdf used on input line 102.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [34 <./Abbildungen/figure3_1_b.pdf>] [35 <./Abbildungen/figure3_2.pdf>]
-<Abbildungen/figure3_3.pdf, id=1184, 597.51233pt x 628.67575pt>
+<Abbildungen/figure3_3.pdf, id=1185, 597.51233pt x 628.67575pt>
 File: Abbildungen/figure3_3.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_3.pdf>
@@ -1073,7 +1076,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--145
 
  []
 
-<Abbildungen/figure3_4.pdf, id=1252, 597.51233pt x 696.18492pt>
+<Abbildungen/figure3_4.pdf, id=1254, 597.51233pt x 696.18492pt>
 File: Abbildungen/figure3_4.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_4.pdf>
@@ -1082,28 +1085,28 @@ Package pdftex.def Info: Abbildungen/figure3_4.pdf used on input line 158.
  [38
 
 ] [39 <./Abbildungen/figure3_4.pdf>]
-<Abbildungen/figure3_5.pdf, id=1313, 597.51233pt x 221.84682pt>
+<Abbildungen/figure3_5.pdf, id=1315, 597.51233pt x 221.84682pt>
 File: Abbildungen/figure3_5.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_5.pdf>
 Package pdftex.def Info: Abbildungen/figure3_5.pdf used on input line 169.
 (pdftex.def)             Requested size: 441.01773pt x 163.74431pt.
 
-<Abbildungen/figure3_6.pdf, id=1314, 597.51233pt x 708.6214pt>
+<Abbildungen/figure3_6.pdf, id=1316, 597.51233pt x 708.6214pt>
 File: Abbildungen/figure3_6.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_6.pdf>
 Package pdftex.def Info: Abbildungen/figure3_6.pdf used on input line 177.
 (pdftex.def)             Requested size: 441.01773pt x 523.03085pt.
  [40 <./Abbildungen/figure3_5.pdf>] [41 <./Abbildungen/figure3_6.pdf>]
-<Abbildungen/figure3_8.pdf, id=1419, 597.51233pt x 233.39397pt>
+<Abbildungen/figure3_8.pdf, id=1421, 597.51233pt x 233.39397pt>
 File: Abbildungen/figure3_8.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_8.pdf>
 Package pdftex.def Info: Abbildungen/figure3_8.pdf used on input line 203.
 (pdftex.def)             Requested size: 441.01773pt x 172.26721pt.
  [42]
-<Abbildungen/figure3_7.pdf, id=1429, 597.51233pt x 617.12859pt>
+<Abbildungen/figure3_7.pdf, id=1431, 597.51233pt x 617.12859pt>
 File: Abbildungen/figure3_7.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure3_7.pdf>
@@ -1136,14 +1139,14 @@ l.58
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.58 
-     ] [47] <Abbildungen/figure4_1.pdf, id=1511, 597.51233pt x 197.73875pt>
+     ] [47] <Abbildungen/figure4_1.pdf, id=1513, 597.51233pt x 197.73875pt>
 File: Abbildungen/figure4_1.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure4_1.pdf>
 Package pdftex.def Info: Abbildungen/figure4_1.pdf used on input line 87.
 (pdftex.def)             Requested size: 441.01773pt x 145.95024pt.
 
-<Abbildungen/figureTAC_2.pdf, id=1514, 597.51233pt x 654.65778pt>
+<Abbildungen/figureTAC_2.pdf, id=1516, 597.51233pt x 654.65778pt>
 File: Abbildungen/figureTAC_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figureTAC_2.pdf>
@@ -1155,14 +1158,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
  []
 
 [48 <./Abbildungen/figure4_1.pdf>] [49 <./Abbildungen/figureTAC_2.pdf>]
-<Abbildungen/figureTAC_3.pdf, id=1599, 597.51233pt x 464.34578pt>
+<Abbildungen/figureTAC_3.pdf, id=1601, 597.51233pt x 464.34578pt>
 File: Abbildungen/figureTAC_3.pdf Graphic file (type pdf)
 
 <use Abbildungen/figureTAC_3.pdf>
 Package pdftex.def Info: Abbildungen/figureTAC_3.pdf used on input line 118.
 (pdftex.def)             Requested size: 441.01773pt x 342.73192pt.
  [50]
-<Abbildungen/figureTAC_4.pdf, id=1614, 597.51233pt x 464.56763pt>
+<Abbildungen/figureTAC_4.pdf, id=1616, 597.51233pt x 464.56763pt>
 File: Abbildungen/figureTAC_4.pdf Graphic file (type pdf)
 
 <use Abbildungen/figureTAC_4.pdf>
@@ -1194,82 +1197,34 @@ Chapter 7.
 
 ]
 Chapter 8.
-
-LaTeX Warning: Reference `a.u.' on page 71 undefined on input line 14.
-
-
-LaTeX Warning: Reference `chi_Neyman' on page 71 undefined on input line 19.
-
-
-LaTeX Warning: Reference `chi_square' on page 71 undefined on input line 19.
-
-
-LaTeX Warning: Reference `chi_square2' on page 71 undefined on input line 19.
-
-
-LaTeX Warning: Reference `def_CI' on page 71 undefined on input line 21.
-
-
-LaTeX Warning: Reference `CV' on page 71 undefined on input line 24.
-
-
-LaTeX Warning: Reference `DAPI' on page 71 undefined on input line 26.
-
-
-LaTeX Warning: Reference `delta_fct' on page 71 undefined on input line 32.
-
-
-LaTeX Warning: Reference `DKFZ' on page 71 undefined on input line 35.
-
-
-LaTeX Warning: Reference `eGFP' on page 71 undefined on input line 43.
-
-
-LaTeX Warning: Reference `FACS' on page 71 undefined on input line 46.
-
-
-LaTeX Warning: Reference `mRNA_0' on page 71 undefined on input line 77.
-
-
-LaTeX Warning: Reference `NFkB_2' on page 71 undefined on input line 82.
-
-
-LaTeX Warning: Reference `NFkB_3' on page 71 undefined on input line 82.
-
-
-LaTeX Warning: Reference `ODE' on page 71 undefined on input line 86.
-
-
-LaTeX Warning: Reference `p50' on page 71 undefined on input line 91.
-
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <9> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 95.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <9> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 95.
-
-LaTeX Warning: Reference `correlation_coefficient' on page 71 undefined on inpu
-t line 95.
-
 [71]
-
-LaTeX Warning: Reference `coefficient_determination' on page 72 undefined on in
-put line 98.
-
-
-LaTeX Warning: Reference `TF' on page 72 undefined on input line 111.
-
-) [72pdfTeX warning (ext4): destination with the same identifier (name{r}) has 
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <9> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 115.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <9> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 115.
+ [72pdfTeX warning (ext4): destination with the same identifier (name{pl}) has 
 been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.333 \include{chapters/Abbreviations}
-                                      ]
+l.154 \end{acronym}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{r}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.154 \end{acronym}
+                   ]) [73]
 \openout2 = `chapters/Appendix.aux'.
 
- (./chapters/Appendix.tex
+ (./chapters/Appendix.tex [74
+
+
+
+
+]
 Appendix A.
-<Abbildungen/figure_A_1.pdf, id=1993, 597.51233pt x 603.57294pt>
+<Abbildungen/figure_A_1.pdf, id=2056, 597.51233pt x 603.57294pt>
 File: Abbildungen/figure_A_1.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure_A_1.pdf>
@@ -1277,26 +1232,21 @@ Package pdftex.def Info: Abbildungen/figure_A_1.pdf used on input line 12.
 (pdftex.def)             Requested size: 441.01773pt x 445.49496pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 76.
- [73
-
-
-
-
- <./Abbildungen/figure_A_1.pdf>] [74]
+ [75 <./Abbildungen/figure_A_1.pdf>] [76]
 Underfull \hbox (badness 10000) in paragraph at lines 95--98
 
  []
 
-<Abbildungen/figure_A_4.pdf, id=2044, 597.51233pt x 211.40883pt>
+<Abbildungen/figure_A_4.pdf, id=2107, 597.51233pt x 211.40883pt>
 File: Abbildungen/figure_A_4.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure_A_4.pdf>
 Package pdftex.def Info: Abbildungen/figure_A_4.pdf used on input line 103.
 (pdftex.def)             Requested size: 441.01773pt x 156.04007pt.
- [75
+ [77
 
  <./Abbildungen/figure_A_4.pdf>]
-<Abbildungen/figure_A_2.pdf, id=2063, 597.51233pt x 449.4672pt>
+<Abbildungen/figure_A_2.pdf, id=2125, 597.51233pt x 449.4672pt>
 File: Abbildungen/figure_A_2.pdf Graphic file (type pdf)
 
 <use Abbildungen/figure_A_2.pdf>
@@ -1308,9 +1258,9 @@ Underfull \hbox (badness 1292) in paragraph at lines 116--116
 ated. \T1/phv/m/n/9 Pair-wise cor-re-la-tions of in-di-rectly
  []
 
-) [76 <./Abbildungen/figure_A_2.pdf>] [77]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
+) [78 <./Abbildungen/figure_A_2.pdf>] [79]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 360.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 360.
  (./TH_Thesis.aux
 (./chapters/Titelseite.aux) (./chapters/Zusammenfassung.aux)
 (./chapters/Summary.aux) (./chapters/Introduction.aux)
@@ -1318,65 +1268,62 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
 (./chapters/RobustRepair.aux) (./chapters/CrossCorrel.aux)
 (./chapters/Discussion.aux) (./chapters/Abbreviations.aux)
 (./chapters/Appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 351.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 360.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 360.
 Package rerunfilecheck Info: File `TH_Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 847DC45EDB4E5AFED9F89421FA0B8374;2785.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 351.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 360.
  ) 
 Here is how much of TeX's memory you used:
- 11929 strings out of 493315
- 182959 string characters out of 6137904
- 331162 words of memory out of 5000000
- 14681 multiletter control sequences out of 15000+600000
- 76097 words of font info for 100 fonts, out of 8000000 for 9000
+ 11985 strings out of 493315
+ 183308 string characters out of 6137904
+ 334239 words of memory out of 5000000
+ 14714 multiletter control sequences out of 15000+600000
+ 76714 words of font info for 102 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 40i,17n,51p,2180b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,17n,51p,2189b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb></usr/local
 /texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/tex
-live/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
-13/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2013/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2013/texmf-d
-ist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2013/texmf-
-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2013/texmf-
-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2013/texmf-dist/f
-onts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
-1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
-public/txfonts/txex.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
-txfonts/txsy.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/u
-hvb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.
-pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texm
-f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TH_Thesis.pdf (87 pages, 4496090 bytes).
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2013/texmf-d
+ist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2013/texmf-d
+ist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2013/texmf-dist/fo
+nts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
+/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/p
+ublic/txfonts/txex.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/t
+xfonts/txsy.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uh
+vb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.p
+fb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on TH_Thesis.pdf (89 pages, 4506829 bytes).
 PDF statistics:
- 2286 PDF objects out of 2487 (max. 8388607)
- 1898 compressed objects within 19 object streams
- 367 named destinations out of 1000 (max. 500000)
+ 2355 PDF objects out of 2487 (max. 8388607)
+ 1963 compressed objects within 20 object streams
+ 388 named destinations out of 1000 (max. 500000)
  418 words of extra memory for PDF output out of 10000 (max. 10000000)
 
