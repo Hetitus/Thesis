@@ -64,6 +64,15 @@
 	\renewcommand{\headrulewidth}{1pt}
 	\renewcommand{\chaptermark}[1]{\markright{}}
 }
+
+\fancypagestyle{plain6}{
+	\fancyhf{}
+	%\fancyhead[LE,RO]{Appendix}
+	\fancyhead[LO,RE]{Acknowledgements}
+	\fancyfoot[C]{\thepage{}}
+	\renewcommand{\headrulewidth}{1pt}
+	\renewcommand{\chaptermark}[1]{\markright{}}
+}
 %\newenvironment{keeppage}{\let\thispagestyle{plain}}
 
  
@@ -354,6 +363,7 @@
 
 
 %\include{chapters/Acknowledgments}
+%\thispagestyle{plain6}
 %\setcounter{chapter}{1}
 
 

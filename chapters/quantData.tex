@@ -30,11 +30,8 @@ To observe the dynamic behaviour of NER factors upon local infliction of DNA dam
 \label{subsec:AccuFlipExp}
 The ability to locally inflict DNA damage with a discrete dose of UV-C allows for the study of accumulation and exchange behaviour of fluorescently-tagged repair proteins under different experimental conditions. In the following, we describe the comprehensive dataset acquired by Luijsterburg \textit{et al.} (2010)\cite{Luijsterburg2010}, which represents the basis for our quantitative analysis of the NER process. In total, the kinetics of seven repair factors were measured: a) XPC, the lesion recognition factor, b) TFIIH, the helicase responsible for DNA unwinding, c) XPA and RPA, which bind and thereby protect single stranded DNA against cleavage, d) the exonucleases XPF/ERCC1 and XPG performing the incision of the damaged DNA strand and, e) PCNA, which loads the DNA polymerase and hence indirectly provides insight into the DNA repair-synthesis kinetics. \\
 \label{sec:eGFP}
-Each repair factor was exogenously tagged with a green fluorescent protein (GFP) (or its 'enhanced' derivative eGFP) and expressed at physiological levels within the cell nucleus. Before the cells have been UV-irradiated at time t = 0, the repair proteins were homogeneously distributed at steady state. Immediately after UV-irradiation, the repair factors accumulated at the damaged chromatin sites, which led to a higher visible fluorescence intensity (\textit{cf.}\ Figure \ref{fig:accuImage}A). For quantification of the fluorescence intensity, image analysis was done by using ImageJ software (NIH Bethesda, MD). Accumulated repair-factor concentrations were determined by multiplying the nuclear reference concentrations (\textit{cf.}\ Table \ref{tab:nuclearconcentrations}) with the fraction of bound proteins at damaged DNA:
-% * <l.adlung@dkfz.de> 2014-12-06T23:21:59.631Z:
-%
-%  expressed at physiological levels under the endogenous promoter?
-%
+Each repair factor was exogenously tagged with a green fluorescent protein (GFP) (or its 'enhanced' derivative eGFP) and expressed at physiological levels within the cell nucleus \cite{Houtsmuller1999,Hoogstraten2002,Rademakers2003,Essers2005,Zotter2006}. Before the cells have been UV-irradiated at time t = 0, the repair proteins were homogeneously distributed at steady state. Immediately after UV-irradiation, the repair factors accumulated at the damaged chromatin sites, which led to a higher visible fluorescence intensity (\textit{cf.}\ Figure \ref{fig:accuImage}A). For quantification of the fluorescence intensity, image analysis was done by using ImageJ software (NIH Bethesda, MD). Accumulated repair-factor concentrations were determined by multiplying the nuclear reference concentrations (\textit{cf.}\ Table \ref{tab:nuclearconcentrations}) with the fraction of bound proteins at damaged DNA:
+
 \begin{equation}
 \text{\textit{Bound fraction}} = (I_\text{LD} - I_\text{outspot})A_\text{LD}/ \left((I_\text{nucleus} - I_\text{background})A_\text{nucleus}\right)
 \label{Eqn:BoundFraction}
@@ -56,10 +53,6 @@ PCNA&1.110 \textmu M&20\%\\  \hline
 \end{tabular}
  \caption{\textbf{Nuclear concentrations of NER factors (in \textmu M).} All nuclear quantities are based on published data or on previous estimates \cite{Araujo2001,Houtsmuller1999,Mone2004}. The nuclear concentrations were taken from Luijsterburg \textit{et.\ al.} \cite{Luijsterburg2010} were a nuclear volume of 0.3 pL was assumed. The bound fractions were determined by Eqn.\ \ref{Eqn:BoundFraction}. }\label{tab:nuclearconcentrations}
   \end{table}
-% * <l.adlung@dkfz.de> 2014-12-06T23:29:58.578Z:
-%
-%  Precisely mention irradiation and cell type
-%
   
 During the timespan of DNA repair, NER factor concentrations rise at the sites of local damage and then gradually decrease from their plateau levels at different rates (\textit{cf.}\ Figure \ref{fig:accuImage}C). For example, the half-time $t_\text{1/2}$ for XPC- and XPG-eGFP is $\sim$1 h, whereas XPA-eGFP has a longer half-time of $\sim$2.5 h \cite{Luijsterburg2010}. In contrast, PCNA and RPA stay present in the damage spot even after lesion removal. These results show that NER factors engage for hours in the repair process with temporal changes in the molecular composition.\\
 \begin{figure}[t!]
@@ -110,10 +103,7 @@ In contrast to the real-time measurements for accumulation and dissociation of t
 \includegraphics[width=1\textwidth]{Abbildungen/figure2_4.pdf}
 \caption{\textbf{EdU incorporation reflects DNA repair synthesis quantitatively.} A) EdU signal at various time points after local UV-C irradiation. B) Repair DNA synthesis (EdU, red curve) coincides with damage removal (6-4PP, blue curve) measured previously by Luijsterburg \textit{et al.} (2010) \cite{Luijsterburg2010}. Graphs display the means $\pm$\,SD, of n=50-70 locally damaged cells per time point for damaged DNA and n=150 locally damaged cells (derived from three independent experiments) per time point for repaired DNA C) Irradiated XP-C XPC-eGFP cells were treated with EdU for different time intervals post-irradiation. Intervals were chosen as follows: 15 minutes pre-irradiation to 60 minutes post-irradiation, 45-120 minutes, 105-180 minutes, 165-240 minutes and 225-300 minutes. Line plot represents mean $\pm$\,SD of EdU distributions derived from a particular time interval. D) DNA repair synthesis follows PCNA accumulation as measured previously \cite{Luijsterburg2010}. E) Mono-exponential fit of the EdU kinetic according to Eqn.\ \ref{Eqn:EdU_kinetic}. (Experiments by P. Verbruggen and M. Luijsterburg)}
 \label{fig:DNArepairKinetic}
-% * <l.adlung@dkfz.de> 2014-12-07T10:08:06.916Z:
-%
-%  Explain UV-C in contrast to UV. Give R^2 for E
-%
+
 \end{center}
 \end{figure}
 The signal at each time point represents the EdU signal averaged over multiple cells.\\
