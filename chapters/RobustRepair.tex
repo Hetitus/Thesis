@@ -181,7 +181,28 @@ While searching for additional factors affecting the repair rate response we not
 \end{figure}
 
 To find out whether the heterogeneity in nuclear NER factor expression, together with the distributed amount of initial DNA damages, would be sufficient to explain the variability in the repair rate we tried to reproduce the EdU response measurements with the evolved quantitative model introduced in Chapter \ref{chap:kineticNERmodel}. Thus, we simulated the model several hundred times in correspondence with the number of measured cells. For each simulated cell nuclear NER factor concentrations and the amount of local damages were randomly drawn from log-normal distributions in accordance with the experimentally determined $CV$s (\textit{cf.}\ Figure \ref{fig:ProteinDist} and Figure \ref{fig:DamageDist}) and the previously measured mean values \cite{Luijsterburg2010}. For PCNA and XPG we took the averaged $CV\sim$0.33 derived from the measured distributions. \\
-For XPC the simulated scatter plot for the accumulation of the nuclear repair factor at sites of local damage agrees remarkably well with the measured data (\textit{cf.}\ Figure \ref{fig:Model_dataComp}A, compare enlarged, simulated correlation with the smaller inlay, of the experimentally observed scatter plot). Qualitatively, the same holds true for the comparison between simulated and measured EdU incorporation as a readout for DNA resynthesis in response to changes in the concentration of the repair factors (\textit{cf.}\ Figure \ref{fig:Model_dataComp}B-F). It should be noted that the simulated slopes representing the overall repair rate response are slightly elevated compared to the calculated response coefficients (\textit{cf.}\ Figure \ref{fig:controlCoefficients}), clearly marking the influence of the introduced distribution of DNA damages. However, the simulated slopes are still significantly smaller than the measured estimates (\textit{cf.}\ Figure \ref{fig:Model_dataComp}B-F, compare enlarged correlation (simulation) with the smaller inlay (experiment)). This indicates that we still miss out on an essential, perhaps intrinsic, factor regulating the repair-rate response.\\    
+For XPC the simulated scatter plot for the accumulation of the nuclear repair factor at sites of local damage agrees remarkably well with the measured data (\textit{cf.}\ Figure \ref{fig:Model_dataComp}A, compare enlarged, simulated correlation with the smaller inlay, of the experimentally observed scatter plot). Qualitatively, the same holds true for the comparison between simulated and measured EdU incorporation as a readout for DNA resynthesis in response to changes in the concentration of the repair factors (\textit{cf.}\ Figure \ref{fig:Model_dataComp}B-F). It should be noted that the simulated slopes representing the overall repair rate response are slightly elevated compared to the calculated response coefficients (\textit{cf.}\ Figure \ref{fig:controlCoefficients}), clearly marking the influence of the introduced distribution of DNA damages. In particular for XPA, XPF and RPA though, the simulated slopes are still significantly smaller than the measurement-based regression estimates (\textit{cf.}\ Table \ref{tab:responsecomparison}). 
+\begin{table}[t!]
+	\centering
+	\begin{tabular}{lccc}
+		\hline
+		\rule{0pt}{2ex}
+		\hspace{-0.1cm}\textbf{Repair protein} & \textbf{Measured $\boldsymbol{ \mathit{m} }$} & \textbf{Simulated $\boldsymbol{ \mathit{m} }$} & $\mathbf{\tilde{R_i}}$  \\
+								&	(\textit{cf.}\ Figure \ref{fig:Nuc_vs_DNAsynthesis})&	(\textit{cf.}\ Figure \ref{fig:Model_dataComp})& (\textit{cf.}\ Figure \ref{fig:controlCoefficients})\\	 \hline					
+		\rule{0pt}{3ex}
+		\hspace{-0.1cm}\textbf{XPC}: & 0.36 $\pm$ 0.21 & 0.33 & 0.20 \\ 
+		\textbf{TFIIH}: & 0.45 $\pm$ 0.08 & 0.55 & 0.30 \\ 
+		\textbf{XPA}: & 0.75 $\pm$ 0.17 & 0.18 & 0.16 \\ 
+		\textbf{XPF}: & 0.62 $\pm$ 0.10 & 0.36 & 0.15 \\ 
+		\textbf{RPA}: & 0.37  & 0.33 & 0.15 \\ 
+		\hline
+		
+		
+	\end{tabular}
+	\caption{\textbf{Comparison of the measured and predicted repair responses caused by fluctuations of the NER factor concentrations.} Changes in DNA repair synthesis in response to variations of the nuclear NER factor abundance quantified i) from experimental data 
+	 (mean $\pm$ SD of the regression slopes $m$ from $\text{n}_{\text{XPC}}$ = 5, $\text{n}_{\text{TFIIH}}$ = 3, $\text{n}_{\text{XPA}}$ = 3, $\text{n}_{\text{XPF}}$ = 3 and $\text{n}_{\text{RPA}}$ = 2 independent biological replicates; within each measurement between n = 250 and n = 572 with an average of n = 477 cells were analysed), ii) from model simulation (nuclear NER factor concentrations and the amount of local damages were randomly drawn from log-normal distributions in accordance with the experimentally determined $CV$s (\textit{cf.}\ Figure \ref{fig:ProteinDist} and Figure \ref{fig:DamageDist})) and predicted iii) by the response coefficients $\tilde{R_i}$ (\textit{cf.}\ Section \ref{sec:repairControl}). }\label{tab:responsecomparison}
+\end{table}
+This indicates that we still miss out on an essential, perhaps intrinsic, factor regulating the repair-rate response. \\    
 To locate the lacking control, we first asked whether the natural variability, contributed by the NER factor expression variability and the distribution of inflicted lesions, can explain the distribution of the repair rate. Assuming that the repair rate $\nu$ is linearly dependent on the initial amount of inflicted lesions $L$ and, as estimated in Section \ref{firstOrderRateKinetic}, also on the nuclear repair-factor concentrations $C_i$ ($i=1,\ldots,N$), we can apply the general law of error propagation
 %and hence 'sums up' according to the response coefficients predicted by the model
 
@@ -196,8 +217,7 @@ CV_{\nu} = \sqrt{CV_{L}^2 + \sum_{i = 1}^{N}(\tilde{R_i} \, CV_i)^2},
 \end{equation}
 where $CV_{i}$ and $CV_L$ denote the coefficients of variation of the distributions of the individual repair factors and initial amount of lesions. Obviously, the response coefficient for the initial amount of inflicted lesions is 1. Including the variability for the initial amount of inflicted lesions $CV_L\sim$0.32 (\textit{cf.}\ Figure \ref{fig:DamageDist}A) and the average $CV_i \sim$0.33 for each repair factor, we can determine the repair rate variability with $CV_{\nu} \sim$0.35. This is around 20\% less than the measured $CV_{\nu} \sim$0.45 after one hour post UV-irradiation (\textit{cf.}\ Figure \ref{fig:CV_Var_comp}).\\
 To dissect the contribution of the individual factors to the
-overall variability, we computed the effect of heterogeneity in only one factor on repair synthesis. Accordingly, for each $CV$-trajectory in Figure \ref{fig:CV_Var_comp} we determined the $CV_{\nu}$ by simulating the repair rate for 500 cells and drawing only one factor randomly. The largest contribution can be allocated to the initial amount of damages (\textit{cf.}\ Figure \ref{fig:CV_Var_comp} brown trajectory), which was responsible for about two thirds of the whole observed repair variability (\textit{cf.}\ Figure \ref{fig:CV_Var_comp} blue trajectory). Drawing all NER factors together with the initial amount of damages from their pre-determined distributions shrinks the gap between measured and simulated DNA repair variability (\textit{cf.}\ Figure \ref{fig:CV_Var_comp} blue (data) and red (simulation) trajectory).\\
-This result becomes more explicit, as seen, by comparing the strikingly matching temporal evolution of the measured and predicted distributions of repair synthesis (\textit{cf.}\ Figure \ref{fig:ModelData_tempVar}).\\
+overall variability, we computed the effect of heterogeneity in only one factor on repair synthesis. Accordingly, for each $CV$-trajectory in Figure \ref{fig:CV_Var_comp} we determined the $CV_{\nu}$ by simulating the repair rate for 500 cells and drawing only one factor randomly. The largest contribution can be allocated to the initial amount of damages (\textit{cf.}\ Figure \ref{fig:CV_Var_comp} brown trajectory), which was responsible for about two thirds of the whole observed repair variability (\textit{cf.}\ Figure \ref{fig:CV_Var_comp} blue trajectory). Drawing all NER factors together with the initial amount of damages from their pre-determined distributions shrinks the gap between measured and simulated DNA repair variability (\textit{cf.}\ Figure \ref{fig:CV_Var_comp} blue (data) and red (simulation) trajectory). This result becomes more explicit, as seen, by comparing the strikingly matching temporal evolution of the measured and predicted distributions of repair synthesis (\textit{cf.}\ Figure \ref{fig:ModelData_tempVar}).\\
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_8.pdf}
@@ -206,15 +226,15 @@ This result becomes more explicit, as seen, by comparing the strikingly matching
 	\end{center}
 \end{figure}
 
-
-
-To summarize, in this chapter we uncovered two sources of natural variability that are propagated throughout the repair process and consequently contributing to the emergent cell-to-cell variability of repair synthesis: (i) the initial amount of inflicted DNA lesions and (ii) the variation of the nuclear NER factor concentrations. 
-However, the significant differences between measured and predicted repair rate responses (\textit{cf.}\ Figure \ref{fig:Model_dataComp}, compare the slope $m$ of the regression lines of the measured and simulated repair synthesis) leave space for interpretation, whether there are additional factors involved in repair, but have not been explicitly accounted for, in the model.
-
-\begin{figure}[htbp]
+\begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{Abbildungen/figure3_7.pdf}
 		\caption{\textbf{Simulated repair rate distribution fits experimentally derived EdU incorporation.} Temporal evolution of the repair rate variation  measured in single cells after initial UV-irradiation (red histograms) and predicted from model simulations (blues lines). (Experiments by P. Verbruggen)}
 		\label{fig:ModelData_tempVar}
 	\end{center}
 \end{figure}
+\clearpage
+
+To summarize, in this chapter we uncovered two sources of natural variability that are propagated throughout the repair process and consequently contributing to the emergent cell-to-cell variability of repair synthesis: (i) the initial amount of inflicted DNA lesions and (ii) the variation of the nuclear NER factor concentrations. 
+However, the significant differences between measured and predicted repair rate responses (\textit{cf.}\ Table \ref{tab:responsecomparison}) leave space for interpretation, whether there are additional factors involved in repair, but have not been explicitly accounted for, in the model.
+
