@@ -16,7 +16,7 @@ A level-1 auxiliary file: chapters/Appendix.aux
 Database file #1: NER_Bibliography.bib
 You've used 115 entries,
             2538 wiz_defined-function locations,
-            1344 strings with 29595 characters,
+            1337 strings with 29475 characters,
 and the built_in function-call counts, 54588 in all, are:
 = -- 4469
 > -- 2006
