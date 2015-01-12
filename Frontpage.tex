@@ -1,0 +1,167 @@
+\documentclass[DIV12,11pt,a4paper,titlepage,twoside,headings=small]{scrbook}
+ %\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+
+
+\def\TCop{\textsuperscript{\textcopyright}}
+\def\TReg{\textsuperscript{\textregistered}}
+\def\TTra{\textsuperscript{\texttrademark}}
+\usepackage[latin1]{inputenc}
+%\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{colortbl}
+%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\renewcommand{\chaptermark}[1]{%
+ \markboth{\thechapter.\ #1}{}}
+
+\renewcommand{\sectionmark}[1]{\markright{}}
+
+\newcommand{\helv}{%
+\fontfamily{phv}\fontsize{10}{11}\selectfont}
+
+\fancypagestyle{plain}{%
+%\fancyhf{} % clear all header and footer fields
+\fancyfoot[C]{\helv \thepage} % except the center
+%\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+\fancyfoot[C]{\helv \thepage} 
+
+
+\fancypagestyle{plain2}{
+	\fancyhf{}
+	\fancyhead[C]{}
+	\fancyfoot[C]{\thepage{}}
+	\renewcommand{\headrulewidth}{1pt}
+}
+
+\renewcommand{\chapterheadstartvskip}{\vspace *{-\baselineskip }}
+
+
+
+
+\usepackage{setspace}
+
+\usepackage{booktabs}
+\usepackage{cite}
+%\usepackage[numbers,sort&compress]{natbib}%enhanced citation
+\usepackage[format=plain,footnotesize,labelfont=bf,justification=justified,singlelinecheck=false]{caption}
+\usepackage{longtable}
+
+\usepackage{tabularx}
+\usepackage[section]{placeins}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{changepage}
+\usepackage{lscape}
+\usepackage{dsfont}
+\usepackage{acronym}
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{helvet}
+     
+\setstretch{1.4}
+%\doublespacing
+
+\parindent0pt
+\usepackage{ifpdf}
+
+%%% Should be LAST usepackage-call!
+%%% For docu on that, see reference on package ``hyperref''
+\ifpdf%   (definitions for using pdflatex instead of latex)
+
+  %%% graphicx: support for graphics
+  \usepackage[pdftex]{graphicx}
+
+  \pdfcompresslevel=9
+
+  %%% hyperref (hyperlinks in PDF): for more options or more detailed
+  %%%          explanations, see the documentation of the hyperref-package
+  \usepackage[%
+    %%% general options
+    pdftex=true,      %% sets up hyperref for use with the pdftex program
+    %plainpages=false, %% set it to false, if pdflatex complains: ``destination with same identifier already exists''
+    %
+    %%% extension options
+    backref,      %% adds a backlink text to the end of each item in the bibliography
+    pagebackref=false, %% if true, creates backward references as a list of page numbers in the bibliography
+    colorlinks=false,   %% turn on colored links (true is better for on-screen reading, false is better for printout versions)
+    %
+    %%% PDF-specific display options
+    bookmarks=true,          %% if true, generate PDF bookmarks (requires two passes of pdflatex)
+    bookmarksopen=false,     %% if true, show all PDF bookmarks expanded
+    bookmarksnumbered=false, %% if true, add the section numbers to the bookmarks
+    %pdfstartpage={1},        %% determines, on which page the PDF file is opened
+    pdfpagemode=None         %% None, UseOutlines (=show bookmarks), UseThumbs (show thumbnails), FullScreen
+  ]{hyperref}
+
+\hyphenpenalty=10
+\exhyphenpenalty=10000
+\sloppy
+
+%%%%defines bibliography environment 
+\def\thebibliography#1{\chapter{Bibliography}% 
+    \markboth{Bibliography}{Bibliography} 
+  \list{[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin 
+\labelwidth 
+    \advance\leftmargin\labelsep 
+    \usecounter{enumi}} 
+    \def\newblock{\hskip .11em plus .33em minus .07em} 
+    \sloppy\clubpenalty4000\widowpenalty4000 
+    \sfcode`\.=1000\relax} 
+
+
+
+  \DeclareGraphicsExtensions{.pdf}
+
+\else %else   (definitions for using latex instead of pdflatex)
+
+  \usepackage[dvips]{graphicx}
+  
+
+  \DeclareGraphicsExtensions{.eps}
+
+%  \usepackage[%
+%    dvips,           %% sets up hyperref for use with the dvips driver
+%    colorlinks=false %% better for printout version; almost every hyperref-extension is eliminated by using dvips
+%  ]{hyperref}
+
+\fi
+
+\usepackage{chngcntr}
+\counterwithin{figure}{chapter}
+
+\geometry{inner=3.0cm,outer=2.5cm,bottom=30mm}
+
+\graphicspath{{Abbildungen/}}
+\raggedbottom
+
+\begin{document}
+\thispagestyle{empty}
+\sffamily
+\raggedleft
+
+\centering
+\vspace*{1.5cm}
+\setstretch{2}
+\textbf{\huge Robust Regulation of DNA Repair}\\
+\setstretch{1.4}
+\vspace{6cm}
+{\large
+Inaugural - Dissertation \\
+submitted to the \\ 
+Combined Faculty for the Natural Sciences and for Mathematics \\ 
+of the Ruperto-Carola University of Heidelberg, Germany \\ for the degree of\\
+Doctor of Natural Sciences
+}
+
+\vspace{7cm}
+
+presented by\\[2ex]
+\textbf{\Large Tim Heinemann, M.S.} \\
+
+\end{document}
