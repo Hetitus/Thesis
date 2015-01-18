@@ -506,6 +506,18 @@ Allison, P.~D.
 \newblock {Multiple regression: A primer}.
 \newblock Pine Forge Press (1999).
 
+\bibitem{Koberle2006}
+K\"{o}berle, B., Roginskaya, V. \& Wood, R.~D.
+\newblock {XPA protein as a limiting factor for nucleotide excision repair and
+  UV sensitivity in human cells.}
+\newblock \emph{DNA Repair} \textbf{5}, 641--8 (2006).
+
+\bibitem{Kang2011}
+Kang, T.~H., Reardon, J.~T. \& Sancar, A.
+\newblock {Regulation of nucleotide excision repair activity by transcriptional
+  and post-transcriptional control of the XPA protein}.
+\newblock \emph{Nucleic Acids Research} \textbf{39}, 3176--3187 (2011).
+
 \bibitem{Smerdon1978}
 Smerdon, M.~J., Tlsty, T.~D. \& Lieberman, M.~W.
 \newblock {Distribution of ultraviolet-induced DNA repair synthesis in nuclease
@@ -595,6 +607,18 @@ Takeuchi, O. \& Akira, S.
 \newblock {Pattern recognition receptors and inflammation.}
 \newblock \emph{Cell} \textbf{140}, 805--20 (2010).
 
+\bibitem{Bruggeman2007}
+Bruggeman, F.~J. \& Westerhoff, H.~V.
+\newblock {The nature of systems biology}.
+\newblock \emph{Trends in Microbiology} \textbf{15}, 45--50 (2007).
+
+\bibitem{Yi2000a}
+Yi, T.~M., Huang, Y., Simon, M.~I. \& Doyle, J.
+\newblock {Robust perfect adaptation in bacterial chemotaxis through integral
+  feedback control.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America} \textbf{97}, 4649--4653 (2000).
+
 \bibitem{Bluthgen2013}
 Bl\"{u}thgen, N. \& Legewie, S.
 \newblock {Robustness of signal transduction pathways.}
@@ -611,12 +635,6 @@ K\"{o}berle, B., Masters, J.~R., Hartley, J.~A. \& Wood, R.~D.
 \newblock {Defective repair of cisplatin-induced DNA damage caused by reduced
   XPA protein in testicular germ cell tumours}.
 \newblock \emph{Current Biology} \textbf{9}, 273--278 (1999).
-
-\bibitem{Koberle2006}
-K\"{o}berle, B., Roginskaya, V. \& Wood, R.~D.
-\newblock {XPA protein as a limiting factor for nucleotide excision repair and
-  UV sensitivity in human cells.}
-\newblock \emph{DNA Repair} \textbf{5}, 641--8 (2006).
 
 \bibitem{Renaud2011}
 Renaud, E., Miccoli, L., Zacal, N., Biard, D.~S., Craescu, C.~T., Rainbow,
@@ -696,7 +714,7 @@ Cheng, L., Spitz, M.~R., Hong, W.~K. \& Wei, Q.
 \newblock \emph{Carcinogenesis} \textbf{21}, 1527--1530 (2000).
 
 \bibitem{Kollmann2005}
-Kollmann, M., L\o~vdok, L., Bartholom\'{e}, K., Timmer, J. \& Sourjik, V.
+Kollmann, M., L\o{}vdok, L., Bartholom\'{e}, K., Timmer, J. \& Sourjik, V.
 \newblock {Design principles of a bacterial signalling network.}
 \newblock \emph{Nature} \textbf{438}, 504--7 (2005).
 
