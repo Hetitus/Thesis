@@ -1,0 +1,24 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Luijsterburg et~al.(2010)Luijsterburg, von Bornstaedt, Gourdin,
+  Politi, Mon{\'e}, Warmerdam, Goedhart, Vermeulen, Van~Driel, and
+  H{\"o}fer}]{Luijsterburg2010}
+Luijsterburg, M.~S., von Bornstaedt, G., Gourdin, A.~M., Politi, A.~Z.,
+  Mon{\'e}, M.~J., Warmerdam, D.~O., Goedhart, J., Vermeulen, W., Van~Driel,
+  R., and H{\"o}fer, T.
+\newblock {S}tochastic and reversible assembly of a multiprotein {DNA} repair
+  complex ensures accurate target site recognition and efficient repair.
+\newblock \emph{The Journal of Cell Biology}, 189(3):445--463, 2010.
+
+\bibitem[{Rand et~al.(2012)Rand, Rinas, Schwerk, N{\"{o}}hren, Linnes,
+  Kr{\"{o}}ger, Flossdorf, K{\'{a}}ly-Kullai, Hauser, H{\"{o}}fer, and
+  K{\"{o}}ster}]{Rand2012}
+Rand, U., Rinas, M., Schwerk, J., N{\"{o}}hren, G., Linnes, M., Kr{\"{o}}ger,
+  A., Flossdorf, M., K{\'{a}}ly-Kullai, K., Hauser, H., H{\"{o}}fer, T., and
+  K{\"{o}}ster, M.
+\newblock {M}ulti-layered stochasticity and paracrine signal propagation shape
+  the type-{I} interferon response.
+\newblock \emph{Molecular Systems Biology}, 8:584, 2012.
+
+\end{thebibliography}

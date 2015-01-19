@@ -4,7 +4,7 @@
 %%
 %% The original source files were:
 %%
-%% merlin.mbs  (with options: `ay,nat,nm-revf,jnrlst,nmlm,x10,x0,m9,keyxyr,note-yr,num-xser,btit-rm,bt-rm,bkpg-x,pre-pub,ppx,ed,abr,ednx,mth-bare,xedn,etal-xc,nfss,')
+%% merlin.mbs  (with options: `ay,nat,nm-rev,jnrlst,keyxyr,note-yr,num-xser,btit-rm,bt-rm,bkpg-x,pre-pub,ppx,ed,abr,ednx,mth-bare,xedn,etal-xc,nfss,')
 %% ----------------------------------------
 %% *** thesis M.Rinas ***
 %% 
@@ -387,21 +387,12 @@ FUNCTION {format.names}
   numnames 'namesleft :=
     { namesleft #0 > }
     { s nameptr
-      "{vv~}{ll}{, ff}{, jj}"
+      "{vv~}{ll}{, f.}{, jj}"
       format.name$
       bibinfo bibinfo.check
       't :=
       nameptr #1 >
         {
-          nameptr #9
-          #1 + =
-          numnames #0
-          #10 +
-          > and
-            { "others" 't :=
-              #1 'namesleft := }
-            'skip$
-          if$
           namesleft #1 >
             { ", " * t * }
             {
@@ -445,7 +436,7 @@ FUNCTION {format.names.ed}
   numnames 'namesleft :=
     { namesleft #0 > }
     { s nameptr
-      "{ff~}{vv~}{ll}{, jj}"
+      "{f.~}{vv~}{ll}{, jj}"
       format.name$
       bibinfo bibinfo.check
       't :=
@@ -545,15 +536,6 @@ FUNCTION {format.full.names}
       't :=
       nameptr #1 >
         {
-          nameptr #9
-          #1 + =
-          numnames #0
-          #10 +
-          > and
-            { "others" 't :=
-              #1 'namesleft := }
-            'skip$
-          if$
           namesleft #1 >
             { ", " * t * }
             {
@@ -1333,19 +1315,10 @@ FUNCTION {sort.format.names}
   numnames 'namesleft :=
     { namesleft #0 > }
     { s nameptr
-      "{vv{ } }{ll{ }}{  ff{ }}{  jj{ }}"
+      "{vv{ } }{ll{ }}{  f{ }}{  jj{ }}"
       format.name$ 't :=
       nameptr #1 >
         {
-          nameptr #9
-          #1 + =
-          numnames #0
-          #10 +
-          > and
-            { "others" 't :=
-              #1 'namesleft := }
-            'skip$
-          if$
           "   "  *
           namesleft #1 = t "others" = and
             { "zzzzz" 't := }
