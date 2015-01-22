@@ -1,15 +1,15 @@
 \chapter{Kinetic model of NER}
 \label{chap:kineticNERmodel}
 
-Luijsterburg \textit{et al.} developed a mathematical NER model by integrating a large data set for all seven core NER factors \cite{Luijsterburg2010}. However, despite the comprehensive collection of time-resolved \textit{in vivo} measurements of the individual protein dynamics the model parameters comprising binding, dissociation and catalytic constants were not fully identified by the data. This is presumably caused by the missing readout of DNA repair, which was so far not measured on a similar time-scale as the protein assembly rates and the dwell times. Unfortunately, the non-identifiability sets a limitation for the predictive power of the model. \\ 
-Based on the EdU incorporation data introduced in chapter \ref{chap:quantData} we present here an evolved mathematical model of NER. It explains the connection between the dynamic exchange of individual repair factors at damaged chromatin sites and the overall time scale of the entire repair process. We calibrated the parametrization of the model iteratively with a profile likelihood estimation leading to identifiable parameters and hence an increased predictive power of the model. As a consequence, our fully identifiable model can reliably predict the behaviour of the experimentally inaccessible repair intermediate of incised DNA.\\
+Luijsterburg \textit{et al.} developed a mathematical NER model by integrating a large dataset for all seven core NER factors \cite{Luijsterburg2010}. However, despite the comprehensive collection of time-resolved \textit{in vivo} measurements of the individual protein dynamics the model parameters comprising binding, dissociation and catalytic constants were not fully identified by the data. This is presumably caused by the missing readout of DNA repair, which was so far not measured on a similar time-scale as the protein assembly rates and the dwell times. Unfortunately, the non-identifiability sets a limitation for the predictive power of the model. \\ 
+Based on the EdU incorporation data introduced in chapter \ref{chap:quantData} we present here an evolved mathematical model of NER that explains the connection between the dynamic exchange of individual repair factors at damaged chromatin sites and the overall time scale of the entire repair process. We calibrate the parametrization of the model iteratively with a profile likelihood estimation leading to identifiable parameters and hence an increased predictive power of the model. As a consequence, our fully identifiable model can reliably predict the behaviour of the experimentally inaccessible repair intermediate of incised DNA.\\
    
 
 
 
 \section{Slow first-order reaction kinetic due to many fast interacting components}
 \label{sec:toyModel}
-To investigate the mechanistic connection between fast NER factor exchange at the DNA template and the overall slow repair time, it appears practical to apply an analytical approach. During her Ph.D. thesis, Dr.\ Gesa Terstiege supervised by Prof.\ Thomas H\"ofer performed this analysis \cite{Terstiege2010,Verbruggen2014}, considering the complex formation with a simplified model of repair including $N$ repair factors. They examined different scenarios distinguishing between random and sequential protein assembly; reversible and irreversible protein binding, or mixed mechanisms specific for each DNA repair intermediate (\textit{cf.}\ Figure \ref{fig:reactionTiming}A,\cite{Verbruggen2014}). Under appropriate assumptions, the mean repair time of such a process can be generally described with:
+To investigate the mechanistic connection between fast NER factor exchange at the DNA template and the overall slow repair time, it appears practical to apply an analytical approach. During her Ph.D. thesis, Dr.\ Gesa Terstiege supervised by Prof.\ Thomas H\"ofer performed this analysis \cite{Terstiege2010,Verbruggen2014}, considering the complex formation with a simplified model of repair including $N$ repair factors. They examined different scenarios distinguishing between random and sequential protein assembly; reversible and irreversible protein binding, or mixed mechanisms specific for each DNA repair intermediate (\textit{cf.}\ Figure \ref{fig:reactionTiming}A,\cite{Verbruggen2014}). Under appropriate assumptions, the mean repair time of such a complex assembly process can be generally described with:
 
 \begin{equation}
 \tau = \underbrace{\frac{1}{k}\sum^{N-1}_{i=0}K_i\left(\frac{l}{k}\right)^i}_{\text{first assembly}} +  \underbrace{\frac{1}{\rho}\sum_{i=0}^{N}J_i \left(\frac{l}{k}\right)^i}_{\text{reassembly and reaction}}, \label{Eqn:taugen}
@@ -36,8 +36,8 @@ Considering reversible protein binding ($l=k=1$), sequential and random assembly
 
 
 \section{Model structure and parametrization}
-To examine the relation between rapid repair factor exchange and the slow first-order reaction kinetic, we extended the previously performed analysis \cite{Luijsterburg2010,Terstiege2010}, by considering a more realistic NER model. Conceptually, the model developed here, follows on the model introduced by Luijsterburg \textit{et al.} (2010) \cite{Luijsterburg2010}. In their model NER factors bind transiently to DNA repair intermediates to form catalytic complexes that, if complete, perform the next repair step. The latter are usually irreversible reactions embodying the sequential characteristics of this pathway (\textit{cf.}\ Figure \ref{fig:introScheme}A).\\
-The nature of these distinguishable repair intermediates has been widely investigated \textit{in vitro} and \textit{in vivo} \cite{Evans1997a,Mu1996,Polo2006,Tapias2004}.
+To examine the relation between rapid repair factor exchange and the slow first-order reaction kinetic, we extended the previously performed analysis \cite{Luijsterburg2010,Terstiege2010}, by considering a more realistic NER model. Conceptually, the model developed here, follows on the model introduced by Luijsterburg \textit{et al.} (2010) \cite{Luijsterburg2010}. In their model NER factors bind transiently to DNA repair intermediates to form catalytic complexes that, if complete, perform the next repair step. The latter are usually irreversible reactions embodying the sequential characteristic of this pathway (\textit{cf.}\ Figure \ref{fig:introScheme}A).\\
+The nature of these repair intermediates has been widely investigated \textit{in vitro} and \textit{in vivo} \cite{Evans1997a,Mu1996,Polo2006,Tapias2004}.
 The evolved model, presented here, distinguishes five DNA repair intermediates: damaged DNA, unwound DNA, incised DNA, resynthesised DNA and rechromatinised DNA. The molecular state of these intermediates defines the binding affinity for a specific set of repair proteins (\textit{cf.}\ Figure \ref{fig:ModelStructure}). Table \ref{tab:modelassumptions} summarizes all repair intermediates and lists the corresponding repair factors that show affinity for a particular repair intermediate. Repair factors that catalyse the enzymatic reaction if assembled are indicated. As stated before, FLIP measurements indicated that diffusion is not rate limiting for protein binding and therefore, we do not include it in the model (\textit{cf.}\ Section \ref{subsec:AccuFlipExp} and \cite{Rademakers2003,Zotter2006}).              
 
 
@@ -50,7 +50,7 @@ The evolved model, presented here, distinguishes five DNA repair intermediates: 
 \end{figure}
 
 
-Theoretical results suggest that the detection of damaged DNA sites by a single element instead of multiple elements simultaneously is crucial for the efficient initiation of the repair process \cite{Politi2005,Volker2001}. This prominent role within the NER pathway plays the lesion recognition factor XPC. Besides this experimentally verified exception, we assumed random and non-cooperative binding for all NER factors.\\ 
+Theoretical results suggest that the detection of damaged DNA sites by a single element instead of multiple elements simultaneously is crucial for the efficient initiation of the repair process \cite{Politi2005,Volker2001}. Within the NER pathway this prominent role is played by the lesion recognition factor XPC. Besides this experimentally verified exception, we assumed random and non-cooperative binding for all NER factors.\\ 
 \begin{table}[t!]
 	\small{
 		\begin{tabular}{cccccc}
@@ -78,8 +78,8 @@ Theoretical results suggest that the detection of damaged DNA sites by a single 
 			&&&XPC.&\\
 			&&&& \\ \hline
 			\rule{0pt}{3ex}
-			(III) Incised&XPC,TFIIH,&Repair-synthesis&PCNA binds to the free&\cite{Evans1997a}\\
-			DNA& XPG, XPA,& (reaction $\gamma$)&3'-OH group generated by&\cite{Winkler2001}\\
+			(III) Incised DNA &XPC,TFIIH,&Repair-synthesis&PCNA binds to the free&\cite{Evans1997a}\\
+			& XPG, XPA,& (reaction $\gamma$)&3'-OH group generated by&\cite{Winkler2001}\\
 			& ERCC1/XPF,&XPA, RPA and&  the ERCC1/XPF incision.&\\
 			&RPA, PCNA& PCNA& DNA polymerase is also&\\
 			&(128 states)&& required (not measured).	&\\
@@ -94,7 +94,7 @@ Theoretical results suggest that the detection of damaged DNA sites by a single 
 			&&&& \\ \hline
 			\rule{0pt}{3ex}
 			(V) Rechromatin- &RPA, PCNA &&RPA and PCNA associate&\cite{Riedl2003}\\
-			ised DNA &(4 states)	&&with repaired intermediate $I$,&\cite{Luijsterburg2010}\\
+			ised DNA &(4 states)	&&with repaired intermediate V,&\cite{Luijsterburg2010}\\
 			&&&as levels of bound eGFP-&\\
 			&&&PCNA and eGFP-RPA&\\ 
 			&&& are  high up to at least 4 h&\\
@@ -107,7 +107,7 @@ Theoretical results suggest that the detection of damaged DNA sites by a single 
 	\newpage
 	\cleardoublepage  
 	 
-The model structure introduced above and shown in Figure \ref{fig:ModelStructure} was translated into an ordinary differential equation system assuming mass-action kinetics for all protein-DNA interaction processes. Each equation describes the concentration of a single DNA state $y_{\pi}^{R}$ (\textit{cf.}\ Eqn. \ref{eqn:DNAstatesModel}) associated with a specific repair intermediate $R$ = I, II,\dots,V (damaged (I), unwound (II), incised (III), resynthesised (IV), rechromatinised (V)). The index $\pi$ represents a binary vector, where each position displays the presence or absence of a repair protein $p$ ($p$ $\in$ {C, T, G, A, F, R, P}, where XPC (C), TFIIH (T), XPG (G), XPA (A), ERCC1/XPF (F), RPA (R) and PCNA (P)). $\pi(p)=1$ if protein p is bound and $\pi(p)=0$ if not. The length of $\pi(p)$ is defined according to the model structure (\textit{cf.}\ Table \ref{tab:modelassumptions}) with: $\pi_{R=I} = \{ \text{C,T} \}$; $\pi_{R=II} = \{ \text{C,T,G,A,F,R} \}$; $\pi_{R=III} = \{ \text{C,T,G,A,F,R,P} \}$; $\pi_{R=IV} = \{ \text{A,R,P} \}$; $\pi_{R=V} = \{ \text{R,P} \}$. The time course of this model is described by
+The model structure introduced above and shown in Figure \ref{fig:ModelStructure} was translated into an ordinary differential equation (ODE) system assuming mass-action kinetics for all protein-DNA interaction processes. Each equation describes the concentration of a single DNA state $y_{\pi}^{R}$ (\textit{cf.}\ Eqn. \ref{eqn:DNAstatesModel}) associated with a specific repair intermediate $R$ = I, II,\dots,V (damaged (I), unwound (II), incised (III), resynthesised (IV), rechromatinised (V)). The index $\pi$ represents a binary vector, where each position displays the presence or absence of a repair protein $p$ ($p$ $\in$ {C, T, G, A, F, R, P}, where XPC (C), TFIIH (T), XPG (G), XPA (A), ERCC1/XPF (F), RPA (R) and PCNA (P)). $\pi(p)=1$ if protein p is bound and $\pi(p)=0$ if not. The length of $\pi(p)$ is defined according to the model structure (\textit{cf.}\ Table \ref{tab:modelassumptions}) with: $\pi_{R=I} = \{ \text{C,T} \}$; $\pi_{R=II} = \{ \text{C,T,G,A,F,R} \}$; $\pi_{R=III} = \{ \text{C,T,G,A,F,R,P} \}$; $\pi_{R=IV} = \{ \text{A,R,P} \}$; $\pi_{R=V} = \{ \text{R,P} \}$. The time course of this model is described by
 
 \begin{equation}\label{eqn:DNAstatesModel}
 \frac{d}{dt}\;y_{\pi}^{R} =\sum_{p\text{ in }R}\eta \, \left( (-1)^{\pi(p)} \,l_{p}^{ R}\, y_{\pi}^{R}\left. \right|_{\pi(p)=1}+  \, (-1)^{1+\pi(p)}\, k_{p}^{ R} \,C_p(t)\,y_{\pi}^{R}\left. \right|_{\pi(p)=0}\right ) +E(y_{\pi}^{R}),
@@ -152,7 +152,7 @@ The Kronecker delta
 \end{array}
 \right.
 \end{align*}
-ensures that a protein only binds to complexes, where it is yet missing and only leaves complexes, where it is actually present. The factor $r$ takes account of the volume ratio of the local damage to nuclear volume, which was estimated to be 0.1 (\textit{cf.}\ Section \ref{sec:LD_volume}).\\
+ensures that a protein only binds to complexes, where it is yet missing and only leaves complexes, where it is actually present. The factor $r$ takes account of the volume ratio of the local damage to nuclear volume, which was estimated as 0.1 (\textit{cf.}\ Section \ref{sec:LD_volume}).\\
 Finally, when an enzymatic complex has fully assembled at the DNA template, it catalyses the next repair step, which is represented in the model by the term $E(y_{\pi}^{R})$ in Eqn.\ \ref{eqn:DNAstatesModel}. After damage recognition by XPC, damaged DNA is unwound by the helicase TFIIH with the unwinding activity $\alpha$, whereas XPC acts as a stabilizing/proof-reading factor in parallel. Accordingly, $E(y_{\pi}^{R})$ translates into the following catalytic reactions for damaged DNA ($R= \text{I}$):
 $$E(y_{00}^\text{I})=\;\varepsilon\;y_{000000}^\text{II} \quad \text{ and }\quad
 E(y_{11}^\text{I})=\;-\alpha \;y_{11}^\text{I}.$$
@@ -164,7 +164,7 @@ If all proteins fall off the DNA template due to false damage detection, the DNA
 	\end{array}
 \end{align*}
 
-Once the lesion strand is excised with incision rate $\beta$, the remaining repair steps are irreversible. Incised DNA is resynthesised with the rate $\gamma$ by the resynthesis complex  XPA-RPA-PCNA. XPA is assumed to assemble at post-incision repair intermediates as suggested by experiments with inhibited incision that showed accelerated dissociation FLIP kinetics for XPA  \cite{Luijsterburg2010}. This result is supported by a chromatin immunoprecipitation (ChIP) \label{par:schip} experiment with antibodies against XRCC1-Lig III showing the co-precipitation of XPA and RPA but not XPC and TFIIH \cite{Moser:2007:Mol-Cell:17643379}. Evidence for the importance of PCNA and RPA for the resynthesis reaction was shown by Shivji \textit{et al.} (1995) \cite{Shivji:1995:Biochemistry:7711023}, and therefore we incorporate the following catalytic reactions for incised DNA ($R= \text{III}$):  
+Once the lesion strand is excised with incision rate $\beta$, the remaining repair steps are irreversible. Incised DNA is resynthesised with the rate $\gamma$ by the resynthesis complex  XPA-RPA-PCNA. XPA is assumed to assemble at post-incision repair intermediates as suggested by experiments with inhibited incision that showed accelerated dissociation FLIP kinetics for XPA  \cite{Luijsterburg2010}. This result is supported by a chromatin immunoprecipitation (ChIP) \label{par:schip} experiment with antibodies against XRCC1-Lig III showing the co-precipitation of XPA and RPA but not XPC and TFIIH \cite{Moser:2007:Mol-Cell:17643379}. Evidence for the importance of PCNA and RPA for the resynthesis reaction was shown by Shivji \textit{et al.} \cite{Shivji:1995:Biochemistry:7711023}, and therefore we incorporate the following catalytic reactions for incised DNA ($R= \text{III}$):  
             
 \begin{align*}
 \begin{array}{l l llll}
@@ -205,7 +205,7 @@ The observables $z_k$ are parametrised by $\theta$ and resemble experimentally-d
 L(z_k^\dag \textbar \theta) = \prod_{k=1}^m \prod_{i=1}^{d_k} \frac{1}{\sqrt{2\pi \sigma_{ki}^2}}\exp \left( -\frac{1}{2\sigma_{ki}^2}\left(z_{ki}^\dag(t_i) - z_k(t_i,\theta)\right)^2\right).
 \end{equation}
   
-Here, $d_k$ denotes the number of distinct experimental data-sets ($t_i,z_k^\dag$) for each measured observable $k = 1,\ldots,m$, measured at time points $t_i$ with $i = 1,\ldots,d_k$. $\sigma_{ki}^2$ are the variance components of the measurement noise of each data point. Instead of maximizing the likelihood it is equivalent and numerically more efficient to minimize its negative logarithm multiplied with 2: $-2\log(L(z_k^\dag\textbar\theta))$, which we will refer to in the following as $\chi^{2}$.  
+Here, $d_k$ denotes the number of distinct experimental data-sets ($t_i,z_k^\dag$) for each measured observable $k = 1,\ldots,m$, measured at the time points $t_i$ with $i = 1,\ldots,d_k$. $\sigma_{ki}^2$ are the variance components of the measurement noise of each data point. Instead of maximizing the likelihood it is equivalent and numerically more efficient to minimize its negative logarithm multiplied with 2: $-2\log(L(z_k^\dag\textbar\theta))$, which we will refer to in the following as $\chi^{2}$.  
 
 \begin{equation}\label{eqn:chiSquare}
 \chi_\theta^2 = -2\log(L(z_k^\dag\textbar\theta)).
@@ -266,19 +266,19 @@ In this section we quantify the quality of the model fit and determine whether t
 PL(\theta_i) = \max_{\forall j \neq i} [L(z_k^\dag \lvert \theta_j)].
 \label{eqn:PL} 
 \end{equation}
-One parameter $\theta_l$ with $l\in\{{1,\ldots,N}\}$ at a time, is gradually fixed along this dimension for different values of $p$. In each step the negative log-likelihood $X_{\theta_l}^2(p)$ is minimized (\textit{cf.}\ Eqn.\ \ref{eqn:chiSquare}), fitting all other parameters $\theta_k$ with $k\in\{{1,\ldots,N}\}$; $k\neq l$. Subsequently, the identifiability of a parameter $\theta_l$ can be determined by $\Delta X_{\theta_l}^2(p)$, which describes the difference between the parameter dependent local minimum $X_{\theta_l}^2(p)$ and the global $\chi^{2}$ minimum
+One parameter $\theta_l$ with $l\in\{{1,\ldots,N}\}$ at a time, is gradually fixed along this dimension for different values of $p$. In each step the negative log-likelihood $\chi_{\theta_l}^2(p)$ is minimized (\textit{cf.}\ Eqn.\ \ref{eqn:chiSquare}), fitting all other parameters $\theta_k$ with $k\in\{{1,\ldots,N}\}$; $k\neq l$. Subsequently, the identifiability of a parameter $\theta_l$ can be determined by $\Delta \chi_{\theta_l}^2(p)$, which describes the difference between the parameter dependent local minimum $\chi_{\theta_l}^2(p)$ and the global $\chi^{2}$ minimum
 \begin{eqnarray}
-	\Delta X_{\theta_l}^2(p) &=& \min_{\{\theta_k\textbar k=1,\ldots,N;k\neq l\}} \left( \chi^{2} (\theta_1,\ldots,\theta_{l-1},p,\theta_{l+1},\ldots,\theta_N )\right)\nonumber \\
+	\Delta \chi_{\theta_l}^2(p) &=& \min_{\{\theta_k\textbar k=1,\ldots,N;k\neq l\}} \left( \chi^{2} (\theta_1,\ldots,\theta_{l-1},p,\theta_{l+1},\ldots,\theta_N )\right)\nonumber \\
 	&-& \quad \! \min_{\{\theta_k\textbar k=1,\ldots,N\}} \quad \!\! \left( \chi^{2} (\theta_1,\ldots,\theta_N )\right).
 \end{eqnarray}  
 
 Confidence bounds for the particular parameter depend on the threshold $Q_{\chi^{2}}(1-a,df)$, which represents the $(1-a)$ quantile of the $\chi^{2}$-distribution with $df$ degrees of freedom. The associated point-wise confidence intervals are defined as
 \begin{equation}
-CI_{1-a}^{\theta_l}= \{p\textbar \Delta X_{\theta_l}^2(p)\leq Q_{\chi^{2}}(1-a,1)\}.
+CI_{1-a}^{\theta_l}= \{p\textbar \Delta \chi_{\theta_l}^2(p)\leq Q_{\chi^{2}}(1-a,1)\}.
 \label{eqn:confidenceIntervals}
 \end{equation} 
 
-For one fixed parameter at a time and thus one degree of freedom we can derive the common confidence region $CI_{95\%}$, which corresponds to a $\chi^{2}$-distribution quantile of $Q_{\chi^{2}}(95\%,1)=3.8$. A parameter $\theta_l$ is identifiable, if the confidence interval $CI_{1-a}(\theta_l)$ is finite, which can be determined directly from the graph of the profile likelihood $\Delta X_{\theta_l}^2(p)$ for different values of $p$ (\textit{cf.}\ Figure \ref{fig:profileLikilihoods}).\\ 
+For one fixed parameter at a time and thus one degree of freedom we can derive the common confidence region $CI_{95\%}$, which corresponds to a $\chi^{2}$-distribution quantile of $Q_{\chi^{2}}(95\%,1)$ = 3.8. A parameter $\theta_l$ is identifiable, if the confidence interval $CI_{1-a}(\theta_l)$ is finite, which can be determined directly from the graph of the profile likelihood $\Delta \chi_{\theta_l}^2(p)$ for different values of $p$ (\textit{cf.}\ Figure \ref{fig:profileLikilihoods}).\\ 
 We applied the identifiability analysis on our NER model (\textit{cf.}\ Eqn.\ \ref{eqn:DNAstatesModel} and Eqn.\ \ref{Eqn:concentration}) comprising 40 binding and dissociation parameters and 4 catalytic reaction constants. However, only under the assumption that the repair factor exchange at unwound and incised DNA is equal (\textit{cf.}\ Figure \ref{fig:PLE_NER_overview} with the exception of PCNA) all binding and dissociation constants were identifiable. The same holds true for the dissociation kinetics of TFIIH from damaged and unwound DNA. This reduces the number of fitted parameters to 14 binding, 13 dissociation and 4 catalytic rate constants.
 \begin{figure}[htbp]
 	\begin{center}
@@ -288,7 +288,7 @@ We applied the identifiability analysis on our NER model (\textit{cf.}\ Eqn.\ \r
 	\end{center}
 \end{figure}
 
-Besides the slow rate of rechromatinisation $\delta$, presumably identifiable due to the slow decrease in accumulated XPA (\textit{cf.}\ Figure \ref{fig:ModelFit_accu_flip}), all catalytic rates are fast. This is seen by the existence of lower bounds on the rate constants of the order of 1 $\text{s}^{-1}$. For the numerical values of the parameters see Table \ref{tab:parameter_bigTable} and Table \ref{tab:parameter_catalyticRates}. 
+Besides the slow rate of rechromatinisation $\delta$, presumably identifiable due to the slow decrease in accumulated XPA (\textit{cf.}\ Figure \ref{fig:ModelFit_accu_flip}), all catalytic rates are fast. This is seen by the existence of lower bounds on the rate constants of the order of 1 $\text{s}^{-\text{1}}$. For the numerical values of the parameters see Table \ref{tab:parameter_bigTable} and Table \ref{tab:parameter_catalyticRates}. 
 
 
 
@@ -321,17 +321,17 @@ Besides the slow rate of rechromatinisation $\delta$, presumably identifiable du
 
 \begin{adjustwidth}{-3.5 cm}{}
 \captionsetup{width=1.24\textwidth}
-\caption{\textbf{$\text{K}_{\text{d}}$Values.} NA, not applicable. $K_d$ ($k_{\text{off}}/k_{\text{on}}$) values are given for every repair protein and arranged in columns. Reference parameter set and 95\% confidence intervals (in parentheses) are shown.}\label{tab:KdValues}
+\caption{\textbf{$\text{K}_{\text{d}}$Values.} NA, not applicable. $\text{K}_{\text{d}}$ ($k_{\text{off}}/k_{\text{on}}$) values are given for every repair protein and arranged in columns. Reference parameter set and 95\% confidence intervals (in parentheses) are shown.}\label{tab:KdValues}
 \end{adjustwidth}
 \end{table}
 
 \end{landscape}
 
-The $K_d$ values ($k_{\text{off}}/k_{\text{on}}$), depicting the protein binding affinities to the respective DNA repair intermediate fall into a physiological realistic range between $\sim$100 nM and $\sim$1 \textmu M (\textit{cf.}\ Table \ref{tab:KdValues}). Only XPC has a particular low affinity of 9 \textmu M, which is consistent with previous findings reporting that the time until DNA incision is mainly determined by the slow lesion recognition \cite{Luijsterburg2010}.\\        
+The $\text{K}_{\text{d}}$ values ($k_{\text{off}}/k_{\text{on}}$), depicting the protein binding affinities to the respective DNA repair intermediate fall into a physiological realistic range between $\sim$100 nM and $\sim$1 \textmu M (\textit{cf.}\ Table \ref{tab:KdValues}). Only XPC has a particular low affinity of 9 \textmu M, which is consistent with previous findings reporting that the time until DNA incision is mainly determined by the slow lesion recognition \cite{Luijsterburg2010}.\\        
 Having an identifiable model allows us to make more precise computational predictions. For example, we can simulate the unobservable fraction of incised DNA (\textit{cf.}\ Figure \ref{fig:ModelFit_intermed}, green trajectory). As the EdU incorporation measurement shows, the damaged (blue) and repaired (red) DNA kinetics are tightly coupled. This omits a higher accumulation of incised DNA.\\ 
 
 
-In summary, for the development of a realistic model of the DNA repair pathway we integrated live-cell imaging data of the assembly and dissociation kinetics of all core NER factors and linked it directly to the DNA repair kinetics. The extended dataset identifies a total of 31 model parameters including 14 binding, 13 dissociation and 4 catalytic rate constants. Therefore, quantitative predictions with the model on the functioning of NER are no longer limited.  
+In summary, for the development of a realistic model of the DNA repair pathway we integrated live-cell imaging data of the assembly and dissociation kinetics of all core NER factors and linked it directly to the DNA repair kinetics. The extended dataset identifies a total of 31 model parameters including 14 binding, 13 dissociation and 4 catalytic rate constants. Therefore, quantitative predictions with the model on the functioning of NER are no longer limited by parameter non-identifiability.  
 
 \begin{figure}[htbp]
 	\begin{center}

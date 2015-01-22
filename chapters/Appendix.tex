@@ -62,7 +62,7 @@
 		&                               &                              &                           &                          &                            &  (0.438;0.645)  & (0.134;0.182)  \\
 		\hline
 	\end{tabular}
-	\caption{\textbf{Values of binding and dissociation rate constants.} NA, not applicable. $k_{\text{on}}$, $k_{\text{off}}$ and $K_{\text{D}}$ ($k_{\text{off}}$/$k_{\text{on}}$) values are given for every repair protein and arranged in columns. Reference parameter set and 95\% confidence intervals (in parentheses) are shown. Nuclear concentration (in \textmu M) of NER factors are based on previously described data \cite{Luijsterburg2010}}
+	\caption{\textbf{Values of binding and dissociation rate constants.} NA, not applicable. $k_{\text{on}}$, $k_{\text{off}}$ and $\text{K}_{\text{d}}$ ($k_{\text{off}}$/$k_{\text{on}}$) values are given for every repair protein and arranged in columns. Reference parameter set and 95\% confidence intervals (in parentheses) are shown. Nuclear concentration (in \textmu M) of NER factors are based on previously described data \cite{Luijsterburg2010}}
 	\label{tab:parameter_bigTable}
 \end{table}
 
@@ -77,7 +77,7 @@
 		\hline
 		Unwinding  $\alpha$                                     & 19.9& (>0.2)                 \\
 		Resynthesis $\gamma$                                 & 25.5 &(>1.5)     \\
-		Rechromatinization $\delta$                         & 0.001 &(0.001;0.0011)                   \\
+		Rechromatinisation $\delta$                         & 0.001 &(0.001;0.0011)                   \\
 		Reannealing  $\epsilon$                                & 5.3&(>0.9)    \\
 		\hline
 	\end{tabular}
@@ -93,7 +93,7 @@ The correlation analysis was performed in MATLAB (2012a, The Mathworks Inc., Nat
 \begin{equation}
 t = \frac{r}{\sqrt{\frac{(1-r^2)}{N-2}}}
 \end{equation}     
-follows approximately a $t$-distribution for $N-2$ degrees of freedom and a sample size $N$ \cite{Kendall1979,Fisher1958}. A low p-value suggests the rejection of the null-hypothesis and thus, demonstrates the significance of the correlation.\\
+follows approximately a $t$-distribution for $N$ - 2 degrees of freedom and a sample size $N$ \cite{Kendall1979,Fisher1958}. A low p-value suggests the rejection of the null-hypothesis and thus, demonstrates the significance of the correlation.\\
 The confidence intervals for each correlation coefficient were estimated by non-parametric bootstrap \cite{Efron1979}. Thereby the correlation coefficient was re-sampled for 10,000 times each time drawing $n$ pseudoreplicates (with replacement), where $n$ denotes the number of measured cells from the original data. The confidence borders mark the interval including 95\% of the re-sampled correlation coefficients.\\ 
 
 \section{Control analysis}
