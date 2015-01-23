@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.10)  22 JAN 2015 19:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.10)  23 JAN 2015 16:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1284,11 +1284,11 @@ Package rerunfilecheck Info: File `TH_Thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 374.
  ) 
 Here is how much of TeX's memory you used:
- 12038 strings out of 493315
- 184168 string characters out of 6137904
+ 12044 strings out of 493315
+ 184238 string characters out of 6137904
  337026 words of memory out of 5000000
- 14753 multiletter control sequences out of 15000+600000
- 78660 words of font info for 108 fonts, out of 8000000 for 9000
+ 14757 multiletter control sequences out of 15000+600000
+ 79797 words of font info for 112 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  40i,17n,51p,2200b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
@@ -1330,7 +1330,7 @@ local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/20
 13/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TH_Thesis.pdf (91 pages, 4510627 bytes).
+Output written on TH_Thesis.pdf (91 pages, 4510720 bytes).
 PDF statistics:
  2402 PDF objects out of 2487 (max. 8388607)
  2006 compressed objects within 21 object streams
