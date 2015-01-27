@@ -13,10 +13,11 @@ A level-1 auxiliary file: chapters/Discussion.aux
 The style file: naturemagC.bst
 A level-1 auxiliary file: chapters/Abbreviations.aux
 A level-1 auxiliary file: chapters/Appendix.aux
+A level-1 auxiliary file: chapters/Acknowledgments.aux
 Database file #1: NER_Bibliography.bib
 You've used 118 entries,
             2538 wiz_defined-function locations,
-            1353 strings with 29955 characters,
+            1354 strings with 29984 characters,
 and the built_in function-call counts, 55932 in all, are:
 = -- 4588
 > -- 2042
