@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.11)  28 JAN 2015 00:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.10)  28 JAN 2015 09:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -768,6 +768,18 @@ Underfull \hbox (badness 1320) in paragraph at lines 7--11
 DNA-Reparaturprozesses
  []
 
+
+Underfull \hbox (badness 4429) in paragraph at lines 7--11
+\T1/phv/m/n/10.95 Die in dieser Ar-beit gewonnenen Erken-nt-nisse zeigen zwei k
+om-ple-men-täre Re-
+ []
+
+
+Underfull \hbox (badness 2564) in paragraph at lines 7--11
+\T1/phv/m/n/10.95 gulationsmechanismen der DNA-Reparatur auf. Zum einen ist die
+ Kon-trolle der
+ []
+
 [1
 
 
@@ -1399,7 +1411,7 @@ local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/20
 13/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TH_Thesis.pdf (94 pages, 4513908 bytes).
+Output written on TH_Thesis.pdf (94 pages, 4513930 bytes).
 PDF statistics:
  2421 PDF objects out of 2487 (max. 8388607)
  2022 compressed objects within 21 object streams
